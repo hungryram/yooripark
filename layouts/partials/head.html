@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Netlify Identity -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <!-- Netlify Idetity -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{.Site.BaseURL}}css/styles.css">
+    <link rel="stylesheet" href="{{.Site.BaseURL}}css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    {{ with .Title }}
+    <title>{{ . | title }}</title>
+    {{ end }}
+
+    {{ with .Params.metadescription }}
+    <meta name="description" content="{{ . }}">
+    {{ end }}
+</head>
+<body>
