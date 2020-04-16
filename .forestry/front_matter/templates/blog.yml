@@ -22,4 +22,5 @@ fields:
       format: markdown
   label: Body
 pages:
+- blog/my-first-blog.md
 - content/test-title.md
