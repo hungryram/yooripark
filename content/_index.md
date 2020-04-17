@@ -1,3 +1,4 @@
 ---
-herotext: 
+herotext: my new title
+
 ---
