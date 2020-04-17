@@ -2,6 +2,10 @@ baseURL = "/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 [[menu.main]]
+name = "Home2"
+url = "/"
+weight = 4
+[[menu.main]]
 name = "getting started"
 post = "<span class='alert'>New!</span>"
 pre = "<i class='fa fa-road'></i>"
