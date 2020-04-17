@@ -54,6 +54,8 @@ sections:
   label: Preferred Partners
   create: documents
   match: "**/*"
+  templates:
+  - partners
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
