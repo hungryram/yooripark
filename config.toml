@@ -2,18 +2,20 @@ baseURL = "/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 [[menu.main]]
-name = "Home2"
-url = "/"
-weight = 4
-[[menu.main]]
 name = "getting started"
+parent = "My Blog"
 post = "<span class='alert'>New!</span>"
 pre = "<i class='fa fa-road'></i>"
 url = "/getting-started/"
-weight = 3
+weight = 2
 [[menu.main]]
 identifier = "about"
 name = "about hugo"
+parent = "My Blog"
 pre = "<i class='fa fa-heart'></i>"
 url = "/about/"
+weight = 1
+[[menu.main]]
+name = "Home2"
+url = "/"
 weight = 2
