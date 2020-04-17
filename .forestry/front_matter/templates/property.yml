@@ -1,6 +1,7 @@
 ---
 label: Property
 hide_body: false
+display_field: propertytitle
 fields:
 - name: propertytitle
   type: text
