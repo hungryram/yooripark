@@ -1,4 +1,25 @@
 ---
 label: Property
 hide_body: false
-fields: []
+fields:
+- name: propertytitle
+  type: text
+  config:
+    required: false
+  label: Property Title
+- name: shortdescription
+  type: text
+  config:
+    required: false
+  label: Short Description
+  description: Simple description describing the property
+- name: listingid
+  type: text
+  config:
+    required: false
+  label: Listing ID
+- name: photogallery
+  type: image_gallery
+  config: {}
+  label: Photo Gallery
+  description: Please keep file size below 2MB
