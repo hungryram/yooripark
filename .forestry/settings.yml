@@ -7,9 +7,9 @@ sections:
 - type: heading
   label: Help Center
 - type: document
-  path: content/help/website-editing
+  path: content/help/website-editing.md
   label: Website Editing
-  read_only: false
+  read_only: true
 - type: heading
   label: Teams and Office
 - type: directory
