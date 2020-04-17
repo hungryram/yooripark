@@ -5,6 +5,13 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: heading
+  label: Help Center
+- type: document
+  path: content/website-editing
+  label: Website Editing
+  match: "**/*"
+  read_only: true
+- type: heading
   label: Teams and Office
 - type: directory
   path: content/teams
