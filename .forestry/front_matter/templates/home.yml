@@ -2,7 +2,7 @@
 label: Home
 hide_body: true
 fields:
-- name: hero_text
+- name: herotext
   type: text
   config:
     required: false
