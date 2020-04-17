@@ -11,6 +11,8 @@ sections:
   label: Property Listings
   create: documents
   match: "**/*"
+  templates:
+  - property
 - type: heading
   label: Default Pages
 - type: document

@@ -39,14 +39,9 @@ header {
 }
 
 .hero__container {
-    height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url("../images/cosmic-timetraveler-oLh-_gLQeak-unsplash.jpg") no-repeat center;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .hero-content {
@@ -66,37 +61,4 @@ header {
     }
 
     
-}
-
-/* Medium (md) */
-@media (min-width: 768px)  {
-    #section__container {
-        max-width: 768px;
-        margin: 0 auto;
-        padding: 70px 20px;
-    }
-
-    .about-content-inner {
-        width: 500px;
-    }
-}
-
-
-/* Large (lg) */
-@media (min-width: 1024px)  {
-    #section__container {
-        max-width: 1024px;
-        margin: 0 auto;
-        padding: 70px 20px;
-    }
-}
-
-
-/* Extra Large (xl) */
-@media (min-width: 1280px)  {
-    #section__container {
-        max-width: 1280px;
-        margin: 0 auto;
-        padding: 70px 20px;
-    }
 }
