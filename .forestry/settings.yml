@@ -5,6 +5,13 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: heading
+  label: Listings
+- type: directory
+  path: content/listings
+  label: Property Listings
+  create: documents
+  match: "**/*"
+- type: heading
   label: Default Pages
 - type: document
   path: content/_index.md
