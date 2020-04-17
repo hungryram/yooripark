@@ -5,6 +5,13 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: heading
+  label: External
+- type: document
+  path: content/help/links.md
+  label: Quick Links
+  match: "**/*"
+  read_only: false
+- type: heading
   label: Help Center
 - type: document
   path: content/help/website-editing.md
