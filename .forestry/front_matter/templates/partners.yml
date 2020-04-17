@@ -1,4 +1,30 @@
 ---
 label: Partners
 hide_body: false
-fields: []
+fields:
+- name: vendor_name
+  type: text
+  config:
+    required: false
+  label: Vendor Name
+- name: phone
+  type: text
+  config:
+    required: false
+  label: Phone
+- name: email
+  type: text
+  config:
+    required: false
+  label: Email
+- name: website
+  type: text
+  config:
+    required: false
+  label: Website
+  description: 'ex: https://yourwebsite.com'
+- name: logo_or_photo
+  type: file
+  config:
+    maxSize: 250
+  label: Logo or Photo
