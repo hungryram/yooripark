@@ -4,6 +4,8 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url: 
 sections:
+- type: heading
+  label: Teams and Office
 - type: directory
   path: content/teams
   label: Teams
@@ -11,8 +13,6 @@ sections:
   match: "**/*"
   templates:
   - team
-- type: heading
-  label: Teams and Office
 - type: heading
   label: Listings
 - type: directory
