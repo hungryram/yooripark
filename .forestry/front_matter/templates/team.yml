@@ -1,4 +1,29 @@
 ---
 label: Team
 hide_body: false
-fields: []
+fields:
+- name: name
+  type: text
+  config:
+    required: true
+  label: Name
+- name: position
+  type: text
+  config:
+    required: false
+  label: Position
+- name: agentid
+  type: text
+  config:
+    required: false
+  label: Agent ID
+- name: email
+  type: text
+  config:
+    required: false
+  label: Email
+- name: phone_number
+  type: text
+  config:
+    required: false
+  label: Phone Number
