@@ -1,4 +1,9 @@
 ---
 label: Home Page
 hide_body: true
-fields: []
+fields:
+- name: herotext
+  type: text
+  config:
+    required: false
+  label: herotext
