@@ -1,7 +1,9 @@
 <div class="hero__container">
     <div class="hero-inner">
         <div class="hero-content">
-            <h1>Luxury Real Estate</h1>
+            {{ with .Params.Herotext }}
+            <h1>{{ . }}</h1>
+            {{ end }}
         </div>
     </div>
 </div>
