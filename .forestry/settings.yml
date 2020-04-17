@@ -4,6 +4,11 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url: 
 sections:
+- type: heading
+  label: Default Pages
+- type: document
+  path: content/_index.md
+  label: Home
 - type: directory
   path: content/blog
   label: Blog
@@ -11,13 +16,6 @@ sections:
   match: "**/*"
   templates:
   - blog
-- type: heading
-  label: Default Pages
-- type: document
-  path: content/_index.md
-  label: Home
-  match: "**/*"
-  read_only: false
 - type: directory
   path: content
   label: Pages
