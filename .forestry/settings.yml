@@ -36,17 +36,24 @@ sections:
   templates:
   - home
 - type: directory
+  path: content
+  label: Pages
+  create: all
+  match: "*"
+- type: directory
   path: content/blog
   label: Blog
   create: documents
   match: "**/*"
   templates:
   - blog
+- type: heading
+  label: Partners
 - type: directory
-  path: content
-  label: Pages
-  create: all
-  match: "*"
+  path: content/partners
+  label: Preferred Partners
+  create: documents
+  match: "**/*"
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
