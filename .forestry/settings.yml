@@ -17,6 +17,7 @@ sections:
   path: content/_index.md
   label: Home
   match: "**/*"
+  read_only: false
 - type: directory
   path: content
   label: Pages
