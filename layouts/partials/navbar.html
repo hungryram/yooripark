@@ -10,9 +10,30 @@
             <span>MENU</span>
             <nav class="nav">
                 <ul>
-                    <a href="/"><li>Home</li></a>
-                    <a href="/about"><li>About</li></a>
-                    <a href=""><li>Contact</li></a>
+                    {{ $currentPage := . }}
+                    {{ range .Site.Menus.main }}
+                        {{ if .HasChildren }}
+          
+                      <li class="sub-menu{{if $currentPage.HasMenuCurrent "main" . }} active{{end}}">
+                      <a href="javascript:;" class="">
+                          {{ .Pre }}
+                          <span>{{ .Name }}</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+                      <ul class="sub">
+                          {{ range .Children }}
+                          <li{{if $currentPage.IsMenuCurrent "main" . }} class="active"{{end}}><a href="{{.URL}}"> {{ .Name }} </a> </li>
+                          {{ end }}
+                      </ul>
+                    {{else}}
+                      <li>
+                      <a href="{{.URL}}">
+                          {{ .Pre }}
+                          <span>{{ .Name }}</span>
+                      </a>
+                    {{end}}
+                    </li>
+                    {{end}}
                 </ul>
             </nav>
         </div>
