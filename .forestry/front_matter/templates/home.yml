@@ -1,4 +1,10 @@
 ---
 label: Home
 hide_body: true
-fields: []
+fields:
+- name: hero_text
+  type: text
+  config:
+    required: false
+  label: Hero Text
+  description: text overlay on main image
