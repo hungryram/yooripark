@@ -25,4 +25,4 @@ fields:
   label: Photo Gallery
   description: Please keep file size below 2MB
 pages:
-- content/listings/this property.md
+- content/listings/second property.md
