@@ -45,7 +45,7 @@ fields:
       source:
         type: documents
         section: state
-        file: 
+        file: content/options/states.md
         path: ''
     label: State
   label: Contact
