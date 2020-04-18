@@ -58,6 +58,7 @@ fields:
     - West Virginia
     - Wisconsin
     - Wyoming
+    - New Hampshire
     source:
       type: simple
       section: 
