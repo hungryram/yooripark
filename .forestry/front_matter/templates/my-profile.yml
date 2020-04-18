@@ -107,5 +107,24 @@ fields:
     label: License Number
   label: Secondary Contact
   description: Add a partner
+- name: social_accounts
+  type: field_group
+  config: {}
+  fields:
+  - name: social_links
+    type: list
+    config:
+      use_select: true
+      min: 
+      max: 
+      source:
+        type: simple
+      options:
+      - Instagram
+      - Google
+      - Linkedin
+      - Youtube
+    label: Social Links
+  label: Social Accounts
 pages:
 - data/profile.yaml
