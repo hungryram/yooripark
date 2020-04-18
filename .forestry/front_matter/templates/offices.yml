@@ -2,7 +2,7 @@
 label: Offices
 hide_body: false
 fields:
-- name: office_name
+- name: title
   type: text
   config:
     required: true
