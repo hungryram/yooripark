@@ -29,12 +29,14 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding-top: 20px;
+
 }
 
 .header-left,
 .header-logo,
 .nav-menu {
-    flex: 1;
+    flex: 33.3%;
     color: #fff;
 }
 
