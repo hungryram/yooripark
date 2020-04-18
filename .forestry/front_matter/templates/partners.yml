@@ -67,3 +67,29 @@ fields:
         step: 
     label: Address
   label: Contact
+- name: category
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Accountants & CPAs
+    - Construction & Builders
+    - Appraisal Service
+    - Finance & Mortgage
+    - Home & Garden Services
+    - Home Service Providers
+    - Inspection Services
+    - Insurance Provider
+    - Legal Professionals
+    - Moving Services
+    - Other Resources
+    - Pest Control
+    - Protection & Relief Services
+    - Real Estate Services
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
