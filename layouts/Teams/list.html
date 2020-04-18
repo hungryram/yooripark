@@ -1,5 +1,9 @@
 {{ define "main" }}
 
-
+<h1>Teams</h1>
+{{ range .Pages }}
+<a href="{{ .URL }}">{{ .Params.name }}</a><br><br>
+<a href="{{ .URL }}">{{ .Params.social_media.facebook }}</a><br><br>
+{{ end }}
 
 {{ end }}
