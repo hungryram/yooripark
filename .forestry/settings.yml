@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url: 
 sections:
+- type: document
+  path: data/homedesign.yaml
+  label: Home Design
+  match: "**/*"
 - type: heading
   label: Default Pages
 - type: document
