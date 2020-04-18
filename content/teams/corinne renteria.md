@@ -1,5 +1,6 @@
 +++
 full_name = "Corinne Renteria"
+title = "Corinne Renteria"
 [contact]
 email = "admin@ramdettmer.com"
 phone = "19514542650"
