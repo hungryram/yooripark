@@ -31,11 +31,6 @@ fields:
     config:
       required: false
     label: Website
-  - name: name
-    type: text
-    config:
-      required: false
-    label: Name
   - name: address
     type: field_group
     config: {}
