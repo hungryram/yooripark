@@ -1,6 +1,6 @@
 ---
 label: Property
-hide_body: false
+hide_body: true
 display_field: propertytitle
 fields:
 - name: propertytitle
@@ -55,30 +55,122 @@ fields:
       max: 99999
       step: 
   label: Listing Address
-- name: property_type
-  type: select
-  default: []
-  config:
-    required: false
-    options:
-    - Land
-    - Commercial
-    - Condo
-    - Townhome
-    - Co-op
-    - Duplex
-    - Residential
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Property Type
-- name: listingid
-  type: text
-  config:
-    required: false
-  label: Listing ID
+- name: details
+  type: field_group
+  config: {}
+  fields:
+  - name: property_type
+    type: select
+    default: Single Family
+    config:
+      required: true
+      options:
+      - Acreage/Land
+      - Commercial
+      - Condo
+      - Townhome
+      - Co-op
+      - Duplex
+      - Farmland
+      - Farmranch
+      - Cabin
+      - Mobile Home
+      - Multi-family
+      - New Construction
+      - Rental
+      - Single Family
+      - Time Share
+      - Vacation Home
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Property Type
+  - name: square_footage
+    type: number
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+    label: Square Footage
+  - name: lot_size
+    type: number
+    label: Lot Size
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: year_built
+    type: number
+    label: Year Built
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 1000
+      max: 9999
+      step: 
+  - name: bedrooms
+    type: number
+    label: Bedrooms
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  - name: bathrooms
+    type: number
+    label: Bathrooms
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  label: Details
+- name: utilities_and_features
+  type: field_group
+  config: {}
+  fields:
+  - name: appliances
+    type: list
+    config:
+      use_select: true
+      min: 
+      max: 
+      source:
+        type: simple
+      options:
+      - Dishwasher
+      - Dryer
+      - Freezer
+      - Microwave
+    label: Appliances
+  - name: floors
+    type: list
+    config:
+      use_select: true
+      min: 
+      max: 
+      source:
+        type: simple
+      options:
+      - Carpet
+      - Concrete
+      - Slate
+      - Laminate
+    label: Floors
+  label: Utilities & Features
 - name: photogallery
   type: image_gallery
   config: {}
