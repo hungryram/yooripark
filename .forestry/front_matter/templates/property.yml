@@ -1,19 +1,27 @@
 ---
 label: Property
 hide_body: true
-display_field: propertytitle
 fields:
-- name: propertytitle
-  type: text
-  config:
-    required: false
-  label: Property Title
-- name: shortdescription
-  type: text
-  config:
-    required: false
-  label: Short Description
-  description: Simple description describing the property
+- name: listing_title
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+    description: 'Ex: Beautiful Home in Los Angeles'
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Description
+  label: Listing Description
 - name: address
   type: field_group
   config: {}
@@ -171,10 +179,38 @@ fields:
       - Laminate
     label: Floors
   label: Utilities & Features
-- name: photogallery
-  type: image_gallery
+- name: photos
+  type: field_group
   config: {}
-  label: Photo Gallery
-  description: Please keep file size below 2MB
+  fields:
+  - name: main_photo
+    type: file
+    config:
+      maxSize: 250
+    label: Main Photo
+  - name: gallery
+    type: image_gallery
+    config: {}
+    label: Gallery
+  label: Photos
+- name: seo
+  type: field_group
+  config: {}
+  fields:
+  - name: title_tag
+    type: text
+    config:
+      required: true
+    label: Title Tag
+  - name: meta_description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Meta Description
+  label: Search Engine Optimization (SEO)
 pages:
 - content/listings/second property.md
