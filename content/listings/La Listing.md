@@ -1,5 +1,5 @@
 +++
-title = "test title"
+title = "6310 Golden Gate Dr."
 [address]
 address = "6310 Golden Gate Drive"
 city = "Yorba Linda"
