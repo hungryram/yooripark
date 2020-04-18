@@ -56,9 +56,16 @@ fields:
         required: false
       label: City
     - name: state
-      type: text
+      type: select
+      default: []
       config:
         required: false
+        options: []
+        source:
+          type: simple
+          section: 
+          file: 
+          path: 
       label: State
     - name: zip_code
       type: number
