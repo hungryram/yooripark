@@ -44,8 +44,8 @@ fields:
       options: []
       source:
         type: documents
-        section: ''
-        file: content/options/states.md
+        section: state
+        file: 
         path: ''
     label: State
   label: Contact
