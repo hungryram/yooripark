@@ -111,20 +111,26 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: social_links
-    type: list
+  - name: youtube
+    type: text
     config:
-      use_select: false
-      min: 
-      max: 
-      source:
-        type: simple
-      options:
-      - Instagram
-      - Google
-      - Linkedin
-      - Youtube
-    label: Social Links
+      required: false
+    label: Youtube
+  - name: facebook
+    type: text
+    config:
+      required: false
+    label: Facebook
+  - name: linkedin
+    type: text
+    config:
+      required: false
+    label: Linkedin
+  - name: instagram
+    type: text
+    config:
+      required: false
+    label: Instagram
   label: Social Accounts
 pages:
 - data/profile.yaml
