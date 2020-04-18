@@ -92,4 +92,10 @@ fields:
       - West Virginia
       - Wisconsin
       - Wyoming
-    label: state
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: State
+  label: Contact
