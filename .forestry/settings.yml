@@ -5,17 +5,27 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: heading
-  label: External
+  label: Default Pages
 - type: document
-  path: content/help/links.md
-  label: Quick Links
-  read_only: true
-- type: heading
-  label: Help Center
+  path: data/profile.yaml
+  label: My Profile
 - type: document
-  path: content/help/website-editing.md
-  label: Website Editing
-  read_only: true
+  path: content/_index.md
+  label: Home
+  templates:
+  - home
+- type: directory
+  path: content
+  label: Pages
+  create: all
+  match: "*"
+- type: directory
+  path: content/blog
+  label: Blog
+  create: documents
+  match: "**/*"
+  templates:
+  - blog
 - type: heading
   label: Teams and Office
 - type: directory
@@ -42,28 +52,6 @@ sections:
   templates:
   - property
 - type: heading
-  label: Default Pages
-- type: document
-  path: data/profile.yaml
-  label: My Profile
-- type: document
-  path: content/_index.md
-  label: Home
-  templates:
-  - home
-- type: directory
-  path: content
-  label: Pages
-  create: all
-  match: "*"
-- type: directory
-  path: content/blog
-  label: Blog
-  create: documents
-  match: "**/*"
-  templates:
-  - blog
-- type: heading
   label: Partners
 - type: directory
   path: content/partners
@@ -72,6 +60,18 @@ sections:
   match: "**/*"
   templates:
   - partners
+- type: heading
+  label: External
+- type: document
+  path: content/help/links.md
+  label: Quick Links
+  read_only: true
+- type: heading
+  label: Help Center
+- type: document
+  path: content/help/website-editing.md
+  label: Website Editing
+  read_only: true
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
