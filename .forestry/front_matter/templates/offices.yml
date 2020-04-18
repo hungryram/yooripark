@@ -37,7 +37,6 @@ fields:
       required: false
     label: City
   - name: state
-    label: state
     type: select
     default: []
     config:
@@ -93,4 +92,4 @@ fields:
       - West Virginia
       - Wisconsin
       - Wyoming
-
+    label: state
