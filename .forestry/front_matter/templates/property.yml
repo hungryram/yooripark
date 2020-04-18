@@ -307,5 +307,3 @@ fields:
         format: markdown
     label: Meta Description
   label: Search Engine Optimization (SEO)
-pages:
-- content/listings/second property.md
