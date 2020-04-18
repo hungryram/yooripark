@@ -32,5 +32,4 @@ fields:
     label: Meta Description
   label: Search Engine Optimization (SEO)
 pages:
-- content/blog/my-first-blog2.md
 - content/test-title.md
