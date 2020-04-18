@@ -2,3 +2,32 @@
 contact:
   email: ramdettmer@gmail.com
   phone: 555-555-5555
+logo_and_title:
+  website_title: Luxury Estates
+  logo: "/images/revel.png"
+primary_contact:
+  full_name: Ram Sornram Dettmer
+  title: Broker
+  phone: "19514542650"
+  mobile_phone: 951-454-2650
+  email: hungryram19@gmail.com
+  license_type: BRE License
+  license_number: 23414f34234
+secondary_contact:
+  full_name: ''
+  title: ''
+  phone: ''
+  mobile_phone: ''
+  email: ''
+  license_type: ''
+  license_number: ''
+location_information:
+  address: ''
+  city: ''
+  state: ''
+  zip_code: 
+social_accounts:
+  youtube: ''
+  facebook: ''
+  linkedin: ''
+  instagram: ''
