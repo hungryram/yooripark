@@ -1,33 +1,57 @@
 ---
 label: Team
 hide_body: false
-display_field: name
 fields:
-- name: name
-  type: text
-  config:
-    required: true
-  label: Name
-- name: position
-  type: text
-  config:
-    required: false
-  label: Position
-- name: agentid
-  type: text
-  config:
-    required: false
-  label: Agent ID
-- name: email
-  type: text
-  config:
-    required: false
-  label: Email
-- name: phone_number
-  type: text
-  config:
-    required: false
-  label: Phone Number
+- name: contact
+  type: field_group
+  config: {}
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Name
+  - name: email
+    type: text
+    config:
+      required: false
+    label: Email
+  - name: phone
+    type: text
+    config:
+      required: false
+    label: Phone
+  label: Contact
+- name: details
+  type: field_group
+  config: {}
+  fields:
+  - name: license_type
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - DRE License
+      - BRE License
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: License Type
+  - name: license_number
+    type: text
+    config:
+      required: false
+    label: License Number
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+    description: The position of the team member
+  label: Details
 - name: social_media
   type: field_group
   config: {}
@@ -58,5 +82,24 @@ fields:
       required: false
     label: Facebook
   label: Social Media
+- name: seo
+  type: field_group
+  config: {}
+  fields:
+  - name: title_tag
+    type: text
+    config:
+      required: true
+    label: Title Tag
+  - name: meta_description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Meta Description
+  label: Search Engine Optimization (SEO)
 pages:
 - content/teams/ram dettmer.md
