@@ -93,3 +93,5 @@ fields:
       file: 
       path: 
   label: Category
+pages:
+- content/partners/the gardener.md
