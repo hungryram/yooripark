@@ -138,3 +138,5 @@ fields:
       required: false
     label: Meta Description
   label: Search Engine Optimization (SEO)
+pages:
+- content/offices/century-21.md
