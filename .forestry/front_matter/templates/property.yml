@@ -186,8 +186,8 @@ fields:
     default: 0
     required: true
     config:
-      min: 1000
-      max: 9999
+      min: 
+      max: 
       step: 
   - name: bedrooms
     type: number
