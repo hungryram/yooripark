@@ -22,6 +22,30 @@ fields:
         format: markdown
     label: Description
   label: Listing Description
+- name: property_status
+  type: field_group
+  config: {}
+  fields:
+  - name: status
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - Sold
+      - Rented
+      - Pending
+      - Available
+      - Negotiating
+      - In Contract
+      - Coming Soon
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Status
+  label: Property Status
 - name: address
   type: field_group
   config: {}
@@ -95,6 +119,11 @@ fields:
         file: 
         path: 
     label: Property Type
+  - name: mls_number
+    type: text
+    config:
+      required: false
+    label: MLS Number
   - name: square_footage
     type: number
     description: ''
@@ -212,29 +241,5 @@ fields:
         format: markdown
     label: Meta Description
   label: Search Engine Optimization (SEO)
-- name: property_status
-  type: field_group
-  config: {}
-  fields:
-  - name: status
-    type: select
-    default: []
-    config:
-      required: false
-      options:
-      - Sold
-      - Rented
-      - Pending
-      - Available
-      - Negotiating
-      - In Contract
-      - Coming Soon
-      source:
-        type: simple
-        section: 
-        file: 
-        path: 
-    label: Status
-  label: Property Status
 pages:
 - content/listings/second property.md
