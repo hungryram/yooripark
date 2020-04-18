@@ -30,6 +30,8 @@ sections:
   label: Offices
   create: documents
   match: "**/*"
+  templates:
+  - offices
 - type: heading
   label: Listings
 - type: directory
