@@ -22,7 +22,7 @@ Maryland = "Maryland"
 Massachusetts = "Massachusetts"
 Michigan = "Michigan"
 Minnesota = "Minnesota"
-Mississippi = "Mississippi"
+<!-- Mississippi = "Mississippi"
 Missouri = "Missouri"
 Montana = "Montana"
 Nebraska = "Nebraska"
@@ -48,6 +48,6 @@ Virginia = "Virginia"
 Washington = "Washington"
 West Virginia = "West Virginia"
 Wisconsin = "Wisconsin"
-Wyoming = "Wyoming"
+Wyoming = "Wyoming" -->
 
 +++
