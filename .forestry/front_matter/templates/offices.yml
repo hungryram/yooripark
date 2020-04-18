@@ -123,3 +123,18 @@ fields:
     config: {}
     label: Photo Gallery
   label: Photos
+- name: seo
+  type: field_group
+  config: {}
+  fields:
+  - name: title_tag
+    type: text
+    config:
+      required: true
+    label: Title Tag
+  - name: meta_description
+    type: text
+    config:
+      required: false
+    label: Meta Description
+  label: Search Engine Optimization (SEO)
