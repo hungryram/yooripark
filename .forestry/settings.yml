@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url: 
 sections:
+- type: document
+  path: content/options/states.md
+  label: States
+  match: "**/*"
 - type: heading
   label: External
 - type: document
