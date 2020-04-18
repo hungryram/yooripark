@@ -38,5 +38,36 @@ fields:
     label: Email
   label: Primary Contact
   description: The main account owner
+- name: secondary_contact
+  type: field_group
+  config: {}
+  fields:
+  - name: full_name
+    type: text
+    config:
+      required: false
+    label: Full Name
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: phone
+    type: text
+    config:
+      required: false
+    label: Phone
+  - name: mobile_phone
+    type: text
+    config:
+      required: false
+    label: Mobile Phone
+  - name: email
+    type: text
+    config:
+      required: false
+    label: Email
+  label: Secondary Contact
+  description: Add a partner
 pages:
 - data/profile.yaml
