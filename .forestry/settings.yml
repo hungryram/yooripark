@@ -44,7 +44,7 @@ sections:
 - type: heading
   label: Default Pages
 - type: document
-  path: config.toml
+  path: data/profile.yaml
   label: My Profile
 - type: document
   path: content/_index.md
