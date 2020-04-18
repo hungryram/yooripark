@@ -7,20 +7,36 @@ fields:
   config:
     maxSize: 250
   label: Logo
-- name: contact
+- name: primary_contact
   type: field_group
   config: {}
   fields:
-  - name: email
+  - name: full_name
+    type: text
+    config:
+      required: true
+    label: Full Name
+  - name: title
     type: text
     config:
       required: false
-    label: Email
+    label: Title
   - name: phone
     type: text
     config:
       required: false
     label: Phone
-  label: Contact
+  - name: mobile_phone
+    type: text
+    config:
+      required: false
+    label: Mobile Phone
+  - name: email
+    type: text
+    config:
+      required: false
+    label: Email
+  label: Primary Contact
+  description: The main account owner
 pages:
 - data/profile.yaml
