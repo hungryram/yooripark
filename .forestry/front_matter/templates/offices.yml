@@ -98,4 +98,14 @@ fields:
         file: 
         path: 
     label: State
+  - name: zip_code
+    type: number
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 99999
+      step: 
+    label: Zip Code
   label: Contact
