@@ -36,4 +36,16 @@ fields:
     config:
       required: false
     label: City
+  - name: state
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: documents
+        section: ''
+        file: content/teams/ram dettmer.md
+        path: 
+    label: State
   label: Contact
