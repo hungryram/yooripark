@@ -163,7 +163,7 @@ fields:
   - name: title_tag
     type: text
     config:
-      required: true
+      required: false
     label: Title Tag
     description: The title tag that Google displays in the heading result page
   - name: meta_description
