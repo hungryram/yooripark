@@ -23,4 +23,4 @@ fields:
     label: Phone
   label: Contact
 pages:
-- config.toml
+- data/profile.yaml
