@@ -31,3 +31,5 @@ fields:
         format: markdown
     label: Meta Description
   label: Search Engine Optimization (SEO)
+pages:
+- content/blog/my-first-blog.md
