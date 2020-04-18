@@ -2,7 +2,7 @@
 label: Team
 hide_body: false
 fields:
-- name: full_name
+- name: title
   type: text
   config:
     required: false
