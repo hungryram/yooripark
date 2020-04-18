@@ -87,6 +87,22 @@ fields:
       max: 99999
       step: 
   label: Listing Address
+- name: pricing
+  type: field_group
+  config: {}
+  fields:
+  - name: price
+    type: text
+    config:
+      required: false
+    label: Price
+  - name: sold_price
+    type: text
+    config:
+      required: false
+    label: Sold Price
+    description: Leave blank if listing is not sold
+  label: Pricing
 - name: details
   type: field_group
   config: {}
