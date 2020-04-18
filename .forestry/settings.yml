@@ -7,7 +7,6 @@ sections:
 - type: document
   path: data/homedesign.yaml
   label: Home Design
-  match: "**/*"
 - type: heading
   label: Default Pages
 - type: document
