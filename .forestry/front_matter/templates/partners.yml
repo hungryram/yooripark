@@ -36,4 +36,34 @@ fields:
     config:
       required: false
     label: Name
+  - name: address
+    type: field_group
+    config: {}
+    fields:
+    - name: address
+      type: text
+      config:
+        required: false
+      label: Address
+    - name: city
+      type: text
+      config:
+        required: false
+      label: City
+    - name: state
+      type: text
+      config:
+        required: false
+      label: State
+    - name: zip_code
+      type: number
+      label: Zip Code
+      description: ''
+      default: 0
+      required: true
+      config:
+        min: 
+        max: 99999
+        step: 
+    label: Address
   label: Contact
