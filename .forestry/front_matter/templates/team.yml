@@ -2,6 +2,11 @@
 label: Team
 hide_body: false
 fields:
+- name: full_name
+  type: text
+  config:
+    required: false
+  label: Full Name
 - name: contact
   type: field_group
   config: {}
@@ -96,8 +101,3 @@ fields:
         format: markdown
     label: Meta Description
   label: Search Engine Optimization (SEO)
-- name: full_name
-  type: text
-  config:
-    required: false
-  label: Full Name
