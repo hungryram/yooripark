@@ -2,11 +2,22 @@
 label: My Profile
 hide_body: true
 fields:
-- name: logo
-  type: file
-  config:
-    maxSize: 250
-  label: Logo
+- name: logo_and_title
+  type: field_group
+  config: {}
+  fields:
+  - name: website_title
+    type: text
+    config:
+      required: false
+    label: Website Title
+    description: This replaces your logo if you do not have one uploaded
+  - name: logo
+    type: file
+    config:
+      maxSize: 5
+    label: Logo
+  label: Logo and Title
 - name: primary_contact
   type: field_group
   config: {}
@@ -58,7 +69,8 @@ fields:
       required: false
     label: License Number
   label: Primary Contact
-  description: The main account owner
+  description: The main account owner. Contact information is displayed across the
+    site.
 - name: secondary_contact
   type: field_group
   config: {}
@@ -107,6 +119,44 @@ fields:
     label: License Number
   label: Secondary Contact
   description: Add a partner
+- name: location_information
+  type: field_group
+  config: {}
+  fields:
+  - name: address
+    type: text
+    config:
+      required: false
+    label: Address
+  - name: city
+    type: text
+    config:
+      required: false
+    label: City
+  - name: state
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: State
+  - name: zip_code
+    type: number
+    label: Zip Code
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 99999
+      step: 
+  label: Location Information
+  description: Displays your main location in the header and footer of the site
 - name: social_accounts
   type: field_group
   config: {}
@@ -132,5 +182,6 @@ fields:
       required: false
     label: Instagram
   label: Social Accounts
+  description: Social media accounts will update globally on the site.
 pages:
 - data/profile.yaml
