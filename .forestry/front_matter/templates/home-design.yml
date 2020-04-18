@@ -7,3 +7,5 @@ fields:
   config:
     maxSize: 5
   label: Hero Image
+pages:
+- data/homedesign.yaml
