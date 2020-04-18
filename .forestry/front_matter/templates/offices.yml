@@ -45,7 +45,7 @@ fields:
       source:
         type: documents
         section: ''
-        file: content/teams/ram dettmer.md
-        path: social_media
+        file: content/options/states.md
+        path: ''
     label: State
   label: Contact
