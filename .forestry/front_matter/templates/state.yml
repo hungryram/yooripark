@@ -2,21 +2,20 @@
 label: State
 hide_body: true
 fields:
-- name: state
+- name: states
   type: select
   default: []
   config:
     required: false
     options:
     - California
-    - Michigan
-    - Oregon
     - Washington
-    - Arizona
+    - Massachussets
+    - Virginia
     - New York
     source:
       type: simple
       section: 
       file: 
       path: 
-  label: State
+  label: States
