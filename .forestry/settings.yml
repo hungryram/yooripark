@@ -27,6 +27,15 @@ sections:
   templates:
   - blog
 - type: heading
+  label: Listings
+- type: directory
+  path: content/listings
+  label: Property Listings
+  create: documents
+  match: "**/*"
+  templates:
+  - property
+- type: heading
   label: Teams and Office
 - type: directory
   path: content/teams
@@ -42,15 +51,6 @@ sections:
   match: "**/*"
   templates:
   - offices
-- type: heading
-  label: Listings
-- type: directory
-  path: content/listings
-  label: Property Listings
-  create: documents
-  match: "**/*"
-  templates:
-  - property
 - type: heading
   label: Partners
 - type: directory
