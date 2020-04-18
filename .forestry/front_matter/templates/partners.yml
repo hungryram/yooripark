@@ -125,5 +125,6 @@ fields:
     label: Meta Description
     description: The description that search engines look for
   label: Search Engine Optimization (SEO)
+  description: Add Title and Description for search engines
 pages:
 - content/partners/the gardener.md
