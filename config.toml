@@ -1,10 +1,5 @@
 baseURL = "/"
 languageCode = "en-us"
-logo = "/images/revelblack.png"
-title = "My New Hugo Site"
-[contact]
-email = "ramdettmer@gmail.com"
-phone = "555-555-5555"
 [[menu.main]]
 name = "getting started"
 parent = "My Blog"
