@@ -25,6 +25,11 @@ sections:
   match: "**/*"
   templates:
   - team
+- type: directory
+  path: content/offices
+  label: Offices
+  create: documents
+  match: "**/*"
 - type: heading
   label: Listings
 - type: directory
