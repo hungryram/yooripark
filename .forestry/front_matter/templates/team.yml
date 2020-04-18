@@ -52,13 +52,9 @@ fields:
     config:
       required: false
     label: Linkedin
+  - name: facebook
+    type: text
+    config:
+      required: false
+    label: Facebook
   label: Social Media
-- name: bio
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Bio
