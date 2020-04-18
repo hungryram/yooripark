@@ -60,7 +60,9 @@ fields:
       default: []
       config:
         required: false
-        options: []
+        options:
+        - california
+        - alabama
         source:
           type: simple
           section: 
