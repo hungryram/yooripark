@@ -6,70 +6,8 @@ fields:
   type: text
   config:
     required: false
-  label: Title
-- name: listing_title
-  type: field_group
-  config: {}
-  fields:
-  - name: name
-    type: text
-    config:
-      required: false
-    label: Name
-    description: 'Ex: Beautiful Home in Los Angeles'
-  - name: description
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-      schema:
-        format: markdown
-    label: Description
-  label: Listing Description
-- name: property_status
-  type: field_group
-  config: {}
-  fields:
-  - name: status
-    type: select
-    default: []
-    config:
-      required: false
-      options:
-      - Sold
-      - Rented
-      - Pending
-      - Available
-      - Negotiating
-      - In Contract
-      - Coming Soon
-      source:
-        type: simple
-        section: 
-        file: 
-        path: 
-    label: Status
-  label: Property Status
-- name: listing_agent
-  type: field_group
-  config: {}
-  fields:
-  - name: listing_agent
-    type: select
-    default: []
-    config:
-      required: false
-      options: []
-      source:
-        type: pages
-        section: teams
-        file: 
-        path: 
-    label: Listing Agent
-    description: The agent assigned to this listing. Add agent under the "Teams and
-      Office" tab
-  label: Listing Agent
+  label: Property Title
+  description: Enter the address as the title
 - name: address
   type: field_group
   config: {}
@@ -157,6 +95,49 @@ fields:
       max: 99999
       step: 
   label: Listing Address
+- name: property_status
+  type: field_group
+  config: {}
+  fields:
+  - name: status
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - Sold
+      - Rented
+      - Pending
+      - Available
+      - Negotiating
+      - In Contract
+      - Coming Soon
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Status
+  label: Property Status
+- name: listing_agent
+  type: field_group
+  config: {}
+  fields:
+  - name: listing_agent
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: pages
+        section: teams
+        file: 
+        path: 
+    label: Listing Agent
+    description: The agent assigned to this listing. Add agent under the "Teams and
+      Office" tab
+  label: Listing Agent
 - name: pricing
   type: field_group
   config: {}
