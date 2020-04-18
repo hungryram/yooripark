@@ -2,7 +2,7 @@
 
 <h1>{{ .Params.vendor_name }}</h1>
 
-{{ with .Params.logo_or_photo }}
+{{ with .Params.photo_or_logo }}
 <img src="{{ . | relURL }}" alt="">
 {{ end }}
 {{ .Params.contact.address.city }}
