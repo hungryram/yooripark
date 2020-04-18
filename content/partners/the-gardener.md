@@ -12,7 +12,7 @@ city = "Whittier"
 state = "Connecticut"
 zip_code = 90602
 [details]
-category = []
+category = "Finance & Mortgage"
 [seo]
 meta_description = ""
 title_tag = ""
