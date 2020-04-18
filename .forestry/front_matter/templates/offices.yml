@@ -109,3 +109,17 @@ fields:
       step: 
     label: Zip Code
   label: Contact
+- name: photos
+  type: field_group
+  config: {}
+  fields:
+  - name: main_photo
+    type: file
+    config:
+      maxSize: 5
+    label: Main Photo
+  - name: photo_gallery
+    type: image_gallery
+    config: {}
+    label: Photo Gallery
+  label: Photos
