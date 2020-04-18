@@ -41,9 +41,11 @@ fields:
     default: []
     config:
       required: false
-      options: []
+      options:
+      - california
+      - New York
       source:
-        type: documents
+        type: simple
         section: teams
         file: content/teams/ram dettmer.md
         path: social_media
