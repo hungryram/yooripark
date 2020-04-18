@@ -36,6 +36,27 @@ fields:
     config:
       required: false
     label: Email
+  - name: license_type
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - DRE License
+      - BRE License
+      - License Number
+      - Licensed Real Estate Broker
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: License Type
+  - name: license_number
+    type: text
+    config:
+      required: false
+    label: License Number
   label: Primary Contact
   description: The main account owner
 - name: secondary_contact
@@ -67,6 +88,23 @@ fields:
     config:
       required: false
     label: Email
+  - name: license_type
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: License Type
+  - name: license_number
+    type: text
+    config:
+      required: false
+    label: License Number
   label: Secondary Contact
   description: Add a partner
 pages:
