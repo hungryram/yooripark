@@ -16,6 +16,7 @@ year_built = 1995
 listing_agent = []
 [listing_title]
 description = "Find out more about the listing"
+name = "Beautiful Home"
 title = "Beautiful Home In LA"
 [photos]
 gallery = ["/images/la.jpg", "/images/int2.jpg", "/images/int.jpg"]
