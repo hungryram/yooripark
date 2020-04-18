@@ -37,6 +37,7 @@ fields:
       required: false
     label: City
   - name: state
+    label: state
     type: select
     default: []
     config:
@@ -92,11 +93,4 @@ fields:
       - West Virginia
       - Wisconsin
       - Wyoming
-      - New Hampshire
-      source:
-        type: simple
-        section: teams
-        file: content/teams/ram dettmer.md
-        path: social_media
-    label: State
-  label: Contact
+
