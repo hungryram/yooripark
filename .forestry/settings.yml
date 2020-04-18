@@ -9,6 +9,8 @@ sections:
   label: State
   create: documents
   match: "**/*"
+  templates:
+  - state
 - type: heading
   label: External
 - type: document
