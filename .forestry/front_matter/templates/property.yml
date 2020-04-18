@@ -46,6 +46,25 @@ fields:
         path: 
     label: Status
   label: Property Status
+- name: listing_agent
+  type: field_group
+  config: {}
+  fields:
+  - name: listing_agent
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: pages
+        section: teams
+        file: 
+        path: 
+    label: Listing Agent
+    description: The agent assigned to this listing. Add agent under the "Teams and
+      Office" tab
+  label: Listing Agent
 - name: address
   type: field_group
   config: {}
@@ -238,6 +257,28 @@ fields:
     config: {}
     label: Gallery
   label: Photos
+- name: tools
+  type: field_group
+  config: {}
+  fields:
+  - name: virtual_tours
+    type: text
+    config:
+      required: false
+    label: Virtual Tours
+    description: Add youtube videos or 3D tour to your listing
+  - name: open_house_date
+    type: text
+    config:
+      required: false
+    label: Open House Date
+    default: No Open House Available
+  - name: file_attachments
+    type: image_gallery
+    config: {}
+    label: File Attachments
+    description: Add attachments such as information, maps, or terms and conditions
+  label: Tools
 - name: seo
   type: field_group
   config: {}
