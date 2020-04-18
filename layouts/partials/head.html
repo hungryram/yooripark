@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="{{.Site.BaseURL}}css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
-    {{ with .Title }}
-    <title>{{ . | title }}</title>
+    {{ with .Params.seo.title_tag }}
+    <title>{{ . }}</title>
     {{ end }}
 
-    {{ with .Params.metadescription }}
+    {{ with .Params.seo.meta_description }}
     <meta name="description" content="{{ . }}">
     {{ end }}
 </head>
