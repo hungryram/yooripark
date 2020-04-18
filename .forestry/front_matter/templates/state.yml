@@ -17,3 +17,5 @@ fields:
       file: 
       path: 
   label: States
+pages:
+- content/options/states.md
