@@ -1,4 +1,39 @@
 ---
 label: Offices
 hide_body: false
-fields: []
+fields:
+- name: office_name
+  type: text
+  config:
+    required: true
+  label: Office Name
+- name: contact
+  type: field_group
+  config: {}
+  fields:
+  - name: office_phone
+    type: text
+    config:
+      required: false
+    label: Office Phone
+  - name: fax_number
+    type: text
+    config:
+      required: false
+    label: Fax Number
+  - name: email
+    type: text
+    config:
+      required: false
+    label: Email
+  - name: address
+    type: text
+    config:
+      required: false
+    label: Address
+  - name: city
+    type: text
+    config:
+      required: false
+    label: City
+  label: Contact
