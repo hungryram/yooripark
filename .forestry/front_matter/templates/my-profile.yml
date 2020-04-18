@@ -22,3 +22,5 @@ fields:
       required: false
     label: Phone
   label: Contact
+pages:
+- content/profile/account.md
