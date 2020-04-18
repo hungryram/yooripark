@@ -14,6 +14,66 @@ fields:
     required: false
   label: Short Description
   description: Simple description describing the property
+- name: address
+  type: field_group
+  config: {}
+  fields:
+  - name: address
+    type: text
+    config:
+      required: false
+    label: Address
+  - name: city
+    type: text
+    config:
+      required: false
+    label: City
+  - name: state
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - Alabama
+      - California
+      - Oregon
+      - Washington
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: State
+  - name: zip_code
+    type: number
+    label: Zip Code
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 5
+      max: 5
+      step: 
+  label: Listing Address
+- name: property_type
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Land
+    - Commercial
+    - Condo
+    - Townhome
+    - Co-op
+    - Duplex
+    - Residential
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Property Type
 - name: listingid
   type: text
   config:
