@@ -1,6 +1,7 @@
 ---
 label: Team
-hide_body: false
+hide_body: true
+display_field: name
 fields:
 - name: name
   type: text
@@ -27,3 +28,37 @@ fields:
   config:
     required: false
   label: Phone Number
+- name: social_media
+  type: field_group
+  config: {}
+  fields:
+  - name: instagram
+    type: text
+    config:
+      required: false
+    label: Instagram
+  - name: twitter
+    type: text
+    config:
+      required: false
+    label: Twitter
+  - name: youtube
+    type: text
+    config:
+      required: false
+    label: Youtube
+  - name: linkedin
+    type: text
+    config:
+      required: false
+    label: Linkedin
+  label: Social Media
+- name: bio
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Bio
