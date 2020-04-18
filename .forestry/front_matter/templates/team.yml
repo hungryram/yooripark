@@ -6,11 +6,6 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: name
-    type: text
-    config:
-      required: false
-    label: Name
   - name: email
     type: text
     config:
@@ -101,3 +96,8 @@ fields:
         format: markdown
     label: Meta Description
   label: Search Engine Optimization (SEO)
+- name: full_name
+  type: text
+  config:
+    required: false
+  label: Full Name
