@@ -2,21 +2,16 @@
 label: Partners
 hide_body: false
 fields:
-- name: partner_logo_and_name
-  type: field_group
-  config: {}
-  fields:
-  - name: name
-    type: text
-    config:
-      required: true
-    label: Name
-  - name: logo_or_photo
-    type: file
-    config:
-      maxSize: 250
-    label: Logo or Photo
-  label: Partner Logo and Name
+- name: title
+  type: text
+  config:
+    required: false
+  label: Name
+- name: photo_or_logo
+  type: file
+  config:
+    maxSize: 250
+  label: Photo or Logo
 - name: contact
   type: field_group
   config: {}
