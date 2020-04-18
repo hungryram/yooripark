@@ -2,16 +2,21 @@
 label: Partners
 hide_body: false
 fields:
-- name: vendor_name
-  type: text
-  config:
-    required: false
-  label: Vendor Name
-- name: logo_or_photo
-  type: file
-  config:
-    maxSize: 250
-  label: Logo or Photo
+- name: partner_logo_and_name
+  type: field_group
+  config: {}
+  fields:
+  - name: name
+    type: text
+    config:
+      required: true
+    label: Name
+  - name: logo_or_photo
+    type: file
+    config:
+      maxSize: 250
+    label: Logo or Photo
+  label: Partner Logo and Name
 - name: contact
   type: field_group
   config: {}
@@ -67,32 +72,38 @@ fields:
         step: 
     label: Address
   label: Contact
-- name: category
-  type: select
-  default: []
-  config:
-    required: false
-    options:
-    - Accountants & CPAs
-    - Construction & Builders
-    - Appraisal Service
-    - Finance & Mortgage
-    - Home & Garden Services
-    - Home Service Providers
-    - Inspection Services
-    - Insurance Provider
-    - Legal Professionals
-    - Moving Services
-    - Other Resources
-    - Pest Control
-    - Protection & Relief Services
-    - Real Estate Services
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Category
+- name: details
+  type: field_group
+  config: {}
+  fields:
+  - name: category
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - Accountants & CPAs
+      - Appraisal Service
+      - Construction & Builders
+      - Finance & Mortgage
+      - Financial Planners
+      - Home & Garden Services
+      - Home Service Providers
+      - Inspection Services
+      - Insurance Provider
+      - Legal Professionals
+      - Moving Services
+      - Other Resources
+      - Pest Control
+      - Protection & Relief Services
+      - Real Estate Services
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Category
+  label: Details
 - name: seo
   type: field_group
   config: {}
