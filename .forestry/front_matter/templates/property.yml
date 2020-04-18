@@ -256,6 +256,15 @@ fields:
     type: image_gallery
     config: {}
     label: Gallery
+    description: <strong>Photography Tips<br></strong>Photos make your website and
+      listing more appealing. Below are easy tips to make sure your listing stand
+      out.<br><br><strong>1.</strong> <strong>Prepare the Room </strong>- Make sure
+      areas and surfaces are cleared off.<br><strong>2. Wide-Angle Lens</strong> -
+      Show more of a room than using regular lens.<br><strong>3. Straight Shot</strong>
+      - Keep camera lined up with the walls and any vertical objects for a clean shot.<br><br>Need
+      professional photos and videos? <a href="https://hungryram.com/contact" title=""
+      target="_blank">Contact us</a> and we'll connect you to a professional near
+      you.
   label: Photos
 - name: tools
   type: field_group
