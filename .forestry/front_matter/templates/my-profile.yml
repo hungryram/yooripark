@@ -138,7 +138,9 @@ fields:
     default: []
     config:
       required: false
-      options: []
+      options:
+      - New York
+      - cali
       source:
         type: simple
         section: 
