@@ -1,4 +1,19 @@
 ---
 label: State
 hide_body: true
-fields: []
+fields:
+- name: states
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - california
+    - newyork
+    - virginia
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: States
