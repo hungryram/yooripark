@@ -93,5 +93,26 @@ fields:
       file: 
       path: 
   label: Category
+- name: seo
+  type: field_group
+  config: {}
+  fields:
+  - name: title_tag
+    type: text
+    config:
+      required: true
+    label: Title Tag
+    description: The title tag that Google displays in the heading result page
+  - name: meta_description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Meta Description
+    description: The description that search engines look for
+  label: Search Engine Optimization (SEO)
 pages:
 - content/partners/the gardener.md
