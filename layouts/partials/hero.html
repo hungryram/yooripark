@@ -1,10 +1,22 @@
 <section class="hero is-success is-fullheight hero__container">
     <!-- Hero head: will stick at the top -->
-  
+
+
+    <!-- Enable MP4 Video Background -->
+    {{ if .Site.Data.homedesign.video_background }}
+      <div class="hero-video">
+        <video poster="img/bgimg.jpg" id="bgvid" playsinline autoplay muted loop>
+            <source src="https://reformosa.pt/public/uploads/_/originals/c9e46682-1225-59f7-8596-67a74b011928.mp4" type="video/mp4">
+        </video>
+    </div>
+    {{end}}
+
+
+
     <!-- Hero content: will be in the middle -->
     <div class="hero-body">
       <div class="container has-text-centered">
-        <h1 class="title">
+        <h1 class="hero-title">
           Title
         </h1>
         <h2 class="subtitle">
@@ -29,3 +41,4 @@
       </nav>
     </div>
   </section>
+

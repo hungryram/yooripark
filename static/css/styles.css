@@ -22,6 +22,7 @@ header {
     right: 0;
     top: 0;
     text-transform: uppercase;
+    z-index: 100;
 }
 
 .header-container {
