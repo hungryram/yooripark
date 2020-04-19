@@ -1,5 +1,5 @@
 +++
-photo_or_logo = "/images/babe2.png"
+photo_or_logo = "/images/0.jpeg"
 title = "The Gardener"
 [contact]
 email = "dude@truestorybro.com"
