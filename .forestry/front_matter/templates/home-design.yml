@@ -7,5 +7,11 @@ fields:
   config:
     maxSize: 5
   label: Hero Image
+- name: website_accent
+  type: color
+  config:
+    required: false
+    color_format: RGB
+  label: Website Accent
 pages:
 - data/homedesign.yaml
