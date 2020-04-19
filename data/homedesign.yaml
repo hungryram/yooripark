@@ -1,4 +1,4 @@
 ---
 hero_image: "/images/office.jpg"
 website_accent: rgb(235, 20, 20)
-video_background: false
+video_background: true
