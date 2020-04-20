@@ -16,14 +16,16 @@ fields:
     type: boolean
     label: Video Background
     description: Toggle to enable background video instead of an image
+  - name: upload_video
+    type: file
+    config:
+      maxSize: 250
+    label: Upload Video
+  - name: add_url_to_youtube_video
+    type: text
+    config:
+      required: false
+    label: Add URL to Youtube Video
   label: Main Image
-- name: hero_image
-  type: file
-  config:
-    maxSize: 5
-  label: Hero Image
-- name: video_background
-  type: boolean
-  label: Video Background
 pages:
 - data/homedesign.yaml
