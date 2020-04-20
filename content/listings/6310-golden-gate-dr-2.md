@@ -1,5 +1,6 @@
 +++
-title = "Need a New Home"
+short_description = "Luxury Listing"
+title = "6310 Golden Gate Drive"
 [address]
 address = "6310 Golden Gate Drive"
 city = "Yorba Linda"
