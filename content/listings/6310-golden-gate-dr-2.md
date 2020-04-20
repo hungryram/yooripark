@@ -1,5 +1,6 @@
 +++
 short_description = "Luxury Listing"
+status = "Active"
 title = "6310 Golden Gate Drive"
 [address]
 address = "6310 Golden Gate Drive"
