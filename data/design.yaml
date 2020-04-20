@@ -6,9 +6,9 @@ logo_or_title:
   upload_logo: https://reluxurytemplate.s3-us-west-1.amazonaws.com/revel.png
   title: Revel Real Estate
 main_image:
-  hero_subtitle: ''
-  home_background_image: ''
+  hero_subtitle: Welcome to our real estate group
+  home_background_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/kichen.jpg
   video_background: false
   upload_video: ''
   add_url_to_youtube_video: ''
-  hero_title: ''
+  hero_title: REVEL REAL ESTATE
