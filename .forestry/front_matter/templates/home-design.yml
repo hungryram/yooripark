@@ -55,3 +55,5 @@ fields:
       required: false
     label: Add URL to Youtube Video
   label: Main Image
+pages:
+- data/design.yaml

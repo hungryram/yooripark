@@ -2,3 +2,13 @@
 hero_image: "/images/office.jpg"
 website_accent: rgb(235, 20, 20)
 video_background: false
+logo_or_title:
+  upload_logo: https://reluxurytemplate.s3-us-west-1.amazonaws.com/revel.png
+  title: Revel Real Estate
+main_image:
+  hero_subtitle: ''
+  home_background_image: ''
+  video_background: false
+  upload_video: ''
+  add_url_to_youtube_video: ''
+  hero_title: ''
