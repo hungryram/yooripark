@@ -1,5 +1,6 @@
 +++
-title = "Luxury Listing"
+short_description = "Great Listing"
+title = "312 Lane Dr."
 [address]
 address = "419 Abbot Dr."
 city = "CA"
