@@ -10,3 +10,8 @@
         </div>
     </div>
 </div>
+
+
+{{ range .Site.Taxonomies.sold }}
+<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+{{end}}

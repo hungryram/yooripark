@@ -1,6 +1,10 @@
 
 /* NAV */
 
+.navbar-item img {
+    max-height: none!important;
+}
+
 .navbar-end {
     align-items: center!important;
 }
@@ -80,6 +84,15 @@ header a {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 10px;
+}
+
+.hero-body h1 {
+    color: #fff;
+    line-height: 2;
+}
+
+.hero-body h2 {
+    color: #cbcbcb;
 }
 
 /* CAROUSEL */

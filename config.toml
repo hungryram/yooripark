@@ -1,5 +1,10 @@
 baseURL = "/"
 languageCode = "en-us"
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+    sold = "sold"
+
 [[menu.main]]
 name = "Home"
 url = "/"
