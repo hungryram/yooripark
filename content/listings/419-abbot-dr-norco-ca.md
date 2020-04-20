@@ -1,6 +1,6 @@
 +++
 short_description = "Great Listing"
-status = "Rented"
+status = "Active"
 title = "312 Lane Dr."
 [address]
 address = "419 Abbot Dr."
