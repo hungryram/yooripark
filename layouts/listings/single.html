@@ -1,49 +1,69 @@
 {{ define "main" }}
 
+<div class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-11">
+                <div class="single-item">
+                  {{range .Params.photos.gallery}}
+                  <div>
+                    <div class="image" style="width: 500px">
+                  <img src="{{.}}" alt="">
+                  </div>
+                  </div>
+                  {{end}}
+                </div>
+      </div>
+      <div class="column">test</div>
 
-				<!-- Start Carousel -->
-				<div id="carousel-demo" class="carousel">
-					<div class="item-1">
-						<!-- Slide Content -->
-					</div>
-					<div class="item-2">
-						<!-- Slide Content -->
-					</div>
-					<div class="item-3">
-						<!-- Slide Content -->
-					</div>
-				</div>
-				<!-- End Carousel -->
-{{ .Params.Propertytitle }}
-
-{{ .Params.Listingid }}<br>
-{{ .Params.Address.Address }}<br>
-{{ .Params.Details.bathrooms }}<br>
-{{ .Params.Details.bedrooms }}<br>
-{{ .Params.Details.lot_size }}<br>
-{{ .Params.Details.property_type }}<br>
-{{ .Params.Details.square_footage }}<br>
-{{ .Params.Details.year_built }}<br>
-
-<h2>Appliances:</h2>
-<ul>
-{{  range .Params.Utilities_and_features.appliances }}
-<li>{{ . }}</li>
-{{ end }}
-</ul>
-
-<h2>Floors:</h2>
-<ul>
-{{  range .Params.Utilities_and_features.floors }}
-<li>{{ . }}</li>
-{{ end }}
-</ul>
-<br>
-{{ .Content }}
-<ul>
-    {{ range .Params.photogallery }}
-      <li><img src="{{ . | relURL }}" width="300"></li>
-    {{ end }}
-  </ul>
+</div>
+</div>
+</div>
+<div class="section listing-details">
+  <div class="container">
+    <div class="columns is-variable is-3">
+      <div class="column is-3">
+        <div class="box">
+          <h2 class="title is-6">Details</h2>
+            <table class="table">
+              <tr>
+                <td>Beds</td>
+                <td>{{ .Params.details.bedrooms }}</td>
+              </tr>
+              <tr>
+                <td>Baths</td>
+                <td>{{ .Params.details.bathrooms }}</td>
+              </tr>
+              <tr>
+                <td>Square Footage</td>
+                <td>{{ .Params.details.square_footage }}</td>
+              </tr>
+              <tr>
+                <td>Location</td>
+                <td>{{ .Params.address.city }}</td>
+              </tr>
+              <tr>
+                <td>Property Type</td>
+                <td>{{ .Params.details.property_type }}</td>
+              </tr>
+            </table>
+            <h2 class="title is-6">Open House</h2>
+            <p>{{ .Params.tools.open_house_date }}</p><br>
+            <h2 class="title is-6">Extras</h2>
+            <p><a href="{{ .Params.tools.virtual_tours }}" target="_blank">Virtual Tour</a></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="box">
+          <p>MLS Number: {{ .Params.details.mls_number }}</p>
+          <hr>
+          <h2 class="title is-6">Property Description</h2>
+          <p>{{.Content}}</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
 
 {{ end }}

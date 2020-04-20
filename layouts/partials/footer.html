@@ -3,8 +3,13 @@
         <footer>
             <h1>This is the footer</h1>
         </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="{{.Site.BaseURL}}js/main.js"></script>
+        <script src="{{.Site.BaseURL}}js/slick.min.js"></script>
+        <script type="text/javascript">
+            $('.single-item').slick();
+          </script>
         <script>
             $(document).ready(function() {
             
@@ -29,7 +34,15 @@
 			slidesToScroll: 1,
 			slidesToShow: 3
         });
+        bulmaCarousel.attach('#listing-carousel', {
+			slidesToScroll: 1,
+			slidesToShow: 1
+        });
         
+
+
+
+
         
 		</script>
     </body>
