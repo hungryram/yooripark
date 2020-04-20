@@ -1,0 +1,27 @@
+<a href="{{.Permalink}}">
+    <div class="card prop-result">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <div class="f-image-overlay"><img src="{{ .Params.photos.main_photo }}" alt="Placeholder image"></div>
+            <span>${{ .Params.pricing.price }}</span>
+          </figure>
+        </div>
+
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              
+              <p class="f-prop-title">{{ .Params.short_description }}</p>
+              <p class="f-prop-address"><i class="fas fa-map-marker-alt"></i>{{ .Params.address.address }}</p>
+            </div>
+          </div>
+      
+          <div class="columns">
+            <div class="column"><i class="fas fa-bed"></i>{{.Params.details.bedrooms}}</div>
+            <div class="column"><i class="fas fa-bath"></i>{{.Params.details.bathrooms}}</div>
+            <div class="column"><i class="fas fa-th-large"></i>{{.Params.details.square_footage}} Sq. ft</div>
+            <br>
+          </div>
+        </div>
+      </div>
+      </a>

@@ -1,12 +1,31 @@
 {{ define "main" }}
 
-<ul>
-    {{ range .Data.Pages }}
+<div class="section">
+    <div class="container">
+        <div class="columns has-text-centered">
+            <div class="column">
+                <h1 class="title is-1">{{.Title}}</h1>
+            </div>
+        </div>
+    <div class="columns">
+        {{ range .Data.Pages }}
+        <div class="column is-one-third">
+            
+            {{ partial "featured-listings.html" . }}
+                  
+        </div>
+        {{ end }}
+    </div>
+</div>
+</div>
+
+<!-- <ul>
+    
       <li>
         <a href="{{.RelPermalink}}">{{ .Title }}</a>
         <p>{{ .Params.address.city }}</p>
       </li>
-    {{ end }}
-  </ul>
+    
+  </ul> -->
 
   {{ end }}

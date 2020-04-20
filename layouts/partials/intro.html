@@ -15,8 +15,7 @@
 {{ range .Site.Taxonomies.status }}
 <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a><br>
 {{end}}
-<hr>
-<section id="menu">
+<!-- <section id="menu">
     <ul>
         {{ range $key, $taxonomy := .Site.Taxonomies.status }}
         <li> {{ $key }} </li>
@@ -32,13 +31,13 @@
 <section id="menu">
     <ul>
         {{ range $key, $taxonomy := .Site.Taxonomies.status }}
-        <li> <a href="{{.Page.RelPermalink}}">{{ $key }}</a> </li>
+        <li> <a href="{{.Page.RelPermalink}}">{{ $key }} </a></li>
         <ul>
             {{ range $taxonomy.Pages }}
             <li hugo-nav="{{ .RelPermalink}}"><a href="{{ .Permalink}}"> {{ .Title }} </a> </li>
-            <li hugo-nav="{{ .RelPermalink}}"><a href="{{ .Permalink}}"> {{ .Params.short_description }} </a> </li><br>
+            <li hugo-nav="{{ .RelPermalink}}"><a href="{{ .Permalink}}"> {{ .Params.short_description }} </a> </li>
             {{ end }}
         </ul>
         {{ end }}
     </ul>
-</section>
+</section> -->
