@@ -1,7 +1,7 @@
 +++
 short_description = "Luxury Listing"
 status = "Active"
-title = "6310 Golden Gate Drive"
+title = "new golden gate"
 [address]
 address = "6310 Golden Gate Drive"
 city = "Yorba Linda"
