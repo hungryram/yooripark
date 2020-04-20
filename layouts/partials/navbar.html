@@ -1,46 +1,50 @@
-<header>
-    <div class="header-container">
-        <div class="header-left">
-            <span>{{ .Site.Data.profile.contact.phone }}</span>
+<div class="hero-head">
+    <header class="navbar" {{ if not .IsHome }}style="background-color:black"{{end}}>
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">
+                {{ with .Site.Data.profile.logo}}
+            <img src="{{ . }}" alt="" width="200">
+                {{ else }}
+            <h1>{{ .Site.Data.profile.contact.email }}</h1>
+                {{ end }}
+          </a>
+          <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
         </div>
-        <div class="header-logo">
-            {{ with .Site.Data.profile.logo}}
-                <img src="{{ . }}" alt="" width="200">
-            {{ else }}
-                <h1>{{ .Site.Data.profile.contact.email }}</h1>
-            {{ end }}
-
+        <div id="navbarMenuHeroC" class="navbar-menu">
+          <div class="navbar-end">
+            <ul class="head-nav">
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                    {{ if .HasChildren }}
+      
+                  <li class="sub-menu{{if $currentPage.HasMenuCurrent "main" . }} active{{end}}">
+                  <a href="javascript:;" class="">
+                      {{ .Pre }}
+                      <span>{{ .Name }}</span>
+                      <span class="menu-arrow arrow_carrot-right"></span>
+                  </a>
+                  <ul class="sub">
+                      {{ range .Children }}
+                      <li{{if $currentPage.IsMenuCurrent "main" . }} class="active"{{end}}><a href="{{.URL}}"> {{ .Name }} </a> </li>
+                      {{ end }}
+                  </ul>
+                {{else}}
+                  <li>
+                  <a href="{{.URL}}" class="nav-item">
+                      {{ .Pre }}
+                      <span>{{ .Name }}</span>
+                  </a>
+                {{end}}
+                </li>
+                {{end}}
+            </ul>
+          </div>
         </div>
-        <div class="nav-menu">
-            <span>MENU</span>
-            <nav class="nav">
-                <ul>
-                    {{ $currentPage := . }}
-                    {{ range .Site.Menus.main }}
-                        {{ if .HasChildren }}
-          
-                      <li class="sub-menu{{if $currentPage.HasMenuCurrent "main" . }} active{{end}}">
-                      <a href="javascript:;" class="">
-                          {{ .Pre }}
-                          <span>{{ .Name }}</span>
-                          <span class="menu-arrow arrow_carrot-right"></span>
-                      </a>
-                      <ul class="sub">
-                          {{ range .Children }}
-                          <li{{if $currentPage.IsMenuCurrent "main" . }} class="active"{{end}}><a href="{{.URL}}"> {{ .Name }} </a> </li>
-                          {{ end }}
-                      </ul>
-                    {{else}}
-                      <li>
-                      <a href="{{.URL}}">
-                          {{ .Pre }}
-                          <span>{{ .Name }}</span>
-                      </a>
-                    {{end}}
-                    </li>
-                    {{end}}
-                </ul>
-            </nav>
-        </div>
-    </div>
-</header>
+      </div>
+    </header>
+  </div>

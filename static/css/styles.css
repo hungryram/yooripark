@@ -2,44 +2,77 @@
     font-family: "Montserrat", sans-serif;
 }
 
+
 /* NAV */
 
-.nav-menu {
-    cursor: pointer;
+.navbar-end {
+    align-items: center!important;
 }
 
-nav {
+.head-nav li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header a {
+    color: white;
+}
+
+.sub-menu:hover .sub {
+    display: block;
+}
+
+.navbar-brand h1 {
+    font-size: 1.3em;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    div#navbarMenuHeroC {
+        background-color: black;
+    }
+}
+
+/* nav {
     display: none;
+} */
+
+.sub {
+    display: none;
+}
+
+.open {
+    display: block;
 }
 
 .nav-open {
     display: block;
 }
 
-header {
+/* header {
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     text-transform: uppercase;
     z-index: 100;
-}
+} */
 
-.header-container {
+/* .header-container {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding-top: 20px;
 
-}
-
+} */
+/* 
 .header-left,
 .header-logo,
 .nav-menu {
     flex: 33.3%;
     color: #fff;
-}
+} */
 
 .hero__container {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
