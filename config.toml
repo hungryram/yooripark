@@ -1,2 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1

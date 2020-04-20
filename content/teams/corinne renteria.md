@@ -8,6 +8,9 @@ phone = "19514542650"
 license_number = "2342r234"
 license_type = "DRE License"
 title = "cofounder"
+[menu.main]
+name = "Corinne"
+weight = 3
 [seo]
 meta_description = "therapy"
 title_tag = "corinne"

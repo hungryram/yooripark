@@ -13,6 +13,8 @@ state = "Connecticut"
 zip_code = 90602
 [details]
 category = "Finance & Mortgage"
+[menu.main]
+weight = 2
 [seo]
 meta_description = ""
 title_tag = ""
