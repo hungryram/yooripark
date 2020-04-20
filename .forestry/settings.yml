@@ -5,8 +5,8 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: document
-  path: data/homedesign.yaml
-  label: Home Design
+  path: data/design.yaml
+  label: Design
 - type: heading
   label: Default Pages
 - type: document
