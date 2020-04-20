@@ -1,7 +1,7 @@
 +++
 short_description = "Great Listing"
+status = "Rented"
 title = "312 Lane Dr."
-status = "sold"
 [address]
 address = "419 Abbot Dr."
 city = "CA"
@@ -23,8 +23,6 @@ main_photo = "https://reluxurytemplate.s3-us-west-1.amazonaws.com/corinne-kutz-2
 [pricing]
 price = "545451"
 sold_price = ""
-[property_status]
-status = "Rented"
 [seo]
 meta_description = "12321323"
 title_tag = "Property Listing"

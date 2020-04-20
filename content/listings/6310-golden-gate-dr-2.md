@@ -26,8 +26,6 @@ main_photo = "/images/office.jpg"
 [pricing]
 price = "995,955"
 sold_price = ""
-[property_status]
-status = "Available"
 [seo]
 meta_description = "la listing meta description"
 title_tag = "LA Listing"

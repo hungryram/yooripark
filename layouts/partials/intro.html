@@ -11,18 +11,32 @@
     </div>
 </div>
 
-<!-- 
+
 {{ range .Site.Taxonomies.status }}
 <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a><br>
-<p>{{ .Page.Title }}</p>
-{{end}} -->
+{{end}}
+<hr>
 <section id="menu">
     <ul>
         {{ range $key, $taxonomy := .Site.Taxonomies.status }}
         <li> {{ $key }} </li>
         <ul>
             {{ range $taxonomy.Pages }}
-            <li hugo-nav="{{ .RelPermalink}}"><a href="{{ .Permalink}}"> {{ .Params.details.lot_size }} </a> </li>
+            <li hugo-nav="{{ .RelPermalink}}"><a href="{{ .Permalink}}"> {{ .Title }} </a> </li>
+            {{ end }}
+        </ul>
+        {{ end }}
+    </ul>
+</section>
+<hr>
+<section id="menu">
+    <ul>
+        {{ range $key, $taxonomy := .Site.Taxonomies.status }}
+        <li> <a href="{{.Page.RelPermalink}}">{{ $key }}</a> </li>
+        <ul>
+            {{ range $taxonomy.Pages }}
+            <li hugo-nav="{{ .RelPermalink}}"><a href="{{ .Permalink}}"> {{ .Title }} </a> </li>
+            <li hugo-nav="{{ .RelPermalink}}"><a href="{{ .Permalink}}"> {{ .Params.short_description }} </a> </li><br>
             {{ end }}
         </ul>
         {{ end }}
