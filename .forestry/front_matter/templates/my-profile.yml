@@ -2,22 +2,6 @@
 label: My Profile
 hide_body: true
 fields:
-- name: logo_and_title
-  type: field_group
-  config: {}
-  fields:
-  - name: website_title
-    type: text
-    config:
-      required: false
-    label: Website Title
-    description: This replaces your logo if you do not have one uploaded
-  - name: logo
-    type: file
-    config:
-      maxSize: 5
-    label: Logo
-  label: Logo and Title
 - name: primary_contact
   type: field_group
   config: {}
