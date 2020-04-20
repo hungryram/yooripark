@@ -1,5 +1,6 @@
 +++
-title = "Elegant Home"
+short_description = "Elegant Home"
+title = "419 Abbot Dr. Norco, CA"
 [address]
 address = "6310 Golden Gate Drive"
 city = "Yorba Linda"
