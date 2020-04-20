@@ -22,6 +22,18 @@ fields:
   type: field_group
   config: {}
   fields:
+  - name: hero_title
+    type: text
+    config:
+      required: false
+    label: Hero Title
+    description: The main title overlaying the main image or video
+  - name: hero_subtitle
+    type: text
+    config:
+      required: false
+    label: Hero Subtitle
+    description: the subtitle overlaying the hero image or video
   - name: home_background_image
     type: file
     config:
