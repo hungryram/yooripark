@@ -8,6 +8,13 @@ fields:
     required: false
   label: Property Title
   description: Enter the address as the title
+- name: short_description
+  type: text
+  config:
+    required: false
+    max: 20
+  label: Short Description
+  description: 'Example: Luxury Listing'
 - name: address
   type: field_group
   config: {}
