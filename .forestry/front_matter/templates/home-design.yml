@@ -2,6 +2,22 @@
 label: Design
 hide_body: true
 fields:
+- name: logo_or_title
+  type: field_group
+  config: {}
+  fields:
+  - name: upload_logo
+    type: file
+    config:
+      maxSize: 250
+    label: Upload Logo
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+    description: Display text instead of a logo
+  label: Logo or Title
 - name: main_image
   type: field_group
   config: {}
