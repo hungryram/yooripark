@@ -1,20 +1,2 @@
 baseURL = "/"
 languageCode = "en-us"
-[[menu.main]]
-name = "getting started"
-parent = "Home2"
-post = "<span class='alert'>New!</span>"
-pre = "<i class='fa fa-road'></i>"
-url = "/getting-started/"
-weight = 1
-[[menu.main]]
-name = "Home2"
-url = "/"
-weight = 1
-[[menu.main]]
-identifier = "about"
-name = "about hugo"
-parent = "My Blog"
-pre = "<i class='fa fa-heart'></i>"
-url = "/about/"
-weight = 2
