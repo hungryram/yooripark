@@ -1,5 +1,5 @@
 +++
-title = "419 Abbot Dr. Norco, CA"
+title = "Luxury Listing"
 [address]
 address = "419 Abbot Dr."
 city = "CA"
