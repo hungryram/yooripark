@@ -18,7 +18,7 @@ year_built = 2000
 listing_agent = "teams/corinne renteria.md"
 [photos]
 gallery = ["/images/tiki.jpg", "/images/IMG_0018.jpg", "/images/cosmic-timetraveler-oLh-_gLQeak-unsplash.jpg"]
-main_photo = "/images/cosmic-timetraveler-oLh-_gLQeak-unsplash.jpg"
+main_photo = "https://reluxurytemplate.s3-us-west-1.amazonaws.com/corinne-kutz-211251-unsplash.jpg"
 [pricing]
 price = "545451"
 sold_price = ""
