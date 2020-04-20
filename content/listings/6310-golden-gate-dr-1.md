@@ -1,5 +1,6 @@
 +++
 short_description = "Single"
+status = "Sold"
 title = "6310 Golden Gate Dr."
 [address]
 address = "6310 Golden Gate Drive"
