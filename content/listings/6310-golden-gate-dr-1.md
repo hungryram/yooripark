@@ -1,6 +1,7 @@
 +++
 short_description = "Single"
 title = "6310 Golden Gate Dr."
+status = "active"
 [address]
 address = "6310 Golden Gate Drive"
 city = "Yorba Linda"

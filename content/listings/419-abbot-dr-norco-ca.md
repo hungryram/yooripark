@@ -1,7 +1,7 @@
 +++
 short_description = "Great Listing"
 title = "312 Lane Dr."
-sold = "solds"
+status = "sold"
 [address]
 address = "419 Abbot Dr."
 city = "CA"

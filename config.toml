@@ -3,7 +3,7 @@ languageCode = "en-us"
 [taxonomies]
     tag = "tags"
     category = "categories"
-    sold = "sold"
+    status = "status"
 
 [[menu.main]]
 name = "Home"
