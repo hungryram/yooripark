@@ -5,7 +5,7 @@ title = "Corinne Renteria"
 email = "admin@ramdettmer.com"
 phone = "19514542650"
 [details]
-agent_photo = ""
+agent_photo = "https://reluxurytemplate.s3-us-west-1.amazonaws.com/babe2.png"
 license_number = "2342r234"
 license_type = "DRE License"
 title = "cofounder"
