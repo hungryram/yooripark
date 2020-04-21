@@ -15,9 +15,6 @@ organize:
   intro_title: New intro title
   intro_body: NEW INTRO BODY
   add_photo: https://reluxurytemplate.s3-us-west-1.amazonaws.com/agent.jpg
-- template: cta
-  cta_title: new cta titel
-  cta_body: new cta body
 - template: featured-listings
   address:
   - listings/6310-golden-gate-dr.md
@@ -25,3 +22,6 @@ organize:
   - listings/419-abbot-dr-norco-ca-1.md
   - listings/6310-golden-gate-dr-1.md
   - listings/6310-golden-gate-dr.md
+- template: cta
+  cta_title: new cta titel
+  cta_body: new cta body
