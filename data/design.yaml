@@ -10,3 +10,56 @@ main_image:
   upload_video: ''
   add_url_to_youtube_video: ''
   hero_title: REVEL REAL ESTATE
+home:
+- template: partners
+  contact:
+    address:
+      state: []
+      zip_code: '0'
+      address: ''
+      city: ''
+    email: ''
+    phone: ''
+    website: ''
+  details:
+    category: []
+  title: ''
+  photo_or_logo: ''
+  seo:
+    title_tag: ''
+    meta_description: ''
+- template: team
+  details:
+    license_type: []
+    agent_photo: ''
+    license_number: ''
+    title: ''
+  title: ''
+  contact:
+    email: ''
+    phone: ''
+  social_media:
+    instagram: ''
+    twitter: ''
+    youtube: ''
+    linkedin: ''
+    facebook: ''
+  seo:
+    title_tag: ''
+    meta_description: ''
+- template: offices
+  contact:
+    state: []
+    zip_code: '0'
+    office_phone: ''
+    fax_number: ''
+    email: ''
+    address: ''
+    city: ''
+  title: '551'
+  photos:
+    main_photo: ''
+    photo_gallery: []
+  seo:
+    title_tag: ''
+    meta_description: ''
