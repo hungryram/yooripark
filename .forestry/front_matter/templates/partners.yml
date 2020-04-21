@@ -176,11 +176,16 @@ fields:
 - name: name
   type: field_group_list
   fields:
-  - name: title
-    type: include
-    config: {}
-    template: team
-    label: Title
+  - name: name
+    type: list
+    config:
+      use_select: true
+      min: 
+      max: 
+      source:
+        type: pages
+        section: preferred-partners
+    label: Name
   config:
     min: 
     max: 
