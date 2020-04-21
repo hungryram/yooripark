@@ -13,11 +13,8 @@ fields:
     maxSize: 250
   label: Featured Image
 - name: categories
-  type: list
-  config:
-    use_select: false
-    min: 
-    max: 
+  type: tag_list
+  default: []
   label: Categories
 - name: tags
   type: tag_list
