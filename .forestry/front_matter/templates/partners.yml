@@ -176,17 +176,10 @@ fields:
 - name: name
   type: field_group_list
   fields:
-  - name: name
-    type: select
-    default: []
+  - name: title
+    type: text
     config:
       required: false
-      options: []
-      source:
-        type: pages
-        section: preferred-partners
-        file: 
-        path: 
     label: Name
   config:
     min: 
