@@ -1,5 +1,4 @@
 +++
-full_name = "Corinne Renteria"
 title = "Corinne Renteria"
 [contact]
 email = "admin@ramdettmer.com"
@@ -15,7 +14,7 @@ weight = 2
 meta_description = "therapy"
 title_tag = "corinne"
 [social_media]
-facebook = "facebook.com/completemuscletherapy"
+facebook = "facebookewrdwedew"
 instagram = "completemuscletherapy"
 linkedin = "linkedin.com/completemuscletherapy"
 twitter = "twitter.comcompletemuscletherapy"

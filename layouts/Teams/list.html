@@ -1,9 +1,85 @@
 {{ define "main" }}
 
-<h1>Teams</h1>
-{{ range .Pages }}
-<a href="{{ .URL }}">{{ .Params.name }}</a><br><br>
-<a href="{{ .URL }}">{{ .Params.social_media.facebook }}</a><br><br>
-{{ end }}
+<div class="section agent-lists">
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                {{ range .Pages }}
+                <div class="box">
+                    <article class="media">
+                      <div class="media-left">
+                        <figure class="image is-64x64">
+                          <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+                        </figure>
+                      </div>
+                      <div class="media-content">
+                        <div class="content">
+                          <p>
+                            <strong>{{ .Params.title }}</strong> <small>{{ .Params.details.title }}</small>
+                            <br>
+                            {{ .Summary }}
+                          </p>
+                        </div>
+                        <nav class="level is-mobile agent-social">
+                          <div class="level-left">
+                            {{ with .Params.social_media.facebook }}
+                            <a class="level-item" href="{{ . }}" target="_blank">
+                              <span class="icon is-small">
+                                <i class="fab fa-facebook"></i>
+                              </span>
+                            </a>
+                            {{end}}
+
+                            {{ with .Params.social_media.instagram }}
+                            <a class="level-item" href="{{ . }}" target="_blank">
+                              <span class="icon is-small">
+                                <i class="fab fa-instagram-square"></i>
+                              </span>
+                            </a>
+                            {{end}}
+
+                            {{ with .Params.social_media.linkedin }}
+                            <a class="level-item" href="{{ . }}" target="_blank">
+                              <span class="icon is-small">
+                                <i class="fab fa-linkedin"></i>
+                              </span>
+                            </a>
+                            {{end}}
+
+                            {{ with .Params.social_media.twitter }}
+                            <a class="level-item" href="{{ . }}" target="_blank">
+                              <span class="icon is-small">
+                                <i class="fab fa-twitter-square"></i>
+                              </span>
+                            </a>
+                            {{end}}
+
+                            {{ with .Params.social_media.youtube }}
+                            <a class="level-item" href="{{ . }}" target="_blank">
+                              <span class="icon is-small">
+                                <i class="fab fa-youtube-square"></i>
+                              </span>
+                            </a>
+                            {{end}}
+                            <!-- <a class="level-item" href="}">
+                              <span class="icon is-small">
+                                <i class="fas fa-retweet" aria-hidden="true"></i>
+                              </span>
+                            </a>
+                            <a class="level-item" href="">
+                              <span class="icon is-small">
+                                <i class="fas fa-heart" aria-hidden="true"></i>
+                              </span>
+                            </a> -->
+                          </div>
+                        </nav>
+                      </div>
+                    </article>
+                  </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
 
 {{ end }}

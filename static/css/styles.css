@@ -169,3 +169,28 @@ header a {
   .listing-details p {
       color: #818181;
   }
+
+  .listing-details i {
+      margin-right: 8px;
+  }
+
+  /* TEAM */
+
+.agent-social i {
+    font-size: 20px;
+    color: black;
+}
+
+  /* FOOTER */
+
+footer {
+    background: black!important;
+}
+
+footer p {
+    color: #fff;
+}
+
+footer a {
+    color: #8f7d20;
+}

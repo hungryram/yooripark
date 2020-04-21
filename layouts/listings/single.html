@@ -19,6 +19,7 @@
 </div>
 </div>
 </div>
+
 <div class="section listing-details">
   <div class="container">
     <div class="columns is-variable is-3">
@@ -26,6 +27,10 @@
         <div class="box">
           <h2 class="title is-6">Details</h2>
             <table class="table">
+              <tr>
+                <td>Status</td>
+                <td>{{ .Params.status }}</td>
+              </tr>
               <tr>
                 <td>Beds</td>
                 <td>{{ .Params.details.bedrooms }}</td>
@@ -52,6 +57,14 @@
             <h2 class="title is-6">Extras</h2>
             <p><a href="{{ .Params.tools.virtual_tours }}" target="_blank">Virtual Tour</a></p>
         </div>
+        <div class="box">
+          <h2 class="title is-6">Property Attachments</h2>
+          {{ if .Params.tools.file_attachments }}
+          <p class="box"><a href="{{ . }}"><i class="fas fa-download"></i>Download File</a></p>
+          {{else}}
+          <p>no file</p>
+          {{end}}
+        </div>
       </div>
       <div class="column">
         <div class="box">
@@ -60,10 +73,11 @@
           <h2 class="title is-6">Property Description</h2>
           <p>{{.Content}}</p>
         </div>
+        <div class="box">
+          test
+        </div>
       </div>
     </div>
     </div>
   </div>
-</div>
-
 {{ end }}
