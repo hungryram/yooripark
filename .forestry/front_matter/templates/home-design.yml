@@ -61,7 +61,6 @@ fields:
   template_types:
   - cta
   - intro
-  - property
   config:
     min: 
     max: 
