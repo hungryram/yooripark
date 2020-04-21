@@ -20,9 +20,6 @@ organize:
   - listings/6310-golden-gate-dr.md
   listing_title: this is the title
   listing_subtitle: this is my subtite listing
-- template: cta
-  cta_title: new cta titel
-  cta_body: new cta body
 - template: intro
   intro_title: the new intro title
   intro_body: NEW INTRO BODY
