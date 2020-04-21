@@ -1,13 +1,13 @@
 ---
-label: Featured Listings
+label: Active Listings
 hide_body: true
 fields:
-- name: listing_title
+- name: active_listing_title
   type: text
   config:
     required: false
-  label: Listing Title
-  description: Listings will pull automatically from added listings
+  label: Active Listing Title
+  description: Listings set to active will display
 - name: listing_subtitle
   type: textarea
   default: ''
