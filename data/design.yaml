@@ -70,3 +70,6 @@ organize:
 - template: cta
   title: ''
   text: ''
+- template: intro
+  title: ''
+  body: ''
