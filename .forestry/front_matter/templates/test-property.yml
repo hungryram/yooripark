@@ -1,4 +1,11 @@
 ---
 label: Test Property
 hide_body: true
-fields: []
+fields:
+- name: property
+  type: blocks
+  label: Property
+  template_types: []
+  config:
+    min: 
+    max: 
