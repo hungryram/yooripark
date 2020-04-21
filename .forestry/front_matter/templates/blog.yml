@@ -12,22 +12,17 @@ fields:
   config:
     maxSize: 250
   label: Featured Image
+- name: categories
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Categories
 - name: tags
   type: tag_list
   default: []
   label: Tags
-- name: categories
-  type: select
-  default: []
-  config:
-    required: false
-    options: []
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Categories
 - name: date_published
   type: datetime
   label: Date Published
