@@ -55,15 +55,18 @@ fields:
       required: false
     label: Add URL to Youtube Video
   label: Main Image
-- name: organize
+- name: home_sections
   type: blocks
-  label: Organize
+  label: Home Sections
   template_types:
+  - featured-listings
+  - sold-listings
   - cta
   - intro
   - featured-listings
   config:
     min: 
     max: 
+  description: Move home section areas
 pages:
 - data/design.yaml
