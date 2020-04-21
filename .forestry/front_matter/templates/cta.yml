@@ -2,12 +2,12 @@
 label: cta
 hide_body: true
 fields:
-- name: title
+- name: cta_title
   type: text
   config:
     required: false
-  label: title
-- name: text
+  label: CTA Title
+- name: cta_body
   type: textarea
   default: ''
   config:
@@ -15,4 +15,4 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-  label: Text
+  label: Body
