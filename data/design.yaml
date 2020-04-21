@@ -22,6 +22,8 @@ organize:
   - listings/419-abbot-dr-norco-ca-1.md
   - listings/6310-golden-gate-dr-1.md
   - listings/6310-golden-gate-dr.md
+  listing_title: this is the title
+  listing_subtitle: this is my subtite listing
 - template: cta
   cta_title: new cta titel
   cta_body: new cta body
