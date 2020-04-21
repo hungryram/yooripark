@@ -64,6 +64,7 @@ fields:
   - cta
   - intro
   - featured-listings
+  - featured-blog
   config:
     min: 
     max: 

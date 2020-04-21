@@ -1,6 +1,7 @@
 +++
 featured_image = "/images/cosmic-timetraveler-oLh-_gLQeak-unsplash.jpg"
 title = "My first blog"
+type = "blog"
 [seo]
 meta_description = "blog description"
 title_tag = "First blog"

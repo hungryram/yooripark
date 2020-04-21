@@ -1,0 +1,18 @@
+---
+label: Featured Blog
+hide_body: true
+fields:
+- name: blog_title
+  type: text
+  config:
+    required: false
+  label: Blog Title
+- name: blog_subtitle
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Blog Subtitle
