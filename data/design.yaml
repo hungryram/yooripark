@@ -17,3 +17,4 @@ organize:
 - template: intro
   intro_title: New intro title
   intro_body: NEW INTRO BODY
+  add_photo: https://reluxurytemplate.s3-us-west-1.amazonaws.com/agent.jpg

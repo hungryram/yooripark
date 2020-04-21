@@ -16,3 +16,9 @@ fields:
     schema:
       format: markdown
   label: Intro Body
+- name: add_photo
+  type: file
+  config:
+    maxSize: 250
+  label: Add Photo
+  description: Upload a photo next to your intro
