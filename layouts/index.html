@@ -1,7 +1,7 @@
 {{ partial "head.html" . }}
 {{ partial "hero.html" . }}
 
-{{ range .Site.Data.design.organize }}
+{{ range .Site.Data.design.home_sections }}
 
     {{ if eq "intro" .template }}
         {{ partial "intro" . }}

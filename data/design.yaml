@@ -10,4 +10,14 @@ main_image:
   upload_video: ''
   add_url_to_youtube_video: ''
   hero_title: REVEL REAL ESTATE
-
+home_sections:
+- template: featured-listings
+  active_listing_title: ''
+  listing_subtitle: ''
+- template: sold-listings
+  sold_listing_title: ''
+  sold_listing_subtite: ''
+- template: intro
+  intro_title: ''
+  intro_body: ''
+  add_photo: ''

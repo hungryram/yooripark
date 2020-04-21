@@ -1,14 +1,14 @@
 ---
-label: Active Listings
+label: Sold Listings
 hide_body: true
 fields:
-- name: active_listing_title
+- name: sold_listing_title
   type: text
   config:
     required: false
-  label: Active Listing Title
-  description: Listings set to active will display
-- name: listing_subtitle
+  label: Sold Listing Title
+  description: Listings set to sold will display
+- name: sold_listing_subtite
   type: textarea
   default: ''
   config:
@@ -16,4 +16,4 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-  label: Listing Subtitle
+  label: Sold Listing Subtite
