@@ -5,12 +5,13 @@
                 <img src="https://images.unsplash.com/photo-1587316206956-0eed13de3bf3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="" width="500">
             </div>
             <div class="column">
-            {{ range .Site.Data.design.organize }}
+            {{ if .intro_title }}
                 <h2 class="title is-2">{{ .intro_title }}</h2>
-                <p>{{.intro_body}}</p>test
-                {{ end }}
-                rwra<br>
-                {{ $.Site.Data.design.organize }}
+            {{ else }}
+                <h2 class="title is-2">About Us</h2>
+            {{ end }}
+                <p>{{.intro_body}}</p>
+
             </div>
         </div>
     </div>
