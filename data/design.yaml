@@ -70,6 +70,10 @@ organize:
 - template: intro
   title: intro title new
   body: intro body
+  intro_title: the new intro title
+  intro_body: NEW INTRO BODY
 - template: cta
   title: cta title
   text: cta body btext
+  cta_title: ''
+  cta_body: ''
