@@ -8,3 +8,13 @@ fields:
     required: false
   label: Hero Text
   description: text overlay on main image
+- name: home
+  type: blocks
+  label: Home
+  template_types:
+  - my-profile
+  - home-design
+  - team
+  config:
+    min: 
+    max: 
