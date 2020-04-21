@@ -183,8 +183,8 @@ fields:
       required: false
       options: []
       source:
-        type: simple
-        section: 
+        type: pages
+        section: property-listings
         file: 
         path: 
     label: Name
