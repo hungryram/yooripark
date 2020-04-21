@@ -19,5 +19,24 @@ weight = 1
 [seo]
 meta_description = ""
 title_tag = ""
+[[name]]
+title = "test"
+[name.contact]
+email = ""
+phone = ""
+[name.details]
+agent_photo = ""
+license_number = ""
+license_type = ""
+title = ""
+[name.seo]
+meta_description = ""
+title_tag = ""
+[name.social_media]
+facebook = ""
+instagram = ""
+linkedin = ""
+twitter = ""
+youtube = ""
 
 +++
