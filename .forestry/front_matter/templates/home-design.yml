@@ -66,17 +66,10 @@ fields:
   config:
     min: 
     max: 
-- name: listings
-  type: list
-  config:
-    use_select: true
-    min: 
-    max: 
-    source:
-      type: documents
-      section: property-listings
-      file: content/listings/419-abbot-dr-norco-ca.md
-      path: listing_agent
-  label: Listings
+- name: name
+  type: include
+  config: {}
+  template: property
+  label: Name
 pages:
 - data/design.yaml
