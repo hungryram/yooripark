@@ -16,7 +16,7 @@ home_sections:
   listing_subtitle: my active listings
 - template: sold-listings
   sold_listing_title: Our Sold Listings
-  sold_listing_subtite: sold listing subtitle
+  sold_listing_subtitle: sold listing subtitle
 - template: intro
   intro_title: The Intro Title
   intro_body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quos
