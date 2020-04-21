@@ -24,3 +24,14 @@ organize:
   intro_title: the new intro title
   intro_body: NEW INTRO BODY
   add_photo: https://reluxurytemplate.s3-us-west-1.amazonaws.com/agent.jpg
+home_sections:
+- template: featured-listings
+  active_listing_title: ''
+  listing_subtitle: ''
+- template: sold-listings
+  sold_listing_title: ''
+  sold_listing_subtite: ''
+- template: intro
+  intro_title: ''
+  intro_body: ''
+  add_photo: ''
