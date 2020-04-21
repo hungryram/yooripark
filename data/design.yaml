@@ -66,4 +66,7 @@ home:
 cta:
   title: test cta title
   text: cta body text
-organize: []
+organize:
+- template: cta
+  title: ''
+  text: ''
