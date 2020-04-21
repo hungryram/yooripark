@@ -75,5 +75,5 @@ organize:
 - template: cta
   title: cta title
   text: cta body btext
-  cta_title: ''
-  cta_body: ''
+  cta_title: new cta titel
+  cta_body: new cta body
