@@ -177,14 +177,16 @@ fields:
   type: field_group_list
   fields:
   - name: name
-    type: list
+    type: select
+    default: []
     config:
-      use_select: true
-      min: 
-      max: 
+      required: false
+      options: []
       source:
         type: pages
         section: preferred-partners
+        file: 
+        path: 
     label: Name
   config:
     min: 
