@@ -31,9 +31,13 @@ home_sections:
 - template: sold-listings
   sold_listing_title: Our Sold Listings
   sold_listing_subtite: sold listing subtitle
+  sold_listing_subtitle: ''
 - template: intro
   intro_title: The Intro Title
   intro_body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quos
     veniam ipsam aspernatur obcaecati beatae assumenda dolore perspiciatis debitis
     commodi nam ab exercitationem modi, ducimus sint dolor accusamus qui impedit.
   add_photo: https://reluxurytemplate.s3-us-west-1.amazonaws.com/kichen.jpg
+- template: featured-blog
+  blog_title: ''
+  blog_subtitle: ''
