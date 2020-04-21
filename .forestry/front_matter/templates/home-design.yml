@@ -60,6 +60,7 @@ fields:
   label: Organize
   template_types:
   - cta
+  - intro
   config:
     min: 
     max: 
