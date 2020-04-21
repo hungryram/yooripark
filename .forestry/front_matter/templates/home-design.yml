@@ -73,7 +73,7 @@ fields:
     min: 
     max: 
     source:
-      type: pages
+      type: documents
       section: property-listings
       file: content/listings/419-abbot-dr-norco-ca.md
       path: listing_agent
