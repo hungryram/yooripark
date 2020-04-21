@@ -18,3 +18,10 @@ organize:
 - template: cta
   cta_title: new cta titel
   cta_body: new cta body
+- template: featured-listings
+  address:
+  - listings/6310-golden-gate-dr.md
+  - listings/6310-golden-gate-dr-1.md
+  - listings/419-abbot-dr-norco-ca-1.md
+  - listings/6310-golden-gate-dr-1.md
+  - listings/6310-golden-gate-dr.md
