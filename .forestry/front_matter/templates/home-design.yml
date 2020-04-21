@@ -55,5 +55,16 @@ fields:
       required: false
     label: Add URL to Youtube Video
   label: Main Image
+- name: home
+  type: blocks
+  label: Home
+  template_types:
+  - my-profile
+  - partners
+  - team
+  - offices
+  config:
+    min: 
+    max: 
 pages:
 - data/design.yaml
