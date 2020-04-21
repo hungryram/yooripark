@@ -1,4 +1,5 @@
 +++
+author = "teams/james-ochner.md"
 categories = ["real estate", "financing"]
 date_published = 2020-04-09T21:11:00Z
 featured_image = "https://reluxurytemplate.s3-us-west-1.amazonaws.com/corinne-kutz-211251-unsplash.jpg"
