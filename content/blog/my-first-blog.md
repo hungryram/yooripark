@@ -1,7 +1,9 @@
 +++
-featured_image = "/images/cosmic-timetraveler-oLh-_gLQeak-unsplash.jpg"
+categories = ["real estate", "financing"]
+date_published = 2020-04-09T21:11:00Z
+featured_image = "https://reluxurytemplate.s3-us-west-1.amazonaws.com/corinne-kutz-211251-unsplash.jpg"
+tags = ["house", "savings"]
 title = "My first blog"
-type = "blog"
 [seo]
 meta_description = "blog description"
 title_tag = "First blog"
