@@ -8,7 +8,7 @@
             </div>
         </div>
         <div id="carousel" class="carousel" style="overflow: hidden;">
-            {{ range first 6 (where .Site.RegularPages "Type" "listings") }}
+            {{ range first 6 (.listings.status.active) }}
             <div style="margin:10px">
                 {{ partial "featured-listings.html" . }}
             </div>

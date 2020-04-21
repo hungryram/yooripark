@@ -11,19 +11,13 @@ main_image:
   add_url_to_youtube_video: ''
   hero_title: REVEL REAL ESTATE
 organize:
-- template: intro
-  intro_title: New intro title
-  intro_body: NEW INTRO BODY
-  add_photo: https://reluxurytemplate.s3-us-west-1.amazonaws.com/agent.jpg
 - template: featured-listings
-  address:
-  - listings/6310-golden-gate-dr.md
-  - listings/6310-golden-gate-dr-1.md
-  - listings/419-abbot-dr-norco-ca-1.md
-  - listings/6310-golden-gate-dr-1.md
-  - listings/6310-golden-gate-dr.md
   listing_title: this is the title
   listing_subtitle: this is my subtite listing
 - template: cta
   cta_title: new cta titel
   cta_body: new cta body
+- template: intro
+  intro_title: the new intro title
+  intro_body: NEW INTRO BODY
+  add_photo: https://reluxurytemplate.s3-us-west-1.amazonaws.com/agent.jpg
