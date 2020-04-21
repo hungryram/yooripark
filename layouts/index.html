@@ -5,7 +5,7 @@
 
 {{ range .Params.page_sections }}
     {{ if eq "hero-section" .template }}
-        {{ partial "blocks/hero" . }}
+        {{ partial "blocks/intro" . }}
     {{ end }}
     {{ if eq "call-to-action" .template }}
         {{ partial "blocks/cta" . }}
