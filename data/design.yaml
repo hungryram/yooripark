@@ -10,11 +10,4 @@ main_image:
   upload_video: ''
   add_url_to_youtube_video: ''
   hero_title: REVEL REAL ESTATE
-organize:
-- template: featured-listings
-  listing_title: this is the title
-  listing_subtitle: this is my subtite listing
-- template: intro
-  intro_title: the new intro title
-  intro_body: NEW INTRO BODY
-  add_photo: https://reluxurytemplate.s3-us-west-1.amazonaws.com/agent.jpg
+

@@ -1,17 +1,17 @@
 {{ partial "head.html" . }}
 {{ partial "hero.html" . }}
 
-
-
 {{ range .Site.Data.design.organize }}
 
     {{ if eq "intro" .template }}
         {{ partial "intro" . }}
     {{ end }}
+
     {{ if eq "cta" .template }}
         {{ partial "cta" . }}
     {{ end }}
 
+    {{/*  ACTIVE LISTING  */}}
     {{ if eq "featured-listings" .template }}
         <section class="section" id="featured-listings">
             <div class="container">
@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <div id="carousel" class="carousel" style="overflow: hidden;">
-                    {{ range first 6 (where $.Site.RegularPages "Type" "listings") }}
+                    {{ range first 6 $.Site.Taxonomies.status.active }}
                     <div style="margin:10px">
                         {{ partial "featured-listings.html" . }}
                     </div>
@@ -33,6 +33,30 @@
             </div>
         </section>
     {{ end }}
+
+
+    {{/*  SOLD LISTING  */}}
+    {{ if eq "featured-listings" .template }}
+    <section class="section" id="featured-listings">
+        <div class="container">
+            <!-- Start Carousel -->
+            <div class="columns has-text-centered">
+                <div class="column is-half is-offset-one-quarter">
+                    <h1 class="title is-2">{{ .listing_title }}</h1>
+                    <p>{{ .listing_subtitle }}</p>
+                </div>
+            </div>
+            <div id="carousel" class="carousel" style="overflow: hidden;">
+                {{ range first 6 $.Site.Taxonomies.status.sold }}
+                <div style="margin:10px">
+                    {{ partial "featured-listings.html" . }}
+                </div>
+                {{end}}
+            </div>
+            <!-- End Carousel -->
+        </div>
+    </section>
+{{ end }}
 
 {{ end }}
 
