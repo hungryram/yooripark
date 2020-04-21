@@ -5,6 +5,10 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: document
+  path: data/cta.yaml
+  label: CTA
+  match: "**/*"
+- type: document
   path: data/design.yaml
   label: Design
 - type: heading
