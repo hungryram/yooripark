@@ -176,11 +176,11 @@ fields:
 - name: name
   type: field_group_list
   fields:
-  - name: name
+  - name: title
     type: include
     config: {}
     template: team
-    label: Name
+    label: Title
   config:
     min: 
     max: 
