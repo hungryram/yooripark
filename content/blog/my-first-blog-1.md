@@ -1,10 +1,9 @@
 +++
 categories = ["real estate", "financing"]
 date_published = 2020-04-09T21:11:00Z
-draft = true
 featured_image = "https://reluxurytemplate.s3-us-west-1.amazonaws.com/corinne-kutz-211251-unsplash.jpg"
 tags = ["house", "savings"]
-title = "My first blog"
+title = "The newest one2"
 [seo]
 meta_description = "blog description"
 title_tag = "First blog"
