@@ -16,7 +16,7 @@
             {{ partial "cta" . }}
         {{ end }}
 
-        {{ if eq "blog" .template }}
+        {{ if eq "featured-blog" .template }}
         <section class="section active-listings" id="featured-listings">
             <div class="container">
                 <!-- Start Carousel -->
@@ -26,11 +26,32 @@
                         <p>{{ .blog_subtitle }}</p>
                     </div>
                 </div>
+                <div class="columns">
                 {{ range first 3 (where $.Site.RegularPages "Type" "blog") }}
-                <li>
-                    <a href="{{.Permalink}}">{{.Title}}</a>
-                    <a href="{{.Permalink}}">{{.Params.featured_image}}</a>
-                </li>
+
+                    <div class="column is-one-third">
+                        <a href="{{.Permalink}}">
+                        <div class="card">
+                            <div class="card-image">
+                              <figure class="image is-4by3">
+                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                              </figure>
+                            </div>
+                            <div class="card-content">
+                              <div class="media-content">
+                                <p class="title is-4">{{ .Title }}</p>
+                              </div> 
+                              <hr>       
+                              <div class="content">
+                                {{slicestr .Summary 3 200 | markdownify }}
+                                <br>
+                              </div>
+                            </div>
+                          </div>
+                          </a>
+                    </div>
+
+            </div>
                 {{ end }}
                 <!-- End Carousel -->
                 <div class="column" align="center"><a class="button" href="/blog/">View All</a></div>
