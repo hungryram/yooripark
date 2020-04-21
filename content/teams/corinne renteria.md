@@ -5,6 +5,7 @@ title = "Corinne Renteria"
 email = "admin@ramdettmer.com"
 phone = "19514542650"
 [details]
+agent_photo = ""
 license_number = "2342r234"
 license_type = "DRE License"
 title = "cofounder"
@@ -15,9 +16,9 @@ weight = 2
 meta_description = "therapy"
 title_tag = "corinne"
 [social_media]
-facebook = "facebook.com/completemuscletherapy"
+facebook = "https://facebook.com/completemuscletherapy"
 instagram = "completemuscletherapy"
-linkedin = "linkedin.com/completemuscletherapy"
+linkedin = "https://linkedin.com/completemuscletherapy"
 twitter = "twitter.comcompletemuscletherapy"
 youtube = "youtube.com/completemuscletherapy"
 
