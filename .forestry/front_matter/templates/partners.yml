@@ -176,11 +176,11 @@ fields:
 - name: name
   type: field_group_list
   fields:
-  - name: partner_nmae
-    type: text
-    config:
-      required: false
-    label: Partner Name
+  - name: name
+    type: include
+    config: {}
+    template: team
+    label: Name
   config:
     min: 
     max: 
