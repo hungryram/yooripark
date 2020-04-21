@@ -1,4 +1,19 @@
 ---
 label: Sold Listings
 hide_body: true
-fields: []
+fields:
+- name: sold_listing_title
+  type: text
+  config:
+    required: false
+  label: Sold Listing Title
+  description: Listings set to sold will display
+- name: sold_listing_subtite
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Sold Listing Subtite
