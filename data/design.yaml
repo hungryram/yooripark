@@ -67,9 +67,9 @@ cta:
   title: test cta title
   text: cta body text
 organize:
-- template: cta
-  title: ''
-  text: ''
 - template: intro
   title: intro title
   body: intro body
+- template: cta
+  title: ''
+  text: ''
