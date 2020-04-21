@@ -1,11 +1,18 @@
 baseURL = "/"
 languageCode = "en-us"
-[taxonomies]
-    tag = "tags"
-    category = "categories"
-    status = "status"
-
+[[menu.main]]
+name = "Our Partners"
+url = "/partners"
+weight = 4
+[[menu.main]]
+name = "Our Team"
+url = "/teams"
+weight = 3
 [[menu.main]]
 name = "Home"
 url = "/"
 weight = 1
+[taxonomies]
+category = "categories"
+status = "status"
+tag = "tags"
