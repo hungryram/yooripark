@@ -2,12 +2,12 @@
 label: Intro
 hide_body: true
 fields:
-- name: title
+- name: intro_title
   type: text
   config:
     required: false
-  label: title
-- name: body
+  label: Intro Title
+- name: intro_body
   type: textarea
   default: ''
   config:
@@ -15,4 +15,4 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-  label: body
+  label: Intro Body
