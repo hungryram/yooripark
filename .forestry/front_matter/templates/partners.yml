@@ -173,15 +173,18 @@ fields:
     description: The description that search engines look for
   label: Search Engine Optimization (SEO)
   description: Add Title and Description for search engines
-- name: partners
-  type: list
+- name: name
+  type: field_group_list
+  fields:
+  - name: title
+    type: include
+    config: {}
+    template: property
+    label: Title
   config:
-    use_select: true
     min: 
     max: 
-    source:
-      type: pages
-      section: teams
-  label: Partners
+    labelField: 
+  label: Name
 pages:
 - content/partners/the-gardener.md
