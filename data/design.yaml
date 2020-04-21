@@ -68,8 +68,8 @@ cta:
   text: cta body text
 organize:
 - template: intro
-  title: intro title
+  title: intro title new
   body: intro body
 - template: cta
-  title: ''
-  text: ''
+  title: cta title
+  text: cta body btext
