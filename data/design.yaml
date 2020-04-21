@@ -71,5 +71,5 @@ organize:
   title: ''
   text: ''
 - template: intro
-  title: ''
-  body: ''
+  title: intro title
+  body: intro body
