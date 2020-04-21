@@ -75,6 +75,8 @@ fields:
     source:
       type: pages
       section: property-listings
+      file: content/listings/419-abbot-dr-norco-ca.md
+      path: listing_agent
   label: Listings
 pages:
 - data/design.yaml
