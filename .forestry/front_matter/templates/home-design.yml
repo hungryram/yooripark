@@ -55,5 +55,13 @@ fields:
       required: false
     label: Add URL to Youtube Video
   label: Main Image
+- name: organize
+  type: blocks
+  label: Organize
+  template_types:
+  - cta
+  config:
+    min: 
+    max: 
 pages:
 - data/design.yaml
