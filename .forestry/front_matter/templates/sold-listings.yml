@@ -8,7 +8,7 @@ fields:
     required: false
   label: Sold Listing Title
   description: Listings set to sold will display
-- name: sold_listing_subtite
+- name: sold_listing_subtitle
   type: textarea
   default: ''
   config:
@@ -16,4 +16,4 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-  label: Sold Listing Subtite
+  label: Sold Listing Subtitle
