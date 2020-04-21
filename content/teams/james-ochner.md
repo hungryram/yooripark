@@ -11,11 +11,11 @@ title = ""
 meta_description = ""
 title_tag = ""
 [social_media]
-facebook = ""
-instagram = ""
-linkedin = ""
-twitter = ""
-youtube = ""
+facebook = "faecbook"
+instagram = "instargma"
+linkedin = "linkedin"
+twitter = "twitter"
+youtube = "youtube.com"
 
 +++
 This is the bio for james
