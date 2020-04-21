@@ -63,3 +63,7 @@ home:
   seo:
     title_tag: ''
     meta_description: ''
+cta:
+  title: test cta title
+  text: cta body text
+organize: []
