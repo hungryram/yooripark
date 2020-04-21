@@ -55,16 +55,6 @@ fields:
       required: false
     label: Add URL to Youtube Video
   label: Main Image
-- name: cta
-  type: field_group
-  config: {}
-  fields:
-  - name: title
-    type: include
-    config: {}
-    template: cta
-    label: Title
-  label: cta
 - name: organize
   type: blocks
   label: Organize
