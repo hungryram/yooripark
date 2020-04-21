@@ -11,9 +11,9 @@ main_image:
   add_url_to_youtube_video: ''
   hero_title: REVEL REAL ESTATE
 organize:
-- template: cta
-  title: ''
-  text: ''
 - template: intro
-  title: intro title
+  title: intro title new
   body: intro body
+- template: cta
+  title: cta title
+  text: cta body btext
