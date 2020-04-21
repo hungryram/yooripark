@@ -177,9 +177,16 @@ fields:
   type: field_group_list
   fields:
   - name: title
-    type: text
+    type: select
+    default: []
     config:
       required: false
+      options: []
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
     label: Name
   config:
     min: 
