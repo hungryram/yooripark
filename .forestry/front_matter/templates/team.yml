@@ -26,6 +26,11 @@ fields:
   type: field_group
   config: {}
   fields:
+  - name: agent_photo
+    type: file
+    config:
+      maxSize: 250
+    label: Agent Photo
   - name: license_type
     type: select
     default: []

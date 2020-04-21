@@ -4,7 +4,8 @@ title = "James Ochner"
 email = "james@gmail.com"
 phone = "4440-232-2322"
 [details]
-license_number = "21312243"
+agent_photo = "https://reluxurytemplate.s3-us-west-1.amazonaws.com/agents-img-5.jpg"
+license_number = "213122435"
 license_type = "BRE License"
 title = "CEO"
 [seo]
