@@ -1,14 +1,13 @@
 {{ partial "head.html" . }}
 {{ partial "hero.html" . }}
-{{ partial "intro.html" . }}
-{{ partial "home-f-listing.html" . }}
 
-{{ range .Params.page_sections }}
-    {{ if eq "hero-section" .template }}
-        {{ partial "blocks/intro" . }}
+
+{{ range .Site.Data.design.organize }}
+    {{ if eq "intro" .template }}
+        {{ partial "intro" . }}
     {{ end }}
-    {{ if eq "call-to-action" .template }}
-        {{ partial "blocks/cta" . }}
+    {{ if eq "cta" .template }}
+        {{ partial "cta" . }}
     {{ end }}
 {{ end }}
 
