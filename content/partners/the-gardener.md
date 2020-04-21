@@ -1,4 +1,5 @@
 +++
+name = []
 photo_or_logo = "https://reluxurytemplate.s3-us-west-1.amazonaws.com/agent.jpg"
 title = "The Gardener"
 [contact]
