@@ -7,7 +7,10 @@ phone = "19514542650"
 agent_photo = "https://reluxurytemplate.s3-us-west-1.amazonaws.com/babe2.png"
 license_number = "2342r234"
 license_type = "DRE License"
+office = "offices/century-21.md"
+specialty = ["real estate", "commercial"]
 title = "cofounder"
+website = "https://completemuscletherapy.net"
 [menu.main]
 name = "Corinne"
 weight = 2
@@ -18,6 +21,7 @@ title_tag = "corinne"
 facebook = "https://facebook.com/completemuscletherapy"
 instagram = "completemuscletherapy"
 linkedin = "https://linkedin.com/completemuscletherapy"
+pinterest = ""
 twitter = "twitter.comcompletemuscletherapy"
 youtube = "youtube.com/completemuscletherapy"
 
