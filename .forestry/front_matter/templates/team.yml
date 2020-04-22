@@ -78,6 +78,10 @@ fields:
     default: []
     label: Specialty
     description: List of specialties
+  - name: languages
+    type: tag_list
+    default: []
+    label: Languages
   label: Details
 - name: social_media
   type: field_group
