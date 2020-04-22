@@ -27,13 +27,15 @@ home_sections:
   top_left_tile:
     top_left_featured_title: Featured Title Newws
     top_left_featured_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/Untitled-1.jpg
-    top_left_link_to_property: listings/419-abbot-dr-norco-ca-1.md
+    top_left_link_to_property: https://youtube.com
   bottom_left_tile:
     featured_title: Bottom Tile
     featured_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/main-luxury.jpg
+    bottom_left_link_to_property: https://instagram.com
   right_tile:
     featured_title: Title
     featured_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/gold.jpg
+    right_link_to_property: https://link.com
 - template: featured-blog
   blog_title: The Aesome BLog
   blog_subtitle: Blog subtitle neaaaa
