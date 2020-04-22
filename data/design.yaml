@@ -23,6 +23,16 @@ home_sections:
     veniam ipsam aspernatur obcaecati beatae assumenda dolore perspiciatis debitis
     commodi nam ab exercitationem modi, ducimus sint dolor accusamus qui impedit.
   add_photo: https://reluxurytemplate.s3-us-west-1.amazonaws.com/kichen.jpg
+- template: featured-tiles
+  top_left_tile:
+    featured_title: First Featured Title
+    featured_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/Untitled-1.jpg
+  bottom_left_tile:
+    featured_title: ''
+    featured_image: ''
+  right_tile:
+    featured_title: ''
+    featured_image: ''
 - template: featured-blog
   blog_title: The Aesome BLog
   blog_subtitle: Blog subtitle neaaaa
