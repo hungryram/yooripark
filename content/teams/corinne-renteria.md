@@ -23,7 +23,12 @@ facebook = "https://facebook.com/completemuscletherapy"
 instagram = "completemuscletherapy"
 linkedin = "https://linkedin.com/completemuscletherapy"
 pinterest = ""
+realtor = "wer"
+reddit = "wer"
+redfin = "werwe"
+trulia = "wer"
 twitter = "twitter.comcompletemuscletherapy"
 youtube = "youtube.com/completemuscletherapy"
+zillow = "ter"
 
 +++
