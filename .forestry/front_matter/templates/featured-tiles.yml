@@ -17,17 +17,11 @@ fields:
       maxSize: 250
     label: Featured Image
   - name: top_left_link_to_property
-    type: select
-    default: []
+    type: text
     config:
       required: false
-      options: []
-      source:
-        type: pages
-        section: property-listings
-        file: 
-        path: 
-    label: Link to Property
+    label: Link
+    description: Add the full link<br>i.e. https://yourdomain.com
   label: Top Left Tile
 - name: bottom_left_tile
   type: field_group
@@ -43,6 +37,12 @@ fields:
     config:
       maxSize: 250
     label: Featured Image
+  - name: bottom_left_link_to_property
+    type: text
+    config:
+      required: false
+    label: Link
+    description: Add the full link<br>i.e. https://yourdomain.com
   label: Bottom Left Tile
 - name: right_tile
   type: field_group
@@ -58,4 +58,10 @@ fields:
     config:
       maxSize: 250
     label: Featured Image
+  - name: right_link_to_property
+    type: text
+    config:
+      required: false
+    description: Add the full link<br>i.e. https://yourdomain.com
+    label: Link
   label: Right Tile
