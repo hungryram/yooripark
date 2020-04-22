@@ -6,16 +6,28 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: featured_title
+  - name: top_left_featured_title
     type: text
     config:
       required: false
     label: Featured Title
-  - name: featured_image
+  - name: top_left_featured_image
     type: file
     config:
       maxSize: 250
     label: Featured Image
+  - name: top_left_link_to_property
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: pages
+        section: property-listings
+        file: 
+        path: 
+    label: Link to Property
   label: Top Left Tile
 - name: bottom_left_tile
   type: field_group
