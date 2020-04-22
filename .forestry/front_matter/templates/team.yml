@@ -122,6 +122,26 @@ fields:
     config:
       required: false
     label: Zillow
+  - name: redfin
+    type: text
+    config:
+      required: false
+    label: Redfin
+  - name: realtor
+    type: text
+    config:
+      required: false
+    label: Realtor
+  - name: trulia
+    type: text
+    config:
+      required: false
+    label: Trulia
+  - name: reddit
+    type: text
+    config:
+      required: false
+    label: Reddit
   label: Social Media
 - name: seo
   type: field_group
