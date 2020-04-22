@@ -1,4 +1,49 @@
 ---
 label: Featured Tiles
 hide_body: true
-fields: []
+fields:
+- name: top_left_tile
+  type: field_group
+  config: {}
+  fields:
+  - name: featured_title
+    type: text
+    config:
+      required: false
+    label: Featured Title
+  - name: featured_image
+    type: file
+    config:
+      maxSize: 250
+    label: Featured Image
+  label: Top Left Tile
+- name: bottom_left_tile
+  type: field_group
+  config: {}
+  fields:
+  - name: featured_title
+    type: text
+    config:
+      required: false
+    label: Featured Title
+  - name: featured_image
+    type: file
+    config:
+      maxSize: 250
+    label: Featured Image
+  label: Bottom Left Tile
+- name: right_tile
+  type: field_group
+  config: {}
+  fields:
+  - name: featured_title
+    type: text
+    config:
+      required: false
+    label: Featured Title
+  - name: featured_image
+    type: file
+    config:
+      maxSize: 250
+    label: Featured Image
+  label: Right Tile
