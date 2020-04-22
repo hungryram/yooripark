@@ -1,7 +1,9 @@
 +++
 title = "Corinne Renteria"
 [contact]
+cell = "342-234-1232"
 email = "admin@ramdettmer.com"
+fax = "123-123-3454"
 phone = "19514542650"
 [details]
 agent_photo = "https://reluxurytemplate.s3-us-west-1.amazonaws.com/babe2.png"
