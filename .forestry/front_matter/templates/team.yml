@@ -56,6 +56,28 @@ fields:
       required: false
     label: Title
     description: The position of the team member
+  - name: website
+    type: text
+    config:
+      required: false
+    label: Website
+  - name: office
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: pages
+        section: offices
+        file: 
+        path: 
+    label: Office
+  - name: specialty
+    type: tag_list
+    default: []
+    label: Specialty
+    description: List of specialties
   label: Details
 - name: social_media
   type: field_group
@@ -66,6 +88,11 @@ fields:
     config:
       required: false
     label: Instagram
+  - name: facebook
+    type: text
+    config:
+      required: false
+    label: Facebook
   - name: twitter
     type: text
     config:
@@ -81,11 +108,11 @@ fields:
     config:
       required: false
     label: Linkedin
-  - name: facebook
+  - name: pinterest
     type: text
     config:
       required: false
-    label: Facebook
+    label: Pinterest
   label: Social Media
 - name: seo
   type: field_group
