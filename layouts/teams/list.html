@@ -24,9 +24,8 @@
                             <br>
                             {{ .Summary }}
                           </p>
-                          <a href='{{ strings.TrimRight 2 . | urlize }}'>
-                            
-                            {{ strings.TrimRight "dm" $.Site.Pages | urlize }}
+                          <a href="{{ . | urlize }}">
+                            Read More
                           </a>
                         </div>
                         <nav class="level is-mobile agent-social">
