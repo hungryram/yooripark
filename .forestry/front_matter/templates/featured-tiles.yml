@@ -21,7 +21,7 @@ fields:
     config:
       required: false
     label: Link
-    description: Add the full link<br>i.e. https://yourdomain.com
+    description: Add the full link i.e. https://yourdomain.com
   label: Top Left Tile
 - name: bottom_left_tile
   type: field_group
@@ -42,7 +42,7 @@ fields:
     config:
       required: false
     label: Link
-    description: Add the full link<br>i.e. https://yourdomain.com
+    description: Add the full link i.e. https://yourdomain.com
   label: Bottom Left Tile
 - name: right_tile
   type: field_group
@@ -62,6 +62,6 @@ fields:
     type: text
     config:
       required: false
-    description: Add the full link<br>i.e. https://yourdomain.com
+    description: Add the full link i.e. https://yourdomain.com
     label: Link
   label: Right Tile
