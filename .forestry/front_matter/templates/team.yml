@@ -21,6 +21,16 @@ fields:
     config:
       required: false
     label: Phone
+  - name: cell
+    type: text
+    config:
+      required: false
+    label: Cell
+  - name: fax
+    type: text
+    config:
+      required: false
+    label: Fax
   label: Contact
 - name: details
   type: field_group
