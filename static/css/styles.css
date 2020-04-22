@@ -1,6 +1,6 @@
 body {
     background: #F7F7F7;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif!important;
 }
 
 p {
@@ -178,18 +178,81 @@ header a {
   /* TEAM */
 
 .agent-social i {
-    font-size: 20px;
+    font-size: 24px;
     color: black;
 }
 
 /* HOME TILE */
 
-.home-tile article {
-    background-size: cover;
-    height: 20px;
+.home-tile a {
+    display: block;
+    height: 100%;
+    padding: 150px;
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
+    transition: all .2s ease-in-out;
 }
 
-  /* FOOTER */
+.home-tile {
+    transition: all .2s ease-in-out;
+}
+
+.home-tile:hover {
+    opacity: .9!important;
+    transition: all .2s ease-in-out;
+}
+
+/* HOME BLOG */
+
+.card.home-card:hover {
+    box-shadow: 0px 2px 9px 3px #cac9c9;
+    transition: all .2s ease-in-out;
+}
+
+.card.home-card {
+    transition: all .2s ease-in-out;
+}
+
+/* AGENT DETAILS PAGE */
+
+.agent-detail-header,
+.agent-header {
+    background-color: #f7f7f7;
+    padding: 15px;
+}
+
+.agent-detail-content {
+    padding: 15px;
+}
+
+.specialties {
+    margin: 5px 10px;
+}
+
+.agent-header h4 {
+    font-weight: 800;
+}
+
+.agent-social li {
+    display: inline-block;
+    margin: 3px;
+}
+
+.agent-name {
+    font-size: 2rem;
+}
+
+.agent-page a {
+    color: #8f8f8f;
+}
+
+.agent-page .box {
+    border-radius: 2px;
+    box-shadow: 0px 1px 15px 2px #bdbdbd;
+}
+
+/* FOOTER */
 
 footer {
     background: black!important;

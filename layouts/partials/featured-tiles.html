@@ -4,25 +4,28 @@
         <div class="column">
         <div class="tile is-ancestor">
             <div class="tile is-vertical is-12">
-              <div class="tile home-tile">
+              <div class="tile">
+                
                 <div class="tile is-parent is-vertical">
 
                 {{ with .top_left_tile }}
-                  <article class="tile is-child notification is-primary" style="background:url('{{ .top_left_featured_image }}');">
-                    <a class="title" href="{{ .top_left_link_to_property }}">{{ .top_left_featured_title }}</a>
+                  <article class="tile is-child home-tile" style="background:linear-gradient(rgba(0,0,0, 0.3),rgba(0,0,0,0.5)),url('{{ .top_left_featured_image }}');background-size:cover;">
+                    <a href="{{ .top_left_link_to_property }}">{{ .top_left_featured_title }}</a>
                   </article>
                 {{end}}
 
-                  <article class="tile is-child notification is-warning" style="background:url(https://grandetest.com/theme/findhouse-html/images/property/fp1.jpg);background-size:cover;padding: 100px;">
-                    <p class="title">{{ .bottom_left_tile.featured_title }}</p>
+                {{ with .bottom_left_tile }}
+                  <article class="tile is-child home-tile" style="background:linear-gradient(rgba(0,0,0, 0.3),rgba(0,0,0,0.5)),url('{{ .featured_image }}');background-size:cover;">
+                    <a href="{{ .bottom_left_link_to_property }}">{{ .featured_title }}</a>
                   </article>
-
+                {{end}}
                 </div>
-
-                <div class="tile is-parent">      
-                  <article class="tile is-child notification is-info" style="background:url(https://grandetest.com/theme/findhouse-html/images/property/fp2.jpg);background-size:cover;padding: 100px;">
-                    <p class="title">Middle tile</p>
+                <div class="tile is-parent">
+                {{ with .right_tile }}    
+                  <article class="tile is-child home-tile" style="background:linear-gradient(rgba(0,0,0, 0.3),rgba(0,0,0,0.5)),url('{{ .featured_image }}');background-size:cover;">
+                    <a href="{{ .right_link_to_property }}">{{ .featured_title }}</a>
                   </article>
+                {{ end }}
                 </div>
               </div>
             </div>

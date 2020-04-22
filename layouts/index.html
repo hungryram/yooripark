@@ -32,23 +32,21 @@
 
                     <div class="column is-one-third">
                         <a href="{{.Permalink}}">
-                        <div class="card">
+                        <div class="card home-card">
                             <div class="card-image">
                               <figure class="image is-4by3">
-                                <img src="{{ .Params.featured_image }}" alt="Placeholder image" style="object-fit: cover;">
+                                <img src="{{ .Params.featured_image }}" alt="Placeholder image" style="object-fit: cover; padding: 20px">
                               </figure>
                             </div>
                             <div class="card-content">
                               <div class="media-content">
-                                <p class="title is-4">{{ .Title }}</p>
+                                <p class="title is-5">{{ .Title }}</p>
                               </div> 
                               <hr>       
                               <div class="content">
                                 <p>
-                                {{slicestr .Summary 3 200 | markdownify }}
+                                {{slicestr .Summary 2 100 | markdownify }}
                                 </p>
-                                <br>
-                                <a href="{{ strings.TrimRight "dm." .Params.author | urlize }}"><i class="fas fa-user"></i></a>
                               </div>
                             </div>
                           </div>
