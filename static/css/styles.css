@@ -182,6 +182,13 @@ header a {
     color: black;
 }
 
+/* HOME TILE */
+
+.home-tile article {
+    background-size: cover;
+    height: 20px;
+}
+
   /* FOOTER */
 
 footer {
