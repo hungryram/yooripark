@@ -61,10 +61,10 @@ fields:
   template_types:
   - featured-listings
   - sold-listings
-  - cta
   - intro
   - featured-listings
   - featured-blog
+  - featured-tiles
   config:
     min: 
     max: 
