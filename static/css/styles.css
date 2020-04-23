@@ -343,6 +343,11 @@ div.single-listing-head h4 {
     box-shadow: 0px 1px 15px 2px #bdbdbd;
 }
 
+#share-buttons img {
+    width: 30px;
+    margin: 0 4px;
+}
+
 /* FOOTER */
 
 footer {
