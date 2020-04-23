@@ -1,32 +1,46 @@
 <a href="{{.Permalink}}">
+  
     <div class="card prop-result home-card">
         <div class="card-image">
           <figure class="image is-2by1">
             <span class="pricing-slider">${{ .Params.pricing.price }} {{with eq .Params.status "For Rent" }}<span class="rent-per-month">PER MONTH</span>{{end}}</span>
+            {{ with .Params.status }}<span class="listing-detail-status">{{ . }}</span>{{ end }}
             <div class="f-image-overlay"><img src="{{ .Params.photos.main_photo }}" alt="Placeholder image"></div>
             
           </figure>
-          <div class="img-address"><i class="fas fa-map-marker fa-2x"></i></i>{{ .Params.address.city }}</div>
+          <div class="img-address"><i class="fas fa-map-marker fa-2x"></i></i>{{ .Params.short_description }}</div>
         </div>
 
         <div class="card-content listing-detail-slider">
           <div class="media">
             <div class="media-content">
-              
-              <p class="f-prop-title">{{ .Params.short_description }}</p>
-              <p class="f-prop-address"><i class="fas fa-map-marker-alt"></i>{{ .Params.address.address }}</p>
+              <p class="f-prop-address"><i class="fas fa-map-marker-alt"></i>{{ .Params.address.address }} {{ .Params.address.city }}, {{ .Params.address.state }}</p>
             </div>
           </div>
       
-          <div class="columns is-mobile">
-            <div class="column"><i class="fas fa-bed"></i>{{.Params.details.bedrooms}}</div>
-            <div class="column"><i class="fas fa-bath"></i>{{.Params.details.bathrooms}}</div>
-            <div class="column"><i class="fas fa-th-large"></i>{{.Params.details.square_footage}} Sq. ft</div>
+          <div class="columns">
+            <div class="column">
+              <i class="fas fa-bed"></i>
+              <span>{{.Params.details.bedrooms}}</span>
+              <p>Bedrooms</p>
+            </div>
+            <div class="column">
+              <i class="fas fa-bath"></i>
+              <span>{{.Params.details.bathrooms}}</span>
+              <p>Bathrooms</p>
+            </div>
+            <div class="column">
+              <i class="fas fa-th-large"></i>
+              <span>{{.Params.details.square_footage}}</span>
+              <p>Sq. Ft</p>
+            </div>
             <br>
           </div>
         </div>
     </div>
 </a>
+
+
 
 
 

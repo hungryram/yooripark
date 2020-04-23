@@ -1,80 +1,177 @@
 {{ define "main" }}
 
-<div class="section">
+<div class="single-listing-header" style="overflow: hidden;">
+<div class="columns is-mobile">
+  {{ range first 3 .Params.photos.gallery }}
+  <div class="column single-listing-header-img" style='background:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url("{{ . }}");height: 40vh;background-size:cover'>
+
+
+
+  </div>
+  {{end}}
+  
+</div>
+<div class="section listing-header-description">
   <div class="container">
     <div class="columns">
-      <div class="column is-11">
-                <div class="single-item">
-                  {{range .Params.photos.gallery}}
-                  <div>
-                    <div class="image" style="width: 500px">
-                  <img src="{{.}}" alt="">
-                  </div>
-                  </div>
-                  {{end}}
-                </div>
+      <div class="column">
+        <div class="address-detail-header">
+          <article class="media">
+            <div class="media-left single-marked-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="media-content">
+              <div class="content single-listing-head">
+                <h1 class="title is-4">{{ .Params.short_description }}</h1>
+                <h4>{{ .Params.address.address }} {{ .Params.address.city }}, {{ .Params.address.state }} {{ .Params.address.zip_code }} </h4>
+              </div>
+            </div>
       </div>
-      <div class="column">test</div>
+    </div>
+  </div>
+</div>
+</div>
 
-</div>
-</div>
-</div>
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="tabs is-centered">
+          <ul>
+            <li>
+              <a>
+                <span class="icon is-small"><i class="fas fa-mobile-alt"></i></span>
+                <span>Call</span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <span class="icon is-small"><i class="far fa-envelope"></i></span>
+                <span>Send an Email</span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <span class="icon is-small"><i class="fas fa-share-alt"></i></span>
+                <span>Share</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 <div class="section listing-details">
   <div class="container">
-    <div class="columns is-variable is-3">
-      <div class="column is-3">
+    <div class="columns is-variable is-2">
+      <div class="column is-6">
         <div class="box">
-          <h2 class="title is-6">Details</h2>
-            <table class="table">
-              <tr>
-                <td>Status</td>
-                <td>{{ .Params.status }}</td>
-              </tr>
-              <tr>
-                <td>Beds</td>
-                <td>{{ .Params.details.bedrooms }}</td>
-              </tr>
-              <tr>
-                <td>Baths</td>
-                <td>{{ .Params.details.bathrooms }}</td>
-              </tr>
-              <tr>
-                <td>Square Footage</td>
-                <td>{{ .Params.details.square_footage }}</td>
-              </tr>
-              <tr>
-                <td>Location</td>
-                <td>{{ .Params.address.city }}</td>
-              </tr>
-              <tr>
-                <td>Property Type</td>
-                <td>{{ .Params.details.property_type }}</td>
-              </tr>
-            </table>
-            <h2 class="title is-6">Open House</h2>
-            <p>{{ .Params.tools.open_house_date }}</p><br>
-            <h2 class="title is-6">Extras</h2>
-            <p><a href="{{ .Params.tools.virtual_tours }}" target="_blank">Virtual Tour</a></p>
+           <div class="single-listing-photo">
+             <img src="{{ .Params.photos.main_photo }}" alt="">
+           </div>
         </div>
         <div class="box">
-          <h2 class="title is-6">Property Attachments</h2>
-          {{ if .Params.tools.file_attachments }}
-          <p class="box"><a href="{{ . }}"><i class="fas fa-download"></i>Download File</a></p>
-          {{else}}
-          <p>no file</p>
-          {{end}}
+          <h2 class="title is-6"><i class="far fa-calendar-alt"></i>Open House</h2>
+          <p>{{ .Params.tools.open_house_date }}</p>
         </div>
       </div>
       <div class="column">
         <div class="box">
-          <p>MLS Number: {{ .Params.details.mls_number }}</p>
+          <p class="subtitle is-6">MLS Number: {{ .Params.details.mls_number }}</p>
           <hr>
-          <h2 class="title is-6">Property Description</h2>
-          <p>{{.Content}}</p>
+            <h2 class="title is-6"><i class="fas fa-align-left"></i>Description</h2>
+            <p>{{.Content}}</p>
+        </div>
+        <div class="box level-details">
+            <h2 class="title is-6"><i class="fas fa-th-large"></i>Details</h2>
+            {{ with .Params.details.property_type }}
+            <div class="level is-mobile">
+              <div class="level-left">
+                <div class="level-item">Property Type</div>
+              </div>
+              <div class="level-right">
+                {{ . }}
+              </div>
+            </div>
+            <hr>
+            {{end}}
+            {{ with .Params.details.bathrooms }}
+            <div class="level is-mobile">
+              <div class="level-left">
+                <div class="level-item">Bathrooms</div>
+              </div>
+              <div class="level-right">
+                {{ . }}
+              </div>
+            </div>
+            <hr>
+            {{end}}
+            {{ with .Params.details.bedrooms }}
+            <div class="level is-mobile">
+              <div class="level-left">
+                <div class="level-item">Bedrooms</div>
+              </div>
+              <div class="level-right">
+                {{ . }}
+              </div>
+            </div>
+            <hr>
+            {{end}}
+
+            {{ with .Params.details.lot_size }}
+            <div class="level is-mobile">
+              <div class="level-left">
+                <div class="level-item">Lot Size</div>
+              </div>
+              <div class="level-right">
+                {{ . }}
+              </div>
+            </div>
+            <hr>
+            {{end}}
+
+            {{ with .Params.details.year_built }}
+            <div class="level is-mobile">
+              <div class="level-left">
+                <div class="level-item">Year Build</div>
+              </div>
+              <div class="level-right">
+                {{ . }}
+              </div>
+            </div>
+            <hr>
+            {{end}}
+
+            {{ with .Params.details.square_footage }}
+            <div class="level is-mobile">
+              <div class="level-left">
+                <div class="level-item">Square Footage</div>
+              </div>
+              <div class="level-right">
+                {{ . }}
+              </div>
+            </div>
+            <hr>
+            {{end}}
+
+
         </div>
         <div class="box">
-          test
+          <h2 class="title is-6">Features</h2>
+          <ul class="listing-detail-features">
+            {{ range .Params.utilities_and_features.appliances }}
+              <li><span class="icon is-small"><i class="fas fa-check"></i></span> {{ . }}</li>
+            {{end}}
+          </ul>
+        </div>
+        <div class="box">
+          <h2 class="title is-6">Extras</h2>
+          {{ if .Params.tools.file_attachments }}
+            <p class="box attachments-detail"><a href="{{ . }}"><i class="fas fa-download fa-2x"></i>Download File</a></p>
+          {{else}}
+            <p>no file</p>
+          {{end}}
         </div>
       </div>
     </div>
