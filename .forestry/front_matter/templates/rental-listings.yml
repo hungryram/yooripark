@@ -1,4 +1,14 @@
 ---
 label: Rental Listings
 hide_body: true
-fields: []
+fields:
+- name: rental_title
+  type: text
+  config:
+    required: false
+  label: Rental Title
+- name: rental_subtitle
+  type: text
+  config:
+    required: false
+  label: Rental Subtitle
