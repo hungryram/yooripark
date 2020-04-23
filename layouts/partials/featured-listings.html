@@ -1,13 +1,15 @@
 <a href="{{.Permalink}}">
     <div class="card prop-result home-card">
         <div class="card-image">
-          <figure class="image is-4by3">
+          <figure class="image is-2by1">
+            <span class="pricing-slider">${{ .Params.pricing.price }} {{with eq .Params.status "For Rent" }}<span class="rent-per-month">PER MONTH</span>{{end}}</span>
             <div class="f-image-overlay"><img src="{{ .Params.photos.main_photo }}" alt="Placeholder image"></div>
-            <span>${{ .Params.pricing.price }}</span>
+            
           </figure>
+          <div class="img-address"><i class="fas fa-map-marker fa-2x"></i></i>{{ .Params.address.city }}</div>
         </div>
 
-        <div class="card-content">
+        <div class="card-content listing-detail-slider">
           <div class="media">
             <div class="media-content">
               
@@ -16,7 +18,7 @@
             </div>
           </div>
       
-          <div class="columns">
+          <div class="columns is-mobile">
             <div class="column"><i class="fas fa-bed"></i>{{.Params.details.bedrooms}}</div>
             <div class="column"><i class="fas fa-bath"></i>{{.Params.details.bathrooms}}</div>
             <div class="column"><i class="fas fa-th-large"></i>{{.Params.details.square_footage}} Sq. ft</div>
@@ -25,3 +27,6 @@
         </div>
     </div>
 </a>
+
+
+

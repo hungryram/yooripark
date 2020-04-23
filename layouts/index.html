@@ -17,6 +17,7 @@
             {{ partial "cta" . }}
         {{ end }}
 
+        {{/*  BLOG  */}}
         {{ if eq "featured-blog" .template }}
         <section class="section active-listings" id="featured-listings">
             <div class="container">
@@ -47,6 +48,9 @@
                                 <p>
                                 {{slicestr .Summary 2 100 | markdownify }}
                                 </p>
+                                {{ range .Params.categories }}
+                                <a href="{{.}}">{{ . }}</a>
+                                {{ end }}
                               </div>
                             </div>
                           </div>
