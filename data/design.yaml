@@ -39,3 +39,6 @@ home_sections:
 - template: featured-blog
   blog_title: The Aesome BLog
   blog_subtitle: Blog subtitle neaaaa
+- template: rental-listings
+  rental_title: ''
+  rental_subtitle: ''
