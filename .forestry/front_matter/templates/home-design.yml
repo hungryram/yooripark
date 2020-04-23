@@ -65,6 +65,7 @@ fields:
   - featured-listings
   - featured-blog
   - featured-tiles
+  - rental-listings
   config:
     min: 
     max: 
