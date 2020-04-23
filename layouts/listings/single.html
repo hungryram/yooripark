@@ -29,17 +29,17 @@
                 <div id="share-buttons">
                   
                   <!-- Email -->
-                  <a href="mailto:?Subject=Check%20Out%20This%20Listing&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20{{ .Permalink }}">
+                  <a href="mailto:?Subject=Check%20Out%20This%20Listing&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20{{ .Permalink | absURL }}">
                       <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
                   </a>
                
                   <!-- Facebook -->
-                  <a href="http://www.facebook.com/sharer.php?u={{ .Permalink }}" target="_blank">
+                  <a href="http://www.facebook.com/sharer.php?u={{ .Permalink | absURL }}" target="_blank">
                       <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
                   </a>
                   
                   <!-- LinkedIn -->
-                  <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ .Permalink }}" target="_blank">
+                  <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ .Permalink | absURL }}" target="_blank">
                       <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
                   </a>
                   
@@ -54,20 +54,19 @@
                   </a>
                   
                   <!-- Reddit -->
-                  <a href="http://reddit.com/submit?url={{ .Permalink }}" target="_blank">
+                  <a href="http://reddit.com/submit?url={{ .Permalink | absURL }}" target="_blank">
                       <img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" />
                   </a>
                    
                   <!-- Twitter -->
-                  <a href="https://twitter.com/share?url={{ .Site.BaseURL }}&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
+                  <a href="https://twitter.com/share?url={{ .Permalink | absURL }}&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
                       <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
                   </a>
 
                   <!-- Pinterest -->
-                  <a href="http://pinterest.com/pin/create/button/?url={{ .Site.BaseURL }}{{ .Permalink }}&media={{ .Params.photos.main_photo }}&description={{ .Params.title }}" target="_blank" data-pin-do="buttonPin" data-pin-custom="true">
+                  <a href="http://pinterest.com/pin/create/button/?url={{ .Permalink | absURL }}{{ .Permalink }}&media={{ .Params.photos.main_photo }}&description={{ .Params.title }}" target="_blank" data-pin-do="buttonPin" data-pin-custom="true">
                     <img src="https://simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" />
                   </a>
-
               </div>
 
 
