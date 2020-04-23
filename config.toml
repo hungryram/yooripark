@@ -1,6 +1,10 @@
 baseURL = "/"
 languageCode = "en-us"
 [[menu.main]]
+name = "Listings"
+url = "/listings"
+weight = 5
+[[menu.main]]
 name = "Our Partners"
 url = "/partners"
 weight = 4
