@@ -23,12 +23,13 @@ fields:
     options:
     - Sold
     - Active
-    - Rented
     - Pending
     - Available
     - Negotiating
     - In Contract
     - Coming Soon
+    - For Rent
+    - Auction
     source:
       type: simple
       section: 
