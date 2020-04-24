@@ -32,6 +32,10 @@ sections:
   match: "**/*"
   templates:
   - blog
+- type: document
+  path: content/testimonials/_index.md
+  label: Testimonials
+  match: "**/*"
 - type: heading
   label: Listings
 - type: directory
