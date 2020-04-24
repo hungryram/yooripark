@@ -10,6 +10,7 @@ main_image:
   upload_video: ''
   add_url_to_youtube_video: ''
   hero_title: My New Site
+  icons: venus-mars
 home_sections:
 - template: featured-listings
   active_listing_title: Active Listings
