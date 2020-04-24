@@ -1,4 +1,16 @@
 ---
 label: Menu Data
 hide_body: true
-fields: []
+fields:
+- name: add_menu
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: pages
+      section: menu-data
+      file: 
+      path: 
+  label: Add Menu
