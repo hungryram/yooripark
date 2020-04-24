@@ -1,14 +1,16 @@
+---
 material:
-  name: "Material"
+  name: Material
   url: "/"
 getting:
-  name: "Getting started"
-  url: "getting-started/"
+  name: Getting started
+  url: getting-started/
 adding:
-  name: "Adding content"
-  url: "adding-content/"
+  name: Adding content
+  url: adding-content/
 roadmap:
-  name: "Roadmap"
+  name: Roadmap
   weight: 30
 licence:
-  name: "License"
+  name: License
+menu: teams/james-ochner.md
