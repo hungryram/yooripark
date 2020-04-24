@@ -1,6 +1,6 @@
 +++
 short_description = "Elegant Home"
-status = "For Rent"
+status = "Rental"
 title = "419 Abbot Dr. Norco, CA"
 [address]
 address = "6310 Golden Gate Drive"
