@@ -14,5 +14,17 @@ fields:
       file: data/menu.yaml
       path: 
   label: Menu
+- name: listings
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: pages
+      section: property-listings
+      file: 
+      path: 
+  label: Listings
 pages:
 - data/menu.yaml
