@@ -39,6 +39,7 @@ fields:
         format: markdown
     label: Body Text
   label: Call to Action One
+  description: Remove icon to activate image
 - name: call_to_action_two
   type: field_group
   config: {}
