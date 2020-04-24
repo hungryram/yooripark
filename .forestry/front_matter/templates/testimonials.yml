@@ -1,4 +1,38 @@
 ---
 label: Testimonials
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Full Name
+- name: testimonial
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Testimonial
+- name: occupation
+  type: text
+  config:
+    required: false
+  label: Occupation
+- name: photo
+  type: file
+  config:
+    maxSize: 1
+  label: Photo
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+    export_format: MM/DD/YYYY
