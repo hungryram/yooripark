@@ -14,5 +14,3 @@ fields:
       file: data/icons.json
       path: 
   label: Icon Choose
-pages:
-- data/icons.yaml

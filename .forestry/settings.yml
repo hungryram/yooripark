@@ -8,9 +8,6 @@ sections:
   path: data/icons.json
   label: Icon JSON
 - type: document
-  path: data/icons.yaml
-  label: Icons
-- type: document
   path: data/design.yaml
   label: Design
 - type: heading
