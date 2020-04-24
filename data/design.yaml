@@ -50,10 +50,10 @@ home_sections:
     title: testing cta one
     body_text: body of cta
   call_to_action_two:
-    icons: []
+    icons: bookmark
     image: ''
-    title: ''
-    body_text: ''
+    title: testesr
+    body_text: wserwersersesef
   call_to_action_three:
     icons: []
     image: ''
