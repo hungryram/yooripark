@@ -60,9 +60,9 @@ fields:
       required: false
       options: []
       source:
-        type: pages
+        type: documents
         section: menu
-        file: 
+        file: data/menu.yaml
         path: 
     label: Menu
   label: Call to Action One
