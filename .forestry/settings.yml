@@ -33,7 +33,7 @@ sections:
   templates:
   - blog
 - type: document
-  path: content/testimonials/_index.md
+  path: content/testimonials/testimonials.md
   label: Testimonials
 - type: heading
   label: Listings
