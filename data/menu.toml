@@ -1,0 +1,16 @@
+[[menu.main]]
+name = "Listings"
+url = "/listings"
+weight = 5
+[[menu.main]]
+name = "Our Partners"
+url = "/partners"
+weight = 4
+[[menu.main]]
+name = "Our Team"
+url = "/teams"
+weight = 3
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
