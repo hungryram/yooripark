@@ -49,13 +49,25 @@ home_sections:
     image: ''
     title: testing cta one
     body_text: body of cta
+    icon_one_cta: venus-mars
+    image_one_cta: ''
+    title_one_cta: '234324'
+    body_text_one_cta: ertertegdfg
   call_to_action_two:
     icons: bookmark
     image: ''
     title: testesr
     body_text: wserwersersesef
+    icon_two_cta: ''
+    image_two_cta: ''
+    title_two_cta: ''
+    body_text_two_cta: ''
   call_to_action_three:
     icons: dot-circle-o
     image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/agent.jpg
     title: cta 3
     body_text: cta body of three
+    icons_three_cta: ''
+    image_three_cta: ''
+    title_three_cta: ''
+    body_text_three_cta: ''
