@@ -53,10 +53,18 @@ fields:
       required: false
     label: Add a Link
     description: Add the full link if external linking.<br><em>i.e. https://thedomain.com</em>
-  - name: cta_one_new_tab
-    type: boolean
-    label: New Tab
-    description: Opens the link in a new tab if enabled
+  - name: menu
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: documents
+        section: menu
+        file: data/menu.yaml
+        path: 
+    label: Menu
   label: Call to Action One
 - name: call_to_action_two
   type: field_group
