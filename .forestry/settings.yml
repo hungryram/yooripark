@@ -75,6 +75,11 @@ sections:
   path: content/help/website-editing.md
   label: Website Editing
   read_only: true
+- type: document
+  path: data/icons.json
+  label: Icons
+  match: "**/*"
+  read_only: true
 upload_dir: ''
 public_path: https://reluxurytemplate.s3-us-west-1.amazonaws.com
 front_matter_path: ''
