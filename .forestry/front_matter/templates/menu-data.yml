@@ -9,9 +9,9 @@ fields:
     required: false
     options: []
     source:
-      type: pages
+      type: documents
       section: menu
-      file: 
+      file: data/menu.yaml
       path: 
   label: Menu items
 pages:
