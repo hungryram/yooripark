@@ -1,5 +1,15 @@
----
-home: teams/james-ochner.md
-about: /about
-contact: /contact
-my_listings : /my-listings
+menu:
+  material:
+    name: "Material"
+    url: "/"
+  getting:
+    name: "Getting started"
+    url: "getting-started/"
+  adding:
+    name: "Adding content"
+    url: "adding-content/"
+  roadmap:
+    name: "Roadmap"
+    weight: 30
+  licence:
+    name: "License"
