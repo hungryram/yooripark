@@ -78,8 +78,7 @@ sections:
 - type: document
   path: data/icons.json
   label: Icons
-  match: "**/*"
-  read_only: true
+  read_only: false
 upload_dir: ''
 public_path: https://reluxurytemplate.s3-us-west-1.amazonaws.com
 front_matter_path: ''
