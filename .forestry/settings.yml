@@ -5,6 +5,10 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: document
+  path: content/testimonials/testimonials.md
+  label: Testimonials
+  match: "**/*"
+- type: document
   path: data/menu.yaml
   label: Menu
 - type: document
@@ -32,9 +36,6 @@ sections:
   match: "**/*"
   templates:
   - blog
-- type: document
-  path: content/testimonials/testimonials.md
-  label: Testimonials
 - type: heading
   label: Listings
 - type: directory
