@@ -1,16 +1,16 @@
-[[menu.main]]
+[[menu]]
 name = "Listings"
 url = "/listings"
 weight = 5
-[[menu.main]]
+[[menu]]
 name = "Our Partners"
 url = "/partners"
 weight = 4
-[[menu.main]]
+[[menu]]
 name = "Our Team"
 url = "/teams"
 weight = 3
-[[menu.main]]
+[[menu]]
 name = "Home"
 url = "/"
 weight = 1
