@@ -78,6 +78,7 @@ fields:
   - featured-blog
   - featured-tiles
   - rental-listings
+  - cta
   config:
     min: 
     max: 
