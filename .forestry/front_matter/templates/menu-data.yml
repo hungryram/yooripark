@@ -2,15 +2,13 @@
 label: Menu Data
 hide_body: true
 fields:
-- name: add_menu
-  type: select
-  default: []
+- name: menu
+  type: list
   config:
-    required: false
-    options: []
+    use_select: true
+    min: 
+    max: 
     source:
       type: pages
-      section: property-listings
-      file: content/teams/corinne-renteria.md
-      path: 
-  label: Add Menu
+      section: teams
+  label: Menu
