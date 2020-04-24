@@ -11,7 +11,7 @@ fields:
     source:
       type: documents
       section: menu
-      file: data/menu.yaml
+      file: data/menu.toml
       path: 
   label: Menu
 pages:
