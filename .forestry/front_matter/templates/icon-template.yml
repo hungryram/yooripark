@@ -1,4 +1,8 @@
 ---
 label: Icon Template
 hide_body: true
-fields: []
+fields:
+- name: icons
+  type: tag_list
+  default: []
+  label: icons
