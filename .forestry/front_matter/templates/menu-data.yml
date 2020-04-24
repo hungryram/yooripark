@@ -14,3 +14,5 @@ fields:
       file: data/menu.yaml
       path: 
   label: Menu
+pages:
+- data/menu.toml
