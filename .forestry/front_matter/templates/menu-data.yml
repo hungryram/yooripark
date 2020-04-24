@@ -9,10 +9,10 @@ fields:
     required: false
     options: []
     source:
-      type: pages
+      type: documents
       section: menu
       file: data/menu.toml
-      path: menu
+      path: ''
   label: Menu
 pages:
 - data/menu.toml
