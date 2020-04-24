@@ -14,5 +14,3 @@ fields:
       file: data/menu.toml
       path: ''
   label: Menu
-pages:
-- data/menu.toml

@@ -5,7 +5,7 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: document
-  path: data/menu.json
+  path: data/menu.yaml
   label: Menu
 - type: document
   path: data/design.yaml
