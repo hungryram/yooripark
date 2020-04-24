@@ -10,7 +10,7 @@ fields:
     options: []
     source:
       type: pages
-      section: menu-data
-      file: 
+      section: property-listings
+      file: content/teams/corinne-renteria.md
       path: 
   label: Add Menu
