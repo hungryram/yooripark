@@ -12,5 +12,5 @@ fields:
       type: documents
       section: menu
       file: data/menu.yaml
-      path: themain
+      path: ''
   label: Menu
