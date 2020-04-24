@@ -5,6 +5,10 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: document
+  path: data/icons.json
+  label: Icon JSON
+  match: "**/*"
+- type: document
   path: data/icons.yaml
   label: Icons
 - type: document
