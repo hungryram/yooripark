@@ -36,3 +36,5 @@ fields:
     time_format: 
     display_utc: false
     export_format: MM/DD/YYYY
+pages:
+- content/testimonials/john-doe.md
