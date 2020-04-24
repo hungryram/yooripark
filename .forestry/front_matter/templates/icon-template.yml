@@ -6,3 +6,15 @@ fields:
   type: tag_list
   default: []
   label: icons
+- name: icon_choose
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: pages
+      section: icon-json-d6865038-db99-47f8-a28d-2b19ded62f27
+      file: data/icons.json
+      path: 
+  label: Icon Choose

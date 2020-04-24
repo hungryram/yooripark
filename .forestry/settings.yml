@@ -7,7 +7,6 @@ sections:
 - type: document
   path: data/icons.json
   label: Icon JSON
-  match: "**/*"
 - type: document
   path: data/icons.yaml
   label: Icons
