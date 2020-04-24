@@ -6,7 +6,8 @@ webhook_url:
 sections:
 - type: document
   path: data/menu.yaml
-  label: Menu Data
+  label: Menu
+  match: "**/*"
 - type: document
   path: data/design.yaml
   label: Design
