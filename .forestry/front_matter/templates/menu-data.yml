@@ -11,6 +11,6 @@ fields:
     source:
       type: documents
       section: menu
-      file: data/menu.toml
-      path: ''
+      file: data/menu.yaml
+      path: themain
   label: Menu
