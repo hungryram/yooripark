@@ -1,16 +1,9 @@
-<article class="message">
-
-  {{ range .Site.Data.design.organize }}
-    <div class="message-header">
-      <p>{{ .cta_title }}</p>
-      <button class="delete" aria-label="delete"></button>
+<div class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        {{ .cta.call_to_action_one.title }}
+      </div>
     </div>
-    <div class="message-body">
-      <p>
-        {{ .cta_body }}
-      </p>
-    </div>
-    {{end}}
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate quam magni earum eveniet nesciunt minima magnam incidunt non porro corporis commodi fugiat tempora perspiciatis est, quae facere illum aperiam dicta.
-{{  .Site.BaseURL.Data.design.organize }}
-  </article>
+  </div>
+</div>
