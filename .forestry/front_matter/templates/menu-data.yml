@@ -9,8 +9,9 @@ fields:
     min: 
     max: 
     source:
-      type: pages
+      type: documents
       section: menu
+      file: data/menu.yaml
   label: Title
 pages:
 - data/menu.yaml
