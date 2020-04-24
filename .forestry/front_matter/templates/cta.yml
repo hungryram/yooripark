@@ -2,17 +2,87 @@
 label: Call to Action
 hide_body: true
 fields:
-- name: cta_title
-  type: text
-  config:
-    required: false
-  label: CTA Title
-- name: cta_body
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Body
+- name: call_to_action_one
+  type: field_group
+  config: {}
+  fields:
+  - name: icons
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: documents
+        section: icons
+        file: data/icons.json
+        path: 
+    label: Icons
+  - name: image
+    type: file
+    config:
+      maxSize: 250
+    label: Image
+    description: 'Use an image instead of an icon '
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: body_text
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Body Text
+  label: Call to Action One
+- name: call_to_action_two
+  type: field_group
+  config: {}
+  fields:
+  - name: icons
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: documents
+        section: icons
+        file: data/icons.json
+        path: 
+    label: Icons
+  - name: image
+    type: file
+    config:
+      maxSize: 250
+    label: Image
+    description: Use an image instead of an icon
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: body_text
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Body Text
+  label: Call to Action Two
+- name: call_to_action_three
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  label: Call to Action Three
