@@ -6,7 +6,7 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: icons
+  - name: icon_one_cta
     type: select
     default: []
     config:
@@ -18,18 +18,18 @@ fields:
         file: data/icons.json
         path: 
     label: Icons
-  - name: image
+  - name: image_one_cta
     type: file
     config:
       maxSize: 250
     label: Image
     description: 'Use an image instead of an icon '
-  - name: title
+  - name: title_one_cta
     type: text
     config:
       required: false
     label: Title
-  - name: body_text
+  - name: body_text_one_cta
     type: textarea
     default: ''
     config:
@@ -43,7 +43,7 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: icons
+  - name: icon_two_cta
     type: select
     default: []
     config:
@@ -55,18 +55,18 @@ fields:
         file: data/icons.json
         path: 
     label: Icons
-  - name: image
+  - name: image_two_cta
     type: file
     config:
       maxSize: 250
     label: Image
     description: Use an image instead of an icon
-  - name: title
+  - name: title_two_cta
     type: text
     config:
       required: false
     label: Title
-  - name: body_text
+  - name: body_text_two_cta
     type: textarea
     default: ''
     config:
@@ -80,7 +80,7 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: icons
+  - name: icons_three_cta
     type: select
     default: []
     config:
@@ -92,17 +92,17 @@ fields:
         file: data/icons.json
         path: 
     label: Icons
-  - name: image
+  - name: image_three_cta
     type: file
     config:
       maxSize: 5
     label: Image
-  - name: title
+  - name: title_three_cta
     type: text
     config:
       required: false
     label: Title
-  - name: body_text
+  - name: body_text_three_cta
     type: textarea
     default: ''
     config:
