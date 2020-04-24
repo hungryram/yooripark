@@ -1,5 +1,10 @@
 ---
-logo_or_title:
-  title: Revel
-main_image:
-  title: Welcome to our real estate group
+- name: listing_agent
+    config:
+      required: false
+      options: []
+      source:
+        type: pages
+        section: teams
+        file: 
+        path: 
