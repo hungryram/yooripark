@@ -10,8 +10,8 @@ fields:
     options: []
     source:
       type: pages
-      section: teams
-      file: 
+      section: menu
+      file: data/menu.yaml
       path: 
   label: Menu
 pages:
