@@ -3,4 +3,5 @@ home: "/"
 about: "/about"
 contact: "/contact"
 listings: "/listings"
-contact_me: /contact-me
+menu: contact_me
+contact_me: "/contact-me"
