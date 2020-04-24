@@ -1,6 +1,5 @@
-mymenu:
-  themain:
-    name: about hugo
-    url: /about/
-  - name: getting started
-    url: /getting-started/
+themain:
+  name: about hugo
+  url: /about/
+- name: getting started
+  url: /getting-started/
