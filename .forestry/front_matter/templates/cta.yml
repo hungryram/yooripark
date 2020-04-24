@@ -27,6 +27,12 @@ fields:
       maxSize: 250
     label: Image
     description: 'Use an image instead of an icon '
+  - name: cta_one_image_alt_tag
+    type: text
+    config:
+      required: false
+    label: Image Alt Tag
+    description: Describe your image
   - name: title_one_cta
     type: text
     config:
@@ -41,6 +47,16 @@ fields:
       schema:
         format: markdown
     label: Body Text
+  - name: cta_one_add_a_link
+    type: text
+    config:
+      required: false
+    label: Add a Link
+    description: Add the full link if external linking.<br><em>i.e. https://thedomain.com</em>
+  - name: cta_one_new_tab
+    type: boolean
+    label: New Tab
+    description: Opens the link in a new tab if enabled
   label: Call to Action One
 - name: call_to_action_two
   type: field_group
@@ -64,6 +80,12 @@ fields:
       maxSize: 250
     label: Image
     description: Use an image instead of an icon
+  - name: cta_two_image_alt_tag
+    type: text
+    config:
+      required: false
+    label: Image Alt Tag
+    description: Describe your image
   - name: title_two_cta
     type: text
     config:
@@ -78,6 +100,16 @@ fields:
       schema:
         format: markdown
     label: Body Text
+  - name: cta_two_add_a_link
+    type: text
+    config:
+      required: false
+    label: Add a Link
+    description: Add the full link if external linking.<br><em>i.e. https://thedomain.com</em>
+  - name: cta_two_new_tab
+    type: boolean
+    label: New Tab
+    description: Opens the link in a new tab if enabled
   label: Call to Action Two
 - name: call_to_action_three
   type: field_group
