@@ -46,14 +46,20 @@ home_sections:
 - template: cta
   call_to_action_one:
     icon_one_cta: venus-mars
-    image_one_cta: 
+    image_one_cta: ''
     title_one_cta: '234324'
     body_text_one_cta: ertertegdfg
+    cta_one_image_alt_tag: ''
+    cta_one_add_a_link: ''
+    menu: getting
   call_to_action_two:
     icon_two_cta: bullhorn
     image_two_cta: ''
     title_two_cta: erter
     body_text_two_cta: erdffg
+    cta_two_image_alt_tag: ''
+    cta_two_add_a_link: ''
+    cta_two_new_tab: false
   call_to_action_three:
     icons_three_cta: comment-o
     image_three_cta: https://reluxurytemplate.s3-us-west-1.amazonaws.com/agent.jpg
