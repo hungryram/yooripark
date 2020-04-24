@@ -45,10 +45,10 @@ home_sections:
   rental_subtitle: ''
 - template: cta
   call_to_action_one:
-    icons: []
+    icons: expand
     image: ''
-    title: ''
-    body_text: ''
+    title: testing cta one
+    body_text: body of cta
   call_to_action_two:
     icons: []
     image: ''
