@@ -9,7 +9,7 @@ fields:
     min: 
     max: 
     source:
-      type: documents
+      type: pages
       section: menu
       file: data/menu.yaml
   label: Menu
