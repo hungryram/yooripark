@@ -18,6 +18,9 @@ fields:
         file: data/icons.json
         path: 
     label: Icons
+    description: Removing the icon will activate the image section if an image is
+      uploaded.<br>Icons are from <a href="https://fontawesome.com/icons" title=""
+      target="_blank">FontAwesome</a>
   - name: image_one_cta
     type: file
     config:
@@ -39,7 +42,6 @@ fields:
         format: markdown
     label: Body Text
   label: Call to Action One
-  description: Remove icon to activate image
 - name: call_to_action_two
   type: field_group
   config: {}
