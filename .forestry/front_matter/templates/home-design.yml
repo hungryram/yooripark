@@ -54,6 +54,18 @@ fields:
     config:
       required: false
     label: Add URL to Youtube Video
+  - name: icons
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: documents
+        section: icon-json-d6865038-db99-47f8-a28d-2b19ded62f27
+        file: data/icons.json
+        path: 
+    label: Icons
   label: Main Image
 - name: home_sections
   type: blocks
