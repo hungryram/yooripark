@@ -80,9 +80,35 @@ fields:
   type: field_group
   config: {}
   fields:
+  - name: icons
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: documents
+        section: icons
+        file: data/icons.json
+        path: 
+    label: Icons
+  - name: image
+    type: file
+    config:
+      maxSize: 5
+    label: Image
   - name: title
     type: text
     config:
       required: false
     label: Title
+  - name: body_text
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Body Text
   label: Call to Action Three
