@@ -1,4 +1,16 @@
 ---
 label: Menu Data
 hide_body: true
-fields: []
+fields:
+- name: menu
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: teams
+      file: content/teams/james-ochner.md
+      path: 
+  label: Menu
