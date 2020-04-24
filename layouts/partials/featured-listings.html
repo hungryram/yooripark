@@ -3,7 +3,7 @@
     <div class="card prop-result home-card">
         <div class="card-image">
           <figure class="image is-2by1">
-            <span class="pricing-slider">${{ .Params.pricing.price }} {{with eq .Params.status "For Rent" }}<span class="rent-per-month">PER MONTH</span>{{end}}</span>
+            <span class="pricing-slider">${{ .Params.pricing.price }} {{with eq .Params.status "Rental" }}<span class="rent-per-month">PER MONTH</span>{{end}}</span>
             {{ with .Params.status }}<span class="listing-detail-status">{{ . }}</span>{{ end }}
             <div class="f-image-overlay"><img src="{{ .Params.photos.main_photo }}" alt="Placeholder image"></div>
             

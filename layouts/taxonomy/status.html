@@ -7,6 +7,24 @@
                 <h1 class="title is-1">{{.Title}}</h1>
             </div>
         </div>
+
+        <div class="section">
+            <div class="columns">
+                <div class="column">
+                    <div class="tabs is-centered">
+                        <ul>
+                            {{ range $name, $taxonomy := .Site.Taxonomies.status }}
+                          <li>
+                            <a href="/status/{{ $name | urlize }}">{{ $name | humanize }} ({{ $taxonomy.Count }})</a>
+                          </li>
+                          {{end}}
+                    
+                          <li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+    </div>
     <div class="columns">
         {{ range .Data.Pages }}
         <div class="column is-one-third">
