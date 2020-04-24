@@ -3,28 +3,15 @@ label: Menu Data
 hide_body: true
 fields:
 - name: menu
-  type: select
-  default: []
+  type: list
   config:
-    required: false
-    options: []
+    use_select: true
+    min: 
+    max: 
     source:
       type: documents
       section: menu
       file: data/menu.yaml
-      path: 
   label: Menu
-- name: listings
-  type: select
-  default: []
-  config:
-    required: false
-    options: []
-    source:
-      type: pages
-      section: property-listings
-      file: 
-      path: 
-  label: Listings
 pages:
 - data/menu.yaml
