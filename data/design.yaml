@@ -42,5 +42,20 @@ home_sections:
   blog_subtitle: Blog subtitle neaaaa
 - template: rental-listings
   rental_title: ''
-  rentsal_subtitle: ''
-
+  rental_subtitle: ''
+- template: cta
+  call_to_action_one:
+    icon_one_cta: venus-mars
+    image_one_cta: 
+    title_one_cta: '234324'
+    body_text_one_cta: ertertegdfg
+  call_to_action_two:
+    icon_two_cta: bullhorn
+    image_two_cta: ''
+    title_two_cta: erter
+    body_text_two_cta: erdffg
+  call_to_action_three:
+    icons_three_cta: comment-o
+    image_three_cta: https://reluxurytemplate.s3-us-west-1.amazonaws.com/agent.jpg
+    title_three_cta: ertert
+    body_text_three_cta: 32423534r

@@ -348,6 +348,77 @@ div.single-listing-head h4 {
     margin: 0 4px;
 }
 
+/* CTA SECTION */
+
+.cta__container {
+    margin-bottom: 0!important;
+}
+
+.icon-cta-one-container,
+.icon-cta-two-container,
+.icon-cta-three-container {
+    padding-top: 100px!important;
+    padding-bottom: 100px!important;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.icon-cta-one-container {
+    background: #1f1f1f;
+}
+
+.icon-cta-two-container {
+    background: #141414;
+}
+
+.icon-cta-three-container {
+    background: #090909;
+}
+
+.icon-cta-content h3 {
+    color: #fff!important;
+    font-size: 1.5rem;
+}
+
+.icon-cta-content p {
+    font-size: 1rem;
+    color: #e8e8e8;
+}
+
+.icon-cta-one-container:hover {
+    opacity: .9;
+    transition: all .2s ease-in-out;
+
+}
+
+.icon-cta-two-container:hover {
+    opacity: .9;
+    transition: all .2s ease-in-out;
+
+}
+
+.icon-cta-three-container:hover {
+    opacity: .9;
+    transition: all .2s ease-in-out;
+
+}
+
+.icon-cta-box .icon {
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    color: white;
+    font-size: 30px;
+}
+
+.icon-cta-box .icon:hover {
+    transition: all .2s ease-in-out;
+    padding-bottom: 20px;
+}
+
+.icon-cta-content {
+    padding-top: 40px;
+}
+
 /* FOOTER */
 
 footer {
