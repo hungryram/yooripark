@@ -2,15 +2,13 @@
 label: Menu Data
 hide_body: true
 fields:
-- name: menu
-  type: select
-  default: []
+- name: title
+  type: list
   config:
-    required: false
-    options: []
+    use_select: true
+    min: 
+    max: 
     source:
-      type: documents
+      type: pages
       section: menu
-      file: data/menu.yaml
-      path: ''
-  label: Menu
+  label: Title
