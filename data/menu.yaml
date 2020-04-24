@@ -1,10 +1,10 @@
 ---
-- name: listing_agent
-    config:
-      required: false
-      options: []
-      source:
-        type: pages
-        section: teams
-        file: 
-        path: 
+menu:
+  main:
+  - identifier: about
+    name: about hugo
+    url: /about/
+    weight: -110
+  - name: getting started
+    url: /getting-started/
+    weight: -100
