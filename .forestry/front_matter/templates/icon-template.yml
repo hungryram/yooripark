@@ -2,10 +2,6 @@
 label: Icon Template
 hide_body: true
 fields:
-- name: icons
-  type: tag_list
-  default: []
-  label: icons
 - name: icon_choose
   type: select
   default: []
