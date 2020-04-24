@@ -12,7 +12,7 @@ fields:
       type: documents
       section: menu
       file: data/menu.toml
-      path: 
+      path: menu
   label: Menu
 pages:
 - data/menu.toml
