@@ -58,16 +58,16 @@ home_sections:
     image: ''
     title: testesr
     body_text: wserwersersesef
-    icon_two_cta: ''
+    icon_two_cta: bullhorn
     image_two_cta: ''
-    title_two_cta: ''
-    body_text_two_cta: ''
+    title_two_cta: erter
+    body_text_two_cta: erdffg
   call_to_action_three:
     icons: dot-circle-o
     image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/agent.jpg
     title: cta 3
     body_text: cta body of three
-    icons_three_cta: ''
-    image_three_cta: ''
-    title_three_cta: ''
-    body_text_three_cta: ''
+    icons_three_cta: comment-o
+    image_three_cta: https://reluxurytemplate.s3-us-west-1.amazonaws.com/agent.jpg
+    title_three_cta: ertert
+    body_text_three_cta: 32423534r
