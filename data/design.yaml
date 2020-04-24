@@ -43,3 +43,19 @@ home_sections:
 - template: rental-listings
   rental_title: ''
   rental_subtitle: ''
+- template: cta
+  call_to_action_one:
+    icons: []
+    image: ''
+    title: ''
+    body_text: ''
+  call_to_action_two:
+    icons: []
+    image: ''
+    title: ''
+    body_text: ''
+  call_to_action_three:
+    icons: []
+    image: ''
+    title: ''
+    body_text: ''
