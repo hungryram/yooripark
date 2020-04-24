@@ -51,7 +51,7 @@ home_sections:
     body_text_one_cta: ertertegdfg
     cta_one_image_alt_tag: ''
     cta_one_add_a_link: ''
-    menu: home
+    menu: about
   call_to_action_two:
     icon_two_cta: bullhorn
     image_two_cta: ''
