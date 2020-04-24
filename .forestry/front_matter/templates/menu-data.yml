@@ -2,7 +2,7 @@
 label: Menu Data
 hide_body: true
 fields:
-- name: menu_items
+- name: menu
   type: select
   default: []
   config:
@@ -13,6 +13,6 @@ fields:
       section: menu
       file: data/menu.yaml
       path: 
-  label: Menu items
+  label: Menu
 pages:
 - data/menu.yaml
