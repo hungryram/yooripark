@@ -1,15 +1,14 @@
-menu:
-  material:
-    name: "Material"
-    url: "/"
-  getting:
-    name: "Getting started"
-    url: "getting-started/"
-  adding:
-    name: "Adding content"
-    url: "adding-content/"
-  roadmap:
-    name: "Roadmap"
-    weight: 30
-  licence:
-    name: "License"
+material:
+  name: "Material"
+  url: "/"
+getting:
+  name: "Getting started"
+  url: "getting-started/"
+adding:
+  name: "Adding content"
+  url: "adding-content/"
+roadmap:
+  name: "Roadmap"
+  weight: 30
+licence:
+  name: "License"
