@@ -13,7 +13,7 @@ fields:
     required: false
     options: []
     source:
-      type: pages
+      type: documents
       section: icon-json-d6865038-db99-47f8-a28d-2b19ded62f27
       file: data/icons.json
       path: 
