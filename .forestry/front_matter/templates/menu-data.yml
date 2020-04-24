@@ -9,7 +9,7 @@ fields:
     required: false
     options: []
     source:
-      type: pages
+      type: documents
       section: menu
       file: data/menu.yaml
       path: 
