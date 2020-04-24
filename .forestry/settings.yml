@@ -35,7 +35,6 @@ sections:
 - type: document
   path: content/testimonials/testimonials.md
   label: Testimonials
-  match: "**/*"
 - type: heading
   label: Listings
 - type: directory
