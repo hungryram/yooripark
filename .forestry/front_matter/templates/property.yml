@@ -28,8 +28,8 @@ fields:
     - Negotiating
     - In Contract
     - Coming Soon
-    - For Rent
     - Auction
+    - Rental
     source:
       type: simple
       section: 
