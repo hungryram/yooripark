@@ -15,4 +15,4 @@ fields:
       path: 
   label: Menu
 pages:
-- data/menu.yaml
+- data/menu.toml
