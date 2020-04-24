@@ -1,3 +1,5 @@
 ---
-title: home page
-  url: /homepage
+home: /
+about: /about
+contact: /contact
+listings: /listings
