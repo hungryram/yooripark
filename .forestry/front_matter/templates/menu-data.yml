@@ -9,7 +9,7 @@ fields:
     required: false
     options: []
     source:
-      type: documents
+      type: pages
       section: menu
       file: data/menu.toml
       path: menu
