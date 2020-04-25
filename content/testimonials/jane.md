@@ -1,15 +1,10 @@
 +++
-<<<<<<< HEAD
-date_published = 2020-04-04T00:00:00Z
-full_width = false
-=======
 date = "04/04/2020"
 date_published = "04/22/2020"
 external_link = ""
 full_width = true
 hide_photos = true
 link_label = ""
->>>>>>> abbd2833a7b89991986b22791a645637044df106
 occupation = "founder"
 photo = ""
 source_label = ""
