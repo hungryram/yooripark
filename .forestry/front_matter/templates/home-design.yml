@@ -68,7 +68,7 @@ fields:
       label: Open in New Tab
     - name: color
       type: color
-      label: Color
+      label: Button Background Color
       config:
         required: false
         color_format: Hex
