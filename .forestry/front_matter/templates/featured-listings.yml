@@ -17,3 +17,24 @@ fields:
     schema:
       format: markdown
   label: Listing Subtitle
+- name: active_background_color
+  type: color
+  label: Background Color
+  config:
+    required: false
+    color_format: Hex
+- name: align_text
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - has-text-centered
+    - has-text-left
+    - has-text-right
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Align Text
