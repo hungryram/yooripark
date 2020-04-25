@@ -23,7 +23,7 @@ fields:
   config:
     required: false
     color_format: Hex
-- name: align_title_text
+- name: active_align_title_text
   type: select
   default: []
   config:
