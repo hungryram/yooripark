@@ -40,11 +40,11 @@ home_sections:
 - template: featured-blog
   blog_title: The Aesome BLog
   blog_subtitle: Blog subtitle neaaaa
-  blog_background: "#CFCFCF"
+  blog_background: "#f7f7f7"
   blog_align_title_text: has-text-centered
 - template: rental-listings
-  rental_title: ''
-  rental_subtitle: ''
+  rental_title: 'test'
+  rental_subtitle: 'tesrsers'
 - template: cta
   call_to_action_one:
     icon_one_cta: venus-mars

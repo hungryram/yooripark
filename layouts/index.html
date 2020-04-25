@@ -19,13 +19,14 @@
 
         {{/*  BLOG  */}}
         {{ if eq "featured-blog" .template }}
-        <section class="section active-listings" id="featured-listings">
+        <section class="section home-featured-sections" id="featured-listings" style="{{ safeHTMLAttr (printf "background-color: %s" .blog_background) }}">
             <div class="container">
                 <!-- Start Carousel -->
-                <div class="columns has-text-centered">
-                    <div class="column is-half is-offset-one-quarter">
+                <div class="columns">
+                    <div {{ if .blog_align_title_text }} class="column {{ .blog_align_title_text }} "{{ end }}>
+                        <h4 class="subtitle is-6">{{ .blog_subtitle }}</h4>
                         <h1 class="title is-2">{{ .blog_title }}</h1>
-                        <p>{{ .blog_subtitle }}</p>
+                        
                     </div>
                 </div>
                 <div class="columns">
@@ -33,10 +34,10 @@
 
                     <div class="column is-one-third">
                         <a href="{{.Permalink}}">
-                        <div class="card home-card">
+                        <div class="home-card">
                             <div class="card-image">
-                              <figure class="image is-4by3">
-                                <img src="{{ .Params.featured_image }}" alt="Placeholder image" style="object-fit: cover; padding: 20px">
+                              <figure class="image is-16by9">
+                                <img src="{{ .Params.featured_image }}" alt="Placeholder image" style="object-fit: cover;">
                               </figure>
                             </div>
                             <div class="card-content">
@@ -46,11 +47,9 @@
                               <hr>       
                               <div class="content">
                                 <p>
-                                {{ slicestr .Summary 2 100 | markdownify }}
+                                {{ slicestr .Summary 2 150 | markdownify }}
                                 </p>
-                                {{ range .Params.categories }}
-                                <a href="{{.}}">{{ . }}</a>
-                                {{ end }}
+                                <a href="{{ .Permalink }}">Continue Reading</a>
                               </div>
                             </div>
                           </div>
@@ -68,13 +67,13 @@
 
         {{/*  RENTAL LISTING  */}}
         {{ if eq "rental-listings" .template }}
-            <section class="section" id="featured-listings">
+            <section class="section home-featured-sections" id="featured-listings">
                 <div class="container">
                     <!-- Start Carousel -->
                     <div class="columns has-text-centered">
                         <div class="column is-half is-offset-one-quarter">
-                            <h1 class="title is-2">{{ .active_listing_title }}</h1>
-                            <p>{{ .listing_subtitle }}</p>
+                            <h4>{{ .rental_subtitle }}</h4>
+                            <h1 class="title is-2">{{ .rental_title }}</h1>
                         </div>
                     </div>
                     <div id="carousel" class="carousel" style="overflow: hidden;">
@@ -93,14 +92,14 @@
 
 
         {{/*  ACTIVE LISTING  */}}
-        {{ if eq "featured-listings" .template }}
+        {{ if eq "featured-listings home-featured-sections" .template }}
             <section class="section active-listings" id="featured-listings">
                 <div class="container">
                     <!-- Start Carousel -->
                     <div class="columns has-text-centered">
                         <div class="column is-half is-offset-one-quarter">
+                            <h4>{{ .listing_subtitle }}</h4>
                             <h1 class="title is-2">{{ .active_listing_title }}</h1>
-                            <p>{{ .listing_subtitle }}</p>
                         </div>
                     </div>
                     <div id="carousel" class="carousel" style="overflow: hidden;">
@@ -119,13 +118,13 @@
 
         {{/*  SOLD LISTING  */}}
         {{ if eq "sold-listings" .template }}
-        <section class="section sold-listings" id="featured-listings">
+        <section class="section sold-listings home-featured-sections" id="featured-listings">
             <div class="container">
                 <!-- Start Carousel -->
                 <div class="columns has-text-centered">
                     <div class="column is-half is-offset-one-quarter">
+                        <h4>{{ .sold_listing_subtitle }}</h4>
                         <h1 class="title is-2">{{ .sold_listing_title }}</h1>
-                        <p>{{ .sold_listing_subtitle }}</p>
                     </div>
                 </div>
                 <div id="carousel" class="carousel" style="overflow: hidden;">
