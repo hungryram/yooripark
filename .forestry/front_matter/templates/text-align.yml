@@ -1,4 +1,16 @@
 ---
 label: Text Align
 hide_body: true
-fields: []
+fields:
+- name: align_text
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: 'Align Text '
