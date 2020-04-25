@@ -419,6 +419,13 @@ div.single-listing-head h4 {
     padding-top: 40px;
 }
 
+/* TESTIMONIAL */
+
+.quote-testimonial i {
+    font-size: 20px;
+    margin: 20px;
+}
+
 /* FOOTER */
 
 footer {

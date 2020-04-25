@@ -1,6 +1,37 @@
 {{ define "main" }}
 
 <h1>testimonials</h1>
-sdfsddfsdfsf
+<div class="section">
+    <div class="container">
+        {{ range .Pages }}
+        {{ if .Params.full_width }}
+        <div class="columns card notification" style="margin: 10px 0;">
+            <div class="column quote-testimonial">
+                <p>{{ .Params.testimonial }}</p><br>
+                <em>{{ .Params.title }}</em><br>
+                <em>{{ .Params.occupation }}</em>
+            </div>
+        </div>
+            {{else}}
+            <div class="columns card notification" style="margin: 10px 0;">
+            <div class="column is-3" align="center">
+                <figure class="image is-128x128">
+                    <img class="is-rounded" src="{{ .Params.photo }}">
+                </figure>
+            </div>
+            
+            <div class="column quote-testimonial">
+                <p>{{ .Params.testimonial }}</p><br>
+                <em>{{ .Params.title }}</em><br>
+                <em>{{ .Params.occupation }}</em><br>
+                <em>{{ .Params.date_published }}</em>
+            </div>
+        </div>
+        
+        {{ end }}
+        {{end}}
+    </div>
+</div>
+</div>
 
 {{ end }}
