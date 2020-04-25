@@ -17,3 +17,24 @@ fields:
     schema:
       format: markdown
   label: Sold Listing Subtitle
+- name: sold_background_color
+  type: color
+  label: Background Color
+  config:
+    required: false
+    color_format: Hex
+- name: sold_align_title_text
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - has-text-centered
+    - has-text-right
+    - has-text-left
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Align Title Text

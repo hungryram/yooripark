@@ -34,6 +34,51 @@ fields:
       required: false
     label: Hero Subtitle
     description: the subtitle overlaying the hero image or video
+  - name: align_hero_text
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - has-text-centered
+      - has-text-right
+      - has-text-left
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Align Hero Text
+  - name: add_a_button
+    type: field_group
+    config: {}
+    fields:
+    - name: hero_button_text
+      type: text
+      config:
+        required: false
+      label: Button Text
+    - name: hero_button_link
+      type: text
+      config:
+        required: false
+      label: Button Link
+    - name: open_in_new_tab
+      type: boolean
+      label: Open in New Tab
+    - name: color
+      type: color
+      label: Button Background Color
+      config:
+        required: false
+        color_format: Hex
+    - name: hero_button_text_color
+      type: color
+      config:
+        required: false
+        color_format: Hex
+      label: Button Text Color
+    label: Add a Button
   - name: home_background_image
     type: file
     config:
@@ -54,18 +99,6 @@ fields:
     config:
       required: false
     label: Add URL to Youtube Video
-  - name: icons
-    type: select
-    default: []
-    config:
-      required: false
-      options: []
-      source:
-        type: documents
-        section: icon-json-d6865038-db99-47f8-a28d-2b19ded62f27
-        file: data/icons.json
-        path: 
-    label: Icons
   label: Main Image
 - name: home_sections
   type: blocks

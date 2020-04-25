@@ -67,7 +67,7 @@
 
         {{/*  RENTAL LISTING  */}}
         {{ if eq "rental-listings" .template }}
-            <section class="section home-featured-sections" id="featured-listings">
+            <section class="section home-featured-sections" id="featured-listings" style="{{ safeHTMLAttr (printf "background-color: %s" .rental_background_color) }}">
                 <div class="container">
                     <!-- Start Carousel -->
                     <div class="columns has-text-centered">
@@ -93,7 +93,7 @@
 
         {{/*  ACTIVE LISTING  */}}
         {{ if eq "featured-listings home-featured-sections" .template }}
-            <section class="section active-listings" id="featured-listings">
+            <section class="section active-listings" id="featured-listings" style="{{ safeHTMLAttr (printf "background-color: %s" .active_background_color) }}">
                 <div class="container">
                     <!-- Start Carousel -->
                     <div class="columns has-text-centered">
@@ -118,7 +118,7 @@
 
         {{/*  SOLD LISTING  */}}
         {{ if eq "sold-listings" .template }}
-        <section class="section sold-listings home-featured-sections" id="featured-listings">
+        <section class="section sold-listings home-featured-sections" id="featured-listings" style="{{ safeHTMLAttr (printf "background-color: %s" .sold_background_color) }}">
             <div class="container">
                 <!-- Start Carousel -->
                 <div class="columns has-text-centered">

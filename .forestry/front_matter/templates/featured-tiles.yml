@@ -65,3 +65,9 @@ fields:
     description: Add the full link i.e. https://yourdomain.com
     label: Link
   label: Right Tile
+- name: tile_background_color
+  type: color
+  label: Background Color
+  config:
+    required: false
+    color_format: Hex
