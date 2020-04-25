@@ -1,7 +1,7 @@
 +++
 date_published = 2020-09-07T00:00:00Z
 external_link = ""
-full_width = true
+full_width = false
 link_label = ""
 occupation = "founder"
 photo = ""
