@@ -1,5 +1,4 @@
 +++
-date = "04/04/2020"
 date_published = "04/22/2020"
 external_link = ""
 full_width = true
