@@ -36,6 +36,10 @@ fields:
     time_format: 
     display_utc: false
     export_format: MM/DD/YYYY
+- name: display_photos
+  type: boolean
+  label: Display Photos
+  description: Disable to remove the photos and show full width.
 pages:
 - content/testimonials/jane.md
 - content/testimonials/john-doe.md
