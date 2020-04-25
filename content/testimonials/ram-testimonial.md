@@ -5,8 +5,8 @@ full_width = false
 link_label = ""
 occupation = "sdfsdfsdf"
 photo = ""
-source_label = ""
-source_link = ""
+source_label = "testset"
+source_link = "https://hungryram.com"
 testimonial = "wersefsdklfn sdfkodlskfmnsld fsdnf sdjfklmdsfdsf"
 title = "ram testimonial"
 

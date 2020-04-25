@@ -7,9 +7,35 @@
         {{ if .Params.full_width }}
         <div class="columns card notification" style="margin: 10px 0;">
             <div class="column quote-testimonial">
-                <p>{{ .Params.testimonial }}</p><br>
-                <em>{{ .Params.title }}</em><br>
-                <em>{{ .Params.occupation }}</em>
+
+                {{ if gt ( len .Params.testimonial )  0 }}
+                    <p>{{ .Params.testimonial }}</p><br>
+                {{end}}
+            
+                {{ if gt ( len .Params.title )  0 }}
+                    <strong><em>{{ .Params.title }}</em></strong><br>
+                {{end}}
+                
+                {{ if gt ( len .Params.occupation )  0 }}
+                    <em>{{ .Params.occupation }}</em><br>
+                {{end}}
+
+                {{ if gt ( len .Params.date_published )  0 }}
+                    <em>{{ .Params.date_published }}</em><br>
+                {{end}}
+
+                {{ if gt ( len .Params.source_link )  0 }}
+                    {{ if gt ( len .Params.source_label )  0 }}
+                        <a href="{{ .Params.source_link }}" target="_blank">{{.Params.source_label  }}</a><br>
+                    {{end}}
+                {{end}}
+
+                {{ if gt ( len .Params.external_link )  0 }}
+                    {{ if gt ( len .Params.link_label )  0 }}
+                        <a href="{{ .Params.external_link }}" target="_blank">{{.Params.link_label  }}</a><br>
+                    {{end}}
+                {{end}}
+
             </div>
         </div>
             {{else}}
@@ -21,10 +47,34 @@
             </div>
             
             <div class="column quote-testimonial">
-                <p>{{ .Params.testimonial }}</p><br>
-                <em>{{ .Params.title }}</em><br>
-                <em>{{ .Params.occupation }}</em><br>
-                <em>{{ .Params.date_published }}</em>
+
+                {{ if gt ( len .Params.testimonial )  0 }}
+                    <p>{{ .Params.testimonial }}</p><br>
+                {{end}}
+                
+                {{ if gt ( len .Params.title )  0 }}
+                    <strong><em>{{ .Params.title }}</em></strong><br>
+                {{end}}
+                
+                {{ if gt ( len .Params.occupation )  0 }}
+                    <em>{{ .Params.occupation }}</em><br>
+                {{end}}
+
+                {{ if gt ( len .Params.date_published )  0 }}
+                    <em>{{ .Params.date_published }}</em><br>
+                {{end}}
+
+                {{ if gt ( len .Params.source_link )  0 }}
+                    {{ if gt ( len .Params.source_label )  0 }}
+                        <a href="{{ .Params.source_link }}" target="_blank">{{.Params.source_label  }}</a><br>
+                    {{end}}
+                {{end}}
+
+                {{ if gt ( len .Params.external_link )  0 }}
+                    {{ if gt ( len .Params.link_label )  0 }}
+                        <a href="{{ .Params.external_link }}" target="_blank">{{.Params.link_label  }}</a><br>
+                    {{end}}
+                {{end}}
             </div>
         </div>
         

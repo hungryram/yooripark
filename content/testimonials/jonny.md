@@ -5,8 +5,8 @@ full_width = false
 link_label = ""
 occupation = "sdfsdfsdfdf"
 photo = ""
-source_label = ""
-source_link = ""
+source_label = "w232"
+source_link = "https://instagram.com"
 testimonial = "sdfsdf"
 title = "jonny"
 
