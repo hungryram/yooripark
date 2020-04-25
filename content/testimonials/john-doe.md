@@ -1,6 +1,6 @@
 +++
 date = "04/16/2020"
-date_published = ""
+date_published = "03/30/2020"
 external_link = "https://youtube.com"
 full_width = false
 link_label = "Youtube"
