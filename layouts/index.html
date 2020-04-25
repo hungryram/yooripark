@@ -42,9 +42,8 @@
                             </div>
                             <div class="card-content">
                               <div class="media-content">
-                                <p class="title is-5">{{ .Title }}</p>
+                                <p class="title is-5 has-text-black">{{ .Title }}</p>
                               </div> 
-                              <hr>       
                               <div class="content">
                                 <p>
                                 {{ slicestr .Summary 2 150 | markdownify }}

@@ -15,9 +15,8 @@ main_image:
     hero_button_text: hero button
     hero_button_link: https://hungryram.com
     open_in_new_tab: true
-    color: "#C72020"
-    hero_button_text_color: "#A7A7A7"
-    hero_button_bg_color: "#8B1A1A"
+    hero_button_text_color: "#000000"
+    hero_button_bg_color: "#ffffff"
 home_sections:
 - template: featured-listings
   active_listing_title: Active Listings
