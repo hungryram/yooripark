@@ -36,11 +36,12 @@ fields:
     time_format: 
     display_utc: false
     export_format: MM/DD/YYYY
-- name: hide_photos
+- name: full_width
   type: boolean
-  label: Hide Photos
-  description: Disable to remove the photos and make the text full width.
+  label: Make Full Width
   default: false
+  description: "<strong>Optional:</strong> If no photo is attached. Enable this to
+    make the row full width, removing the column for images."
 pages:
 - content/testimonials/jane.md
 - content/testimonials/john-doe.md
