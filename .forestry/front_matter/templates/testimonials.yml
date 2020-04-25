@@ -42,6 +42,28 @@ fields:
   default: false
   description: "<strong>Optional:</strong> If no photo is attached. Enable this to
     make the row full width, removing the column for images."
+- name: source_link
+  type: text
+  config:
+    required: false
+  label: Source Link
+  description: Add a source link where the review came from
+- name: source_label
+  type: text
+  config:
+    required: false
+  label: Source Label
+- name: external_link
+  type: text
+  config:
+    required: false
+  label: Link
+  description: Add an external link
+- name: link_label
+  type: text
+  config:
+    required: false
+  label: Link Label
 pages:
 - content/testimonials/jane.md
 - content/testimonials/john-doe.md
