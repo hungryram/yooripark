@@ -65,4 +65,5 @@ fields:
     required: false
   label: Link Label
 pages:
+- content/testimonials/janie.md
 - content/testimonials/john-doe.md
