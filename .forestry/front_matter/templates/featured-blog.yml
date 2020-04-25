@@ -16,3 +16,10 @@ fields:
     schema:
       format: markdown
   label: Blog Subtitle
+- name: blog_background
+  type: color
+  label: Background Color
+  config:
+    required: false
+    color_format: Hex
+  description: Choose the background color for the blog section
