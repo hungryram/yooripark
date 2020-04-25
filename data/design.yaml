@@ -40,6 +40,8 @@ home_sections:
 - template: featured-blog
   blog_title: The Aesome BLog
   blog_subtitle: Blog subtitle neaaaa
+  blog_background: "#CFCFCF"
+  blog_align_title_text: has-text-centered
 - template: rental-listings
   rental_title: ''
   rental_subtitle: ''
