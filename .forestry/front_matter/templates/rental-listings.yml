@@ -12,3 +12,9 @@ fields:
   config:
     required: false
   label: Rental Subtitle
+- name: rental_background_color
+  type: color
+  label: Background Color
+  config:
+    required: false
+    color_format: Hex
