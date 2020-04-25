@@ -37,6 +37,7 @@ home_sections:
     featured_title: Title
     featured_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/gold.jpg
     right_link_to_property: https://link.com
+  tile_background_color: "#F23434"
 - template: featured-blog
   blog_title: The Aesome BLog
   blog_subtitle: Blog subtitle neaaaa
