@@ -34,6 +34,21 @@ fields:
       required: false
     label: Hero Subtitle
     description: the subtitle overlaying the hero image or video
+  - name: align_hero_text
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - has-text-centered
+      - has-text-right
+      - has-text-left
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Align Hero Text
   - name: home_background_image
     type: file
     config:
@@ -62,7 +77,7 @@ fields:
       options: []
       source:
         type: documents
-        section: icon-json-d6865038-db99-47f8-a28d-2b19ded62f27
+        section: ''
         file: data/icons.json
         path: 
     label: Icons
