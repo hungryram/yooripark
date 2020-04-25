@@ -18,3 +18,18 @@ fields:
   config:
     required: false
     color_format: Hex
+- name: rental_align_title_text
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - has-text-centered
+    - has-text-left
+    - has-text-right
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Align Title Text
