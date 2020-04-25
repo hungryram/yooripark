@@ -1,5 +1,6 @@
 +++
 date = 2020-04-04T00:00:00Z
+full_width = true
 hide_photos = true
 occupation = "founder"
 photo = ""
