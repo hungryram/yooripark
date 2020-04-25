@@ -40,6 +40,7 @@ fields:
   type: boolean
   label: Display Photos
   description: Disable to remove the photos and show full width.
+  default: true
 pages:
 - content/testimonials/jane.md
 - content/testimonials/john-doe.md
