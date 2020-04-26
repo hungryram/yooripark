@@ -16,7 +16,7 @@ property_type = "Co-op"
 square_footage = 1231
 year_built = 2000
 [listing_agent]
-listing_agent = "teams/corinne renteria.md"
+listing_agent = "teams/corinne-renteria.md"
 [photos]
 gallery = ["/images/tiki.jpg", "/images/IMG_0018.jpg", "/images/cosmic-timetraveler-oLh-_gLQeak-unsplash.jpg"]
 main_photo = "https://reluxurytemplate.s3-us-west-1.amazonaws.com/la2.jpg"
