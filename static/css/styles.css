@@ -269,7 +269,7 @@ header a {
 
 .listing-details .box {
     border-radius: 0px;
-    border: none;
+    box-shadow: 0 2px 3px rgba(148, 148, 148, 0.15), 0 0 0 1px rgba(250, 0, 0, 0)!important;
 }
 
 .listing-details hr {
