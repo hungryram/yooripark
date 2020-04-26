@@ -1,7 +1,6 @@
 body {
     background: #F7F8F9;
     font-family: 'Roboto', sans-serif;
-
 }
 
 p {
@@ -13,6 +12,9 @@ p {
 .home-featured-sections .title {
     padding-bottom: 20px!important;
     line-height: 2;
+    font-size: 2rem;
+    font-weight: 400;
+
 }
 
 a.button.hero-button {
@@ -251,6 +253,7 @@ header a {
     line-height: 60px;
     border-bottom: 1px solid rgba(0,0,0,.05);
     padding: 0 25px;
+    font-size: 13px;
 }
 
 .single-details-list ul li span {
@@ -279,7 +282,7 @@ header a {
 
 .listing-details p {
       color: #222222;
-      font-size: 15px;
+      font-size: 13px;
       font-weight: 300;
       line-height: 25px;
   }
@@ -365,6 +368,18 @@ div.single-listing-head h4 {
 
 .card.home-card {
     transition: all .2s ease-in-out;
+}
+
+.home-blog-content div h3 {
+    font-size: 16px;
+}
+
+.home-blog-content p {
+    font-size: 14px;
+}
+
+.home-blog-content a {
+    font-size: 14px;
 }
 
 /* AGENT DETAILS PAGE */

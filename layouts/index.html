@@ -19,30 +19,29 @@
 
         {{/*  BLOG  */}}
         {{ if eq "featured-blog" .template }}
-        <section class="section home-featured-sections" id="featured-listings" style="{{ safeHTMLAttr (printf "background-color: %s" .blog_background) }}">
+        <section class="section home-featured-sections home-featured-blog" style="{{ safeHTMLAttr (printf "background-color: %s" .blog_background) }}">
             <div class="container">
                 <!-- Start Carousel -->
                 <div class="columns">
-                    <div {{ if .blog_align_title_text }} class="column {{ .blog_align_title_text }} "{{ end }}>
+                    <div {{ if .blog_align_title_text }} class="column content {{ .blog_align_title_text }} "{{ end }}>
                         <h4 class="subtitle is-6">{{ .blog_subtitle }}</h4>
-                        <h1 class="title is-2">{{ .blog_title }}</h1>
+                        <h1 class="title">{{ .blog_title }}</h1>
                         
                     </div>
                 </div>
                 <div class="columns">
-                {{ range first 3 (where $.Site.RegularPages "Type" "blog") }}
+                {{ range first 4 (where $.Site.RegularPages "Type" "blog") }}
 
                     <div class="column is-one-third">
-                        <a href="{{.Permalink}}">
-                        <div class="home-card">
+                        <div class="home-card card">
                             <div class="card-image">
                               <figure class="image is-16by9">
                                 <img src="{{ .Params.featured_image }}" alt="Placeholder image" style="object-fit: cover;">
                               </figure>
                             </div>
-                            <div class="card-content">
+                            <div class="card-content content home-blog-content">
                               <div class="media-content">
-                                <p class="title is-5 has-text-black">{{ .Title }}</p>
+                                <h3 class="has-text-black">{{ .Title }}</h3>
                               </div> 
                               <div class="content">
                                 <p>
@@ -52,7 +51,6 @@
                               </div>
                             </div>
                           </div>
-                          </a>
                     </div>
 
                 {{ end }}
@@ -72,7 +70,7 @@
                     <div class="columns has-text-centered">
                         <div class="column is-half is-offset-one-quarter">
                             <h4>{{ .rental_subtitle }}</h4>
-                            <h1 class="title is-2">{{ .rental_title }}</h1>
+                            <h1 class="title">{{ .rental_title }}</h1>
                         </div>
                     </div>
                     <div id="carousel" class="carousel" style="overflow: hidden;">
@@ -98,7 +96,7 @@
                     <div class="columns has-text-centered">
                         <div class="column is-half is-offset-one-quarter">
                             <h4>{{ .listing_subtitle }}</h4>
-                            <h1 class="title is-2">{{ .active_listing_title }}</h1>
+                            <h1 class="title">{{ .active_listing_title }}</h1>
                         </div>
                     </div>
                     <div id="carousel" class="carousel" style="overflow: hidden;">
@@ -123,7 +121,7 @@
                 <div class="columns has-text-centered">
                     <div class="column is-half is-offset-one-quarter">
                         <h4>{{ .sold_listing_subtitle }}</h4>
-                        <h1 class="title is-2">{{ .sold_listing_title }}</h1>
+                        <h1 class="title">{{ .sold_listing_title }}</h1>
                     </div>
                 </div>
                 <div id="carousel" class="carousel" style="overflow: hidden;">

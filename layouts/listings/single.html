@@ -66,46 +66,20 @@
 </div>
 </div>
 
-<!-- OPTION CTA -->
-  <div class="container">
-    <div class="columns">
-      <div class="column">
-        <div class="tabs is-centered">
-          <ul>
-            <li>
-              <a>
-                <span class="icon is-small"><i class="fas fa-mobile-alt"></i></span>
-                <span>Call</span>
-              </a>
-            </li>
-            <li>
-              <a>
-                <span class="icon is-small"><i class="far fa-envelope"></i></span>
-                <span>Send an Email</span>
-              </a>
-            </li>
-            <li>
-              <a href="{{ .Params.listing_agent.listing_agent }}">
-                <span class="icon is-small"><i class="fas fa-share-alt"></i></span>
-                <span>Listing Agent</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
 
 <div class="section listing-details">
   <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="box">
+          <div class="single-listing-photo">
+            <img src="{{ .Params.photos.main_photo }}" alt="">
+          </div>
+       </div>
+      </div>
+    </div>
     <div class="columns is-variable is-2">
       <div class="column is-8">
-        <div class="box">
-           <div class="single-listing-photo">
-             <img src="{{ .Params.photos.main_photo }}" alt="">
-           </div>
-        </div>
         <div class="box">
           <h2 class="title is-6">Overview</h2>
           <hr>
@@ -169,6 +143,10 @@
 
         
         <div class="box">
+          <div class="listing-agent">
+            <h2>Listing Agent</h2>
+            <a href="{{ .Params.listing_agent.listing_agent | relURL }}">Test</a>
+          </div>
           <h2 class="title is-6">Extras</h2>
           {{ if .Params.tools.file_attachments }}
             <p class="box attachments-detail"><a href="{{ . }}"><i class="fas fa-download fa-2x"></i>Download File</a></p>
