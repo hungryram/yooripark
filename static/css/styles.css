@@ -334,6 +334,11 @@ div.single-listing-head address {
     padding-bottom: 20px;
 }
 
+.matterport-vt iframe {
+    width: 100%;
+    height: 50vh;
+}
+
   /* TEAM */
 
 .agent-social i {
