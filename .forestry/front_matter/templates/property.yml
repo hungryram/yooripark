@@ -318,6 +318,16 @@ fields:
       required: false
     label: Open House Date
     default: No Open House Available
+  - name: open_house_details
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Open House Details
+    description: Add additional details/instructions for the open house
   - name: file_attachments
     type: image_gallery
     config: {}
