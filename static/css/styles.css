@@ -334,9 +334,19 @@ div.single-listing-head address {
     padding-bottom: 20px;
 }
 
-.matterport-vt iframe {
+.vt-single iframe {
     width: 100%;
     height: 50vh;
+}
+
+.single-agent-link {
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+.single-agent-link:hover {
+    transition: all .2s ease-in-out;
+    color: #fff;
 }
 
   /* TEAM */
@@ -403,10 +413,11 @@ div.single-listing-head address {
 
 /* AGENT DETAILS PAGE */
 
-.agent-detail-header,
+
 .agent-header {
     background-color: #f7f7f7;
     padding: 15px;
+    font-weight: 500;
 }
 
 .agent-detail-content {
@@ -415,10 +426,6 @@ div.single-listing-head address {
 
 .specialties {
     margin: 5px 10px;
-}
-
-.agent-header h4 {
-    font-weight: 800;
 }
 
 .agent-social li {
