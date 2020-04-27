@@ -32,9 +32,11 @@ meta_description = "la listing meta description"
 title_tag = "LA Listing"
 [tools]
 file_attachments = ["https://reluxurytemplate.s3-us-west-1.amazonaws.com/agents-img-5.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/agent.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/Untitled-1.jpg", "/images/MSARESUME.pdf"]
+matterport_link = ""
 open_house_date = "Monday April 20th, 2020"
 open_house_details = ""
 virtual_tours = "https://youtube.com"
+youtube_link = "https://www.youtube.com/watch?v=0FoyamhXjIk"
 [utilities_and_features]
 appliances = ["Microwave", "Freezer", "Dryer"]
 floors = ["Carpet", "Slate", "Concrete"]
