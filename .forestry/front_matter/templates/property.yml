@@ -323,8 +323,6 @@ fields:
     config:
       required: false
     label: Youtube Link
-    description: Embed Youtube videos under <strong>Share </strong>&gt; <strong>Embed
-      </strong>&gt; <strong>Copy code</strong>
   - name: open_house_date
     type: text
     config:
