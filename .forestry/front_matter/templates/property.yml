@@ -312,6 +312,12 @@ fields:
       required: false
     label: Virtual Tours
     description: Add youtube videos or 3D tour to your listing
+  - name: matterport_link
+    type: text
+    config:
+      required: false
+    label: Matterport Virtual Tour Link
+    description: i.e. https://my.matterport.com/show/?m=xxxxxxxxxxx
   - name: open_house_date
     type: text
     config:
