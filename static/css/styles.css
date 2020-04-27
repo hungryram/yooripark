@@ -312,14 +312,6 @@ div.single-listing-head address {
     font-size: 4em;
 }
 
-.level-details .level.is-mobile {
-    margin-bottom: 10px!important;
-}
-
-.level-details hr {
-    margin: 12px 0!important;
-}
-
 .listing-detail-features li {
     display: inline-block;
     padding: 10px;
@@ -336,6 +328,10 @@ div.single-listing-head address {
 .listing-agent article div ul {
     list-style: none;
     margin: 0;
+}
+
+.single-open-house {
+    padding-bottom: 20px;
 }
 
   /* TEAM */
