@@ -36,7 +36,7 @@ matterport_link = "https://my.matterport.com/show/?m=zEWsxhZpGba"
 open_house_date = "Monday April 20th, 2020"
 open_house_details = "testing my open house"
 virtual_tours = "https://youtube.com"
-youtube_link = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/0FoyamhXjIk\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+youtube_link = "https://www.youtube.com/watch?v=0FoyamhXjIk"
 [utilities_and_features]
 appliances = ["Microwave", "Freezer", "Dryer"]
 floors = ["Carpet", "Slate", "Concrete"]
