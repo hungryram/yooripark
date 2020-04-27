@@ -168,7 +168,8 @@
       {{ if .Params.tools.matterport_link }}
       <div class="box">
         <h2 class="title is-6">Youtube</h2>
-        {{ .Params.tools.youtube_link }}
+
+        <iframe width="560" height="315" src="{{ .Params.tools.youtube_link }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
       </div>
       {{end}}
 
