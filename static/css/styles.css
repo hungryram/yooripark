@@ -128,7 +128,6 @@ header a {
     font-size: 12px;
     margin: 0;
     color: #7d7d7d;
-    font-weight: 800;
 }
 
 .prop-result i {
@@ -161,7 +160,6 @@ header a {
     z-index: 100;
     border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 2px;
-    font-weight: 800;
 }
 
 .listing-detail-slider {
@@ -190,9 +188,7 @@ header a {
       bottom: 50px;
       color: white;
       font-size: 16px;
-      
-      font-weight: 800;
-  }
+}
 
 .listing-detail-status {
     position: absolute;
@@ -233,6 +229,11 @@ header a {
   }
 
   /* LISTING DETAILS */
+
+  .single-price-header p {
+      color: #4a4a4a;
+      font-weight: 200;
+  }
 
 @media screen and (max-width: 768px) {
     .single-details-list ul {
@@ -289,10 +290,22 @@ header a {
 
 .listing-details i {
       margin-right: 8px;
+      color: #b4c0c9;
   }
 
-div.single-listing-head h4 {
+div.single-listing-head address {
     font-weight: 200;
+    margin-top: 1.5rem;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.single-listing-head span {
+    background-color: #000000;
+    padding: 5px 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 4px;
 }
 
 .single-marked-icon i {
@@ -318,6 +331,11 @@ div.single-listing-head h4 {
 
 .attachments-detail i {
     color: #f44336;
+}
+
+.listing-agent article div ul {
+    list-style: none;
+    margin: 0;
 }
 
   /* TEAM */
