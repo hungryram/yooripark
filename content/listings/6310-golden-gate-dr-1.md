@@ -34,7 +34,7 @@ title_tag = "LA Listing"
 file_attachments = ["/images/MSARESUME.pdf"]
 matterport_link = "https://my.matterport.com/show/?m=zEWsxhZpGba"
 open_house_date = "Monday April 20th, 2020"
-open_house_details = ""
+open_house_details = "testing my open house"
 virtual_tours = "https://youtube.com"
 youtube_link = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/0FoyamhXjIk\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
 [utilities_and_features]
