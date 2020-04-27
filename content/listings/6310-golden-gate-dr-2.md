@@ -16,7 +16,7 @@ property_type = "Single Family"
 square_footage = "03431"
 year_built = 1995
 [listing_agent]
-listing_agent = []
+listing_agent = "teams/james-ochner.md"
 [listing_title]
 description = "Find out more about the listing"
 name = "Beautiful Home"
