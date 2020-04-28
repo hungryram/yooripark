@@ -1,4 +1,5 @@
 +++
+featured_listing = true
 short_description = "Luxury Listing"
 status = "Rental"
 title = "new golden gate"
