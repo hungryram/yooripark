@@ -24,7 +24,7 @@ name = "Beautiful Home"
 title = "Beautiful Home In LA"
 [photos]
 gallery = ["https://reluxurytemplate.s3-us-west-1.amazonaws.com/la2.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/kichen.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/int.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/anitatherealtor.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/agent.jpg"]
-main_photo = "https://reluxurytemplate.s3-us-west-1.amazonaws.com/anitatherealtor.jpg"
+main_photo = "https://reluxurytemplate.s3-us-west-1.amazonaws.com/gold.jpg"
 [pricing]
 price = "995,955"
 sold_price = ""

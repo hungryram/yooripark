@@ -24,7 +24,7 @@ name = "Beautiful Home"
 title = "Beautiful Home In LA"
 [photos]
 gallery = ["/images/la.jpg", "/images/int2.jpg", "/images/int.jpg"]
-main_photo = "/images/office.jpg"
+main_photo = "https://reluxurytemplate.s3-us-west-1.amazonaws.com/main-luxury.jpg"
 [pricing]
 price = "995,955"
 sold_price = ""
