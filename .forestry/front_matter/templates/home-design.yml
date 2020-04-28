@@ -9,7 +9,7 @@ fields:
   - name: upload_logo
     type: file
     config:
-      maxSize: 250
+      maxSize: 5
     label: Upload Logo
   - name: title
     type: text
@@ -82,7 +82,7 @@ fields:
   - name: home_background_image
     type: file
     config:
-      maxSize: 250
+      maxSize: 5
     label: Home Background Image
     description: Recommended size of 2000 x 1075.
   - name: video_background
@@ -92,7 +92,7 @@ fields:
   - name: upload_video
     type: file
     config:
-      maxSize: 250
+      maxSize: 5
     label: Upload Video
   - name: add_url_to_youtube_video
     type: text
@@ -100,6 +100,17 @@ fields:
       required: false
     label: Add URL to Youtube Video
   label: Main Image
+- name: sub_pages
+  type: field_group
+  config: {}
+  fields:
+  - name: sub_page_image
+    type: file
+    config:
+      maxSize: 5
+    label: Sub Page Image
+    description: The image to display globally on the site
+  label: Sub Pages
 - name: home_sections
   type: blocks
   label: Home Sections
