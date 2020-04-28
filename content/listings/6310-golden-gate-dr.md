@@ -1,4 +1,5 @@
 +++
+featured_listing = true
 short_description = "Great Listing"
 status = "Rental"
 title = "6310 Golden Gate Dr."
@@ -34,8 +35,11 @@ meta_description = "la listing meta description"
 title_tag = "LA Listing"
 [tools]
 file_attachments = ["/images/MSARESUME.pdf"]
+matterport_link = ""
 open_house_date = "Monday April 20th, 2020"
+open_house_details = ""
 virtual_tours = "https://youtube.com"
+youtube_link = ""
 [utilities_and_features]
 appliances = ["Microwave", "Freezer", "Dryer"]
 floors = ["Carpet", "Slate", "Concrete"]
