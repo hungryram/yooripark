@@ -1,10 +1,60 @@
 {{ define "main" }}
 
+<div class="section agent-lists">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-8">
+                {{ range .Pages }}
+                <div class="box">
+                    <article class="media">
+                      <div class="media-left">
+                        <figure class="image is-128x128">
+                            {{ with .Params.photo_or_logo }}
+                          <img src="{{.}}" alt="Image">
+                            {{else }}
+                            <img src="https://bulma.io/images/placeholders/480x480.png" alt="Image">
 
-<h1>Teams</h1>
-{{ range .Pages }}
-<a href="{{ .Permalink }}">{{ .Title }}</a><br><br>
-{{ end }}
-
+                            {{end}}
+                        </figure>
+                      </div>
+                      <div class="media-content">
+                        <div class="content">
+                          <p>
+                            <strong>{{ .Params.title }}</strong>
+                            <br><small>{{ .Params.contact.name }}</small>
+                            <br>
+                            
+                                <ul>
+                                  {{ with .Params.contact.email }}
+                                  <li><a href="mailto:{{ . }}"><i class="far fa-envelope"></i>{{ . }}</a></li>
+                                  {{end}}
+        
+                                  {{ with .Params.contact.phone }}
+                                  <li><a href="{{ . }}"><i class="fas fa-mobile-alt"></i>{{ . }}</a></li>
+                                  {{end}}
+        
+                                  {{ with .Params.contact.website }}
+                                  <li><a href="{{ . }}"><i class="fas fa-globe"></i>{{ . }}</a></li>
+                                  {{end}}
+        
+                                  {{ with .Params.contact.details }}
+                                  <li><a href="{{ . }}"><i class="fab fa-pinterest"></i>{{ . }}</a></li> 
+                                  {{end}}
+        
+                                </ul>
+                          </p>
+                          <a href="{{ .Permalink }}">
+                            Read More
+                          </a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                {{ end }}
+            </div>
+            {{ partial "sidebar.html" . }}
+        </div>
+    </div>
+</div>
 
 {{ end }}

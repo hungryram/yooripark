@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-8 content">
+                <img src="{{ .Params.featured_image }}" alt="">
+                <h1>{{ .Title }}</h1>
+                {{ .Content }}
+            </div>
+            {{ partial "sidebar.html" . }}
+        </div>
+    </div>
+</div>
+{{end}}
