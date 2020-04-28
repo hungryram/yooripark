@@ -48,6 +48,13 @@
 
 
         
-		</script>
-    </body>
+    </script>
+    <script>
+      function siteRedirect() {
+        var selectbox = document.getElementById("status-dropdown");
+        var selectedValue = "{{ .Site.BaseURL }}" + "status/" + selectbox.options[selectbox.selectedIndex].value;
+        window.location.href = selectedValue;
+      }
+    
+    </script>
 </html>
