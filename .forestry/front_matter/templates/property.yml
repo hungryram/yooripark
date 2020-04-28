@@ -36,6 +36,10 @@ fields:
       file: 
       path: 
   label: Property Status
+- name: featured_listing
+  type: boolean
+  label: Featured Listing
+  description: Toggle to feature this listing
 - name: address
   type: field_group
   config: {}
@@ -286,7 +290,7 @@ fields:
   - name: main_photo
     type: file
     config:
-      maxSize: 250
+      maxSize: 5
     label: Main Photo
   - name: gallery
     type: image_gallery
