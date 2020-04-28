@@ -1,4 +1,5 @@
 +++
+featured_listing = true
 short_description = "Single"
 status = ""
 title = "6310 Golden Gate Dr."
