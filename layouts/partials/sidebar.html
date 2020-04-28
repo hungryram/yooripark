@@ -2,17 +2,7 @@
 
 
 <div class="column">
-    <div class="box">
-      <h2 class="subtitle is-6">Blog Categories</h2>
-        <ul>
-            {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-          <li>
-            <i class="fas fa-angle-right" style="margin-right: 10px"></i><a href="{{ $name | urlize }}">{{ $name | humanize }} ({{ $taxonomy.Count }})</a>
-          </li>
-          {{end}}
 
-        </ul>
-    </div>
 
     <div class="box">
         <h2 class="subtitle is-6">Search Properties<h2>
@@ -31,9 +21,23 @@
           </div>
         </div>
     </div>
+
+    <div class="box">
+      <div class="sidebar-listing">
+        {{ range first 6 (where $.Site.RegularPages "Type" "listings") }}
+        {{ if .Params.featured_listing }}
+        <div style="background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url({{ .Params.photos.main_photo }});height:200px;background-size:cover">
+          {{ .Params.title }}
+        </div>
+        {{end}}
+        {{end}}
+    </div>
+    </div>
+
+
     <div class="box">
         <h2 class="subtitle is-6">Featured Properties<h2>
-            {{ range (where $.Site.RegularPages "Type" "listings") }}
+            {{ range first 100 (where $.Site.RegularPages "Type" "listings") }}
             {{ if .Params.featured_listing }}
             <div class="side-bar-featured" style="background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url({{ .Params.photos.main_photo }});">
               <a href="{{.Permalink }}">
@@ -64,7 +68,17 @@
               <a href="/featured" class="card-footer-item single-agent-link">View More</a>
             </footer>
     </div>
+    <div class="box">
+      <h2 class="subtitle is-6">Blog Categories</h2>
+        <ul>
+            {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+          <li>
+            <i class="fas fa-angle-right" style="margin-right: 10px"></i><a href="{{ $name | urlize }}">{{ $name | humanize }} ({{ $taxonomy.Count }})</a>
+          </li>
+          {{end}}
 
+        </ul>
+    </div>
     <div class="box">
         <h2 class="subtitle is-6">Latest Posts<h2>
 
