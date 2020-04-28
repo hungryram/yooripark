@@ -1,0 +1,41 @@
+{{ define "main" }}
+
+<div class="section">
+    <div class="container">
+        <div class="columns has-text-centered">
+            <div class="column">
+                <h1 class="title is-1">{{.Title}}</h1>
+            </div>
+        </div>
+<div class="section">
+        <div class="columns">
+            <div class="column">
+                <div class="tabs is-centered">
+                    <ul>
+                        {{ range $name, $taxonomy := .Site.Taxonomies.status }}
+                      <li>
+                        <a href="/status/{{ $name | urlize }}">{{ $name | humanize }} ({{ $taxonomy.Count }})</a>
+                      </li>
+                      {{end}}
+                
+                      <li><a href="/featured">Featured</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+</div>
+    <div class="columns is-multiline">
+        {{ range (where $.Site.RegularPages "Type" "listings") }}
+{{ if .Params.featured_listing }}
+        <div class="column is-4">
+            
+            {{ partial "featured-listings.html" . }}
+                  
+        </div>
+        {{end}}
+{{end}}
+    </div>
+</div>
+</div>
+
+{{ end }}

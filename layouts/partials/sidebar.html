@@ -10,7 +10,7 @@
             <i class="fas fa-angle-right" style="margin-right: 10px"></i><a href="{{ $name | urlize }}">{{ $name | humanize }} ({{ $taxonomy.Count }})</a>
           </li>
           {{end}}
-          <li>
+
         </ul>
     </div>
 
@@ -35,11 +35,34 @@
         <h2 class="subtitle is-6">Featured Properties<h2>
             {{ range (where $.Site.RegularPages "Type" "listings") }}
             {{ if .Params.featured_listing }}
-            <div class="side-bar-featured" style="background:url({{ .Params.photos.main_photo }});height:200px;background-size: cover">
-              {{ .Params.pricing.price }}
+            <div class="side-bar-featured" style="background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url({{ .Params.photos.main_photo }});">
+              <a href="{{.Permalink }}">
+                <div class="featured-status-sidebar">
+                  <span>{{ .Params.status }}</span>
+            {{ if .Params.featured_listing }}
+            <i class="far fa-star"></i><em>Featured</em>
+            {{end}}
+                </div>
+              <div class="container-featured">
+                <div class="container-featured-column">
+                  <h2>{{ .Params.short_description }}</h2>
+                  <span>${{ .Params.pricing.price }}</span>
+                </div>
+                <div class="featured-details-sidebar">
+                  <ul>
+                    <li><span><i class="fas fa-bath"></i></i>{{ .Params.details.bathrooms }}</span></li>
+                    <li><span><i class="fas fa-bed"></i>{{ .Params.details.bedrooms }}</span></li>
+                    <li><span><i class="fas fa-th-large"></i>{{ .Params.details.square_footage }}</span></li>
+                  </ul>
+              </div>
+              </div>
+            </a>
             </div>
             {{end}}
             {{end}}
+            <footer class="card-footer">
+              <a href="/featured" class="card-footer-item single-agent-link">View More</a>
+            </footer>
     </div>
 
     <div class="box">
