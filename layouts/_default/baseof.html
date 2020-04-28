@@ -1,8 +1,7 @@
 {{ partial "head.html" . }}
 {{ partial "navbar.html" . }}
 
-<div class="interior-image" style="height: 20vh;background: gray">
-{{.Title}}
+<div style="height: 20vh;background:url({{ .Site.Data.design.sub_pages.sub_page_image }}); background-size: cover;background-position: center">
 </div>
 {{ block "main" . }}
 
