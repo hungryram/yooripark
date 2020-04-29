@@ -6,75 +6,38 @@
             <div class="column is-8">
                 {{ range .Pages }}
                 <div class="box">
-                    <article class="media">
-                      <div class="media-left">
-                        <figure class="image is-128x128">
-                            {{ with .Params.details.agent_photo }}
-                          <img src="{{.}}" alt="Image">
-                            {{else }}
-                            <img src="https://bulma.io/images/placeholders/480x480.png" alt="Image">
+                  <div class="columns">
+                    <div class="column is-4">
+                      <figure class="image">
+                        {{ with .Params.details.agent_photo }}
+                      <img src="{{.}}" alt="Image">
+                        {{else }}
+                        <img src="https://bulma.io/images/placeholders/480x480.png" alt="Image">
 
-                            {{end}}
-                        </figure>
+                        {{end}}
+                    </figure>
+                    </div>
+                    <div class="column agent-list-content">
+                      <div class="content">
+                          <h1>{{ .Params.title }}</h1>
+                          <small>{{ .Params.details.title }}</small>
+                        <ul class="agent-list-contact">
+                          {{ if .Params.contact.cell }}<li><strong>Mobile: </strong> {{ .Params.contact.cell }}</li>{{ end }}
+                          {{ if .Params.contact.email }}<li><strong>Email: </strong> {{ .Params.contact.email }}</li>{{ end }}
+                          {{ if .Params.contact.phone }}<li><strong>Phone: </strong> {{ .Params.contact.phone }}</li>{{ end }}
+                        </ul>
+                        <ul class="agent-list-social">
+                          {{ if .Params.social_media.facebook }}<li><a href="{{ .Params.social_media.facebook }}" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>{{ end }}
+                          {{ if .Params.social_media.instagram }}<li><a href="{{ .Params.social_media.instagram }}" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>{{ end }}
+                          {{ if .Params.social_media.linkedin }}<li><a href="{{ .Params.social_media.linkedin }}" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>{{ end }}
+                          {{ if .Params.social_media.pinterest }}<li><a href="{{ .Params.social_media.pinterest }}" target="_blank" title="Pinterest"><i class="fab fa-pinterest-p"></i></a></li>{{ end }}
+                        </ul>
                       </div>
-                      <div class="media-content">
-                        <div class="content">
-                          <p>
-                            <strong>{{ .Params.title }}</strong> <small>{{ .Params.details.title }}</small>
-                            <br>
-                            {{ .Summary }}
-                          </p>
-                          <a href="{{ .Permalink }}">
-                            Read More
-                          </a>
-                        </div>
-                        <nav class="level is-mobile agent-social">
-                          <div class="level-left">
-                            {{ with .Params.social_media.facebook }}
-                            <a class="level-item" href="{{ . }}" target="_blank">
-                              <span class="icon is-small">
-                                <i class="fab fa-facebook"></i>
-                              </span>
-                            </a>
-                            {{end}}
-
-                            {{ with .Params.social_media.instagram }}
-                            <a class="level-item" href="{{ . }}" target="_blank">
-                              <span class="icon is-small">
-                                <i class="fab fa-instagram-square"></i>
-                              </span>
-                            </a>
-                            {{end}}
-
-                            {{ with .Params.social_media.linkedin }}
-                            <a class="level-item" href="{{ . }}" target="_blank">
-                              <span class="icon is-small">
-                                <i class="fab fa-linkedin"></i>
-                              </span>
-                            </a>
-                            {{end}}
-
-                            {{ with .Params.social_media.twitter }}
-                            <a class="level-item" href="{{ . }}" target="_blank">
-                              <span class="icon is-small">
-                                <i class="fab fa-twitter-square"></i>
-                              </span>
-                            </a>
-                            {{end}}
-
-                            {{ with .Params.social_media.youtube }}
-                            <a class="level-item" href="{{ . }}" target="_blank">
-                              <span class="icon is-small">
-                                <i class="fab fa-youtube-square"></i>
-                              </span>
-                            </a>
-                            {{end}}
-                          </div>
-                        </nav>
-                      </div>
-                    </article>
+                      <a href="{{ .Permalink }}">Read More</a>
+                    </div>
                   </div>
-                {{ end }}
+                </div>
+              {{ end }}
             </div>
             {{ partial "sidebar.html" . }}
         </div>

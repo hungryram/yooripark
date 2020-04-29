@@ -12,7 +12,7 @@ license_number = "2342r234"
 license_type = "DRE License"
 office = "offices/century-21.md"
 specialty = ["real estate", "commercial"]
-title = "cofounder"
+title = "Cofounder"
 website = "https://completemuscletherapy.net"
 [menu.main]
 name = "Corinne"

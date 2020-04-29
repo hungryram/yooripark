@@ -5,8 +5,8 @@
     <div class="columns">
       <div class="column is-8">
           <div style="padding: 20px">
-            <h1 class="agent-name">{{ .Params.title }}</h1>
-            <h4>{{ .Params.details.title }}</h4>
+            <h1 class="agent-name">{{ .Params.title }} </h1>
+            <h4>{{ .Params.details.title }} at {{ if .Params.details.office }}{{ with .Site.GetPage .Params.details.office }}<a href="{{ .Permalink }}" class="office-link">{{ .Params.title }}</a>{{end}}{{end}}</h4>
             <h4>{{ .Params.details.license_type }}: {{ .Params.details.license_number }}</h4>
             
           </div>
@@ -24,7 +24,7 @@
                       <i class="fas fa-mobile-alt"></i>
                     </div>
                     <div class="column">
-                      <a href="tel:{{ . }}">{{ . }}</a>
+                      <a href="tel:{{ . }}" title="Cell">{{ . }}</a>
                     </div>
                   </div>
                   {{ end }}
@@ -36,7 +36,7 @@
                       <i class="fas fa-phone"></i>
                     </div>
                     <div class="column">
-                      <a href="tel:{{ . }}">{{ . }}</a>
+                      <a href="tel:{{ . }}" title="Phone">{{ . }}</a>
                     </div>
                   </div>
                   {{ end }}
@@ -47,7 +47,7 @@
                       <i class="fas fa-fax"></i>
                     </div>
                     <div class="column">
-                      <a href="{{ . }}">{{ . }}</a>
+                      <a href="{{ . }}" title="Fax">{{ . }}</a>
                     </div>
                   </div>
                   {{ end }}
@@ -58,7 +58,7 @@
                       <i class="far fa-envelope"></i>
                     </div>
                     <div class="column">
-                      <a href="mailto:{{ . }}">{{ . }}</a>
+                      <a href="mailto:{{ . }}" title="Email">{{ . }}</a>
                     </div>
                   </div>
                   {{ end }}
@@ -70,7 +70,7 @@
                       <i class="fas fa-globe"></i>
                     </div>
                     <div class="column">
-                      <a href="{{ . }}" target="_blank">Website</a>
+                      <a href="{{ . }}" target="_blank" title="Website">Website</a>
                     </div>
                   </div>
                   {{ end }}
@@ -80,43 +80,43 @@
                       <div class="agent-social">
                         <ul>
                           {{ with .Params.social_media.facebook }}
-                          <li><a href="{{ . }}"><i class="fab fa-facebook-square"></i></a></li>
+                          <li><a href="{{ . }}" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></i></a></li>
                           {{end}}
 
                           {{ with .Params.social_media.instagram }}
-                          <li><a href="{{ . }}"><i class="fab fa-instagram-square"></i></a></li>
+                          <li><a href="{{ . }}" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
                           {{end}}
 
                           {{ with .Params.social_media.linkedin }}
-                          <li><a href="{{ . }}"><i class="fab fa-linkedin"></i></a></li>
+                          <li><a href="{{ . }}" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
                           {{end}}
 
                           {{ with .Params.social_media.pinterest }}
-                          <li><a href="{{ . }}"><i class="fab fa-pinterest"></i></a></li>
+                          <li><a href="{{ . }}" target="_blank" title="Pinterest"><i class="fab fa-pinterest-p"></i></a></li>
                           {{end}}
 
                           {{ with .Params.social_media.twitter }}
-                          <li><a href="{{ . }}"><i class="fab fa-twitter-square"></i></a></li>
+                          <li><a href="{{ . }}" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
                           {{end}}
 
                           {{ with .Params.social_media.youtube }}
-                          <li><a href="{{ . }}" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                          <li><a href="{{ . }}" target="_blank" title="Youtube"><i class="fab fa-youtube"></i></a></li>
                           {{end}}
 
                           {{ with .Params.social_media.realtor }}
-                          <li><a href="{{ . }}" target="_blank">Realtor</a></li>
+                          <li><a href="{{ . }}" target="_blank" title="Realtor">Realtor</a></li>
                           {{end}}
 
                           {{ with .Params.social_media.reddit }}
-                          <li><a href="{{ . }}" target="_blank">Reddit</a></li>
+                          <li><a href="{{ . }}" target="_blank" title="Reddit">Reddit</a></li>
                           {{end}}
 
                           {{ with .Params.social_media.redfin }}
-                          <li><a href="{{ . }}" target="_blank">Redfin</a></li>
+                          <li><a href="{{ . }}" target="_blank" title="Redfin">Redfin</a></li>
                           {{end}}
 
                           {{ with .Params.social_media.trulia }}
-                          <li><a href="{{ . }}" target="_blank">Trulia</a></li>
+                          <li><a href="{{ . }}" target="_blank" title="Trulia">Trulia</a></li>
                           {{end}}
                         </ul>
                       </div>
@@ -130,25 +130,29 @@
             
             <div class="columns">
               <div class="column">
-                <div class="agent-header">
-                  <h4>Specialty</h4>
-                </div>
+                  <h4 class="agent-header">Additional Information</h4>
               </div>            
             </div>
             <div class="columns">
               <div class="column">
-                {{ range .Params.details.specialty }}
-
-                <span class="specialties">{{ . }}</span>
-
+                <ul class="agent-additional">
+                  <li><i class="far fa-comment"></i><strong>Language:</strong></li>
+                {{ range .Params.details.languages }}
+                  <li class="accent-boxes">{{ . }}</li>
                 {{ end }}
+                </ul>
+
+                <ul class="agent-additional">
+                  <li><i class="far fa-star"></i><strong>Specialties:</strong></li>
+                {{ range .Params.details.specialty }}
+                  <li class="accent-boxes">{{ . }}</li>
+                {{ end }}
+                </ul>
               </div>
             </div>
             <div class="columns">
               <div class="column">
-                <div class="agent-header">
-                  <h4>About</h4>
-                </div>
+                  <h4 class="agent-header">About</h4>
               </div>            
             </div>
             <div class="columns content">
