@@ -22,17 +22,6 @@
         </div>
     </div>
 
-    <div class="box">
-      <div class="sidebar-listing">
-        {{ range first 6 (where $.Site.RegularPages "Type" "listings") }}
-        {{ if .Params.featured_listing }}
-        <div style="background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url({{ .Params.photos.main_photo }});height:200px;background-size:cover">
-          {{ .Params.title }}
-        </div>
-        {{end}}
-        {{end}}
-    </div>
-    </div>
 
 
     <div class="box">

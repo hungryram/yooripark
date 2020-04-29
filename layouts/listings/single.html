@@ -27,7 +27,7 @@
               <div class="content single-listing-head">
                 <h1 class="title is-4">{{ .Params.short_description }}</h1>
                 <span>{{ .Params.status }}</span>
-                <address><i class="fas fa-map-marker-alt"></i> {{ .Params.address.address }} {{ .Params.address.city }}, {{ .Params.address.state }} {{ .Params.address.zip_code }} </address>
+                <address><i class="fas fa-map-marker-alt"></i> {{ .Params.address.address }} {{ .Params.address.city }}, {{ .Params.address.state }} {{ .Params.address.zip_code }} </address><br>
              </div>
             </div>
       </div>
@@ -84,19 +84,30 @@
   </div>
 </div>
 </div>
+{{ if .Params.photos.gallery }}
+  <div class="container">
+  <div class="slider-for">
+    {{ range .Params.photos.gallery }}
+    <div style="background:url({{ . }}) no-repeat center;background-size:cover!important;height:70vh;">
+    </div>
+    {{end}}
+  </div>
+    <div class="slider-nav">
+    {{ range .Params.photos.gallery }}
+      <div class="slider-nav-container" style="background:url({{.}})no-repeat center;height:100px;background-size:cover;margin: 0 5px">
+      </div>
+    {{end}}
+    </div>
+  </div>
+  {{else}}
+  no photos
+  {{end}}
+
+
 
 
 <div class="section listing-details">
   <div class="container">
-    <div class="columns">
-      <div class="column">
-        <div class="box">
-          <div class="single-listing-photo">
-            <img src="{{ .Params.photos.main_photo }}" alt="">
-          </div>
-       </div>
-      </div>
-    </div>
     <div class="columns is-variable is-2">
       <div class="column is-8">
         <div class="box">

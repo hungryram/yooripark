@@ -232,6 +232,15 @@ header a {
       right: auto!important;
   } */
 
+
+  .slider-nav {
+      margin-top: 10px;
+  }
+
+.slick-dots li button:before {
+    font-size: 30px!important
+}
+
   /* LISTING DETAILS */
 
   .single-price-header p {

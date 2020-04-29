@@ -52,8 +52,29 @@
     
     </script>
     <script>
-      $('.sidebar-listing').slick({
-        autoplay: true,
-      });
+      bulmaCarousel.attach('#listing-slide', {
+        slidesToScroll: 1,
+        slidesToShow: 1,
+          });
+    </script>
+    <script>
+      
+ $('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  autoplay: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true
+});
+			
     </script>
 </html>
