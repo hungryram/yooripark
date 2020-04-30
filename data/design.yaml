@@ -18,16 +18,16 @@ main_image:
     hero_button_text_color: "#000000"
     hero_button_bg_color: "#ffffff"
 home_sections:
-- template: featured-listings
-  active_listing_title: Active Listing
-  listing_subtitle: my active listings
-  active_background_color: ''
-  active_align_title_text: ''
 - template: sold-listings
   sold_listing_title: Our Sold Listings
   sold_listing_subtitle: sold listing subtitle
   sold_background_color: ''
   sold_align_title_text: ''
+- template: featured-listings
+  active_listing_title: Active Listing
+  listing_subtitle: my active listings
+  active_background_color: ''
+  active_align_title_text: ''
 - template: intro
   intro_title: The Intro Title
   intro_body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quos
