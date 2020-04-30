@@ -3,8 +3,9 @@
 
 <div style="height: 20vh;background:url({{ .Site.Data.design.sub_pages.sub_page_image }}); background-size: cover;background-position: center">
 </div>
+<main>
 {{ block "main" . }}
 
 {{ end }}
-
+</main>
 {{ partial "footer.html" . }}

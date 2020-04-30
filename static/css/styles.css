@@ -1,6 +1,113 @@
+/* DEFAULT LIST.HTML */
+
+.default-list {
+    padding: 30px;
+}
+
+.default-list a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #007bb6;
+}
+
+
+/* LISTING CAROUSEL */
+
+
+.slick-prev::before {
+    font-family: FontAwesome!important;
+    content:  "\f104"!important;
+    font-size: 28px!important;
+    color: #007bb6!important;
+}  
+.slick-next::before {
+    font-family: FontAwesome!important;
+    content:  "\f105"!important;
+    font-size: 28px!important;
+    color: #007bb6!important;
+}      
+
+.card-footer-item i,
+.listing-address i {
+    margin-right: 8px;
+}
+
+.listing-bg:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+    transition: all .8s ease;
+}
+
+.listing-bg {
+    transition: all .8s ease;
+
+}
+
+.listing-image-container {
+    overflow: hidden;
+}
+
+span.status {
+    background: #00AFFF;
+    font-size: 10px;
+    line-height: 11px;
+    font-weight: 500;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 3px 5px;
+    color: #fff;
+    border-radius: 2px;
+}
+
+span.featured {
+    background: #E28429;
+    font-size: 10px;
+    line-height: 11px;
+    font-weight: 500;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 3px 5px;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.card-footer-item {
+    font-size: 12px;
+    color: #242429;
+}
+
+.listing-bottom {
+    padding: 1rem;
+}
+
+.listing-bottom ul li {
+    color: #fff;
+}
+
+.list-description {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.list-pricing {
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+    padding: 5px 7px;
+}
+
+
+
 body {
     background: #F7F8F9;
     color: #303030;
+    height: 100%;
+}
+
+main {
+    padding: 50px 10px 150px 10px;
 }
 
 h1,
@@ -37,7 +144,6 @@ i.fab.fa-instagram {
 }
 
 p,
-a,
 li {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
@@ -521,16 +627,10 @@ div.single-listing-head address {
 }
 
 .featured-details-sidebar {
-    background: #202020;
-    height: 0;
+    background: #1F223E;
     transition: all .3s ease-in-out;
     overflow: hidden;
     color: #fff;
-}
-
-.side-bar-featured:hover .featured-details-sidebar {
-    height: 70px;
-    transition: all .3s ease-in-out;
 }
 
 .featured-status-sidebar { 
@@ -780,14 +880,12 @@ div.single-listing-head address {
 
 /* FOOTER */
 
-footer {
-    background: black!important;
+footer.site-footer {
+    background-color: black;
+    bottom:0;
+    left:0;
 }
 
 footer p {
     color: #fff;
-}
-
-footer a {
-    color: #8f7d20;
 }

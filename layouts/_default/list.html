@@ -1,8 +1,19 @@
   
 {{ define "main" }}
+<div class="section">
+    <div class="container">
+        <div class="columns has-text-centered is-multiline">
+    {{ range .Pages }}
 
-{{ range .Pages }}
-<a href="{{ .URL }}">{{ .Title }}</a><br><br>
-{{ end }}
+            <div class="column is-4">
+                <div class="box default-list">
+                    
+                    <a href="{{ .Permalink }}"><i class="fas fa-layer-group"></i><br>{{ .Title }}</a>
+                </div>
+            </div>
 
+    {{ end }}
+        </div>
+    </div>
+</div>
 {{ end }}

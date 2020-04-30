@@ -1,3 +1,4 @@
+  
 {{ define "main" }}
 
 <div class="section">
@@ -7,43 +8,39 @@
                 <h1 class="title is-1">{{.Title}}</h1>
             </div>
         </div>
-
-        <div class="section">
-            <div class="columns">
-                <div class="column">
-                    <div class="tabs is-centered">
-                        <ul>
-                            {{ range $name, $taxonomy := .Site.Taxonomies.status }}
-                          <li>
-                            <a href="/status/{{ $name | urlize }}">{{ $name | humanize }} ({{ $taxonomy.Count }})</a>
-                          </li>
-                          {{end}}
-                    
-                          <li>
-                        </ul>
-                      </div>
-                </div>
+<div class="section">
+        <div class="columns">
+            <div class="column">
+                <div class="tabs is-centered">
+                    <ul>
+                        {{ range $name, $taxonomy := .Site.Taxonomies.status }}
+                      <li>
+                        <a href="/status/{{ $name | urlize }}">{{ $name | humanize }} ({{ $taxonomy.Count }})</a>
+                      </li>
+                      {{end}}
+                    </ul>
+                  </div>
             </div>
-    </div>
-    <div class="columns">
-        {{ range .Data.Pages }}
-        <div class="column is-one-third">
+        </div>
+</div>
+    <div class="columns is-multiline">
+        {{ $paginator := .Paginate (where .Pages "Type" "listings") 9 }}
+        {{ range $paginator.Pages }}
+
+        <div class="column is-4">
             
             {{ partial "featured-listings.html" . }}
                   
         </div>
+        
         {{ end }}
+
+        
     </div>
+    
+    {{ partial "pagination" . }}
+    
 </div>
 </div>
-
-<!-- <ul>
-    
-      <li>
-        <a href="{{.RelPermalink}}">{{ .Title }}</a>
-        <p>{{ .Params.address.city }}</p>
-      </li>
-    
-  </ul> -->
-
-  {{ end }}
+  
+{{ end }}

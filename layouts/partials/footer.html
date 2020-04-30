@@ -1,6 +1,6 @@
 <!-- Footer -->
 
-<footer class="footer">
+<footer class="footer site-footer">
     <div class="content has-text-centered">
       <p>
         Built by <a href="https://hungryram.com">Hungry Ram</a> First version of Real Estate Website
@@ -33,16 +33,7 @@
             </script>
             
 		<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
-		<script>
-		bulmaCarousel.attach('#carousel', {
-			slidesToScroll: 1,
-			slidesToShow: 3
-        });
-        bulmaCarousel.attach('#listing-carousel', {
-			slidesToScroll: 1,
-			slidesToShow: 1
-        });
-    </script>
+
     <script>
       function siteRedirect() {
         var selectbox = document.getElementById("status-dropdown");
@@ -50,12 +41,6 @@
         window.location.href = selectedValue;
       }
     
-    </script>
-    <script>
-      bulmaCarousel.attach('#listing-slide', {
-        slidesToScroll: 1,
-        slidesToShow: 1,
-          });
     </script>
     <script>
       
@@ -74,6 +59,45 @@ $('.slider-nav').slick({
   dots: true,
   centerMode: true,
   focusOnSelect: true
+});
+
+
+$('.responsive-slide').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  autoplay: true,
+  slidesToScroll: 3,
+  pauseOnHover: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 });
 			
     </script>

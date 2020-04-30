@@ -1,7 +1,7 @@
 +++
 featured_listing = true
 short_description = "Single"
-status = ""
+status = "active"
 title = "6310 Golden Gate Dr."
 [address]
 address = "6310 Golden Gate Drive"

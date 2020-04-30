@@ -1,46 +1,30 @@
-<a href="{{.Permalink}}">
-  
-    <div class="card prop-result home-card">
-        <div class="card-image">
-          <figure class="image is-2by1">
-            <span class="pricing-slider">${{ .Params.pricing.price }} {{with eq .Params.status "Rental" }}<span class="rent-per-month">PER MONTH</span>{{end}}</span>
-            {{ with .Params.status }}<span class="listing-detail-status">{{ . }}</span>{{ end }}
-            <div class="f-image-overlay"><img src="{{ .Params.photos.main_photo }}" alt="Placeholder image"></div>
-            
-          </figure>
-          <div class="img-address"><i class="fas fa-map-marker fa-2x"></i></i>{{ .Params.short_description }}</div>
-        </div>
-
-        <div class="card-content listing-detail-slider">
-          <div class="media">
-            <div class="media-content">
-              <p class="f-prop-address"><i class="fas fa-map-marker-alt"></i>{{ .Params.address.address }} {{ .Params.address.city }}, {{ .Params.address.state }}</p>
-            </div>
-          </div>
-      
-          <div class="columns">
-            <div class="column">
-              <i class="fas fa-bed"></i>
-              <span>{{.Params.details.bedrooms}}</span>
-              <p>Bedrooms</p>
-            </div>
-            <div class="column">
-              <i class="fas fa-bath"></i>
-              <span>{{.Params.details.bathrooms}}</span>
-              <p>Bathrooms</p>
-            </div>
-            <div class="column">
-              <i class="fas fa-th-large"></i>
-              <span>{{.Params.details.square_footage}}</span>
-              <p>Sq. Ft</p>
-            </div>
-            <br>
-          </div>
-        </div>
+<div class="card" style="margin: 10px;">
+  <a href="{{ .Permalink }}">
+  <div class="listing-image-container">
+      <div class="card-content listing-bg" style="background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)),url({{ .Params.photos.main_photo }});height: 30vh;position:relative;background-size:cover">
+    <div class="content">
+      <span class="status">{{ .Params.status }}</span>
+      {{ if .Params.featured_listing }}<span class="featured">Featured</span>{{ end }}
+      <span style="float:right;color: white" class="list-pricing">${{ .Params.pricing.price }}{{with eq .Params.status "Rental" }}<span class="rent-per-month">PER MONTH</span>{{end}}</span>
     </div>
+    <div class="listing-bottom" style="position:absolute;bottom:0">
+        <ul>
+            <li class="list-description">{{ .Params.short_description }}</li>
+            <li class="listing-address"><i class="fas fa-map-marker-alt"></i>{{ .Params.address.city }}, {{ .Params.address.state }} {{ .Params.address.zip_code }}</li>
+        </ul>
+    </div>
+  </div>
+</div>
+  <footer class="card-footer">
+      <span class="card-footer-item"><i class="fas fa-bed"></i> {{ .Params.details.bedrooms }} Beds</span>
+    <span class="card-footer-item"><i class="fas fa-bath"></i>{{ .Params.details.bathrooms }} Baths</span>
+  </footer>
+  <footer class="card-footer">
+      <span class="card-footer-item"><i class="far fa-clone"></i>{{ .Params.details.square_footage }} Sq Ft.</span>
+      <span class="card-footer-item"><i class="fas fa-warehouse"></i> 2 Garage</span>
+  </footer>
+  <footer class="card-footer">
+      <span class="card-footer-item">{{ .Params.details.property_type }}</span>
+  </footer>
 </a>
-
-
-
-
-
+</div>
