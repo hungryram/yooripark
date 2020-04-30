@@ -87,30 +87,6 @@
                 </div>
               </div>
             </div>
-
-            
-            <div class="columns">
-              <div class="column">
-                  <h4 class="agent-header">Additional Information</h4>
-              </div>            
-            </div>
-            <div class="columns">
-              <div class="column">
-                <ul class="agent-additional">
-                  <li><i class="far fa-comment"></i><strong>Language:</strong></li>
-                {{ range .Params.details.languages }}
-                  <li class="accent-boxes">{{ . }}</li>
-                {{ end }}
-                </ul>
-
-                <ul class="agent-additional">
-                  <li><i class="far fa-star"></i><strong>Specialties:</strong></li>
-                {{ range .Params.details.specialty }}
-                  <li class="accent-boxes">{{ . }}</li>
-                {{ end }}
-                </ul>
-              </div>
-            </div>
             <div class="columns">
               <div class="column">
                   <h4 class="agent-header">About</h4>

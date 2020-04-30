@@ -26,14 +26,22 @@
         </div>
 </div>
     <div class="columns is-multiline">
-        {{ range .Data.Pages }}
+        {{ $paginator := .Paginate (where .Pages "Type" "listings") 6 }}
+        {{ range $paginator.Pages }}
+
         <div class="column is-4">
             
             {{ partial "featured-listings.html" . }}
                   
         </div>
+        
         {{ end }}
+
+        
     </div>
+    
+    {{ partial "pagination" . }}
+    
 </div>
 </div>
   

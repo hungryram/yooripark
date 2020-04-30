@@ -1,12 +1,103 @@
 {{ define "main" }}
 
-<h1>{{ .Params.vendor_name }}</h1>
+<div class="section agent-page">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8">
+          <div style="padding: 20px">
+            <h1 class="agent-name">{{ .Params.title }} </h1>
+            <h4>{{ .Params.details.title }}</h4>
+            
+          </div>
+          <div class="box">
+            <div class="columns">
+              <div class="column is-5">
+                <img src="{{ .Params.photo_or_logo }}" alt="">
+              </div>
+              <div class="column is-7">
+                  <h4 class="agent-header">Details</h4>
+                <div class="agent-detail-content">
 
-{{ with .Params.photo_or_logo }}
-<img src="{{ . | relURL }}" alt="">
-{{ end }}
-{{ .Params.contact.address.city }}
+                    {{ with .Params.contact.name }}
+                    <div class="columns is-mobile">
+                      <div class="column is-2">
+                        <span>Name:</span>
+                      </div>
+                      <div class="column">
+                        <span title="Name">{{ . }}</span>
+                      </div>
+                    </div>
+                    {{ end }}
+                  
+                  {{ with .Params.contact.phone }}
+                  <div class="columns is-mobile">
+                    <div class="column is-2">
+                      <span>Phone:</span>
+                    </div>
+                    <div class="column">
+                      <a href="tel:{{ . }}" title="Phone">{{ . }}</a>
+                    </div>
+                  </div>
+                  {{ end }}
 
-{{.Content}}
+                  {{ with .Params.contact.email }}
+                  <div class="columns is-mobile">
+                    <div class="column is-2">
+                      <span>Email:</span>
+                    </div>
+                    <div class="column">
+                      <a href="mailto:{{ . }}" title="Email">{{ . }}</a>
+                    </div>
+                  </div>
+                  {{ end }}
+
+
+                  {{ with .Params.contact.website }}
+                  <div class="columns is-mobile">
+                    <div class="column is-2">
+                      <span>Link:</span>
+                    </div>
+                    <div class="column">
+                      <a href="{{ . }}" target="_blank" title="Website">Visit Website</a>
+                    </div>
+                  </div>
+                  {{ end }}
+
+                  {{ with .Params.contact.address }}
+                  <div class="columns is-mobile">
+                    <div class="column is-2">
+                      <span>Address:</span>
+                    </div>
+                    <div class="column">
+                      <em>{{ .address }} {{ .city }}, {{ .state }} {{ .zip_code }}</em>
+                    </div>
+                  </div>
+                  {{ end }}      
+                </div>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column">
+                  <h4 class="agent-header">About</h4>
+              </div>            
+            </div>
+            <div class="columns content">
+              <div class="column">
+                <div class="agent-detail-content">
+                  {{ .Content }}
+                </div>
+              </div>
+            </div>
+
+          </div>
+      </div>
+
+{{ partial "sidebar.html" . }}
+      
+
+  
+    </div>
+  </div>
+</div>
 
 {{ end }}

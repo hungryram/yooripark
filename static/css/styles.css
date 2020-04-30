@@ -12,6 +12,30 @@ h6 {
     font-family: 'Raleway', sans-serif;
 }
 
+.fa-facebook-f {
+    color: #506dab!important;
+}
+
+i.fab.fa-instagram {
+    color: #517fa4!important;
+}
+
+.fa-linkedin-in {
+    color: #007bb6!important;
+}
+
+.fa-pinterest-p {
+    color: #cb2027!important;
+}
+
+.fa-twitter {
+    color: #00aced!important;
+}
+
+.fa-youtube {
+    color: #be0303;
+}
+
 p,
 a,
 li {
@@ -49,6 +73,43 @@ a.button.hero-button {
     padding: 25px 50px!important;
     font-size: 1.3rem;
 }
+
+/* PAGINATION */
+
+.pagination li a {
+    transition: all .3s ease;
+    color: #00aeff;
+}
+
+.pagination li:hover a {
+    background: #DCE0E0;
+    transition: all .3s ease;
+}
+
+ul.pagination {
+    justify-content: center;
+}
+
+li.page-item {
+    padding: 2px;
+    font-size: 14px;
+}
+
+.pagination-next,
+.pagination-previous {
+    background: white;
+    border-color: #fff!important;
+}
+
+li.active a {
+    background: #00aeff;
+    color: #ffffff;
+}
+
+.disabled {
+    display: none;
+}
+
 
 /* NAV */
 
@@ -390,7 +451,6 @@ div.single-listing-head address {
 
 .agent-social i {
     font-size: 24px;
-    color: black;
 }
 
 /* HOME TILE */
@@ -561,10 +621,10 @@ div.single-listing-head address {
     padding: 0 10px;
 }
 
-.agent-list-social i,
+/* .agent-list-social i,
 .agent-social i {
     color: #888;
-}
+} */
 
 .agent-social i {
     font-size: 16px;
@@ -623,7 +683,11 @@ div.single-listing-head address {
 }
 
 .agent-page a {
-    color: #8f8f8f;
+    color: #000000;
+}
+
+.agent-page span {
+    font-weight: 600;
 }
 
 .agent-page .box {
