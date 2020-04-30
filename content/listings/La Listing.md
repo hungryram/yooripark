@@ -1,6 +1,7 @@
 +++
+featured_listing = false
 short_description = "Elegant Home"
-status = "Rental"
+status = "Active"
 title = "419 Abbot Dr. Norco, CA"
 [address]
 address = "6310 Golden Gate Drive"
@@ -34,8 +35,11 @@ meta_description = "la listing meta description"
 title_tag = "LA Listing"
 [tools]
 file_attachments = ["/images/MSARESUME.pdf"]
+matterport_link = ""
 open_house_date = "Monday April 20th, 2020"
+open_house_details = ""
 virtual_tours = "https://youtube.com"
+youtube_link = ""
 [utilities_and_features]
 appliances = ["Microwave", "Freezer", "Dryer"]
 floors = ["Carpet", "Slate", "Concrete"]
