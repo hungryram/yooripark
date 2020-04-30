@@ -1,16 +1,11 @@
-  
 {{ define "main" }}
 
-<div class="section">
+<div class="section agent-lists">
     <div class="container">
-        <div class="columns has-text-centered">
-            <div class="column">
-                <h1 class="title is-1">{{.Title}}</h1>
-            </div>
-        </div>
-<div class="section">
+        
         <div class="columns">
-            <div class="column">
+            
+            <div class="column is-8">
                 <div class="tabs is-centered">
                     <ul>
                         {{ range $name, $taxonomy := .Site.Taxonomies.status }}
@@ -22,27 +17,19 @@
                       <li>
                     </ul>
                   </div>
+                <div class="columns is-multiline">
+                {{ $paginator := .Paginate (where .Pages "Type" "listings") 10 }}
+                {{ range $paginator.Pages }}
+                    <div class="column is-6">   
+                        {{ partial "featured-listings.html" . }}         
+                    </div>   
+                {{ end }}
+                </div>
+                {{ partial "pagination" . }}
             </div>
+            {{ partial "sidebar.html" . }}
         </div>
-</div>
-    <div class="columns is-multiline">
-        {{ $paginator := .Paginate (where .Pages "Type" "listings") 6 }}
-        {{ range $paginator.Pages }}
-
-        <div class="column is-4">
-            
-            {{ partial "featured-listings.html" . }}
-                  
-        </div>
-        
-        {{ end }}
-
-        
     </div>
-    
-    {{ partial "pagination" . }}
-    
 </div>
-</div>
-  
+
 {{ end }}
