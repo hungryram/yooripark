@@ -98,7 +98,11 @@ span.featured {
     padding: 5px 7px;
 }
 
-
+a.main-btn {
+    background: #2d2d2d;
+    color: #fff;
+    padding: 10px 20px;
+}
 
 body {
     background: #F7F8F9;
@@ -110,13 +114,15 @@ main {
     padding: 50px 10px 150px 10px;
 }
 
+
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .fa-facebook-f {
@@ -144,8 +150,9 @@ i.fab.fa-instagram {
 }
 
 p,
-li {
-    font-family: 'Source Sans Pro', sans-serif;
+li,
+a {
+    font-family: 'Quicksand', sans-serif;
     font-weight: 400;
 
 }
@@ -581,77 +588,7 @@ div.single-listing-head address {
 }
 /* SIDEBAR */
 
-.side-bar-featured {
-    background-size: cover!important;
-    height: 300px;
-    background-position: center;
-    position: relative;
-    color: #fff;
-    margin: 20px 0;
-    cursor: pointer;
-}
 
-.featured-details-sidebar ul {
-    columns: 3;
-    -webkit-columns: 3;
-    -o-columns: 3;
-    -moz-columns: 3;
-    padding: 20px;
-}
-
-.side-bar-featured a {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.featured-details-sidebar ul li i {
-    margin-right: 10px;
-}
-
-.container-featured-column {
-    padding: 10px!important;
-    color: #fff;
-}
-
-.container-featured-column h2 {
-    font-weight: 700;
-    font-size:18px;
-}
-
-.container-featured {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
-.featured-details-sidebar {
-    background: #1F223E;
-    transition: all .3s ease-in-out;
-    overflow: hidden;
-    color: #fff;
-}
-
-.featured-status-sidebar { 
-    margin: 15px;
-    position: absolute; 
-    font-size: 13px;
-}
-
-.featured-status-sidebar span {
-    background: rgba(74,74,76,0.7);
-    padding: 10px;
-    color: #fff;
-    border-radius: 3px;
-}
-
-.featured-status-sidebar i,
-.featured-status-sidebar em {
-    color: #e6db5e;
-    font-style: normal;
-    margin: 0 4px;
-} 
 
 /* HOME BLOG */
 

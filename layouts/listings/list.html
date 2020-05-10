@@ -10,7 +10,7 @@
                     <ul>
                         {{ range $name, $taxonomy := .Site.Taxonomies.status }}
                       <li>
-                        <a href="/status/{{ $name | urlize }}">{{ $name | humanize }} ({{ $taxonomy.Count }})</a>
+                        <a hre f="/status/{{ $name | urlize }}">{{ $name | humanize }} ({{ $taxonomy.Count }})</a>
                       </li>
                       {{end}}
                 

@@ -225,9 +225,7 @@
                 {{ end }}
 
                 {{ if .Params.listing_agent.listing_agent }}
-                <footer class="card-footer">
-                  <a href='{{ strings.TrimRight "dm." .Params.listing_agent.listing_agent | relURL}}' class="card-footer-item single-agent-link">Learn More</a>
-                </footer>
+                  <a href='{{ strings.TrimRight "dm." .Params.listing_agent.listing_agent | relURL}}' class="card-footer-item single-agent-link button main-btn">Learn More</a>
               </div>
             </div>
                 {{ end }}

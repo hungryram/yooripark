@@ -2,6 +2,15 @@
 {{ define "main" }}
 <div class="section">
     <div class="container">
+        <div class="columns has-text-centered">
+            <div class="column">
+                <h2 class="title is-4" style="text-transform: capitalize">{{ .Title }}</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="container">
         <div class="columns has-text-centered is-multiline">
     {{ range .Pages }}
 

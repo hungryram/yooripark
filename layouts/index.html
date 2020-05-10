@@ -73,11 +73,10 @@
                             <h1 class="title">{{ .rental_title }}</h1>
                         </div>
                     </div>
-                    <div id="carousel" class="carousel" style="overflow: hidden;">
+                    <div class="responsive-slide">
                         {{ range first 6 $.Site.Taxonomies.status.rental }}
-                        <div style="margin:10px">
+                        
                             {{ partial "featured-listings.html" . }}
-                        </div>
                         {{end}}
                     </div>
                     <!-- End Carousel -->

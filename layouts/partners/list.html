@@ -4,7 +4,8 @@
     <div class="container">
         <div class="columns">
             <div class="column is-8">
-                {{ range .Pages }}
+              {{ $paginator := .Paginate (where .Pages "Type" "partners") 5 }}
+              {{ range $paginator.Pages }}
                 <div class="box">
                   <div class="columns">
                     <div class="column is-4">
@@ -30,11 +31,13 @@
                           {{ .Summary }}
                         </p>
                       </div>
-                      <a href="{{ .Permalink }}">Learn More</a>
+                      <a href="{{ .Permalink }}" class="button main-btn">Learn More</a>
                     </div>
                   </div>
                 </div>
               {{ end }}
+              {{ partial "pagination" . }}
+
             </div>
             {{ partial "sidebar.html" . }}
         </div>
