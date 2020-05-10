@@ -25,7 +25,6 @@
                         <ul class="agent-list-contact">
                           {{ if .Params.contact.office_phone }}<li><strong>Phone: </strong> <a href="tel:{{ .Params.contact.office_phone }}">{{ .Params.contact.office_phone }}</a></li>{{ end }}
                           {{ if .Params.contact.email }}<li><strong>Email: </strong> <a href="mailto:{{ .Params.contact.email }}">{{ .Params.contact.email }}</a></li>{{ end }}
-                          {{ if .Params.contact.website }}<li><strong>Website: </strong> <a href="{{ .Params.contact.website }}" target="_blank">{{ .Params.contact.website }}</a></li>{{ end }}
                         </ul>
                         <p>
                           {{ .Summary }}
