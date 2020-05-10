@@ -10,7 +10,7 @@ fields:
 - name: photo_or_logo
   type: file
   config:
-    maxSize: 250
+    maxSize: 5
   label: Photo or Logo
 - name: contact
   type: field_group
@@ -151,27 +151,10 @@ fields:
         path: 
     label: Category
   label: Details
-- name: seo
-  type: field_group
+- name: search_engine_optimization
+  type: include
   config: {}
-  fields:
-  - name: title_tag
-    type: text
-    config:
-      required: false
-    label: Title Tag
-    description: The title tag that Google displays in the heading result page
-  - name: meta_description
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-      schema:
-        format: markdown
-    label: Meta Description
-    description: The description that search engines look for
-  label: Search Engine Optimization (SEO)
-  description: Add Title and Description for search engines
+  template: seo
+  label: Search Engine Optimization
 pages:
 - content/partners/the-gardener.md

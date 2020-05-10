@@ -13,5 +13,3 @@ fields:
       section: menu
       file: data/menu.yaml
   label: Title
-pages:
-- data/menu.yaml

@@ -4,6 +4,16 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url: 
 sections:
+- type: heading
+  label: My Website
+- type: document
+  path: data/profile.yaml
+  label: My Profile
+- type: document
+  path: data/design.yaml
+  label: Design
+- type: heading
+  label: Default Pages
 - type: directory
   path: content/testimonials
   label: Testimonials
@@ -11,30 +21,18 @@ sections:
   match: "**/*"
   templates:
   - testimonials
-- type: document
-  path: data/menu.yaml
-  label: Menu
-- type: document
-  path: data/design.yaml
-  label: Design
 - type: heading
-  label: Default Pages
-- type: document
-  path: data/profile.yaml
-  label: My Profile
-- type: document
-  path: content/_index.md
-  label: Home
-  templates:
-  - home
+  label: Website Pages
 - type: directory
   path: content
-  label: Pages
+  label: Add/View Pages
   create: all
   match: "*"
+- type: heading
+  label: Blog
 - type: directory
   path: content/blog
-  label: Blog
+  label: Add/View Posts
   create: documents
   match: "**/*"
   templates:
