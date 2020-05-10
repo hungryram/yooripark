@@ -10,7 +10,7 @@ fields:
 - name: featured_image
   type: file
   config:
-    maxSize: 250
+    maxSize: 5
   label: Featured Image
 - name: author
   type: select
