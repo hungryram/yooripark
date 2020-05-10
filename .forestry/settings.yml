@@ -20,7 +20,7 @@ sections:
   templates:
   - testimonials
 - type: heading
-  label: Default Pages
+  label: Website Pages
 - type: directory
   path: content
   label: Add/View Pages
