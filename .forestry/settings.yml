@@ -23,12 +23,14 @@ sections:
   label: Default Pages
 - type: directory
   path: content
-  label: Pages
+  label: Add/View Pages
   create: all
   match: "*"
+- type: heading
+  label: Blog
 - type: directory
   path: content/blog
-  label: Blog
+  label: Add/View Posts
   create: documents
   match: "**/*"
   templates:
