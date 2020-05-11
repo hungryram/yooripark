@@ -37,42 +37,37 @@
                   
         <!-- Email -->
         <a href="mailto:?Subject=Check%20Out%20This%20Listing&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20{{ .Permalink | absURL }}">
-            <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+          <i class="far fa-envelope"></i>
         </a>
      
         <!-- Facebook -->
         <a href="http://www.facebook.com/sharer.php?u={{ .Permalink | absURL }}" target="_blank">
-            <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+          <i class="fab fa-facebook-f"></i>
         </a>
         
         <!-- LinkedIn -->
         <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ .Permalink | absURL }}" target="_blank">
-            <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+          <i class="fab fa-linkedin-in"></i>
         </a>
         
         <!-- Pinterest -->
         <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
-            <img src="https://simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" />
+          <i class="fab fa-pinterest-p"></i>
         </a>
         
         <!-- Print -->
         <a href="javascript:;" onclick="window.print()">
-            <img src="https://simplesharebuttons.com/images/somacro/print.png" alt="Print" />
+          <i class="fas fa-print"></i>
         </a>
         
         <!-- Reddit -->
         <a href="http://reddit.com/submit?url={{ .Permalink | absURL }}" target="_blank">
-            <img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" />
+          <i class="fab fa-reddit-alien"></i>
         </a>
          
         <!-- Twitter -->
         <a href="https://twitter.com/share?url={{ .Permalink | absURL }}&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
-            <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
-        </a>
-
-        <!-- Pinterest -->
-        <a href="http://pinterest.com/pin/create/button/?url={{ .Permalink | absURL }}{{ .Permalink }}&media={{ .Params.photos.main_photo }}&description={{ .Params.title }}" target="_blank" data-pin-do="buttonPin" data-pin-custom="true">
-          <img src="https://simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" />
+          <i class="fab fa-twitter"></i>
         </a>
     </div>
       <div class="single-price-header">
