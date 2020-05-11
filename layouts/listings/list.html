@@ -10,7 +10,7 @@
                     <ul>
                         {{ range $name, $taxonomy := .Site.Taxonomies.status }}
                       <li>
-                        <a hre f="/status/{{ $name | urlize }}">{{ $name | humanize }} ({{ $taxonomy.Count }})</a>
+                        <a href="/status/{{ $name | urlize }}">{{ $name | humanize }} ({{ $taxonomy.Count }})</a>
                       </li>
                       {{end}}
                 
@@ -18,7 +18,7 @@
                     </ul>
                   </div>
                 <div class="columns is-multiline">
-                {{ $paginator := .Paginate (where .Pages "Type" "listings") 10 }}
+                {{ $paginator := .Paginate (where .Pages "Type" "listings") 6 }}
                 {{ range $paginator.Pages }}
                     <div class="column is-6">   
                         {{ partial "featured-listings.html" . }}         
