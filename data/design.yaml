@@ -24,10 +24,10 @@ home_sections:
   sold_background_color: ''
   sold_align_title_text: ''
 - template: featured-listings
-  active_listing_title: Active Listing
+  active_listing_title: Active Listing2222
   listing_subtitle: my active listings
-  active_background_color: ''
-  active_align_title_text: ''
+  active_background_color: "#B21313"
+  active_align_title_text: has-text-left
 - template: intro
   intro_title: The Intro Title
   intro_body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quos
