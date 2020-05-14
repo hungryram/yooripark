@@ -82,3 +82,8 @@ home_sections:
     body_text_three_cta: 32423534r
 sub_pages:
   sub_page_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/kichen.jpg
+footer:
+  footer_background: "#7D6868"
+  footer_bio: Lorem ipsum dolor, sit amet consectetur adipisicing elit. A nobis ratione
+    ad provident? Nulla nisi numquam quam ipsum fuga fugit iure. Nobis obcaecati veritatis
+    vero! Quisquam impedit eos pariatur eius!
