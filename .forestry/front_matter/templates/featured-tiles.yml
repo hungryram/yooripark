@@ -14,7 +14,7 @@ fields:
   - name: top_left_featured_image
     type: file
     config:
-      maxSize: 250
+      maxSize: 5
     label: Featured Image
   - name: top_left_link_to_property
     type: text
@@ -35,7 +35,7 @@ fields:
   - name: featured_image
     type: file
     config:
-      maxSize: 250
+      maxSize: 5
     label: Featured Image
   - name: bottom_left_link_to_property
     type: text
@@ -56,7 +56,7 @@ fields:
   - name: featured_image
     type: file
     config:
-      maxSize: 250
+      maxSize: 5
     label: Featured Image
   - name: right_link_to_property
     type: text
