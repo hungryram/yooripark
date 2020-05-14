@@ -81,10 +81,10 @@ home_sections:
   listing_subtitle: view active statuses
   active_background_color: "#909090"
 - template: showcase-featured-properties
-  featured_align_title_text: []
-  featured_title: ''
-  featured_subtitle: ''
-  featured_background: ''
+  featured_align_title_text: has-text-centered
+  featured_title: Featured title
+  featured_subtitle: featured showcase
+  featured_background: "#E1E1E1"
 sub_pages:
   sub_page_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/kichen.jpg
 footer:
