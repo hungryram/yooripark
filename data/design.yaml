@@ -23,11 +23,6 @@ home_sections:
   sold_listing_subtitle: sold listing subtitle
   sold_background_color: ''
   sold_align_title_text: ''
-- template: featured-listings
-  active_listing_title: Active Listing2222
-  listing_subtitle: my active listings
-  active_background_color: "#B21313"
-  active_align_title_text: has-text-left
 - template: intro
   intro_title: The Intro Title
   intro_body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quos
@@ -80,6 +75,11 @@ home_sections:
     image_three_cta: https://reluxurytemplate.s3-us-west-1.amazonaws.com/agent.jpg
     title_three_cta: ertert
     body_text_three_cta: 32423534r
+- template: featured-listings
+  active_align_title_text: []
+  active_listing_title: ''
+  listing_subtitle: ''
+  active_background_color: ''
 sub_pages:
   sub_page_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/kichen.jpg
 footer:
