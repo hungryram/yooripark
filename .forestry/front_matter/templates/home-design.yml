@@ -111,22 +111,6 @@ fields:
     label: Sub Page Image
     description: The image to display globally on the site
   label: Sub Pages
-- name: home_sections
-  type: blocks
-  label: Home Sections
-  template_types:
-  - featured-listings
-  - sold-listings
-  - intro
-  - featured-listings
-  - featured-blog
-  - featured-tiles
-  - rental-listings
-  - cta
-  config:
-    min: 
-    max: 
-  description: Move home section areas
 - name: footer
   type: field_group
   config: {}
@@ -147,5 +131,21 @@ fields:
         format: markdown
     label: Footer Bio
   label: Footer
+- name: home_sections
+  type: blocks
+  label: Home Sections
+  template_types:
+  - featured-listings
+  - sold-listings
+  - intro
+  - featured-listings
+  - featured-blog
+  - featured-tiles
+  - rental-listings
+  - cta
+  config:
+    min: 
+    max: 
+  description: Move home section areas
 pages:
 - data/design.yaml
