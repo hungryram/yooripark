@@ -1,4 +1,35 @@
 ---
 label: Showcase Featured Properties
 hide_body: false
-fields: []
+fields:
+- name: featured_title
+  type: text
+  config:
+    required: false
+  label: Featured Title
+- name: featured_subtitle
+  type: text
+  config:
+    required: false
+  label: Featured Subtitle
+- name: featured_background
+  type: color
+  config:
+    required: false
+    color_format: Hex
+  label: Background
+- name: featured_align_title_text
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - has-text-left
+    - has-text-centered
+    - has-text-right
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Align Title Text
