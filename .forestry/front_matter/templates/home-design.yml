@@ -127,5 +127,25 @@ fields:
     min: 
     max: 
   description: Move home section areas
+- name: footer
+  type: field_group
+  config: {}
+  fields:
+  - name: footer_background
+    type: color
+    label: Footer Background
+    config:
+      required: false
+      color_format: Hex
+  - name: footer_bio
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Footer Bio
+  label: Footer
 pages:
 - data/design.yaml
