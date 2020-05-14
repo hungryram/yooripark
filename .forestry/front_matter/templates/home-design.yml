@@ -135,7 +135,6 @@ fields:
   type: blocks
   label: Home Sections
   template_types:
-  - featured-listings
   - sold-listings
   - intro
   - featured-listings
