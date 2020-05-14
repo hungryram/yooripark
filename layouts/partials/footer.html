@@ -1,12 +1,64 @@
 <!-- Footer -->
 
-<footer class="footer site-footer">
-    <div class="content has-text-centered">
-      <p>
-        Built by <a href="https://hungryram.com">Hungry Ram</a> First version of Real Estate Website
-      </p>
+<footer class="footer site-footer" style="{{ safeHTMLAttr (printf "background-color: %s" .Site.Data.design.footer.footer_background) }}">
+<div class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <a href="/">
+              {{ with .Site.Data.design.logo_or_title.upload_logo}}
+          <img src="{{ . }}" alt="" width="200">
+              {{ else }}
+          <h1>{{ .Site.Data.design.logo_or_title.title }}</h1>
+              {{ end }}
+        </a>
+        <p>{{ .Site.Data.design.footer.footer_bio }}</p>
+      </div>
+      <div class="column">
+        <h4 class="subtitle is-5">Contact</h4>
+        {{ $location := .Site.Data.profile.location_information }}
+        {{ $contact := .Site.Data.profile.primary_contact }}
+        <ul>
+          {{ if $location }}<li><i class="fas fa-map-marker-alt"></i> {{ $location.address }} {{ $location.city }} {{ $location.state }} {{ $location.zip_code }}</li> {{ end }}
+          {{ if $contact }}<li><i class="far fa-envelope"></i> {{ $contact.email }}</li> {{ end }}
+          {{ if $contact }}<li><i class="fas fa-mobile-alt"></i> {{ $contact.mobile_phone }}</li> {{ end }}
+          {{ if $contact }}<li><i class="fas fa-phone-alt"></i> {{ $contact.phone }}</li> {{ end }}
+        </ul>
+        
+        
+      </div>
+      <div class="column">
+        <h4 class="subtitle is-5">Send a Message</h4>
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input name="bot-field" type="hidden"/>
+          <div class="field">
+            <div class="control">
+              <input class="input" type="text" placeholder="Full Name">
+            </div>
+          </div>
+          
+          <div class="field">
+            <div class="control">
+              <input class="input" type="email" placeholder="Email">
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <textarea class="textarea" placeholder="Textarea"></textarea>
+            </div>
+          </div>
+          <div class="control">
+            <button class="button">Submit</button>
+          </div>
+        </form>
+      </div>
     </div>
-  </footer>
+  </div>
+</div>
+</footer>
+<div class="bottom-credit">
+  <a href="https://hungryram.com" target="_blank">Website Developed by Hungry Ram</a>
+</div>
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="{{.Site.BaseURL}}js/main.js"></script>
