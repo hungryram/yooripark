@@ -67,7 +67,7 @@
             <section class="section home-featured-sections" id="featured-listings" style="{{ safeHTMLAttr (printf "background-color: %s" .rental_background_color) }}">
                 <div class="container">
                     <!-- Start Carousel -->
-                    <div class="columns has-text-centered">
+                    <div class="columns {{ with .rental_align_title_text }}{{ . }}{{end}}">
                         <div class="column is-half is-offset-one-quarter">
                             <h4>{{ .rental_subtitle }}</h4>
                             <h1 class="title">{{ .rental_title }}</h1>
@@ -92,8 +92,8 @@
             <section class="section home-featured-sections active-listings" id="featured-listings" style="{{ safeHTMLAttr (printf "background-color: %s" .active_background_color) }}">
                 <div class="container">
                     <!-- Start Carousel -->
-                    <div class="columns has-text-centered">
-                        <div class="column is-half is-offset-one-quarter">
+                    <div class="columns {{ with .active_align_title_text }}{{ . }}{{end}}">
+                        <div class="column">
                             <h4>{{ .listing_subtitle }}</h4>
                             <h1 class="title">{{ .active_listing_title }}</h1>
                         </div>
@@ -109,14 +109,38 @@
             </section>
         {{ end }}
 
+                {{/*  SHOWCASE FEATURED LISTING  */}}
+                {{ if eq "showcase-featured-properties" .template }}
+                <section class="section home-featured-sections active-listings" id="featured-listings" style="{{ safeHTMLAttr (printf "background-color: %s" .featured_background_color) }}">
+                    <div class="container">
+                        <!-- Start Carousel -->
+                        <div class="columns {{ with .featured_align_title_text }}{{ . }}{{end}}">
+                            <div class="column is-half is-offset-one-quarter">
+                                <h4>{{ .featured_subtitle }}</h4>
+                                <h1 class="title">{{ .featured_title }}</h1>
+                            </div>
+                        </div>
+                        <div class="responsive-slide">
+                            {{ range first 50 (where $.Site.RegularPages "Type" "listings") }}
+                            {{ if .Params.featured_listing }}
+                                {{ partial "featured-listings.html" . }}
+                            {{end}}
+                            {{ end }}
+                        </div>
+                        <!-- End Carousel -->
+                        <div class="column" align="center"><a class="button" href="/featured">View All</a></div>
+                    </div>
+                </section>
+            {{ end }}
+
 
         {{/*  SOLD LISTING  */}}
         {{ if eq "sold-listings" .template }}
         <section class="section sold-listings home-featured-sections" id="featured-listings" style="{{ safeHTMLAttr (printf "background-color: %s" .sold_background_color) }}">
             <div class="container">
                 <!-- Start Carousel -->
-                <div class="columns has-text-centered">
-                    <div class="column is-half is-offset-one-quarter">
+                <div class="columns {{ with .sold_align_title_text }}{{ . }}{{end}}">
+                    <div class="column">
                         <h4>{{ .sold_listing_subtitle }}</h4>
                         <h1 class="title">{{ .sold_listing_title }}</h1>
                     </div>
