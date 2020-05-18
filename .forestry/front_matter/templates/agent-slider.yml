@@ -1,4 +1,35 @@
 ---
 label: Agent Slider
 hide_body: true
-fields: []
+fields:
+- name: agent_title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: agent_subtitle
+  type: text
+  config:
+    required: false
+  label: Agent Subtitle
+- name: agent_background
+  type: color
+  label: Background
+  config:
+    required: false
+    color_format: Hex
+- name: text_align
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - has-text-left
+    - has-text-centered
+    - has-text-right
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Text Align
