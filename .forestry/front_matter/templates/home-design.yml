@@ -137,6 +137,7 @@ fields:
   template_types:
   - sold-listings
   - intro
+  - agent-slider
   - featured-listings
   - featured-blog
   - featured-tiles
