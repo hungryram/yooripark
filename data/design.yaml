@@ -110,3 +110,4 @@ colors:
   button_background_colors: "#580404"
   header_background_color: "#5D5858"
   navigation_link_color: "#BA0000"
+  enable_black_menu_items: true
