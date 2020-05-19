@@ -114,7 +114,6 @@ span.featured {
 }
 
 a.main-btn {
-    background: #2d2d2d;
     color: #fff;
     padding: 10px 20px;
 }
@@ -316,9 +315,9 @@ li.active a {
 }
 
 
-header a {
+/* header a {
     color: white;
-}
+} */
 
 .sub-menu:hover .sub {
     display: block;

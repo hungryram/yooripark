@@ -1,5 +1,5 @@
 <div class="hero-head">
-    <header class="navbar" {{ if not .IsHome }}style="background-color:black"{{end}}>
+    <header class="navbar" {{ if not .IsHome }}style="{{ safeHTMLAttr (printf "background-color: %s" .Site.Data.design.colors.header_background_color) }}"{{end}}>
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item" href="/">

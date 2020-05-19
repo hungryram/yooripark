@@ -39,7 +39,7 @@
                   <div class="content">
                       <h1 class="title is-6" style="margin: 2px">{{ .Params.short_description }} ({{ .Params.status }})</h1>
                       <h4 class="subtitle is-6" style="margin:2px">${{ .Params.pricing.price }}</h4>
-                      <a href="{{ .Permalink }}">More Info</a>
+                      <a href="{{ .Permalink }}" class="secondary-btn">More Info</a>
                 </div>
             </article>
             {{end}}
@@ -71,7 +71,7 @@
             <div class="media-content">
               <div class="content">
                   <h1 class="title is-6">{{ .Params.title }}</h1>
-                  <a href="{{ .Permalink }}">Continue Reading</a>
+                  <a href="{{ .Permalink }}" class="secondary-btn">Continue Reading</a>
             </div>
         </article>
         {{end}}

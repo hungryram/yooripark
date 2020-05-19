@@ -6,6 +6,9 @@ $(document).ready(function () {
       });
 });
 
+
+
+
 // TESTIMONIAL SLIDER
 $('.responsive-testimonial-slide').slick({
   dots: true,

@@ -27,7 +27,7 @@
     {{ with .Params.seo.meta_description }}
     <meta name="description" content="{{ . }}">
     {{ end }}
-
+    {{ $color := .Site.Data.design.hero_button_bg_color }}
     <style>
         .hero__container {
             background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),

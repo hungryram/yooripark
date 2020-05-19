@@ -70,7 +70,20 @@
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="{{.Site.BaseURL}}/js/slick.min.js"></script>
         <script src="{{.Site.BaseURL}}/js/main.js"></script>
+        <script>
 
+          // COLORS
+          // SECONDARY BUTTON
+          document.querySelectorAll(".secondary-btn").forEach(function(el) {
+            el.style.color = '{{ .Site.Data.design.colors.text_link_colors }}';
+          });
+          // PRIMARY BUTTON
+          document.querySelectorAll("a.main-btn").forEach(function(bg) {
+            bg.style.backgroundColor = '{{ .Site.Data.design.colors.button_background_colors }}';
+          });
+
+
+        </script>
         <script>
             $(document).ready(function() {
             
