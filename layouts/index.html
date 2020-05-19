@@ -17,6 +17,24 @@
             {{ partial "cta" . }}
         {{ end }}
 
+        {{ if eq "idx-search-bar" .template }}
+            <div class="section">
+                <div class="container">
+                    <div class="columns has-text-centered">
+                        <div class="column">
+                            <h4>{{ .subtitle }}</h4>
+                            <h1 class="title">{{ .idx_title }}</h1>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column">
+                            <script type="text/javascript" src="https://www.idxhome.com/site/listing/search/widget/{{ $.Site.Data.idx.idx_id }}?style=horizontal"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{ end }}
+
         {{/*  BLOG  */}}
         {{ if eq "featured-blog" .template }}
         <section class="section home-featured-sections home-featured-blog" style="{{ safeHTMLAttr (printf "background-color: %s" .blog_background) }}">
@@ -68,7 +86,7 @@
                 <div class="container">
                     <!-- Start Carousel -->
                     <div class="columns {{ with .rental_align_title_text }}{{ . }}{{end}}">
-                        <div class="column is-half is-offset-one-quarter">
+                        <div class="column">
                             <h4>{{ .rental_subtitle }}</h4>
                             <h1 class="title">{{ .rental_title }}</h1>
                         </div>
