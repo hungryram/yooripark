@@ -18,6 +18,18 @@ fields:
     label: Title
     description: Display text instead of a logo
   label: Logo or Title
+- name: colors
+  type: field_group
+  config: {}
+  fields:
+  - name: text_link_colors
+    type: color
+    config:
+      required: false
+      color_format: RGB
+    label: Text Link Colors
+    description: Links like <em>Read More</em> and <em>More Info</em>...
+  label: Colors
 - name: main_image
   type: field_group
   config: {}
