@@ -4,9 +4,6 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url: 
 sections:
-- type: document
-  path: data/idx.yaml
-  label: Set Up
 - type: heading
   label: My Website
 - type: document
@@ -76,6 +73,9 @@ sections:
   - partners
 - type: heading
   label: IDX Configuration
+- type: document
+  path: data/idx.yaml
+  label: Set Up
 - type: heading
   label: External
 - type: document
