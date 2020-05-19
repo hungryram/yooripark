@@ -31,6 +31,8 @@ fields:
     config:
       required: false
     label: Email
+    description: Please contact the <a href="https://hungryram.com" title="" target="_blank">developer
+      </a>if you need to change email notifications.
   - name: license_type
     type: select
     default: []
