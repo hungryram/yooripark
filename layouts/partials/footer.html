@@ -5,7 +5,7 @@
   <div class="container">
     <div class="columns">
       <div class="column">
-        <a href="/">
+        <a href="{{ .Site.BaseURL }}">
               {{ with .Site.Data.design.logo_or_title.upload_logo}}
           <img src="{{ . }}" alt="" width="200">
               {{ else }}
