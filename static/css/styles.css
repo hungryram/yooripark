@@ -917,10 +917,27 @@ ul.agent-list-contact a {
     margin: 20px;
 }
 
+.responsive-testimonial-slide {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+}
+
+.testimonials-slider figure {
+    margin: 15px auto;
+}
+
+.testimonials-slider p {
+    line-height: 25px;
+}
+
+.testimonials-slider a {
+    color: #a2a2a2;
+}
+
 /* FOOTER */
 
 footer.site-footer {
-    background-color: #111111;
     bottom:0;
     left:0;
 }

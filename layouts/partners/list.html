@@ -2,6 +2,11 @@
 
 <div class="section agent-lists">
     <div class="container">
+      <div class="columns">
+        <div class="column">
+          <h2 class="title is-4">{{ .Title }}</h2>
+        </div>
+      </div>
         <div class="columns">
             <div class="column is-8">
               {{ $paginator := .Paginate (where .Pages "Type" "partners") 5 }}

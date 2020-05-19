@@ -1,6 +1,6 @@
 <!-- Footer -->
 
-<footer class="footer site-footer" style="{{ safeHTMLAttr (printf "background-color: %s" .Site.Data.design.footer.footer_background) }}">
+<footer class="footer site-footer" {{ if .Site.Data.design.footer.disable_background_color }} style="background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url({{ .Site.Data.design.footer.footer_background_image }}) no-repeat center;background-size: cover;background-attachment:fixed"{{ else }} style="{{ safeHTMLAttr (printf "background-color: %s" .Site.Data.design.footer.footer_background) }}"{{ end }}>
 <div class="section">
   <div class="container">
     <div class="columns">
@@ -68,11 +68,9 @@
 </div>
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script src="{{.Site.BaseURL}}js/main.js"></script>
         <script src="{{.Site.BaseURL}}js/slick.min.js"></script>
-        <script type="text/javascript">
-            $('.single-item').slick();
-          </script>
+        <script src="{{.Site.BaseURL}}js/main.js"></script>
+
         <script>
             $(document).ready(function() {
             
@@ -90,9 +88,6 @@
                  });
             });
             </script>
-            
-		<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
-
     <script>
       function siteRedirect() {
         var selectbox = document.getElementById("status-dropdown");
