@@ -18,5 +18,12 @@ fields:
   type: boolean
   label: Enable Home Quick Search
   description: Enabling this will displays the quick search overlaying the main image.
+- name: test
+  type: text
+  config:
+    required: false
+  hidden: true
+  label: test
+  description: esdfdfsdfdsfdsf
 pages:
 - data/idx.yaml
