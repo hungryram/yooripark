@@ -4,7 +4,9 @@ hide_body: true
 fields:
 - name: idx_id
   type: number
-  description: ''
+  description: Please contact the developer to configure your IDX.<br>Depending on
+    your MLS board, some will have additional fees or monthly data fees. Unfortunately
+    we are unable to waive these data fees.
   default: 0
   required: true
   config:
@@ -15,6 +17,6 @@ fields:
 - name: enable_home_quick_search
   type: boolean
   label: Enable Home Quick Search
-  description: Enabling this will displays the quick search overlaying the main image.
+  description: Enabling this will display the quick search overlaying the main image.
 pages:
 - data/idx.yaml
