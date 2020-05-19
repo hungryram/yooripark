@@ -31,6 +31,22 @@
             
         </div>
     </div>
+
+  
+     <!-- Hero footer: will stick at the bottom -->
+{{ if .Site.Data.idx.enable_home_quick_search }}
+  <div class="hero-foot">
+      <div class="section">
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <script type="text/javascript" src="https://www.idxhome.com/site/listing/search/widget/{{ $.Site.Data.idx.idx_id }}?style=horizontal"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+{{ end }}
   
   </section>
 

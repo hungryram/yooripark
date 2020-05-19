@@ -988,3 +988,21 @@ ul.footer-social li {
     display: inline-block;
     padding-right: 10px
 }
+
+/* IHOMEFINDER */
+
+#ihf-main-container input.ihf-area-input[type=text],
+#ihf-main-container input.ihf-search-form-input[type=text],
+#ihf-main-container select.ihf-chosen-select-width,
+#ihf-main-container .ihf-main-search-form-submit {
+    border-radius: 0px!important;
+}
+
+#ihf-main-container label {
+    color: #c2c2c2!important
+}
+
+.hero-foot {
+    background: rgba(0, 0, 0, 0.6);
+}
+
