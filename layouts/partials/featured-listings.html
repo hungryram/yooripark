@@ -5,7 +5,7 @@
     <div class="content">
       <span class="status">{{ .Params.status }}</span>
       {{ if .Params.featured_listing }}<span class="featured">Featured</span>{{ end }}
-      <span style="float:right;color: white" class="list-pricing">${{ .Params.pricing.price }}{{with eq .Params.status "Rental" }}<span class="rent-per-month">PER MONTH</span>{{end}}</span>
+      <span style="float:right;color: white" class="list-pricing">${{ .Params.pricing.price }}{{with eq .Params.status "Rental" }}<span class="rent-per-month">/MONTH</span>{{end}}</span>
     </div>
     <div class="listing-bottom" style="position:absolute;bottom:0">
         <ul>

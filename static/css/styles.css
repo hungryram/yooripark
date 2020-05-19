@@ -119,7 +119,7 @@ span.featured {
 }
 
 .list-pricing {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 2px;
@@ -297,8 +297,8 @@ li.active a {
 
 
 
-    div#navbarMenuHeroC ul {
-        padding-top: 50px;
+    div#navbarMenuHeroC ul:first-child {
+        padding-top: 30px;
     }
 
     div#navbarMenuHeroC {
@@ -317,7 +317,10 @@ li.active a {
         display: inline-block;
         padding: 0 20px;
     }
-    
+
+    ul.sub {
+        position: absolute;
+    }
 }
 
 .navbar-item img {
@@ -333,8 +336,14 @@ header a {
     color: white;
 }
 
-.sub-menu:hover .sub {
-    display: block;
+.sub-menu:hover .sub-active-menu {
+    max-height: 600px;
+    transition: max-height .3s ease;
+}
+
+.sub.sub-active-menu {
+    max-height: 600px;
+    transition: max-height .3s ease;
 }
 
 .navbar-brand h1 {
@@ -347,7 +356,11 @@ header a {
 } */
 
 .sub {
-    display: none;
+    /* display: none; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .2s ease;
+
 }
 
 .open {
