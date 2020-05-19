@@ -12,3 +12,5 @@ fields:
     max: 
     step: 
   label: IDX ID
+pages:
+- data/idx.yaml
