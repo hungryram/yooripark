@@ -1,4 +1,14 @@
 ---
 label: IDX Config
 hide_body: true
-fields: []
+fields:
+- name: idx_id
+  type: number
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+  label: IDX ID
