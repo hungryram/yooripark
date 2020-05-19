@@ -4,7 +4,9 @@ hide_body: true
 fields:
 - name: idx_id
   type: number
-  description: ''
+  description: Please contact the developer to configure your IDX.<br>Depending on
+    your MLS board, some will have additional fees or monthly data fees. Unfortunately
+    we are unable to waive these data fees.
   default: 0
   required: true
   config:
