@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "testingre.netlify.app"
 languageCode = "en-us"
 [[menu.main]]
 name = "Listings"
