@@ -35,6 +35,24 @@ fields:
       required: false
       color_format: Hex
     label: Button Background Colors
+  - name: header_and_navigation
+    type: field_group
+    config: {}
+    fields:
+    - name: header_background_color
+      type: color
+      config:
+        required: false
+        color_format: RGB
+      default: rgb(0, 0, 0)
+      label: Header Background
+    - name: navigation_link_color
+      type: color
+      config:
+        required: false
+        color_format: Hex
+      label: Navigation Link Color
+    label: Header and Navigation
   label: Colors
 - name: main_image
   type: field_group

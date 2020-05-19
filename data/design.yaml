@@ -108,3 +108,6 @@ footer:
 colors:
   text_link_colors: rgb(9, 93, 115)
   button_background_colors: "#580404"
+  header_and_navigation:
+    header_background_color: rgb(98, 98, 98)
+    navigation_link_color: "#890202"
