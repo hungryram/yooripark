@@ -91,8 +91,8 @@ home_sections:
   agent_background: "#E6E6E6"
   agent_text_align: has-text-left
 - template: testimonial-slider
-  testimonial_slider_title: ''
-  testimonial_slider_subtitle: ''
+  testimonial_slider_title: Our testimonials
+  testimonial_slider_subtitle: See our clients review
 sub_pages:
   sub_page_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/kichen.jpg
 footer:
