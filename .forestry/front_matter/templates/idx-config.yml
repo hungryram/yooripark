@@ -12,5 +12,9 @@ fields:
     max: 
     step: 
   label: IDX ID
+- name: enable_home_quick_search
+  type: boolean
+  label: Enable Home Quick Search
+  description: Enabling this will displays the quick search overlaying the main image.
 pages:
 - data/idx.yaml
