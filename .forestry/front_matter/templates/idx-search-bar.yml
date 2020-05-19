@@ -1,0 +1,14 @@
+---
+label: IDX Search Bar
+hide_body: true
+fields:
+- name: idx_title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: subtitle
+  type: text
+  config:
+    required: false
+  label: Subtitle
