@@ -154,6 +154,8 @@ fields:
   - cta
   - showcase-featured-properties
   - testimonial-slider
+  - testimonials
+  - idx-search-bar
   config:
     min: 
     max: 
