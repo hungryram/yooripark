@@ -113,3 +113,4 @@ colors:
     navigation_link_color: "#890202"
   header_background_color: "#5D5858"
   navigation_link_color: "#BA0000"
+  enable_black_menu_items: true
