@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url: 
 sections:
+- type: document
+  path: data/idx.yaml
+  label: Set Up
+  match: "**/*"
 - type: heading
   label: My Website
 - type: document
