@@ -117,7 +117,7 @@ fields:
   fields:
   - name: footer_background
     type: color
-    label: Footer Background
+    label: Background Color
     config:
       required: false
       color_format: Hex
@@ -130,6 +130,15 @@ fields:
       schema:
         format: markdown
     label: Footer Bio
+  - name: disable_background_color
+    type: boolean
+    label: Disable Background Color
+    description: Disable background color to use background image instead.
+  - name: footer_background_image
+    type: file
+    config:
+      maxSize: 64
+    label: Background Image
   label: Footer
 - name: home_sections
   type: blocks
