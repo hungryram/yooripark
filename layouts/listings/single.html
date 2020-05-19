@@ -10,11 +10,11 @@
         {{ $.Scratch.Add "path" .Site.BaseURL }}
         <nav class="breadcrumb is-small " aria-label="breadcrumbs">
         <ul>
-          <li><a href="/">Home</a></li>
+          <li><a href="/" class="secondary-btn">Home</a></li>
           {{ range $index, $element := split $url "/" }}
             {{ $.Scratch.Add "path" $element }}
               {{ if ne $element "" }}
-              <li><a href='{{ $.Scratch.Get "path" }}'>{{ . | humanize }}</a></li>
+              <li><a href='{{ $.Scratch.Get "path" }}' class="secondary-btn">{{ . | humanize }}</a></li>
               {{ $.Scratch.Add "path" "/" }}
               {{ end }}
           {{ end }}
@@ -26,7 +26,7 @@
             <div class="media-content">
               <div class="content single-listing-head">
                 <h1 class="title is-4">{{ .Params.short_description }}</h1>
-                <span>{{ .Params.status }}</span>
+                <span style="{{ safeHTMLAttr (printf "background-color: %s" $.Site.Data.design.colors.button_background_colors) }}">{{ .Params.status }}</span>
                 <address><i class="fas fa-map-marker-alt"></i> {{ .Params.address.address }} {{ .Params.address.city }}, {{ .Params.address.state }} {{ .Params.address.zip_code }} </address><br>
              </div>
             </div>

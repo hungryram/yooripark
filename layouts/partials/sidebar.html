@@ -2,28 +2,6 @@
 
 
 <div class="column">
-
-
-    <div class="box">
-        <h2 class="subtitle is-6">Search Properties<h2>
-        <div class="field has-addons">
-          <div class="control is-expanded">
-            <div class="select is-fullwidth">
-              <select name="country" id="status-dropdown">
-                {{ range $name, $taxonomy := .Site.Taxonomies.status }}
-                <option value="{{ $name | urlize }}">{{ $name | humanize }} ({{ $taxonomy.Count }})</option>
-              {{end}}
-              </select>
-            </div>
-          </div>
-          <div class="control">
-            <button type="submit" class="button" onclick="siteRedirect()">Search</button>
-          </div>
-        </div>
-    </div>
-
-
-
     <div class="box">
         <h2 class="subtitle is-6">Recent Listings<h2>
             {{ range first 4 (where $.Site.RegularPages "Type" "listings") }}
@@ -50,7 +28,7 @@
         <ul>
             {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
           <li>
-            <i class="fas fa-angle-right" style="margin-right: 10px"></i><a href="/categories{{ $name | urlize | relURL }}">{{ $name | humanize }} ({{ $taxonomy.Count }})</a>
+            <i class="fas fa-angle-right" style="margin-right: 10px"></i><a href="/categories{{ $name | urlize | relURL }}" class="secondary-btn">{{ $name | humanize }} ({{ $taxonomy.Count }})</a>
           </li>
           {{end}}
 

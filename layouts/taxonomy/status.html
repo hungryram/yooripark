@@ -8,6 +8,7 @@
             <div class="column is-8">
                 <div class="tabs is-centered">
                     <ul>
+                        <li><a href="/featured" class="main-btn" style="color: #fff">Featured</a></li>
                         {{ range $name, $taxonomy := .Site.Taxonomies.status }}
                       <li>
                         <a href="/status/{{ $name | urlize }}">{{ $name | humanize }} ({{ $taxonomy.Count }})</a>

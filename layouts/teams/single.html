@@ -6,7 +6,7 @@
       <div class="column is-8">
           <div style="padding: 20px">
             <h1 class="agent-name">{{ .Params.title }} </h1>
-            <h4>{{ .Params.details.title }}{{ if .Params.details.office }}{{ with .Site.GetPage .Params.details.office }} at <a href="{{ .Permalink }}" class="office-link">{{ .Params.title }}</a>{{end}}{{end}}</h4>
+            <h4>{{ .Params.details.title }}{{ if .Params.details.office }}{{ with .Site.GetPage .Params.details.office }} at <a href="{{ .Permalink }}" class="office-link secondary-btn">{{ .Params.title }}</a>{{end}}{{end}}</h4>
             <h4>{{ .Params.details.license_type }}: {{ .Params.details.license_number }}</h4>
             
           </div>
@@ -138,14 +138,14 @@
                 <ul class="agent-additional">
                   <li><i class="far fa-comment"></i><strong>Language:</strong></li>
                 {{ range .Params.details.languages }}
-                  <li class="accent-boxes">{{ . }}</li>
+                  <li class="accent-boxes" style="{{ safeHTMLAttr (printf "background-color: %s" $.Site.Data.design.colors.button_background_colors) }}">{{ . }}</li>
                 {{ end }}
                 </ul>
 
                 <ul class="agent-additional">
                   <li><i class="far fa-star"></i><strong>Specialties:</strong></li>
                 {{ range .Params.details.specialty }}
-                  <li class="accent-boxes">{{ . }}</li>
+                  <li class="accent-boxes" style="{{ safeHTMLAttr (printf "background-color: %s" $.Site.Data.design.colors.button_background_colors) }}">{{ . }}</li>
                 {{ end }}
                 </ul>
               </div>

@@ -65,7 +65,7 @@
                                 <p>
                                 {{ slicestr .Summary 2 150 | markdownify }}
                                 </p>
-                                <a href="{{ .Permalink }}">Continue Reading</a>
+                                <a href="{{ .Permalink }}" class="secondary-btn">Continue Reading</a>
                               </div>
                             </div>
                           </div>
@@ -73,7 +73,7 @@
 
                 {{ end }}
             </div>
-                <div class="column" align="center"><a class="button" href="/blog/">View All</a></div>
+                <div class="column" align="center"><a class="button main-btn" href="/blog/">View All</a></div>
             </div>
         </section>
         {{ end }}
@@ -98,7 +98,7 @@
                         {{end}}
                     </div>
                     <!-- End Carousel -->
-                    <div class="column" align="center"><a class="button" href="/status/rental">View All</a></div>
+                    <div class="column" align="center"><a class="button main-btn" href="/status/rental">View All</a></div>
                 </div>
             </section>
         {{ end }}
@@ -122,7 +122,7 @@
                         {{end}}
                     </div>
                     <!-- End Carousel -->
-                    <div class="column" align="center"><a class="button" href="/status/active/">View All</a></div>
+                    <div class="column" align="center"><a class="button main-btn" href="/status/active/">View All</a></div>
                 </div>
             </section>
         {{ end }}
@@ -146,7 +146,7 @@
                             {{ end }}
                         </div>
                         <!-- End Carousel -->
-                        <div class="column" align="center"><a class="button" href="/featured">View All</a></div>
+                        <div class="column" align="center"><a class="button main-btn" href="/featured">View All</a></div>
                     </div>
                 </section>
             {{ end }}
@@ -170,7 +170,7 @@
                     {{end}}
                 </div>
                 <!-- End Carousel -->
-                <div class="column" align="center"><a class="button" href="/status/sold/">View All</a></div>
+                <div class="column" align="center"><a class="button main-btn" href="/status/sold/">View All</a></div>
                 
             </div>
         </section>
@@ -178,7 +178,7 @@
 
         {{/*  AGENT SLIDER  */}}
         {{ if eq "agent-slider" .template }}
-        <section class="section home-featured-sections"style="{{ safeHTMLAttr (printf "background-color: %s" .agent_background) }}">
+        <section class="section home-featured-sections" style="{{ safeHTMLAttr (printf "background-color: %s" .agent_background) }}">
             <div class="container">
                 <!-- Start Carousel -->
                 <div class="columns {{ with .agent_text_align }}{{ . }}{{end}}">
@@ -201,7 +201,7 @@
                     {{ end }}
                 </div>
                 <!-- End Carousel -->
-                <div class="column" align="center"><a class="button" href="/teams">View All</a></div>
+                <div class="column" align="center"><a class="button main-btn" href="/teams">View All</a></div>
             </div>
         </section>
     {{ end }}
@@ -232,7 +232,7 @@
                 {{ end }}
             </div>
             <!-- End Carousel -->
-            <div class="column" align="center"><a class="button" href="/testimonials">View All</a></div>
+            <div class="column" align="center"><a class="button main-btn" href="/testimonials">View All</a></div>
         </div>
     </section>
     {{ end }}

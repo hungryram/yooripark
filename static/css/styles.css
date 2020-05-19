@@ -1,5 +1,18 @@
 /* DEFAULT LIST.HTML */
 
+button.button {
+    border: 0!important;
+    border-radius: 0;
+    color: #fff;
+    transition: all .2s ease;
+    padding: 0 20px;
+}
+
+.button.is-hovered, .button:hover {
+    color: #ccc!important;
+    transition: all .2s ease;
+}
+
 .default-list {
     padding: 30px;
 }
@@ -115,7 +128,8 @@ span.featured {
 
 a.main-btn {
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 40px;
+    border-radius: 0;
 }
 
 body {
@@ -254,7 +268,7 @@ li.active a {
 /* NAV */
 @media screen and (max-width: 1087px){
     div#navbarMenuHeroC {
-        background-color: black;
+        background-color: #7c7c7c;
     }
     
     .navbar-menu.is-active {
@@ -315,9 +329,9 @@ li.active a {
 }
 
 
-/* header a {
+header a {
     color: white;
-} */
+}
 
 .sub-menu:hover .sub {
     display: block;
@@ -759,9 +773,6 @@ ul.agent-list-contact a {
     color: #000;
 }
 
-.office-link {
-    color: #00AEFF!important;
-}
 
 .agent-header {
     background-color: #f5f5f5;
@@ -785,11 +796,11 @@ ul.agent-list-contact a {
 }
 
 .accent-boxes {
-    background-color: #00AEFF;
-    padding: 5px 8px;
+    padding: 5px 6px;
     color: #fff;
     margin: 0 2px;
     border-radius: 4px;
+    font-size: 13px;
 }
 
 .agent-additional li {

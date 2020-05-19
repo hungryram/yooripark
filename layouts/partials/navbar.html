@@ -35,7 +35,7 @@
                   </ul>
                 {{else}}
                   <li>
-                  <a href="{{.URL}}" class="nav-item">
+                  <a href="{{.URL}}" class="nav-item"{{ if not $.IsHome }}{{ if $.Site.Data.design.colors.enable_black_menu_items }}style="color: black"{{ end }}{{ else }}style="color: #fff"{{end}}>
                       {{ .Pre }}
                       <span>{{ .Name }}</span>
                   </a>
