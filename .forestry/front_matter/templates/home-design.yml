@@ -29,6 +29,12 @@ fields:
       color_format: RGB
     label: Text Link Colors
     description: Links like <em>Read More</em> and <em>More Info</em>...
+  - name: button_background_colors
+    type: color
+    config:
+      required: false
+      color_format: Hex
+    label: Button Background Colors
   label: Colors
 - name: main_image
   type: field_group
