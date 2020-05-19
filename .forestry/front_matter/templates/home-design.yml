@@ -41,12 +41,9 @@ fields:
     config:
       required: false
       color_format: Hex
-  - name: navigation_link_color
-    type: color
-    label: Navigation Link Color
-    config:
-      required: false
-      color_format: Hex
+  - name: enable_black_menu_items
+    type: boolean
+    label: Enable Black Menu Items
   label: Colors
 - name: main_image
   type: field_group
