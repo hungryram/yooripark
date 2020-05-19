@@ -72,6 +72,8 @@ sections:
   templates:
   - partners
 - type: heading
+  label: IDX Configuration
+- type: heading
   label: External
 - type: document
   path: content/help/links.md
