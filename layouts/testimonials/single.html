@@ -1,38 +1,47 @@
 {{ define "main" }}
 
-<h1>testimonials</h1>
 <div class="section">
-    <div class="container">
-        <div class="columns">
-            <div class="column">
-                <div class="card">
-                    <header class="card-header">
-                      <p class="card-header-title">
-                        Component
-                      </p>
-                      <a href="#" class="card-header-icon" aria-label="more options">
-                        <span class="icon">
-                          <i class="fas fa-angle-down" aria-hidden="true"></i>
-                        </span>
-                      </a>
-                    </header>
-                    <div class="card-content">
-                      <div class="content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-                        <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
-                        <br>
-                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                      </div>
-                    </div>
-                    <footer class="card-footer">
-                      <a href="#" class="card-footer-item">Save</a>
-                      <a href="#" class="card-footer-item">Edit</a>
-                      <a href="#" class="card-footer-item">Delete</a>
-                    </footer>
-                  </div>
-            </div>
-        </div>
-    </div>
-</div>
+  <div class="container">
+    <h1 class="title is-4">Testimonial by {{ .Title }}</h1>
+    <div class="columns card notification" style="margin: 10px 0;">
+      <div class="column is-3" align="center">
+          <figure class="image is-128x128">
+              <img class="is-rounded" src="{{ .Params.photo }}">
+          </figure>
+      </div>
+      <div class="column quote-testimonial">
 
+          {{ if gt ( len .Params.testimonial )  0 }}
+              <p>{{ .Params.testimonial }}</p><br>
+          {{end}}
+          
+          {{ if gt ( len .Params.title )  0 }}
+              <strong><em>{{ .Params.title }}</em></strong><br>
+          {{end}}
+          
+          {{ if gt ( len .Params.occupation )  0 }}
+              <em>{{ .Params.occupation }}</em><br>
+          {{end}}
+
+          {{ if gt ( len .Params.date_published )  0 }}
+              <em>{{ .Params.date_published }}</em><br>
+          {{end}}
+
+          {{ if gt ( len .Params.source_link )  0 }}
+              {{ if gt ( len .Params.source_label )  0 }}
+                  <a href="{{ .Params.source_link }}" target="_blank">{{.Params.source_label  }}</a><br>
+              {{end}}
+          {{end}}
+
+          {{ if gt ( len .Params.external_link )  0 }}
+              {{ if gt ( len .Params.link_label )  0 }}
+                  <a href="{{ .Params.external_link }}" target="_blank">{{.Params.link_label  }}</a><br>
+              {{end}}
+          {{end}}
+
+          <a href="{{ .Permalink }}">More</a>
+      </div>
+  </div>
+  </div>
+</div>
 {{ end }}

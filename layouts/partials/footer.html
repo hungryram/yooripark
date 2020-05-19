@@ -13,9 +13,16 @@
               {{ end }}
         </a>
         <p>{{ .Site.Data.design.footer.footer_bio }}</p>
+        {{ $footerSocial := .Site.Data.profile.social_accounts }}
+        <ul class="footer-social">
+          {{ if $footerSocial.facebook }}<li><a href="{{ $footerSocial.facebook }}" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>{{ end }}
+          {{ if $footerSocial.instagram }}<li><a href="{{ $footerSocial.instagram }}" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>{{ end }}
+          {{ if $footerSocial.linkedin }}<li><a href="{{ $footerSocial.linkedin }}" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>{{ end }}
+          {{ if $footerSocial.pinterest }}<li><a href="{{ $footerSocial.pinterest }}" target="_blank" title="Pinterest"><i class="fab fa-pinterest-p"></i></a></li>{{ end }}
+        </ul>
       </div>
       <div class="column">
-        <h4 class="subtitle is-5">Contact</h4>
+        <h4 class="subtitle is-6">Contact</h4>
         {{ $location := .Site.Data.profile.location_information }}
         {{ $contact := .Site.Data.profile.primary_contact }}
         <ul>
@@ -28,7 +35,7 @@
         
       </div>
       <div class="column">
-        <h4 class="subtitle is-5">Send a Message</h4>
+        <h4 class="subtitle is-6">Send a Message</h4>
         <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
           <input name="bot-field" type="hidden"/>
           <div class="field">

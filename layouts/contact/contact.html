@@ -1,0 +1,59 @@
+{{ define "main" }}
+<div class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <h2 class="title is-4">About</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum optio odit repellat, doloribus mollitia, laudantium impedit incidunt quaerat, magnam repellendus tempora dolore? Suscipit architecto nemo cum minima a rem ab?</p>
+        {{ $contactSocial := .Site.Data.profile.social_accounts }}
+        {{ $locationContact := .Site.Data.profile.location_information }}
+        {{ $contactPage := .Site.Data.profile.primary_contact }}
+
+                    <ul class="contact-page-icons">
+                    {{ if $locationContact }}<li><i class="fas fa-map-marker-alt"></i> {{ $locationContact.address }} {{ $locationContact.city }} {{ $locationContact.state }} {{ $locationContact.zip_code }}</li> {{ end }}
+                    {{ if $contactPage }}<li><i class="far fa-envelope"></i> {{ $contactPage.email }}</li> {{ end }}
+                    {{ if $contactPage }}<li><i class="fas fa-mobile-alt"></i> {{ $contactPage.mobile_phone }}</li> {{ end }}
+                    {{ if $contactPage }}<li><i class="fas fa-phone-alt"></i> {{ $contactPage.phone }}</li> {{ end }}
+                  </ul>
+                <ul class="contact-page-social">
+                    {{ if $contactSocial.facebook }}<li><a href="{{ $contactSocial.facebook }}" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>{{ end }}
+                    {{ if $contactSocial.instagram }}<li><a href="{{ $contactSocial.instagram }}" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>{{ end }}
+                    {{ if $contactSocial.linkedin }}<li><a href="{{ $contactSocial.linkedin }}" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>{{ end }}
+                    {{ if $contactSocial.pinterest }}<li><a href="{{ $contactSocial.pinterest }}" target="_blank" title="Pinterest"><i class="fab fa-pinterest-p"></i></a></li>{{ end }}
+                  </ul>
+            </div>
+            <div class="column">
+                <h2 class="title is-4">Send a Message</h2>
+                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                  <input name="bot-field" type="hidden"/>
+                  <input name="subject" type="hidden" value="Website Contact Form"/>
+                  <div class="field">
+                    <div class="control">
+                      <input class="input" type="text" placeholder="First Name" name="first name">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Last Name" name="last name">
+                    </div>
+                  </div>
+                  
+                  <div class="field">
+                    <div class="control">
+                      <input class="input" type="email" placeholder="Email" name="email">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="control">
+                      <textarea class="textarea" placeholder="Textarea" name="message"></textarea>
+                    </div>
+                  </div>
+                  <div class="control">
+                    <button class="button">Submit</button>
+                  </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
