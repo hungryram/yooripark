@@ -103,7 +103,7 @@ footer:
   footer_bio: Lorem ipsum dolor, sit amet consectetur adipisicing elit. A nobis ratione
     ad provident? Nulla nisi numquam quam ipsum fuga fugit iure. Nobis obcaecati veritatis
     vero! Quisquam impedit eos pariatur eius!
-  disable_background_color: false
+  disable_background_color: true
   footer_background_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/sterling-davis-513079-unsplash.jpg
 colors:
   text_link_colors: rgb(5, 163, 208)
