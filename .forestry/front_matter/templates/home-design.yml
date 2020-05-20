@@ -166,6 +166,11 @@ fields:
     config:
       maxSize: 64
     label: Background Image
+  - name: enable_black_text
+    type: boolean
+    label: Enable Black Text
+    description: Enable if you're using a whiter background to make text easier to
+      see.
   label: Footer
 - name: home_sections
   type: blocks
