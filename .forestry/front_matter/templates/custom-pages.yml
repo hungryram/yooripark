@@ -17,5 +17,3 @@ fields:
     template: seo
     label: SEO
   label: Search Engine Optimization
-pages:
-- content/first-page.md

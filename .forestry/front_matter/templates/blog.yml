@@ -51,6 +51,3 @@ fields:
     template: seo
     label: SEO
   label: Search Engine Optimization
-pages:
-- content/blog/my-first-blog.md
-- content/blog/secondblog.md
