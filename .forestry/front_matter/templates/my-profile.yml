@@ -149,26 +149,61 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: youtube
-    type: text
-    config:
-      required: false
-    label: Youtube
-  - name: facebook
-    type: text
-    config:
-      required: false
-    label: Facebook
-  - name: linkedin
-    type: text
-    config:
-      required: false
-    label: Linkedin
   - name: instagram
     type: text
     config:
       required: false
     label: Instagram
+  - name: facebook
+    type: text
+    config:
+      required: false
+    label: Facebook
+  - name: twitter
+    type: text
+    config:
+      required: false
+    label: Twitter
+  - name: youtube
+    type: text
+    config:
+      required: false
+    label: Youtube
+  - name: linkedin
+    type: text
+    config:
+      required: false
+    label: Linkedin
+  - name: pinterest
+    type: text
+    config:
+      required: false
+    label: Pinterest
+  - name: zillow
+    type: text
+    config:
+      required: false
+    label: Zillow
+  - name: redfin
+    type: text
+    config:
+      required: false
+    label: Redfin
+  - name: realtor
+    type: text
+    config:
+      required: false
+    label: Realtor
+  - name: trulia
+    type: text
+    config:
+      required: false
+    label: Trulia
+  - name: reddit
+    type: text
+    config:
+      required: false
+    label: Reddit
   label: Social Accounts
   description: Social media accounts will update globally on the site.
 pages:
