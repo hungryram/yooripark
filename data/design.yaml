@@ -1,7 +1,7 @@
 ---
 video_background: false
 logo_or_title:
-  upload_logo: https://reluxurytemplate.s3-us-west-1.amazonaws.com/revel.png
+  upload_logo: ''
   title: Revel
 main_image:
   hero_subtitle: Welcome to our real estate group
@@ -17,85 +17,7 @@ main_image:
     open_in_new_tab: true
     hero_button_text_color: "#000000"
     hero_button_bg_color: "#ffffff"
-home_sections:
-- template: idx-search-bar
-  idx_title: Search Now
-  subtitle: Our featured Homes
-- template: intro
-  intro_title: The Intro Title
-  intro_body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quos
-    veniam ipsam aspernatur obcaecati beatae assumenda dolore perspiciatis debitis
-    commodi nam ab exercitationem modi, ducimus sint dolor accusamus qui impedit.
-  add_photo: https://reluxurytemplate.s3-us-west-1.amazonaws.com/kichen.jpg
-- template: sold-listings
-  sold_listing_title: Our Sold Listings
-  sold_listing_subtitle: sold listing subtitle
-  sold_background_color: ''
-  sold_align_title_text: ''
-- template: featured-tiles
-  top_left_tile:
-    top_left_featured_title: test
-    top_left_featured_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/Untitled-1.jpg
-    top_left_link_to_property: https://youtube.com
-  bottom_left_tile:
-    featured_title: Bottom Tile
-    featured_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/main-luxury.jpg
-    bottom_left_link_to_property: https://instagram.com
-  right_tile:
-    featured_title: Title
-    featured_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/gold.jpg
-    right_link_to_property: https://link.com
-  tile_background_color: "#F23434"
-- template: cta
-  call_to_action_one:
-    icon_one_cta: venus-mars
-    image_one_cta: ''
-    title_one_cta: '234324'
-    body_text_one_cta: ertertegdfg
-    cta_one_image_alt_tag: ''
-    cta_one_add_a_link: ''
-    menu: listings
-  call_to_action_two:
-    icon_two_cta: bullhorn
-    image_two_cta: ''
-    title_two_cta: erter
-    body_text_two_cta: erdffg
-    cta_two_image_alt_tag: ''
-    cta_two_add_a_link: ''
-    cta_two_new_tab: false
-  call_to_action_three:
-    icons_three_cta: comment-o
-    image_three_cta: https://reluxurytemplate.s3-us-west-1.amazonaws.com/agent.jpg
-    title_three_cta: ertert
-    body_text_three_cta: 32423534r
-- template: showcase-featured-properties
-  featured_align_title_text: has-text-centered
-  featured_title: Featured title
-  featured_subtitle: featured showcase
-  featured_background: "#E1E1E1"
-- template: featured-blog
-  blog_title: The Aesome BLog
-  blog_subtitle: Blog subtitle neaaaa
-  blog_background: "#f7f7f7"
-  blog_align_title_text: has-text-centered
-- template: rental-listings
-  rental_title: ''
-  rental_subtitle: ''
-  rental_background_color: ''
-  rental_align_title_text: ''
-- template: featured-listings
-  active_align_title_text: has-text-right
-  active_listing_title: My Active Listings
-  listing_subtitle: view active statuses
-  active_background_color: "#909090"
-- template: agent-slider
-  agent_title: Meet our Team
-  agent_subtitle: Welcome to our team
-  agent_background: "#E6E6E6"
-  agent_text_align: has-text-left
-- template: testimonial-slider
-  testimonial_slider_title: Our testimonials
-  testimonial_slider_subtitle: See our clients review
+home_sections: []
 sub_pages:
   sub_page_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/kichen.jpg
 footer:
