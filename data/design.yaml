@@ -1,0 +1,36 @@
+---
+video_background: false
+logo_or_title:
+  upload_logo: ''
+  title: Revel
+main_image:
+  hero_subtitle: Welcome to our real estate group
+  home_background_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/kichen.jpg
+  video_background: false
+  upload_video: ''
+  add_url_to_youtube_video: ''
+  hero_title: Luxury Real Estate
+  align_hero_text: has-text-left
+  add_a_button:
+    hero_button_text: hero button
+    hero_button_link: https://hungryram.com
+    open_in_new_tab: true
+    hero_button_text_color: "#000000"
+    hero_button_bg_color: "#ffffff"
+home_sections: []
+sub_pages:
+  sub_page_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/kichen.jpg
+footer:
+  footer_background: "#000000"
+  footer_bio: Lorem ipsum dolor, sit amet consectetur adipisicing elit. A nobis ratione
+    ad provident? Nulla nisi numquam quam ipsum fuga fugit iure. Nobis obcaecati veritatis
+    vero! Quisquam impedit eos pariatur eius!
+  disable_background_color: true
+  footer_background_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/sterling-davis-513079-unsplash.jpg
+  enable_black_text: false
+colors:
+  text_link_colors: rgb(5, 163, 208)
+  button_background_colors: "#000000"
+  header_background_color: "#000000"
+  navigation_link_color: "#BA0000"
+  enable_black_menu_items: false
