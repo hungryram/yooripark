@@ -41,25 +41,16 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
-- name: seo
+- name: search_engine_optimization
   type: field_group
   config: {}
   fields:
-  - name: title_tag
-    type: text
-    config:
-      required: false
-    label: Title Tag
-  - name: meta_description
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-      schema:
-        format: markdown
-    label: Meta Description
-  label: Search Engine Optimization (SEO)
+  - name: seo
+    type: include
+    config: {}
+    template: seo
+    label: SEO
+  label: Search Engine Optimization
 pages:
 - content/blog/my-first-blog-1.md
 - content/blog/my-first-blog.md

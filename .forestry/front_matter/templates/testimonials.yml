@@ -65,9 +65,14 @@ fields:
     required: false
   label: Link Label
 - name: search_engine_optimization
-  type: include
+  type: field_group
   config: {}
-  template: seo
+  fields:
+  - name: seo
+    type: include
+    config: {}
+    template: seo
+    label: SEO
   label: Search Engine Optimization
 pages:
 - content/testimonials/john-doe.md

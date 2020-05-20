@@ -349,25 +349,16 @@ fields:
     label: File Attachments
     description: Add attachments such as information, maps, or terms and conditions
   label: Tools
-- name: seo
+- name: search_engine_optimization
   type: field_group
   config: {}
   fields:
-  - name: title_tag
-    type: text
-    config:
-      required: false
-    label: Title Tag
-  - name: meta_description
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-      schema:
-        format: markdown
-    label: Meta Description
-  label: Search Engine Optimization (SEO)
+  - name: seo
+    type: include
+    config: {}
+    template: seo
+    label: SEO
+  label: Search Engine Optimization
 pages:
 - content/listings/419-abbot-dr-norco-ca-1.md
 - content/listings/419-abbot-dr-norco-ca.md
