@@ -57,54 +57,6 @@ fields:
   label: Primary Contact
   description: The main account owner. Contact information is displayed across the
     site.
-- name: secondary_contact
-  type: field_group
-  config: {}
-  fields:
-  - name: full_name
-    type: text
-    config:
-      required: false
-    label: Full Name
-  - name: title
-    type: text
-    config:
-      required: false
-    label: Title
-  - name: phone
-    type: text
-    config:
-      required: false
-    label: Phone
-  - name: mobile_phone
-    type: text
-    config:
-      required: false
-    label: Mobile Phone
-  - name: email
-    type: text
-    config:
-      required: false
-    label: Email
-  - name: license_type
-    type: select
-    default: []
-    config:
-      required: false
-      options: []
-      source:
-        type: simple
-        section: 
-        file: 
-        path: 
-    label: License Type
-  - name: license_number
-    type: text
-    config:
-      required: false
-    label: License Number
-  label: Secondary Contact
-  description: Add a partner
 - name: location_information
   type: field_group
   config: {}
