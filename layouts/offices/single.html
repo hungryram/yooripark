@@ -1,0 +1,104 @@
+{{ define "main" }}
+
+<div class="section agent-page">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8">
+          <div style="padding: 20px">
+            <h1 class="agent-name">{{ .Params.title }} </h1>
+            <h4>{{ .Params.details.title }}</h4>
+            
+          </div>
+          <div class="box">
+            <div class="columns">
+              <div class="column is-5">
+                <img src="{{ .Params.photos.main_photo }}" alt="">
+              </div>
+              <div class="column is-7">
+                  <h4 class="agent-header">Details</h4>
+                <div class="agent-detail-content">
+                  {{ with .Params.contact.cell }}
+                  <div class="columns is-mobile">
+                    <div class="column is-3">
+                      <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="column">
+                      <a href="tel:{{ . }}" title="Cell">{{ . }}</a>
+                    </div>
+                  </div>
+                  {{ end }}
+
+                  
+                  {{ with .Params.contact.office_phone }}
+                  <div class="columns is-mobile">
+                    <div class="column is-3">
+                      <span>Phone:</span>
+                    </div>
+                    <div class="column">
+                      <a href="tel:{{ . }}" title="Phone">{{ . }}</a>
+                    </div>
+                  </div>
+                  {{ end }}
+
+                  {{ with .Params.contact.fax_number }}
+                  <div class="columns is-mobile">
+                    <div class="column is-3">
+                      <span>Fax:</span>
+                    </div>
+                    <div class="column">
+                      <a href="tel:{{ . }}" title="Fax">{{ . }}</a>
+                    </div>
+                  </div>
+                  {{ end }}
+
+                  {{ with .Params.contact.email }}
+                  <div class="columns is-mobile">
+                    <div class="column is-3">
+                      <span>Email:</span>
+                    </div>
+                    <div class="column">
+                      <a href="mailto:{{ . }}" title="Email">{{ . }}</a>
+                    </div>
+                  </div>
+                  {{ end }}            
+                  
+
+
+                  <div class="columns is-mobile">
+                    <div class="column is-3">
+                      <span>Address:</span>
+                    </div>
+                    <div class="column">
+                      <address>{{ .Params.contact.address }} {{ .Params.contact.city }}, {{ .Params.contact.state }}  {{ .Params.contact.zip_code }} </address>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column">
+                  <h4 class="agent-header">About</h4>
+              </div>            
+            </div>
+            <div class="columns content">
+              <div class="column">
+                <div class="agent-detail-content">
+                  {{ .Content }}
+                </div>
+              </div>
+            </div>
+
+          </div>
+      </div>
+
+{{ partial "sidebar.html" . }}
+      
+
+  
+    </div>
+  </div>
+</div>
+
+{{ end }}
