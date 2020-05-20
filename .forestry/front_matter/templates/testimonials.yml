@@ -74,6 +74,3 @@ fields:
     template: seo
     label: SEO
   label: Search Engine Optimization
-pages:
-- content/testimonials/john-doe.md
-- content/testimonials/jonny.md
