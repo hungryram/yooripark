@@ -20,11 +20,10 @@
 
 
 
-    {{ with .Params.seo.title_tag }}
+    {{ with .Params.search_engine_optimization.meta_title }}
     <title>{{ . }}</title>
     {{ end }}
-
-    {{ with .Params.seo.meta_description }}
+    {{ with .Params.search_engine_optimization.meta_description }}
     <meta name="description" content="{{ . }}">
     {{ end }}
     {{ $color := .Site.Data.design.hero_button_bg_color }}
@@ -34,7 +33,6 @@
             url("{{ .Site.Data.design.main_image.home_background_image }}") no-repeat center;
         }
     </style>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"> -->
     <script src="https://kit.fontawesome.com/2dac2bfc0f.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" type="text/css" href="{{.Site.BaseURL}}/css/slick.css"/>

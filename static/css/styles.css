@@ -148,13 +148,14 @@ main {
 
 
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Roboto', sans-serif;
+body h1.title,
+body h2.title,
+body h3.title,
+body h4.title,
+body h5.title,
+body h6.title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
 }
 
 .fa-facebook-f {
@@ -184,7 +185,7 @@ i.fab.fa-instagram {
 p,
 li,
 a {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 400;
 }
 
@@ -373,6 +374,7 @@ li.active a {
     .sub li {
         padding-top: 5px;
         padding-bottom: 5px;
+        display: block;
     }
 
     .head-nav a.nav-item,
