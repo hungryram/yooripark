@@ -133,5 +133,3 @@ fields:
     template: seo
     label: SEO
   label: Search Engine Optimization
-pages:
-- content/offices/century-21.md
