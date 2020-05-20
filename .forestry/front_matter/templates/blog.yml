@@ -52,6 +52,5 @@ fields:
     label: SEO
   label: Search Engine Optimization
 pages:
-- content/blog/my-first-blog-1.md
 - content/blog/my-first-blog.md
 - content/blog/secondblog.md
