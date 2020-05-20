@@ -8,6 +8,10 @@ button.button {
     padding: 0 20px;
 }
 
+address {
+    font-style: normal;
+}
+
 .button.is-hovered, .button:hover {
     color: #ccc!important;
     transition: all .2s ease;
@@ -267,8 +271,11 @@ li.active a {
 
 /* NAV */
 @media screen and (max-width: 1087px){
-    div#navbarMenuHeroC {
-        background-color: #7c7c7c;
+
+    span.navbar-burger {
+        background: black;
+        transition: all .2s ease;
+        margin-top: 10px;
     }
     
     .navbar-menu.is-active {
@@ -292,11 +299,16 @@ li.active a {
         padding: 40px;
         height: 105vh;
         top: -20px;
+    }
 
+    .head-nav li a.nav-item,
+    .head-nav a.parent-drop {
+        color: #000!important;
     }
 
     div#navbarMenuHeroC ul:first-child {
         padding-top: 30px;
+        padding-bottom: 50px;
     }
 
     div#navbarMenuHeroC {
@@ -341,7 +353,21 @@ li.active a {
         display: block;
         background: #fff;
         padding: 10px 0;
-        margin-top: 28px;
+        margin-top: 38px;
+    }
+
+    .dropdown-i {
+        transition: all .2s ease;
+        padding: 0 5px;
+    }
+
+    .sub-menu:hover .dropdown-i {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg );
+        transition: all .4s ease;
     }
 
     .sub li {
@@ -351,8 +377,14 @@ li.active a {
 
     .head-nav a.nav-item,
     .head-nav a.parent-drop {
-        padding: 30px 0;
+        padding: 40px 0;
+        color: white;
     }
+}
+
+/* ALL SCREEN SIZE MENU */
+header.navbar {
+    padding: 10px 0;
 }
 
 .navbar-item img {
@@ -364,64 +396,17 @@ li.active a {
 }
 
 
-header a {
-    color: white;
-}
-
 .sub-menu:hover .sub-active-menu {
     max-height: 600px;
     transition: max-height .3s ease;
 }
-
-
-
-/* .sub.sub-active-menu li {
-    padding: 10px;
-} */
 
 .navbar-brand h1 {
     font-size: 1.3em;
     color: white;
 }
 
-/* nav {
-    display: none;
-} */
-
-
-
-.open {
-    display: block;
-}
-
-.nav-open {
-    display: block;
-}
-
-/* header {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    text-transform: uppercase;
-    z-index: 100;
-} */
-
-/* .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-top: 20px;
-
-} */
-/* 
-.header-left,
-.header-logo,
-.nav-menu {
-    flex: 33.3%;
-    color: #fff;
-} */
+/* HERO CONTAINER */
 
 .hero__container {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
