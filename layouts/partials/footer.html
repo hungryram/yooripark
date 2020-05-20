@@ -4,7 +4,7 @@
 <div class="section">
   <div class="container">
     <div class="columns">
-      <div class="column">
+      <div class="column" {{ if .Site.Data.design.footer.enable_black_text}}style="color:black"{{else}} style="color:white"{{end}}>
         <a href="{{ .Site.BaseURL }}">
               {{ with .Site.Data.design.logo_or_title.upload_logo}}
           <img src="{{ . }}" alt="" width="200">
@@ -15,17 +15,52 @@
         <p>{{ .Site.Data.design.footer.footer_bio }}</p>
         {{ $footerSocial := .Site.Data.profile.social_accounts }}
         <ul class="footer-social">
-          {{ if $footerSocial.facebook }}<li><a href="{{ $footerSocial.facebook }}" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>{{ end }}
-          {{ if $footerSocial.instagram }}<li><a href="{{ $footerSocial.instagram }}" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>{{ end }}
-          {{ if $footerSocial.linkedin }}<li><a href="{{ $footerSocial.linkedin }}" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>{{ end }}
-          {{ if $footerSocial.pinterest }}<li><a href="{{ $footerSocial.pinterest }}" target="_blank" title="Pinterest"><i class="fab fa-pinterest-p"></i></a></li>{{ end }}
+          {{ with $footerSocial.facebook }}
+          <li><a href="{{ . }}" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></i></a></li>
+          {{end}}
+
+          {{ with $footerSocial.instagram }}
+          <li><a href="{{ . }}" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+          {{end}}
+
+          {{ with $footerSocial.linkedin }}
+          <li><a href="{{ . }}" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+          {{end}}
+
+          {{ with $footerSocial.pinterest }}
+          <li><a href="{{ . }}" target="_blank" title="Pinterest"><i class="fab fa-pinterest-p"></i></a></li>
+          {{end}}
+
+          {{ with $footerSocial.twitter }}
+          <li><a href="{{ . }}" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+          {{end}}
+
+          {{ with $footerSocial.youtube }}
+          <li><a href="{{ . }}" target="_blank" title="Youtube"><i class="fab fa-youtube"></i></a></li>
+          {{end}}
+
+          {{ with $footerSocial.realtor }}
+          <li><a href="{{ . }}" target="_blank" title="Realtor">Realtor</a></li>
+          {{end}}
+
+          {{ with $footerSocial.reddit }}
+          <li><a href="{{ . }}" target="_blank" title="Reddit">Reddit</a></li>
+          {{end}}
+
+          {{ with $footerSocial.redfin }}
+          <li><a href="{{ . }}" target="_blank" title="Redfin">Redfin</a></li>
+          {{end}}
+
+          {{ with $footerSocial.trulia }}
+          <li><a href="{{ . }}" target="_blank" title="Trulia">Trulia</a></li>
+          {{end}}
         </ul>
       </div>
       <div class="column">
-        <h4 class="subtitle is-6">Contact</h4>
+        <h4 class="subtitle is-6" {{ if .Site.Data.design.footer.enable_black_text}}style="color:black"{{else}} style="color:white"{{end}}>Contact</h4>
         {{ $location := .Site.Data.profile.location_information }}
         {{ $contact := .Site.Data.profile.primary_contact }}
-        <ul>
+        <ul {{ if .Site.Data.design.footer.enable_black_text}}style="color:black"{{else}} style="color:white"{{end}}>
           {{ if $location }}<li><i class="fas fa-map-marker-alt"></i>{{ $location.address }} {{ $location.city }} {{ $location.state }} {{ $location.zip_code }}</li> {{ end }}
           {{ if $contact }}<li><i class="far fa-envelope"></i> {{ $contact.email }}</li> {{ end }}
           {{ if $contact }}<li><i class="fas fa-mobile-alt"></i> {{ $contact.mobile_phone }}</li> {{ end }}
@@ -35,7 +70,7 @@
         
       </div>
       <div class="column">
-        <h4 class="subtitle is-6">Send a Message</h4>
+        <h4 class="subtitle is-6" {{ if .Site.Data.design.footer.enable_black_text}}style="color:black"{{else}} style="color:white"{{end}}>Send a Message</h4>
         <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
           <input name="bot-field" type="hidden"/>
           <div class="field">

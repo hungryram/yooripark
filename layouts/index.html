@@ -190,11 +190,12 @@
                 <div class="responsive-slide">
                     {{ range first 20 (where $.Site.RegularPages "Type" "teams") }}
                     <div class="agent-slider">
-                            <figure class="image is-128x128">
+                            <a href="{{ .Permalink }}"><figure class="image is-128x128">
                                 <img class="is-rounded" src="{{ .Params.details.agent_photo }}" style="object-fit: cover;">
                             </figure>
+                        </a>
                             <h4 class="subtitle is-5">{{ .Title }}</h4>
-                            <h5 class="subtitle is-6">{{ .Params.details.title }}</h5>
+                            <h5 class="subtitle is-6" style="margin:0">{{ .Params.details.title }}</h5>
                             <a href="tel:{{ .Params.contact.phone }}">{{ .Params.contact.phone }}</a><br>
                             <a href="mailto:{{ .Params.contact.email }}">{{ .Params.contact.email }}</a>
                     </div>
@@ -222,7 +223,7 @@
 
                     <div class="testimonials-slider">
                             <figure class="image is-128x128">
-                                <img class="is-rounded" src="{{ .Params.photo }}" style="object-fit: cover;" alt="{{ .Site.BaseURL }} reviews">
+                                {{ if.Params.photo }}<img class="is-rounded" src="{{ .Params.photo }}" style="object-fit: cover;" alt="{{ .Site.BaseURL }} reviews">{{ end }}
                             </figure>
                             <p class="content">{{ .Params.testimonial }}</p>
                             <em>{{ .Title }}</em><br>

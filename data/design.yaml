@@ -105,7 +105,7 @@ footer:
     vero! Quisquam impedit eos pariatur eius!
   disable_background_color: true
   footer_background_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/sterling-davis-513079-unsplash.jpg
-  enable_black_text: true
+  enable_black_text: false
 colors:
   text_link_colors: rgb(5, 163, 208)
   button_background_colors: "#000000"
