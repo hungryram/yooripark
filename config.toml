@@ -1,10 +1,6 @@
 baseURL = "https://testingre.netlify.app"
 languageCode = "en-us"
 [[menu.main]]
-name = "Listings"
-url = "/listings"
-weight = 3
-[[menu.main]]
 name = "Our Partners"
 parent = "Corinne"
 url = "/partners"
@@ -14,6 +10,10 @@ name = "Our Team"
 parent = "Corinne"
 url = "/teams"
 weight = 1
+[[menu.main]]
+name = "Listings"
+url = "/listings"
+weight = 3
 [[menu.main]]
 name = "Home"
 url = "/"
