@@ -75,4 +75,5 @@ fields:
     label: SEO
   label: Search Engine Optimization
 pages:
+- content/testimonials/darlene-dixon.md
 - content/testimonials/michael-sims.md
