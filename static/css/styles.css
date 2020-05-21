@@ -696,13 +696,15 @@ div.single-listing-head address {
 /* HOME TILE */
 
 .home-tile a {
-    display: block;
     height: 100%;
     padding: 150px;
     color: #fff;
     font-size: 26px;
     text-align: center;
+    display: flex;
     transition: all .2s ease-in-out;
+    align-items: center;
+    justify-content: center;
 }
 
 .home-tile {
