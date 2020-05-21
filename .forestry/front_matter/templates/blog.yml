@@ -52,3 +52,5 @@ fields:
     template: seo
     label: SEO
   label: Search Engine Optimization
+pages:
+- content/blog/what-is-lorem-ipsum.md
