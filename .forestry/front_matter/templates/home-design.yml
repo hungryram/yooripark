@@ -190,6 +190,7 @@ fields:
   config:
     min: 
     max: 
-  description: Move home section areas
+  description: Arrange home sections by drag and drop. Click through each section
+    to customize. Listing sections will not display if no listings are found.
 pages:
 - data/design.yaml
