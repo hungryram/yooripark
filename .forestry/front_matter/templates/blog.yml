@@ -38,9 +38,10 @@ fields:
   description: ''
   config:
     required: false
-    date_format: 
+    date_format: MM/DD/YYYY
     time_format: 
     display_utc: false
+    export_format: MM/DD/YYYY
 - name: search_engine_optimization
   type: field_group
   config: {}
