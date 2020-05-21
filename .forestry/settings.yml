@@ -86,8 +86,8 @@ sections:
   path: data/icons.json
   label: Developer Access Only
   read_only: true
-upload_dir: ''
-public_path: https://reluxurytemplate.s3-us-west-1.amazonaws.com
+upload_dir: static/uploads
+public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
