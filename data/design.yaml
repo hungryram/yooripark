@@ -44,9 +44,10 @@ home_sections:
   blog_subtitle: ''
   blog_background: ''
 - template: featured-listings
-  active_align_title_text: []
-  active_listing_title: ''
-  listing_subtitle: ''
+  active_align_title_text: has-text-centered
+  active_listing_title: Our Featured Exclusives​
+  listing_subtitle: View our most featured office listings by Real Estate Brokerage.
+    Contact us for more questions regarding these listings.
   active_background_color: ''
 sub_pages:
   sub_page_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/main.jpg
