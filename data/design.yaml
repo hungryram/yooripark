@@ -1,8 +1,8 @@
 ---
 video_background: false
 logo_or_title:
-  upload_logo: ''
-  title: Revel
+  upload_logo: https://reluxurytemplate.s3-us-west-1.amazonaws.com/cropped-logotrans.png
+  title: Real Estate Sample
 main_image:
   hero_subtitle: Find your dream home
   home_background_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/shutterstock_683283169.jpg
@@ -48,11 +48,6 @@ home_sections:
   agent_title: Our Team
   agent_text_align: has-text-centered
   agent_background: ''
-- template: featured-listings
-  active_align_title_text: []
-  active_listing_title: ''
-  listing_subtitle: ''
-  active_background_color: ''
 sub_pages:
   sub_page_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/main.jpg
 footer:
