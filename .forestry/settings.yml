@@ -15,6 +15,34 @@ sections:
 - type: heading
   label: Default Pages
 - type: directory
+  path: content/listings
+  label: Property Listings
+  create: documents
+  match: "**/*"
+  templates:
+  - property
+- type: directory
+  path: content/teams
+  label: Teams
+  create: documents
+  match: "**/*"
+  templates:
+  - team
+- type: directory
+  path: content/offices
+  label: Offices
+  create: documents
+  match: "**/*"
+  templates:
+  - offices
+- type: directory
+  path: content/partners
+  label: Preferred Partners
+  create: documents
+  match: "**/*"
+  templates:
+  - partners
+- type: directory
   path: content/testimonials
   label: Testimonials
   create: documents
@@ -37,40 +65,6 @@ sections:
   match: "**/*"
   templates:
   - blog
-- type: heading
-  label: Listings
-- type: directory
-  path: content/listings
-  label: Property Listings
-  create: documents
-  match: "**/*"
-  templates:
-  - property
-- type: heading
-  label: Teams and Office
-- type: directory
-  path: content/teams
-  label: Teams
-  create: documents
-  match: "**/*"
-  templates:
-  - team
-- type: directory
-  path: content/offices
-  label: Offices
-  create: documents
-  match: "**/*"
-  templates:
-  - offices
-- type: heading
-  label: Partners
-- type: directory
-  path: content/partners
-  label: Preferred Partners
-  create: documents
-  match: "**/*"
-  templates:
-  - partners
 - type: heading
   label: IDX Configuration
 - type: document
