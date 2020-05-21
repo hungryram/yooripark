@@ -19,8 +19,8 @@ year_built = 1923
 [listing_agent]
 listing_agent = []
 [photos]
-gallery = []
-main_photo = ""
+gallery = ["https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904885-15JPG.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904885-14JPG.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904885-13JPG.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904885-12JPG.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904885-11JPG.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904885-10JPG.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904885-9JPG.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904885-8JPG.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904885-7JPG.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904885-6JPG.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904885-5JPG.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904885-4JPG.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904885-3JPG.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904885-2JPG.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904885-1JPG.jpg"]
+main_photo = "https://reluxurytemplate.s3-us-west-1.amazonaws.com/40902643JPG.jpg"
 [pricing]
 price = "3,195,000"
 sold_price = ""
