@@ -24,6 +24,12 @@ home_sections:
     your phone or computer. Easily manage your website through our website editor
     customized specifically for real estate professionals.
   add_photo: https://reluxurytemplate.s3-us-west-1.amazonaws.com/office.jpg
+- template: featured-listings
+  active_align_title_text: has-text-centered
+  active_listing_title: Our Featured Exclusives​
+  listing_subtitle: View our most featured office listings by Real Estate Brokerage.
+    Contact us for more questions regarding these listings.
+  active_background_color: ''
 - template: featured-tiles
   top_left_tile:
     top_left_featured_title: Los Angeles
@@ -43,12 +49,6 @@ home_sections:
   blog_title: ''
   blog_subtitle: ''
   blog_background: ''
-- template: featured-listings
-  active_align_title_text: has-text-centered
-  active_listing_title: Our Featured Exclusives​
-  listing_subtitle: View our most featured office listings by Real Estate Brokerage.
-    Contact us for more questions regarding these listings.
-  active_background_color: ''
 sub_pages:
   sub_page_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/main.jpg
 footer:
