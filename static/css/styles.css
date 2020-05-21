@@ -342,19 +342,23 @@ li.active a {
 @media screen and (min-width:1087px) {
     .head-nav li {
         display: inline-block;
-        padding: 0 20px;
+        padding: 0 10px;
     }
 
     ul.sub {
         position: absolute;
-        display: none;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .2s ease;
+        width: 250px;
     }
 
     .sub-menu:hover ul.sub {
-        display: block;
+        visibility: visible;
         background: #fff;
-        padding: 10px 0;
         margin-top: 38px;
+        opacity: 1;
+        transition: all .2s ease;
     }
 
     .dropdown-i {
@@ -372,9 +376,16 @@ li.active a {
     }
 
     .sub li {
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         display: block;
+        border-top: 1px solid rgba(0,0,0,.15);
+        transition: all .3s ease;
+    }
+
+    .sub li:hover {
+        padding-left: 20px;
+        transition: all .3s ease;
     }
 
     .head-nav a.nav-item,
@@ -711,9 +722,14 @@ div.single-listing-head address {
     transition: all .2s ease-in-out;
 }
 
+.home-tile:hover a {
+    color: #fff;
+}
+
 .home-tile:hover {
     opacity: .9!important;
     transition: all .3s ease-in-out;
+    color: #fff;
 }
 /* SIDEBAR */
 

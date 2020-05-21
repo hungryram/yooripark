@@ -25,9 +25,9 @@
                   <a href="javascript:;" class="parent-drop" {{ if not $.IsHome }}{{ if $.Site.Data.design.colors.enable_black_menu_items }}style="color: black"{{ end }}{{ else }}style="color: #fff"{{end}}>
                       {{ .Pre }}
                       <span>{{ .Name }}</span>
-                      <i class="fas fa-angle-down dropdown-i"></i>
+                      <i class="fas fa-caret-down dropdown-i"></i>
                   </a>
-                  <ul class="sub" style="background: white">
+                  <ul class="sub" style="background: #fff;">
                       {{ range .Children }}
                       <li{{if $currentPage.IsMenuCurrent "main" . }} class="active"{{end}}><a href="{{.URL}}" style="color:black">{{ .Name }}</a> </li>
                       {{ end }}
