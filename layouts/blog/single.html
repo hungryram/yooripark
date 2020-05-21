@@ -2,6 +2,11 @@
 <div class="section">
     <div class="container">
         <div class="columns">
+            <div class="column">
+                {{ partial "breadcrumbs.html" . }}
+            </div>
+        </div>
+        <div class="columns">
             <div class="column is-8 content">
                 <img src="{{ .Params.featured_image }}" alt="">
                 <h1>{{ .Title }}</h1>

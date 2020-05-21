@@ -6,21 +6,11 @@
   <div class="container">
     <div class="columns">
       <div class="column">
-        {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
-        {{ $.Scratch.Add "path" .Site.BaseURL }}
-        <nav class="breadcrumb is-small " aria-label="breadcrumbs">
-        <ul>
-          <li><a href="/" class="secondary-btn">Home</a></li>
-          {{ range $index, $element := split $url "/" }}
-            {{ $.Scratch.Add "path" $element }}
-              {{ if ne $element "" }}
-              <li><a href='{{ $.Scratch.Get "path" }}' class="secondary-btn">{{ . | humanize }}</a></li>
-              {{ $.Scratch.Add "path" "/" }}
-              {{ end }}
-          {{ end }}
-        </ul>
-      </nav>
-
+        {{ partial "breadcrumbs.html" . }}
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column">
         <div class="address-detail-header">
           <article class="media">
             <div class="media-content">
@@ -83,14 +73,14 @@
   <div class="container">
   <div class="slider-for">
     {{ range .Params.photos.gallery }}
-    <div style="background:url({{ . }}) no-repeat center;background-size:cover!important;height:70vh;">
-    </div>
+      <img src="{{ . }}" alt="">
     {{end}}
   </div>
     <div class="slider-nav">
     {{ range .Params.photos.gallery }}
-      <div class="slider-nav-container" style="background:url({{.}})no-repeat center;height:100px;background-size:cover;margin: 0 5px">
-      </div>
+      {{/*  <div class="slider-nav-container" style="background:url({{.}})no-repeat center;height:100px;background-size:cover;margin: 0 5px">
+      </div>  */}}
+      <img src="{{ . }}" alt="" style="margin: 0 5px;" class="img-holder">
     {{end}}
     </div>
   </div>

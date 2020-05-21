@@ -3,6 +3,11 @@
 <div class="section agent-lists">
     <div class="container">
         <div class="columns">
+            <div class="column">
+                {{ partial "breadcrumbs.html" . }}
+            </div>
+        </div>
+        <div class="columns">
             <div class="column is-8">
                 {{ $paginator := .Paginate (where .Pages "Type" "blog") 5 }}
                 {{ range $paginator.Pages }}

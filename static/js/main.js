@@ -6,9 +6,6 @@ $(document).ready(function () {
       });
 });
 
-
-
-
 // TESTIMONIAL SLIDER
 $('.responsive-testimonial-slide').slick({
   dots: true,
@@ -19,6 +16,7 @@ $('.responsive-testimonial-slide').slick({
   pauseOnHover: true,
 });
 
+// SINGLE LISTING SLIDER
 $('.slider-for').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -36,6 +34,11 @@ $('.slider-nav').slick({
   focusOnSelect: true
 });
 
+
+$('.slider-for').slickLightbox({
+  itemSelector        : 'img',
+  navigateByKeyboard  : true
+});
 
 $('.responsive-slide').slick({
   dots: true,

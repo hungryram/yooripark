@@ -12,6 +12,10 @@ address {
     font-style: normal;
 }
 
+nav.breadcrumb.is-small li a {
+    text-transform: capitalize;
+}
+
 .button.is-hovered, .button:hover {
     color: #ccc!important;
     transition: all .2s ease;
@@ -386,6 +390,7 @@ li.active a {
     .sub li:hover {
         padding-left: 20px;
         transition: all .3s ease;
+        background: #e8e8e8;
     }
 
     .head-nav a.nav-item,
@@ -425,9 +430,7 @@ section.hero {
     margin-bottom: 70px;
 }
 
-.hero__container {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("../images/cosmic-timetraveler-oLh-_gLQeak-unsplash.jpg") no-repeat center;
+section.hero__container {
     background-size: cover;
 }
 
@@ -444,6 +447,24 @@ section.hero {
 
 .hero-body h2 {
     color: #cbcbcb;
+}
+
+/* PAGE BANNER */
+
+div.page-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-banner h2.title {
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .page-banner h2.title {
+        font-size: 1.5rem;
+    }
 }
 
 /* CAROUSEL */
