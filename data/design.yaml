@@ -43,11 +43,6 @@ home_sections:
   blog_title: ''
   blog_subtitle: ''
   blog_background: ''
-- template: agent-slider
-  agent_subtitle: Our team is here to help you
-  agent_title: Our Team
-  agent_text_align: has-text-centered
-  agent_background: ''
 sub_pages:
   sub_page_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/main.jpg
 footer:
