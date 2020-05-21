@@ -43,6 +43,11 @@ home_sections:
   blog_title: ''
   blog_subtitle: ''
   blog_background: ''
+- template: featured-listings
+  active_align_title_text: []
+  active_listing_title: ''
+  listing_subtitle: ''
+  active_background_color: ''
 sub_pages:
   sub_page_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/main.jpg
 footer:
