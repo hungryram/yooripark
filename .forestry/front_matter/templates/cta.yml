@@ -24,7 +24,7 @@ fields:
   - name: image_one_cta
     type: file
     config:
-      maxSize: 250
+      maxSize: 5
     label: Image
     description: 'Use an image instead of an icon '
   - name: cta_one_image_alt_tag
@@ -85,7 +85,7 @@ fields:
   - name: image_two_cta
     type: file
     config:
-      maxSize: 250
+      maxSize: 5
     label: Image
     description: Use an image instead of an icon
   - name: cta_two_image_alt_tag
