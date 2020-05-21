@@ -22,8 +22,8 @@
                 <div class="container">
                     <div class="columns has-text-centered">
                         <div class="column">
-                            <h4>{{ .subtitle }}</h4>
                             <h1 class="title">{{ .idx_title }}</h1>
+                            <h4>{{ .subtitle }}</h4>
                         </div>
                     </div>
                     <div class="columns">
@@ -42,9 +42,8 @@
                 <!-- Start Carousel -->
                 <div class="columns">
                     <div {{ if .blog_align_title_text }} class="column content {{ .blog_align_title_text }} "{{ end }}>
-                        <h4 class="subtitle is-6">{{ .blog_subtitle }}</h4>
                         <h1 class="title">{{ .blog_title }}</h1>
-                        
+                        <h4 class="subtitle is-6">{{ .blog_subtitle }}</h4>
                     </div>
                 </div>
                 <div class="columns">
@@ -87,8 +86,8 @@
                     <!-- Start Carousel -->
                     <div class="columns {{ with .rental_align_title_text }}{{ . }}{{end}}">
                         <div class="column">
-                            <h4>{{ .rental_subtitle }}</h4>
                             <h1 class="title">{{ .rental_title }}</h1>
+                            <h4>{{ .rental_subtitle }}</h4>
                         </div>
                     </div>
                     <div class="responsive-slide">
@@ -112,8 +111,8 @@
                     <!-- Start Carousel -->
                     <div class="columns {{ with .active_align_title_text }}{{ . }}{{end}}">
                         <div class="column">
-                            <h4>{{ .listing_subtitle }}</h4>
                             <h1 class="title">{{ .active_listing_title }}</h1>
+                            <h4>{{ .listing_subtitle }}</h4>
                         </div>
                     </div>
                     <div class="responsive-slide">
@@ -134,8 +133,8 @@
                         <!-- Start Carousel -->
                         <div class="columns {{ with .featured_align_title_text }}{{ . }}{{end}}">
                             <div class="column is-half is-offset-one-quarter">
-                                <h4>{{ .featured_subtitle }}</h4>
                                 <h1 class="title">{{ .featured_title }}</h1>
+                                <h4>{{ .featured_subtitle }}</h4>
                             </div>
                         </div>
                         <div class="responsive-slide">
@@ -158,9 +157,9 @@
             <div class="container">
                 <!-- Start Carousel -->
                 <div class="columns {{ with .sold_align_title_text }}{{ . }}{{end}}">
-                    <div class="column">
-                        <h4>{{ .sold_listing_subtitle }}</h4>
+                    <div class="column">     
                         <h1 class="title">{{ .sold_listing_title }}</h1>
+                        <h4>{{ .sold_listing_subtitle }}</h4>
                     </div>
                 </div>
                 <div class="responsive-slide">
@@ -182,9 +181,9 @@
             <div class="container">
                 <!-- Start Carousel -->
                 <div class="columns {{ with .agent_text_align }}{{ . }}{{end}}">
-                    <div class="column">
-                        <h4>{{ .agent_subtitle }}</h4>
+                    <div class="column">                     
                         <h1 class="title">{{ .agent_title }}</h1>
+                        <h4>{{ .agent_subtitle }}</h4>
                     </div>
                 </div>
                 <div class="responsive-slide">
@@ -214,8 +213,8 @@
             <!-- Start Carousel -->
             <div class="columns has-text-centered">
                 <div class="column">
-                    <h4>{{ .testimonial_slider_subtitle }}</h4>
                     <h1 class="title">{{ .testimonial_slider_title }}</h1>
+                    <h4>{{ .testimonial_slider_subtitle }}</h4>
                 </div>
             </div>
             <div class="responsive-testimonial-slide">
