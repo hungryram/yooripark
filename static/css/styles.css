@@ -744,6 +744,10 @@ img.img-holder {
     margin: 0 auto;
 }
 
+div.hidden {
+    display: none;
+}
+
   /* TEAM */
 
 .agent-social i {

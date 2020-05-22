@@ -10,7 +10,7 @@
         <div class="columns">
             <div class="column is-8">
                 {{ $paginator := .Paginate (where .Pages "Type" "teams") 5 }}
-                {{ range $paginator.Pages }}
+                {{ range $paginator.Pages.ByWeight }}
                 <div class="box">
                   <div class="columns">
                     <div class="column is-4">
@@ -45,8 +45,7 @@
                 </div> <!-- end box -->
               {{ end }}
               {{ partial "pagination" . }}
-
-            </div>
+              </div>
             {{ partial "sidebar.html" . }}
         </div>
     </div>

@@ -3,7 +3,7 @@ featured_listing = false
 short_description = "Luxury Listing"
 status = "Active"
 title = "110 YORK DRIVE"
-weight = "3,195,000"
+weight = "1"
 [address]
 address = "110 YORK DRIVE"
 city = "PIEDMONT"

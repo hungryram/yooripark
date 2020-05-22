@@ -4,6 +4,17 @@ $(document).ready(function () {
     $('.nav-menu').click(function(){
         $('.nav').toggleClass('nav-open');
       });
+
+      // Toggle Sort by Price
+      $('.ascending').click(function(){
+        $('.ascend').addClass('hidden');
+        $('.descend').removeClass('hidden');
+      });
+
+      $('.descending').click(function(){
+        $('.descend').addClass('hidden');
+        $('.ascend').removeClass('hidden');
+      });
 });
 
 // TESTIMONIAL SLIDER
