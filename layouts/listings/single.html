@@ -22,44 +22,29 @@
             </div>
       </div>
     </div>
-    <div class="column has-text-right">
-      <div id="share-buttons">
-                  
+    <div class="column desktop-view has-text-right">
+      <div id="share-buttons">            
         <!-- Email -->
-        <a href="mailto:?Subject=Check%20Out%20This%20Listing&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20{{ .Permalink | absURL }}">
+        <a href="mailto:?Subject=Check%20Out%20This%20Listing&amp;Body=Check%20out%20this%20listing%20from%20{{ .Permalink | absURL }}">
           <i class="far fa-envelope"></i>
-        </a>
-     
+        </a>    
         <!-- Facebook -->
         <a href="http://www.facebook.com/sharer.php?u={{ .Permalink | absURL }}" target="_blank">
           <i class="fab fa-facebook-f"></i>
-        </a>
-        
+        </a>     
         <!-- LinkedIn -->
         <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ .Permalink | absURL }}" target="_blank">
           <i class="fab fa-linkedin-in"></i>
-        </a>
-        
-        <!-- Pinterest -->
-        <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
-          <i class="fab fa-pinterest-p"></i>
-        </a>
-        
+        </a>       
         <!-- Print -->
         <a href="javascript:;" onclick="window.print()">
           <i class="fas fa-print"></i>
-        </a>
-        
-        <!-- Reddit -->
-        <a href="http://reddit.com/submit?url={{ .Permalink | absURL }}" target="_blank">
-          <i class="fab fa-reddit-alien"></i>
-        </a>
-         
+        </a>      
         <!-- Twitter -->
-        <a href="https://twitter.com/share?url={{ .Permalink | absURL }}&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
+        <a href="https://twitter.com/share?url={{ .Permalink | absURL }}&amp;text=Check%20out%20this%20listing%20from%20{{ .Site.Data.profile.logo_and_title.website_title }}" target="_blank">
           <i class="fab fa-twitter"></i>
         </a>
-    </div>
+    </div> <!-- end share buttons -->
       <div class="single-price-header">
         <p>Property ID: {{ .Params.details.mls_number }}</p>
         <h2 class="title is-3">${{ .Params.pricing.price }}</h2>
@@ -69,6 +54,7 @@
   </div>
 </div>
 </div>
+<div class="section">
 {{ if .Params.photos.gallery }}
   <div class="container">
   <div class="slider-for">
@@ -89,10 +75,40 @@
   {{else}}
   no photos
   {{end}}
-
-
-
-
+</div>
+<div class="section mobile-view">
+  <div class="columns">
+    <div class="column">
+      <div id="share-buttons">            
+        <!-- Email -->
+        <a href="mailto:?Subject=Check%20Out%20This%20Listing&amp;Body=Check%20out%20this%20listing%20from%20{{ .Permalink | absURL }}">
+          <i class="far fa-envelope"></i>
+        </a>    
+        <!-- Facebook -->
+        <a href="http://www.facebook.com/sharer.php?u={{ .Permalink | absURL }}" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>     
+        <!-- LinkedIn -->
+        <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ .Permalink | absURL }}" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>       
+        <!-- Print -->
+        <a href="javascript:;" onclick="window.print()">
+          <i class="fas fa-print"></i>
+        </a>      
+        <!-- Twitter -->
+        <a href="https://twitter.com/share?url={{ .Permalink | absURL }}&amp;text=Check%20out%20this%20listing%20from%20{{ .Site.Data.profile.logo_and_title.website_title }}" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+    </div> <!-- end share buttons -->
+      <div class="single-price-header">
+        <p>Property ID: {{ .Params.details.mls_number }}</p>
+        <h2 class="title is-3">${{ .Params.pricing.price }}</h2>
+        
+      </div>
+    </div>
+  </div>
+</div>
 <div class="section listing-details">
   <div class="container">
     <div class="columns is-variable is-2">

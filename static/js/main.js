@@ -23,6 +23,7 @@ $('.slider-for').slick({
   arrows: false,
   fade: true,
   autoplay: true,
+  adaptiveHeight: true,
   asNavFor: '.slider-nav'
 });
 $('.slider-nav').slick({
@@ -34,7 +35,7 @@ $('.slider-nav').slick({
   focusOnSelect: true
 });
 
-
+// LIGHTBOX
 $('.slider-for').slickLightbox();
 
 $('.responsive-slide').slick({

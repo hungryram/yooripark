@@ -14,6 +14,7 @@ address {
 
 nav.breadcrumb.is-small li a {
     text-transform: capitalize;
+    color: #7c7c7c;
 }
 
 .button.is-hovered, .button:hover {
@@ -49,6 +50,10 @@ div#share-buttons i {
 
 
 /* LISTING CAROUSEL */
+
+.slick-prev, .slick-next {
+    z-index: 1000;
+}
 
 
 .slick-prev::before {
@@ -588,6 +593,22 @@ div.page-banner {
 
   /* LISTING DETAILS */
 
+  @media screen and (max-width: 1088px) {
+      div.desktop-view {
+          display: none;
+      }
+  }
+
+  @media screen and (min-width: 1088px) {
+      div.mobile-view {
+          display: none;
+      }
+  }
+
+  div.mobile-view {
+    padding: 1rem 1.5rem;
+  }
+
   .single-price-header p {
       color: #4a4a4a;
       font-weight: 200;
@@ -717,6 +738,10 @@ div.single-listing-head address {
 .single-agent-link:hover {
     transition: all .2s ease-in-out;
     color: #fff;
+}
+
+img.img-holder {
+    margin: 0 auto;
 }
 
   /* TEAM */
