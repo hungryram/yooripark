@@ -126,6 +126,10 @@ fields:
     config:
       required: false
     label: Add URL to Youtube Video
+  - name: slide_show
+    type: field_group
+    config: {}
+    label: Slide Show
   label: Main Image
 - name: sub_pages
   type: field_group
