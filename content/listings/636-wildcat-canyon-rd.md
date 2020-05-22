@@ -3,7 +3,7 @@ featured_listing = true
 short_description = "Guaranteed Modern"
 status = "Active"
 title = "636 WILDCAT CANYON RD"
-weight = "2"
+weight = "3,900,000"
 [address]
 address = "636 WILDCAT CANYON RD"
 city = "BERKELEY"
