@@ -1,11 +1,37 @@
 {{ define "main" }}
+
 <div class="section agent-lists">
     <div class="container">
-        
         <div class="columns">
-            
-            <div class="column is-8">
-                {{ partial "breadcrumbs.html" . }}
+            <div class="column">
+              {{ partial "breadcrumbs.html" . }}
+            </div>
+          </div>
+        <div class="columns">
+            <div class="column is-8 ascend">
+              <div class="columns">
+                <div class="column">
+                  <nav class="navbar sortnav">
+                    <div class="navbar-menu">          
+                      <div class="navbar-end">
+                        <div class="navbar-item has-dropdown sort-nav">
+                          <a class="navbar-link">
+                            Sort: Price (Low to High)
+                          </a>
+                          <div class="navbar-dropdown is-right">
+                            <a class="navbar-item ascending">
+                              Price (High to Low)
+                            </a>
+                            <a class="navbar-item descending">
+                              Price (Low to High)
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+              </div>
                 <div class="tabs is-centered">
                     <ul>
                         <li><a href="/featured" class="main-btn" style="color: #fff">Featured</a></li>
@@ -18,19 +44,70 @@
                       <li>
                     </ul>
                   </div>
-                  <div class="columns is-multiline">
-                    {{ range (where $.Site.RegularPages "Type" "listings") }}
-            {{ if .Params.featured_listing }}
+
+                <div class="columns is-multiline">
+                    {{ range (where $.Site.RegularPages.ByWeight "Type" "listings") }}
+                    {{ if .Params.featured_listing }}
                     <div class="column is-6">
                         
                         {{ partial "featured-listings.html" . }}
                               
                     </div>
                     {{end}}
-            {{end}}
+                    {{end}}
                 </div>
                 {{ partial "pagination" . }}
             </div>
+
+            <div class="column is-8 descend hidden">
+              <div class="columns">
+                <div class="column">
+                  <nav class="navbar sortnav" role="navigation" aria-label="dropdown navigation">
+                    <div class="navbar-menu">          
+                      <div class="navbar-end">
+                        <div class="navbar-item has-dropdown sort-nav">
+                          <a class="navbar-link">
+                            Sort: Price (High to Low)
+                          </a>
+                          <div class="navbar-dropdown is-right">
+                            <a class="navbar-item ascending">
+                              Price (High to Low)
+                            </a>
+                            <a class="navbar-item descending">
+                              Price (Low to High)
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+              <div class="tabs is-centered">
+                  <ul>
+                      <li><a href="/featured" class="main-btn" style="color: #fff">Featured</a></li>
+                      {{ range $name, $taxonomy := .Site.Taxonomies.status }}
+                    <li>
+                      <a href="/status/{{ $name | urlize }}">{{ $name | humanize }} ({{ $taxonomy.Count }})</a>
+                    </li>
+                    {{end}}
+              
+                    <li>
+                  </ul>
+                </div>
+              <div class="columns is-multiline">
+                {{ range (where $.Site.RegularPages.ByWeight.Reverse "Type" "listings") }}
+                {{ if .Params.featured_listing }}
+                <div class="column is-6">
+                    
+                    {{ partial "featured-listings.html" . }}
+                          
+                </div>
+                {{end}}
+                {{end}}
+              </div>
+              {{ partial "pagination" . }}
+          </div>
             {{ partial "sidebar.html" . }}
         </div>
     </div>

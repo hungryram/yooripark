@@ -15,6 +15,11 @@ $(document).ready(function () {
         $('.descend').addClass('hidden');
         $('.ascend').removeClass('hidden');
       });
+
+      // BULMA FOR SORTING
+      $('.sort-nav').click(function(){
+        $('.sort-nav').toggleClass('is-active');
+      });
 });
 
 // TESTIMONIAL SLIDER

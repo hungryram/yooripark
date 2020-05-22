@@ -163,7 +163,6 @@
                 </div>
                 <div class="responsive-slide">
                     {{ range first 6 $.Site.Taxonomies.status.sold }}
-                    
                         {{ partial "featured-listings.html" . }}
                     {{end}}
                 </div>
@@ -188,10 +187,9 @@
                 <div class="responsive-slide">
                     {{ range first 20 (where $.Site.RegularPages "Type" "teams") }}
                     <div class="agent-slider box">
-                            <a href="{{ .Permalink }}"><figure class="image">
-                                <img class="" src="{{ .Params.details.agent_photo }}" alt="{{ .Title }} {{ $.Site.Data.profile.primary_company_name }}" style="object-fit: cover;">
-                            </figure>
-                        </a>
+                            <a href="{{ .Permalink }}">
+                                <img src="{{ .Params.details.agent_photo }}" alt="" style="object-fit: cover;height:200px;width:200px;border-radius:50%;margin: 0 auto;padding-bottom: 20px">
+                            </a>
                             <h4 class="subtitle is-5" class="secondary-titles">{{ .Title }}</h4>
                             <h5 class="subtitle is-6" style="margin:0">{{ .Params.details.title }}</h5>
                             <a href="tel:{{ .Params.contact.phone }}">{{ .Params.contact.phone }}</a><br>
