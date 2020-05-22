@@ -73,14 +73,16 @@
   <div class="container">
   <div class="slider-for">
     {{ range .Params.photos.gallery }}
-      <img src="{{ . }}" alt="">
+    <a href="{{ . }}">
+      <img src="{{ . }}" alt="" class="img-holder">
+      </a>
     {{end}}
   </div>
     <div class="slider-nav">
     {{ range .Params.photos.gallery }}
       {{/*  <div class="slider-nav-container" style="background:url({{.}})no-repeat center;height:100px;background-size:cover;margin: 0 5px">
       </div>  */}}
-      <img src="{{ . }}" alt="" style="margin: 0 5px;" class="img-holder">
+      <img src="{{ . }}" alt="" style="margin: 0 5px;">
     {{end}}
     </div>
   </div>

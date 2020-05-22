@@ -26,19 +26,16 @@ $('.slider-for').slick({
   asNavFor: '.slider-nav'
 });
 $('.slider-nav').slick({
-  slidesToShow: 3,
+  slidesToShow: 6,
   slidesToScroll: 1,
   asNavFor: '.slider-for',
-  dots: true,
+  dots: false,
   centerMode: true,
   focusOnSelect: true
 });
 
 
-$('.slider-for').slickLightbox({
-  itemSelector        : 'img',
-  navigateByKeyboard  : true
-});
+$('.slider-for').slickLightbox();
 
 $('.responsive-slide').slick({
   dots: true,
