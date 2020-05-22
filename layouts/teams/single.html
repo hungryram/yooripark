@@ -7,7 +7,7 @@
           <div style="padding: 20px">
             <h1 class="agent-name">{{ .Params.title }} </h1>
             <h4>{{ .Params.details.title }}{{ if .Params.details.office }}{{ with .Site.GetPage .Params.details.office }} at <a href="{{ .Permalink }}" class="office-link secondary-btn">{{ .Params.title }}</a>{{end}}{{end}}</h4>
-            <h4>{{ .Params.details.license_type }}: {{ .Params.details.license_number }}</h4>
+            <h4>{{ .Params.details.license_type }} {{ .Params.details.license_number }}</h4>
             
           </div>
           <div class="box">

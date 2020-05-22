@@ -1129,3 +1129,12 @@ ul.footer-social li {
         padding: 1rem 1.5rem;
 }
 
+@media print {
+    div.hero-head,
+    div.page-banner,
+    div.column.desktop-view.has-text-right,
+    footer.site-footer,
+    div.bottom-credit {
+        display: none!important;
+    }
+}
