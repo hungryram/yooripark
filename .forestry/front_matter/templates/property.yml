@@ -41,10 +41,15 @@ fields:
   label: Featured Listing
   description: Toggle to feature this listing
 - name: weight
-  type: text
-  config:
-    required: false
+  type: number
   label: Price
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
 - name: address
   type: field_group
   config: {}
