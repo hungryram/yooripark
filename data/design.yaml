@@ -17,6 +17,8 @@ main_image:
     open_in_new_tab: false
     hero_button_text_color: "#000000"
     hero_button_bg_color: "#ffffff"
+  slide_show:
+    slider: []
 home_sections:
 - template: intro
   intro_title: Discover Our Finest Selection
@@ -69,3 +71,4 @@ colors:
   header_background_color: "#0B1723"
   navigation_link_color: "#BA0000"
   enable_black_menu_items: false
+upload_image: ''
