@@ -60,7 +60,7 @@
   <div class="slider-for">
     {{ range .Params.photos.gallery }}
     <a href="{{ . }}">
-      <img src="{{ . }}" alt="" class="img-holder">
+      <img src="{{ . }}" alt="{{ $.Site.Data.profile.primary_company_name }}" class="img-holder">
       </a>
     {{end}}
   </div>
@@ -68,7 +68,7 @@
     {{ range .Params.photos.gallery }}
       {{/*  <div class="slider-nav-container" style="background:url({{.}})no-repeat center;height:100px;background-size:cover;margin: 0 5px">
       </div>  */}}
-      <img src="{{ . }}" alt="" style="margin: 0 5px;">
+      <img src="{{ . }}" alt="{{ $.Site.Data.profile.primary_company_name }}" style="margin: 0 3px;">
     {{end}}
     </div>
   </div>
@@ -197,9 +197,6 @@
 
       <!-- RIGHT COLUMN -->
       <div class="column">
-
-        
- 
             {{ if .Params.listing_agent.listing_agent }}<p>
               {{ with .Site.GetPage .Params.listing_agent.listing_agent }}
               <div class="box">
@@ -208,7 +205,7 @@
             <article class="media">
               <div class="media-left">
                 <figure class="image is-96x96">
-                  <img src="{{ .Params.details.agent_photo }}" alt="Image">
+                  <img src="{{ .Params.details.agent_photo }}" alt="{{ .Title }} {{ $.Site.Data.profile.primary_company_name }}">
                 </figure>
               </div>
               <div class="media-content">
@@ -217,8 +214,8 @@
                     <strong>{{ .Title }}</strong>
                     <ul>
                       
-                      {{if .Params.contact.cell}}<li><i class="fas fa-mobile-alt"></i><a href="tel:{{ .Params.contact.cell }}"><span>{{ .Params.contact.cell }}</span></a></li>{{end}}
-                      {{if .Params.contact.email}}<li><i class="far fa-envelope"></i><a href="mailto:{{ .Params.contact.email }}"><span>{{ .Params.contact.email }}</span></a></li>{{end}}
+                      {{if .Params.contact.cell}}<li><i class="fas fa-mobile-alt"></i><a href="tel:{{ .Params.contact.cell }}" class="secondary-btn"><span>{{ .Params.contact.cell }}</span></a></li>{{end}}
+                      {{if .Params.contact.email}}<li><i class="far fa-envelope"></i><a href="mailto:{{ .Params.contact.email }}" class="secondary-btn"><span>{{ .Params.contact.email }}</span></a></li>{{end}}
                     </ul>
                     <br>
                   </p>

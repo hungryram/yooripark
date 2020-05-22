@@ -7,7 +7,7 @@
       <div class="column" {{ if .Site.Data.design.footer.enable_black_text}}style="color:black"{{else}} style="color:white"{{end}}>
         <a href="{{ .Site.BaseURL }}">
               {{ with .Site.Data.design.logo_or_title.upload_logo}}
-          <img src="{{ . }}" alt="" width="200">
+          <img src="{{ . }}" alt="{{ $.Site.Data.profile.primary_company_name }}" width="200">
               {{ else }}
           <h1>{{ .Site.Data.design.logo_or_title.title }}</h1>
               {{ end }}

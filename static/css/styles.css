@@ -900,6 +900,7 @@ ul.agent-list-contact a {
 
 .agent-additional li {
     display: inline-block;
+    margin: 2px;
 }
 
 .agent-social li {

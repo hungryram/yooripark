@@ -46,10 +46,10 @@
                         <h4 class="subtitle is-6">{{ .blog_subtitle }}</h4>
                     </div>
                 </div>
-                <div class="columns">
-                {{ range first 4 (where $.Site.RegularPages "Type" "blog") }}
+                <div class="responsive-slide">
+                {{ range first 6 (where $.Site.RegularPages "Type" "blog") }}
 
-                    <div class="column is-one-third">
+                    <div class="column">
                         <div class="home-card card">
                             <div class="card-image">
                               <figure class="image is-16by9">
@@ -71,7 +71,7 @@
                     </div>
 
                 {{ end }}
-            </div>
+                </div>
                 <div class="column" align="center"><a class="button main-btn" href="/blog/">View All</a></div>
             </div>
         </section>
@@ -92,7 +92,6 @@
                     </div>
                     <div class="responsive-slide">
                         {{ range first 6 $.Site.Taxonomies.status.rental }}
-                        
                             {{ partial "featured-listings.html" . }}
                         {{end}}
                     </div>
@@ -188,12 +187,12 @@
                 </div>
                 <div class="responsive-slide">
                     {{ range first 20 (where $.Site.RegularPages "Type" "teams") }}
-                    <div class="agent-slider">
-                            <a href="{{ .Permalink }}"><figure class="image is-128x128">
-                                <img class="is-rounded" src="{{ .Params.details.agent_photo }}" style="object-fit: cover;">
+                    <div class="agent-slider box">
+                            <a href="{{ .Permalink }}"><figure class="image">
+                                <img class="" src="{{ .Params.details.agent_photo }}" alt="{{ .Title }} {{ $.Site.Data.profile.primary_company_name }}" style="object-fit: cover;">
                             </figure>
                         </a>
-                            <h4 class="subtitle is-5">{{ .Title }}</h4>
+                            <h4 class="subtitle is-5" class="secondary-titles">{{ .Title }}</h4>
                             <h5 class="subtitle is-6" style="margin:0">{{ .Params.details.title }}</h5>
                             <a href="tel:{{ .Params.contact.phone }}">{{ .Params.contact.phone }}</a><br>
                             <a href="mailto:{{ .Params.contact.email }}">{{ .Params.contact.email }}</a>

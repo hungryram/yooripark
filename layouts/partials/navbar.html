@@ -4,7 +4,7 @@
         <div class="navbar-brand">
           <a class="navbar-item" href="/">
                 {{ with .Site.Data.design.logo_or_title.upload_logo}}
-            <img src="{{ . }}" alt="{{ $.Site.Data.profile.logo_and_title.website_title }}">
+            <img src="{{ . }}" alt="{{ $.Site.Data.profile.primary_company_name }}">
                 {{ else }}
             <h1>{{ .Site.Data.design.logo_or_title.title }}</h1>
                 {{ end }}
