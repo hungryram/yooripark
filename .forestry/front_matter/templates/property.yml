@@ -12,7 +12,7 @@ fields:
   type: text
   config:
     required: false
-    max: 20
+    max: 30
   label: Short Description
   description: 'Example: Luxury Listing'
 - name: status
@@ -40,6 +40,11 @@ fields:
   type: boolean
   label: Featured Listing
   description: Toggle to feature this listing
+- name: weight
+  type: text
+  config:
+    required: false
+  label: Price
 - name: address
   type: field_group
   config: {}
