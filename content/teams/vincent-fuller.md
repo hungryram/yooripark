@@ -7,10 +7,10 @@ email = "vincent@hungryram.com"
 fax = ""
 phone = ""
 [details]
-agent_photo = ""
+agent_photo = "/uploads/agent-4.jpg"
 languages = []
 license_number = ""
-license_type = []
+license_type = ""
 office = []
 specialty = []
 title = ""
