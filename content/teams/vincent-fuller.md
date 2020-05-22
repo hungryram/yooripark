@@ -1,12 +1,13 @@
 +++
 title = "Vincent Fuller"
+weight = nil
 [contact]
 cell = "555-555-5555"
 email = "vincent@hungryram.com"
 fax = ""
 phone = ""
 [details]
-agent_photo = "/uploads/agent-4.jpg"
+agent_photo = ""
 languages = ["english"]
 license_number = "40905442"
 license_type = "DRE License"
