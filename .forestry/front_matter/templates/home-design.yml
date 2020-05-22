@@ -126,19 +126,6 @@ fields:
     config:
       required: false
     label: Add URL to Youtube Video
-  - name: slide_show
-    type: field_group
-    config: {}
-    fields:
-    - name: slider
-      type: blocks
-      label: Slider
-      template_types:
-      - slide-show
-      config:
-        min: 
-        max: 
-    label: Slide Show
   label: Main Image
 - name: sub_pages
   type: field_group
