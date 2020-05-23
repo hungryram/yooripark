@@ -5,13 +5,13 @@ fields:
 - name: weight
   type: number
   label: Order to Appear
-  description: ''
   default: 0
   required: true
   config:
     min: 
     max: 
     step: 
+  description: Enter 1 to display first and 2 to display the next and so on.
 - name: title
   type: text
   config:
