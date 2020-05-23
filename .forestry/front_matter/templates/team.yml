@@ -176,5 +176,6 @@ fields:
     label: SEO
   label: Search Engine Optimization
 pages:
+- content/teams/john-conner.md
 - content/teams/sarah-conner.md
 - content/teams/vincent-fuller.md
