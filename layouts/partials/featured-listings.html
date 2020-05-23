@@ -1,7 +1,7 @@
 <div class="card" style="margin: 10px;">
   <a href="{{ .Permalink }}">
   <div class="listing-image-container">
-      <div class="card-content listing-bg" style="background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)),url({{ .Params.photos.main_photo }});height: 30vh;position:relative;background-size:cover">
+      <div class="card-content listing-bg" style="background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)),url({{ if .Params.photos.main_photo }}{{ .Params.photos.main_photo }}{{else}}http://www.hungryram.com/uploads/nophotohouse.jpg{{ end }});height: 30vh;position:relative;background-size:cover">
     <div class="content">
       <span class="status">{{ .Params.status }}</span>
       {{ if .Params.featured_listing }}<span class="featured">Featured</span>{{ end }}

@@ -1,6 +1,3 @@
-
-
-
 <div class="column">
     <div class="box">
         <h2 class="subtitle is-6">Recent Listings<h2>
@@ -10,6 +7,12 @@
                 <div class="media-left">
                   <figure class="image is-96x96">
                     <img src="{{ .Params.photos.main_photo }}" alt="Image">
+                  </figure>
+                </div>
+                {{ else }}
+                <div class="media-left">
+                  <figure class="image is-96x96">
+                    <img src="http://www.hungryram.com/uploads/nophotohouse.jpg" alt="Image">
                   </figure>
                 </div>
                 {{end}}
