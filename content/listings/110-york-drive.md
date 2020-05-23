@@ -12,6 +12,7 @@ zip_code = 94611
 [details]
 bathrooms = 2
 bedrooms = 5
+garage = 2
 hoa = 300
 lot_size = 0.17
 mls_number = "40904885"
