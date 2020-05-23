@@ -11,7 +11,7 @@ state = "California"
 zip_code = 94708
 [details]
 bathrooms = 4
-bedrooms = 5
+bedrooms = 3
 garage = 3
 hoa = 200
 lot_size = 0.944
