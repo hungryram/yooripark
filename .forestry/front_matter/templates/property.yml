@@ -249,22 +249,22 @@ fields:
   - name: hoa
     type: number
     label: HOA
-    description: ''
+    description: Enter 0 if none.
     default: 0
     required: true
     config:
-      min: 
+      min: 0
       max: 
       step: 
       required: true
   - name: garage
     type: number
     label: Garage
-    description: ''
+    description: Enter 0 if none
     default: 0
     required: true
     config:
-      min: 
+      min: 0
       max: 
       step: 
       required: true
