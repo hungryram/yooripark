@@ -47,8 +47,7 @@
     </div> <!-- end share buttons -->
       <div class="single-price-header">
         <p>Property ID: {{ .Params.details.mls_number }}</p>
-        <h2 class="title is-3">${{ .Params.pricing.price }}</h2>
-        
+        <h2 class="title is-3">${{ lang.NumFmt 0 .Params.weight }}</h2>
       </div>
     </div>
   </div>
@@ -160,19 +159,97 @@
             {{ with .Params.details.garage }}<li><strong>Garage</strong><span>{{ . }}</span></li>{{ end }}
             {{ with .Params.details.square_footage }}<li><strong>Size Sq Ft.</strong><span>{{ . }} Sq. Ft</span></li>{{ end }}
             {{ with .Params.details.year_built }}<li><strong>Year Built</strong><span>{{ . }}</span></li>{{ end }}
-            {{ with .Params.details.hoa }}<li><strong>HOA</strong><span>{{ . }}/month</span></li>{{ end }}
+            {{ with .Params.details.hoa }}<li><strong>HOA</strong><span>${{ . }}/month</span></li>{{ end }}
           </ul>
+      </div>
 
-      </div>
       <div class="box single-features-list">
-        <h2 class="title is-6"><i class="fas fa-th-large"></i>Features</h2>
+        <h2 class="title is-6"><i class="fas fa-th-large"></i>Property Interior</h2>
         <hr>
+        <h3 class="title is-6"><strong>Rooms</strong></h3>
         <ul>
-        {{ range .Params.utilities_and_features.appliances }}
+        {{ range .Params.utilities_and_features.interior_details.interior_rooms }}
           <li><i class="far fa-check-circle"></i>{{ . }}</li>
+        {{ else }}
+        <p>No rooms listed</p>
         {{end}}
-      </ul>
+        </ul>
+        <h3 class="title is-6"><strong>Flooring</strong></h3>
+        <ul>
+        {{ range .Params.utilities_and_features.interior_details.interior_flooring }}
+          <li><i class="far fa-check-circle"></i>{{ . }}</li>
+        {{ else }}
+        <p>No flooring listed</p>
+        {{end}}
+        </ul>
+        <h3 class="title is-6"><strong>Appliances</strong></h3>
+        <ul>
+        {{ range .Params.utilities_and_features.interior_details.interior_appliances }}
+          <li><i class="far fa-check-circle"></i>{{ . }}</li>
+        {{ else }}
+        <p>No appliances listed</p>
+        {{end}}
+        </ul>
+        <h3 class="title is-6"><strong>Additional Interior Details</strong></h3>
+        <ul>
+        {{ range .Params.utilities_and_features.interior_details.additional_interior_details }}
+          <li><i class="far fa-check-circle"></i>{{ . }}</li>
+        {{ else }}
+        <p>No additional details</p>
+        {{end}}
+        </ul>
       </div>
+
+      <div class="box single-features-list">
+        <h2 class="title is-6"><i class="fas fa-th-large"></i>Property Exterior</h2>
+        <hr>
+        <h3 class="title is-6"><strong>Details</strong></h3>
+        <ul>
+        {{ range .Params.utilities_and_features.exterior.exterior_details }}
+          <li><i class="far fa-check-circle"></i>{{ . }}</li>
+        {{ else }}
+        <p>No rooms listed</p>
+        {{end}}
+        </ul>
+        <h3 class="title is-6"><strong>Roof</strong></h3>
+        <ul>
+        {{ range .Params.utilities_and_features.exterior.exterior_roof }}
+          <li><i class="far fa-check-circle"></i>{{ . }}</li>
+        {{ else }}
+        <p>No roofing listed</p>
+        {{end}}
+        </ul>
+        <h3 class="title is-6"><strong>Additional Exterior Details</strong></h3>
+        <ul>
+        {{ range .Params.utilities_and_features.exterior.additional_exterior_details }}
+          <li><i class="far fa-check-circle"></i>{{ . }}</li>
+        {{ else }}
+        <p>No additional details</p>
+        {{end}}
+        </ul>
+      </div>
+
+      <div class="box single-features-list">
+        <h2 class="title is-6"><i class="fas fa-th-large"></i>Community Details</h2>
+        <hr>
+        <h3 class="title is-6"><strong>Details</strong></h3>
+        <ul>
+        {{ range .Params.utilities_and_features.community_features.community_features_choice }}
+          <li><i class="far fa-check-circle"></i>{{ . }}</li>
+        {{ else }}
+        <p>No details listed</p>
+        {{end}}
+        </ul>
+        <h3 class="title is-6"><strong>Additional Exterior Details</strong></h3>
+        <ul>
+        {{ range .Params.utilities_and_features.community_features.additional_community_details }}
+          <li><i class="far fa-check-circle"></i>{{ . }}</li>
+        {{ else }}
+        <p>No additional details</p>
+        {{end}}
+        </ul>
+      </div>
+
       {{ if .Params.tools.matterport_link }}
       <div class="box vt-single">
         <h2 class="title is-6">Virtual Tour</h2>
@@ -189,13 +266,6 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ .Params.tools.youtube_link }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       {{end}}
-
-
-<div class="box">
-  <div class="box">
-    <!-- Mortgage Calculator Widget --><div class="mcw-wrap_250" id="maoWrap"><div id="mcwWidget"></div><script>var maoCalc={};maoCalc.settings={"theme":"theme4","view":"vertical1","responsive":"mcw-wrap_responsive","font":"Open Sans, Helvetica, Arial, sans-serif","border":false,"boxShadow":true,"backgroundColor":"#f9f9f9","fieldColor":"#fff","textColor":"#334356","borderColor":"#dde2e5","currency":"$","currencySide":"left","delimiters":",.","popup":true,"popupView":"doughnutPopup","style":true,"widgetTotalInterest":false,"widgetTotalPrincipal":false,"monthlyPayment":"Monthly Payment","totalPrincipalPaid":"Total Principal","totalInterestPaid":"Total Interest","totalPayments":"Total Payments","years":"years","title":{"enabled":true,"color":"#334356","label":"Mortgage Calculator"},"homePrice":{"label":"Home Price","value":"350,000"},"downPayment":{"enabled":true,"label":"Down Payment","value":"52,000"},"interestRate":{"label":"Interest Rate","value":"4.05"},"mortgageTerm":{"label":"Mortgage Term","value":"30"},"pmi":{"enabled":true,"label":"PMI","value":"1,881.24"},"taxes":{"enabled":true,"label":"Taxes","value":"4,375"},"insurance":{"enabled":true,"label":"Insurance","value":"1,225"},"hoa":{"enabled":true,"label":"HOA","value":"0"},"extra":{"enabled":true,"labelAdd":"Add extra payments","labelRemove":"Remove extra payments","labelToMonthy":"To monthly","labelYearly":"Extra yearly"},"startDate":{"enabled":true,"label":"Start Date"},"monthsArr":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"button":{"color":"#ffffff","bg":"#000000","label":"Calculate"},"amortizationSchedule":"Amortization Schedule","popupLabels":{"monthlyPrincipalInterest":"Monthly Principal & Interest","monthlyExtraPayment":"Monthly Extra Payment","monthlyPayment":"MONTHLY PAYMENT","downPayment":"Down payment","extraPayments":"Extra payments","totalPrincipalPaid":"Total principal paid","totalInterestPaid":"Total interest paid","totalOfAllPayments":"TOTAL OF ALL PAYMENTS","amortizationSchedule":"Amortization Schedule","tablePaymentDate":"Payment date","tablePayment":"Payment","tablePrincipal":"Principal","tableInterest":"Interest","tableTotalInterest":"Total Interest","tableBalance":"Balance","pmi":"PMI","taxes":"Taxes","insurance":"Insurance","shortInsurance":"Ins","hoa":"HOA","chartBalance":"Balance","chartPrincipal":"Principal","chartInterest":"Interest"},"useTitleAsLink":false,"titleLinkUrl":"","useFooterLink":false,"footerLinkAnchor":"","footerLinkUrl":""};(function(){function loadScript(src){var s,t;s=document.createElement("script");s.src=src;t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);}function decode(str){return!window.btoa?'not_found':window.btoa(unescape(encodeURIComponent(str)));}var uri='https://mortgage-advice-online.org/widget/'+decode(window.location)+'.js';loadScript(uri);})();</script></div><!-- End Mortgage Calculator Widget -->
-  </div>
-</div>
       </div>
 
       <!-- RIGHT COLUMN -->
@@ -250,6 +320,11 @@
           {{else}}
             <p>no files</p>
           {{end}}
+        </div>
+        <div class="box">
+          <div class="box">
+            <!-- Mortgage Calculator Widget --><div class="mcw-wrap_250" id="maoWrap"><div id="mcwWidget"></div><script>var maoCalc={};maoCalc.settings={"theme":"theme4","view":"vertical1","responsive":"mcw-wrap_responsive","font":"Open Sans, Helvetica, Arial, sans-serif","border":false,"boxShadow":true,"backgroundColor":"#f9f9f9","fieldColor":"#fff","textColor":"#334356","borderColor":"#dde2e5","currency":"$","currencySide":"left","delimiters":",.","popup":true,"popupView":"doughnutPopup","style":true,"widgetTotalInterest":false,"widgetTotalPrincipal":false,"monthlyPayment":"Monthly Payment","totalPrincipalPaid":"Total Principal","totalInterestPaid":"Total Interest","totalPayments":"Total Payments","years":"years","title":{"enabled":true,"color":"#334356","label":"Mortgage Calculator"},"homePrice":{"label":"Home Price","value":"350,000"},"downPayment":{"enabled":true,"label":"Down Payment","value":"52,000"},"interestRate":{"label":"Interest Rate","value":"4.05"},"mortgageTerm":{"label":"Mortgage Term","value":"30"},"pmi":{"enabled":true,"label":"PMI","value":"1,881.24"},"taxes":{"enabled":true,"label":"Taxes","value":"4,375"},"insurance":{"enabled":true,"label":"Insurance","value":"1,225"},"hoa":{"enabled":true,"label":"HOA","value":"0"},"extra":{"enabled":true,"labelAdd":"Add extra payments","labelRemove":"Remove extra payments","labelToMonthy":"To monthly","labelYearly":"Extra yearly"},"startDate":{"enabled":true,"label":"Start Date"},"monthsArr":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"button":{"color":"#ffffff","bg":"#000000","label":"Calculate"},"amortizationSchedule":"Amortization Schedule","popupLabels":{"monthlyPrincipalInterest":"Monthly Principal & Interest","monthlyExtraPayment":"Monthly Extra Payment","monthlyPayment":"MONTHLY PAYMENT","downPayment":"Down payment","extraPayments":"Extra payments","totalPrincipalPaid":"Total principal paid","totalInterestPaid":"Total interest paid","totalOfAllPayments":"TOTAL OF ALL PAYMENTS","amortizationSchedule":"Amortization Schedule","tablePaymentDate":"Payment date","tablePayment":"Payment","tablePrincipal":"Principal","tableInterest":"Interest","tableTotalInterest":"Total Interest","tableBalance":"Balance","pmi":"PMI","taxes":"Taxes","insurance":"Insurance","shortInsurance":"Ins","hoa":"HOA","chartBalance":"Balance","chartPrincipal":"Principal","chartInterest":"Interest"},"useTitleAsLink":false,"titleLinkUrl":"","useFooterLink":false,"footerLinkAnchor":"","footerLinkUrl":""};(function(){function loadScript(src){var s,t;s=document.createElement("script");s.src=src;t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);}function decode(str){return!window.btoa?'not_found':window.btoa(unescape(encodeURIComponent(str)));}var uri='https://mortgage-advice-online.org/widget/'+decode(window.location)+'.js';loadScript(uri);})();</script></div><!-- End Mortgage Calculator Widget -->
+          </div>
         </div>
       </div>
     </div>

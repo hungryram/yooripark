@@ -656,10 +656,11 @@ div.page-banner {
 
 .single-features-list ul li {
     padding: 10px 0;
+    font-size: 13px;
 }
 
 .single-features-list ul li i {
-    color: black;
+    font-size: 14px;
 }
 
 .listing-details .box {
@@ -678,6 +679,13 @@ div.page-banner {
       font-weight: 300;
       line-height: 25px;
   }
+
+.single-features-list h3.title {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-size: 14px;
+}
 
 .listing-details i {
       margin-right: 8px;
