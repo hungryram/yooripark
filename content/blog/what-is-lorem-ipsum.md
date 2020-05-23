@@ -1,7 +1,8 @@
 +++
 author = "teams/sarah-conner.md"
 categories = ["real estate", "financing"]
-date_published = 2020-02-05T00:00:00Z
+date = 2020-05-02T07:00:00Z
+date_published = "2020-02-05T00:00:00.000+00:00"
 featured_image = "https://reluxurytemplate.s3-us-west-1.amazonaws.com/derek-thomson-p50HcC0YrL0-unsplash.jpg"
 tags = ["commercial"]
 title = "What is Lorem Ipsum?"
