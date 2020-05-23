@@ -1,9 +1,9 @@
-<div class="section">
+<div class="section"  style="{{ safeHTMLAttr (printf "background-color: %s" .intro_background_color) }}">
     <div class="container">
-        <div class="columns is-vcentered">
+        <div class="columns is-vcentered {{ with .intro_align_text }}{{ . }}{{end}}">
 
             {{ if .add_photo }}
-                <div class="column is-centered">
+                <div class="column">
                     <img src="{{ .add_photo }}" alt="" width="500">
                 </div>
             {{ end }}
@@ -20,72 +20,3 @@
         </div>
     </div>
 </div>
-
-<!-- 
-{{ range .Site.Taxonomies.status }}
-<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a><br>
-{{end}}
-<section id="menu">
-    <ul>
-        {{ range $key, $taxonomy := .Site.Taxonomies.status }}
-        <li> {{ $key }} </li>
-        <ul>
-            {{ range $taxonomy.Pages }}
-            <li hugo-nav="{{ .RelPermalink}}"><a href="{{ .Permalink}}"> {{ .Title }} </a> </li>
-            {{ end }}
-        </ul>
-        {{ end }}
-    </ul>
-</section>
-<hr>
-<section id="menu">
-    <ul>
-        {{ range $key, $taxonomy := .Site.Taxonomies.status }}
-        <li> <a href="{{.Page.RelPermalink}}">{{ $key }} </a></li>
-        <ul>
-            {{ range $taxonomy.Pages }}
-            <li hugo-nav="{{ .RelPermalink}}"><a href="{{ .Permalink}}"> {{ .Title }} </a> </li>
-            <li hugo-nav="{{ .RelPermalink}}"><a href="{{ .Permalink}}"> {{ .Params.short_description }} </a> </li><br>
-            {{ end }}
-        </ul>
-        {{ end }}
-    </ul>
-</section> -->
-
-
-{{/*  
-<hr style="width: 1000%;border:3px solid black">
-<h1>filter through statuses</h1>
-<section> 
-    {{ range $key, $value := $.Site.Taxonomies.status.active }}
-    <a href="{{.Permalink}}">{{ .Params.short_description }}</a><br>
-    {{ end }} 
-
-
-    <div class="field">
-        <p class="control has-icons-left">
-          <span class="select">
-            <select>
-                {{ range $key, $value := $.Site.Taxonomies.status.active }}
-              <option selected>{{ .Params.short_description }}</option>
-              {{ end }} 
-            </select>
-          </span>
-          <span class="icon is-small is-left">
-            <i class="fas fa-globe"></i>
-          </span>
-        </p>
-      </div>
-</section>  */}}
-
-
-
-{{/*  
-
-    List All Pages In content
-
-{{ range .Pages }}
-<li>
-    <a href="{{.Permalink}}">{{.Title}}</a>
-</li>
-{{ end }}  */}}

@@ -32,7 +32,7 @@ home_sections:
     your phone or computer. Easily manage your website through our website editor
     customized specifically for real estate professionals.
   add_photo: "/uploads/office.jpg"
-  intro_align_text: has-text-centered
+  intro_align_text: has-text-left
   intro_background_color: "#ECECEC"
 - template: featured-listings
   active_align_title_text: has-text-centered
