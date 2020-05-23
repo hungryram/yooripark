@@ -9,32 +9,39 @@
           </div>
         <div class="columns">
             <div class="column is-8 ascend">
-              <div class="columns">
+              <div class="columns has-text-right">
                 <div class="column">
-                  <nav class="navbar sortnav">
-                    <div class="navbar-menu">          
-                      <div class="navbar-end">
-                        <div class="navbar-item has-dropdown sort-nav">
-                          <a class="navbar-link">
-                            Sort: Price (Low to High)
+                  <div class="dropdown sorttrigger">
+                    <div class="dropdown-trigger">
+                      <button class="sort-nav" aria-haspopup="true" aria-controls="dropdown-menu2">
+                        <span>Sort by</span>
+                        <span class="icon is-small">
+                          <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                      </button>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+                      <div class="dropdown-content">
+                        <div class="dropdown-item">
+                          <a class="ascending" href="#">
+                            Price (High to Low)
                           </a>
-                          <div class="navbar-dropdown is-right">
-                            <a class="navbar-item ascending">
-                              Price (High to Low)
-                            </a>
-                            <a class="navbar-item descending">
-                              Price (Low to High)
-                            </a>
-                          </div>
+                        </div>
+                        <hr class="dropdown-divider">
+                        <div class="dropdown-item">
+                          <a class="descending" href="#">
+                            Price (Low to High)
+                          </a>
                         </div>
                       </div>
                     </div>
-                  </nav>
+                  </div>
                 </div>
               </div>
                 <div class="tabs is-centered">
                     <ul>
-                        <li><a href="/featured" class="main-btn" style="color: #fff">Featured</a></li>
+                      <li><a href="/listings">All Listings({{ len ( where $.Site.RegularPages "Type" "listings") }})</a></li>
+                        <li><a href="/featured">Featured</a></li>
                         {{ range $name, $taxonomy := .Site.Taxonomies.status }}
                       <li>
                         <a href="/status/{{ $name | urlize }}">{{ $name | humanize }} ({{ $taxonomy.Count }})</a>
@@ -60,41 +67,48 @@
             </div>
 
             <div class="column is-8 descend hidden">
-              <div class="columns">
+              <div class="columns has-text-right">
                 <div class="column">
-                  <nav class="navbar sortnav" role="navigation" aria-label="dropdown navigation">
-                    <div class="navbar-menu">          
-                      <div class="navbar-end">
-                        <div class="navbar-item has-dropdown sort-nav">
-                          <a class="navbar-link">
-                            Sort: Price (High to Low)
+                  <div class="dropdown sorttrigger">
+                    <div class="dropdown-trigger">
+                      <button class="sort-nav" aria-haspopup="true" aria-controls="dropdown-menu2">
+                        <span>Sort by</span>
+                        <span class="icon is-small">
+                          <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                      </button>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+                      <div class="dropdown-content">
+                        <div class="dropdown-item">
+                          <a class="ascending" href="#">
+                            Price (High to Low)
                           </a>
-                          <div class="navbar-dropdown is-right">
-                            <a class="navbar-item ascending">
-                              Price (High to Low)
-                            </a>
-                            <a class="navbar-item descending">
-                              Price (Low to High)
-                            </a>
-                          </div>
+                        </div>
+                        <hr class="dropdown-divider">
+                        <div class="dropdown-item">
+                          <a class="descending" href="#">
+                            Price (Low to High)
+                          </a>
                         </div>
                       </div>
                     </div>
-                  </nav>
+                  </div>
                 </div>
               </div>
               <div class="tabs is-centered">
-                  <ul>
-                      <li><a href="/featured" class="main-btn" style="color: #fff">Featured</a></li>
-                      {{ range $name, $taxonomy := .Site.Taxonomies.status }}
-                    <li>
-                      <a href="/status/{{ $name | urlize }}">{{ $name | humanize }} ({{ $taxonomy.Count }})</a>
-                    </li>
-                    {{end}}
-              
-                    <li>
-                  </ul>
-                </div>
+                <ul>
+                  <li><a href="/listings">All Listings({{ len ( where $.Site.RegularPages "Type" "listings") }})</a></li>
+                    <li><a href="/featured">Featured</a></li>
+                    {{ range $name, $taxonomy := .Site.Taxonomies.status }}
+                  <li>
+                    <a href="/status/{{ $name | urlize }}">{{ $name | humanize }} ({{ $taxonomy.Count }})</a>
+                  </li>
+                  {{end}}
+            
+                  <li>
+                </ul>
+              </div>
               <div class="columns is-multiline">
                 {{ range (where $.Site.RegularPages.ByWeight.Reverse "Type" "listings") }}
                 {{ if .Params.featured_listing }}

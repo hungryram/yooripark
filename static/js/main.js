@@ -16,9 +16,10 @@ $(document).ready(function () {
         $('.ascend').removeClass('hidden');
       });
 
-      // BULMA FOR SORTING
-      $('.sort-nav').click(function(){
-        $('.sort-nav').toggleClass('is-active');
+      //BULMA FOR SORTING
+      $('.dropdown-trigger').click(function(e){
+        $('.sorttrigger').toggleClass('is-active');
+        e.stopPropagation();
       });
 });
 

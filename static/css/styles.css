@@ -748,8 +748,24 @@ div.hidden {
     display: none;
 }
 
-nav.sortnav {
+button.sort-nav {
     background: transparent;
+    border: none;
+    font-size: 16px;
+    color: #191919;
+}
+
+a.ascending,
+a.descending {
+    color: #191919;
+}
+
+
+@media screen and (max-width: 768px) {
+    div#dropdown-menu2 {
+        position: absolute;
+        left: -120px;
+    }
 }
 
 .navbar-item.has-dropdown.is-active{

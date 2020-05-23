@@ -116,7 +116,7 @@
         <div class="box">
           <h2 class="title is-6">Overview</h2>
           <hr>
-          <div class="columns is-mobile">
+          <div class="columns is-mobile is-multiline">
             <div class="column">
               <i class="fas fa-bed" aria-hidden="true"></i>
               <strong>{{ .Params.details.bedrooms }}</strong>
@@ -127,11 +127,13 @@
               <strong>{{ .Params.details.bathrooms }}</strong>
               <p>Bathrooms</p>
             </div>
+            {{ if .Params.details.garage }}
             <div class="column">
               <i class="fas fa-warehouse"></i>
               <strong>{{ .Params.details.garage }}</strong>
               <p>Garage</p>
             </div>
+            {{ end }}
             <div class="column">
               <i class="far fa-clone"></i>
               <strong>{{ .Params.details.square_footage }}</strong>
