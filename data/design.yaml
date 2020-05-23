@@ -31,7 +31,7 @@ home_sections:
   intro_body: Each section of the home page can be arranged and customized through
     your phone or computer. Easily manage your website through our website editor
     customized specifically for real estate professionals.
-  add_photo: ''
+  add_photo: "/uploads/office.jpg"
 - template: featured-listings
   active_align_title_text: has-text-centered
   active_listing_title: Our Featured Exclusives​
