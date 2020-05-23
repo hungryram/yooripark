@@ -1,6 +1,6 @@
 +++
-author = []
-categories = []
+author = "teams/samuel-palmer.md"
+categories = ["financing", "Listing"]
 date = 2020-05-09T07:00:00Z
 featured_image = "/uploads/40904885-32jpg.jpg"
 tags = []
