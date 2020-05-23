@@ -1,13 +1,13 @@
 +++
 title = "Sarah Conner"
-weight = ""
+weight = nil
 [contact]
 cell = "(510) 555-1213"
 email = "ddixon@mailinator.com"
 fax = "(510) 555-5895"
 phone = "(510) 555-1000"
 [details]
-agent_photo = "https://reluxurytemplate.s3-us-west-1.amazonaws.com/edward-cisneros-_H6wpor9mjs-unsplash.jpg"
+agent_photo = "/uploads/edward-cisneros-_h6wpor9mjs-unsplash.jpg"
 languages = ["english", "spanish"]
 license_number = "40905442"
 license_type = "DRE License"
