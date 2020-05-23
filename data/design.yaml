@@ -18,14 +18,20 @@ main_image:
     hero_button_text_color: "#000000"
     hero_button_bg_color: "#ffffff"
   slide_show:
-    slider: []
+    slider:
+    - template: slide-show
+      upload_image: ''
+    - template: slide-show
+      upload_image: ''
+    - template: slide-show
+      upload_image: ''
 home_sections:
 - template: intro
   intro_title: Discover Our Finest Selection
   intro_body: Each section of the home page can be arranged and customized through
     your phone or computer. Easily manage your website through our website editor
     customized specifically for real estate professionals.
-  add_photo: https://reluxurytemplate.s3-us-west-1.amazonaws.com/office.jpg
+  add_photo: ''
 - template: featured-listings
   active_align_title_text: has-text-centered
   active_listing_title: Our Featured Exclusives​
