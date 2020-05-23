@@ -11,7 +11,7 @@ fields:
     min: 0
     max: 
     step: 
-  description: Enter 1 to display first and 2 to display the next and so on.
+  description: Arrange what team displays first. Enter 1 to be at the top of the list.
 - name: title
   type: text
   config:
