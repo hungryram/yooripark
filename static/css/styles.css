@@ -989,6 +989,12 @@ ul.agent-list-contact a {
 
 /* CTA SECTION */
 
+.cta-a-wrap {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
 .cta__container {
     margin-bottom: 0!important;
 }

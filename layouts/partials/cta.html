@@ -1,38 +1,46 @@
 <div class="tile is-ancestor cta__container">
   <div class="tile is-vertical is-12 has-text-centered">
     <div class="tile">
-
       {{ with .call_to_action_one.image_one_cta }}
-      <div class="tile is-parent icon-cta-one-container" style='background: url("{{.}}");background-size: cover'>
-        {{else}}
+      
+      <div class="tile is-parent icon-cta-three-container" style='background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("{{.}}");background-size: cover'>
+      {{else}}
         <div class="tile is-parent icon-cta-one-container">
           {{end}}
+          <a href="{{ .call_to_action_one.cta_one_add_a_link }}" class="cta-a-wrap" {{ if .call_to_action_one.cta_one_new_tab }} target="_blank"{{ end }}>
         <article class="tile is-child">
+          {{ if .call_to_action_one.icon_one_cta }}
           <div class="icon-cta-box">
-            <div class="icon"><i class="fab fas fa-{{ .call_to_action_one.icon_one_cta }} fa-2x"></i></div>
+            <div class="icon"><i class="{{ .call_to_action_one.icon_one_cta }} fa-2x"></i></div>
           </div>
+          {{ end }}
           <div class="icon-cta-content">
             <h3>{{ .call_to_action_one.title_one_cta }}</h3>
             <p>{{ .call_to_action_one.body_text_one_cta }}</p>
             <p>{{ .call_to_action_one.menu | urlize }}</p>
           </div>
         </article>
+      </a>
       </div>
 
       {{ with .call_to_action_two.image_two_cta }}
-      <div class="tile is-parent icon-cta-two-container" style='background: url("{{.}}");background-size: cover'>
+      <div class="tile is-parent icon-cta-three-container" style='background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("{{.}}");background-size: cover'>
         {{else}}
         <div class="tile is-parent icon-cta-two-container">
           {{end}}
+          <a href="{{ .call_to_action_two.cta_two_add_a_link }}" class="cta-a-wrap" {{ if .call_to_action_two.cta_two_new_tab }} target="_blank"{{ end }}>
         <article class="tile is-child">
+          {{ if .call_to_action_two.icon_two_cta }}
           <div class="icon-cta-box">
-            <div class="icon"><i class="fab fas fa-{{ .call_to_action_two.icon_two_cta }} fa-2x"></i></div>
+            <div class="icon"><i class="{{ .call_to_action_two.icon_two_cta }} fa-2x"></i></div>
           </div>
+          {{ end }}
           <div class="icon-cta-content">
             <h3>{{ .call_to_action_two.title_two_cta }}</h3>
             <p>{{ .call_to_action_two.body_text_two_cta }}</p>
           </div>
         </article>
+        </a>
       </div>
 
       {{ with .call_to_action_three.image_three_cta }}
@@ -40,15 +48,19 @@
         {{else}}
         <div class="tile is-parent icon-cta-three-container">
           {{end}}
+          <a href="{{ .call_to_action_three.cta_three_add_a_link }}" class="cta-a-wrap" {{ if .call_to_action_three.cta_three_new_tab }} target="_blank"{{ end }}>
         <article class="tile is-child">
+          {{ if .call_to_action_one.icon_three_cta }}
           <div class="icon-cta-box">
-            <div class="icon"><i class="fab fas fa-{{ .call_to_action_one.icon_three_cta }} fa-2x"></i></div>
+            <div class="icon"><i class="{{ .call_to_action_one.icon_three_cta }} fa-2x"></i></div>
           </div>
+          {{ end }}
           <div class="icon-cta-content">
             <h3>{{ .call_to_action_three.title_three_cta }}</h3>
             <p>{{ .call_to_action_three.body_text_three_cta }}</p>
           </div>
         </article>
+      </a>
       </div>
 
     </div>
