@@ -1,6 +1,6 @@
 +++
 title = "John Conner"
-weight = 0
+weight = 3
 [contact]
 cell = ""
 email = "john@hungryram.com"
