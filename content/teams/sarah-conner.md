@@ -7,7 +7,7 @@ email = "james@gmail.com"
 fax = ""
 phone = ""
 [details]
-agent_photo = "/uploads/edward-cisneros-_h6wpor9mjs-unsplash.jpg"
+agent_photo = "/uploads/agent-4.jpg"
 languages = []
 license_number = ""
 license_type = ""
