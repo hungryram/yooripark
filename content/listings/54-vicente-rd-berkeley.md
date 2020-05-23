@@ -12,6 +12,7 @@ zip_code = 94705
 [details]
 bathrooms = 3
 bedrooms = 4
+hoa = nil
 lot_size = 1900
 mls_number = "40903982"
 property_type = "Single Family"
@@ -38,5 +39,17 @@ youtube_link = "https://www.youtube.com/watch?v=3Ba_WoSZXvw"
 [utilities_and_features]
 appliances = ["Dryer", "Dishwasher", "Freezer", "Microwave"]
 floors = ["Carpet", "Slate", "Concrete"]
+[utilities_and_features.community_features]
+additional_community_details = ["senior living", "senior homes"]
+community_features_choice = ["Community Park"]
+[utilities_and_features.exterior]
+additional_exterior_details = ["roof is stable"]
+exterior_details = ["Solar Panels (Owned)", "Solar Panels (Leased)", "Gated"]
+exterior_roof = ["Bitumen", "Foam", "Clay"]
+[utilities_and_features.interior_details]
+additional_interior_details = ["floor is great"]
+interior_appliances = ["Microwave", "Water Heater", "Wine Refrigerator", "Freezer"]
+interior_flooring = ["Hardwood", "Linoleum/Vinyl"]
+interior_rooms = ["Walk-in Closet", "Sauna", "Master Bath"]
 
 +++
