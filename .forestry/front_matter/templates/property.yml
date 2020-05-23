@@ -501,12 +501,6 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: virtual_tours
-    type: text
-    config:
-      required: false
-    label: Virtual Tours
-    description: Add youtube videos or 3D tour to your listing
   - name: matterport_link
     type: text
     config:
@@ -538,7 +532,7 @@ fields:
     type: image_gallery
     config: {}
     label: File Attachments
-    description: Add attachments such as information, maps, or terms and conditions
+    description: Add additional files for visitors to download about the listing.
   label: Tools
 - name: search_engine_optimization
   type: field_group
