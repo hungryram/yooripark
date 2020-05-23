@@ -330,16 +330,8 @@ fields:
         - Laminate
       label: Flooring
     - name: additional_interior_details
-      type: select
+      type: tag_list
       default: []
-      config:
-        required: false
-        options: []
-        source:
-          type: simple
-          section: 
-          file: 
-          path: 
       label: Additional Interior Details
       description: List your own details. Click enter after each detail to add.
     label: Interior Details
