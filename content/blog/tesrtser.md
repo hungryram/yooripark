@@ -1,7 +1,8 @@
 +++
 author = []
 categories = []
-date_published = 2020-05-29T07:00:00Z
+date = 2020-05-07T07:00:00Z
+date_published = "2020-05-29T07:00:00+00:00"
 featured_image = "/uploads/40904885-32jpg.jpg"
 tags = []
 title = "tesrtser"
