@@ -40,13 +40,13 @@ home_sections:
     body_text_two_cta: body tezxt
     cta_two_add_a_link: https://ramdettmer.com
     cta_two_new_tab: true
-    icon_two_cta: ''
+    icon_two_cta: fas fa-building
   call_to_action_three:
-    image_three_cta: "/uploads/40904885-7jpg.jpg"
+    image_three_cta: ''
     title_three_cta: Title 3
     body_text_three_cta: body 3
     cta_three_add_a_link: https://hungryram.com
-    icons_three_cta: ''
+    icons_three_cta: fab fa-btc
     cta_three_new_tab: false
 - template: intro
   intro_title: Discover Our Finest Selection
