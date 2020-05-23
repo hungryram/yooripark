@@ -22,8 +22,8 @@ year_built = 1956
 [listing_agent]
 listing_agent = "teams/sarah-conner.md"
 [photos]
-gallery = ["https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904495JPG.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904495-39JPG.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904495-38JPG.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904495-37JPG.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904495-36JPG.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904495-35JPG.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904495-34JPG.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904495-33JPG.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904495-32JPG.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904495-31JPG.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904495-30JPG.jpg", "https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904495-29JPG.jpg"]
-main_photo = "https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904495JPG.jpg"
+gallery = []
+main_photo = ""
 [pricing]
 price = "3,900,000"
 sold_price = ""
