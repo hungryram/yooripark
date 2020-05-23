@@ -1,6 +1,6 @@
 +++
 title = "Vincent Fuller"
-weight = nil
+weight = 0
 [contact]
 cell = "897 654 1258"
 email = "vincent@hungryram.com"
