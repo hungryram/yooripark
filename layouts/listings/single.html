@@ -117,16 +117,20 @@
           <h2 class="title is-6">Overview</h2>
           <hr>
           <div class="columns is-mobile is-multiline">
+            {{ if .Params.details.bedrooms }}
             <div class="column">
               <i class="fas fa-bed" aria-hidden="true"></i>
               <strong>{{ .Params.details.bedrooms }}</strong>
               <p>Bedrooms</p>
             </div>
+            {{ end }}
+            {{ if .Params.details.bathrooms }}
             <div class="column">
               <i class="fas fa-bath"></i>
               <strong>{{ .Params.details.bathrooms }}</strong>
               <p>Bathrooms</p>
             </div>
+            {{ end }}
             {{ if .Params.details.garage }}
             <div class="column">
               <i class="fas fa-warehouse"></i>
@@ -134,11 +138,6 @@
               <p>Garage</p>
             </div>
             {{ end }}
-            <div class="column">
-              <i class="far fa-clone"></i>
-              <strong>{{ .Params.details.square_footage }}</strong>
-              <p>Sq. Ft.</p>
-            </div>
           </div>
         </div>
         <div class="box">
@@ -158,8 +157,10 @@
             {{ with .Params.pricing.price }}<li><strong>Price</strong><span>${{ . }}</span></li>{{ end }}
             {{ with .Params.details.bedrooms }}<li><strong>Bedrooms</strong><span>{{ . }}</span></li>{{ end }}
             {{ with .Params.details.bathrooms }}<li><strong>Bathrooms</strong><span>{{ . }}</span></li>{{ end }}
-            {{ with .Params.details.square_footage }}<li><strong>Size</strong><span>{{ . }} Sq. Ft</span></li>{{ end }}
-            {{ with .Params.details.year_built }}<li><strong>Year Built</strong><span>{{ . }} Sq. Ft</span></li>{{ end }}
+            {{ with .Params.details.garage }}<li><strong>Garage</strong><span>{{ . }}</span></li>{{ end }}
+            {{ with .Params.details.square_footage }}<li><strong>Size Sq Ft.</strong><span>{{ . }} Sq. Ft</span></li>{{ end }}
+            {{ with .Params.details.year_built }}<li><strong>Year Built</strong><span>{{ . }}</span></li>{{ end }}
+            {{ with .Params.details.hoa }}<li><strong>HOA</strong><span>{{ . }}/month</span></li>{{ end }}
           </ul>
 
       </div>

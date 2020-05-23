@@ -12,7 +12,7 @@ zip_code = 94705
 [details]
 bathrooms = 3
 bedrooms = 4
-hoa = nil
+hoa = 2
 lot_size = 1900
 mls_number = "40903982"
 property_type = "Single Family"
