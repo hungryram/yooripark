@@ -32,7 +32,7 @@ fields:
   type: tag_list
   default: []
   label: Tags
-- name: date_published
+- name: date
   type: datetime
   label: Date Published
   description: ''
