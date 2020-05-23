@@ -13,6 +13,7 @@
               {{ end }}
         </a>
         <p>{{ .Site.Data.design.footer.footer_bio }}</p>
+        <em>{{ .Site.Data.profile.primary_contact.license_type }} {{ .Site.Data.profile.primary_contact.license_number }}</em>
         {{ $footerSocial := .Site.Data.profile.social_accounts }}
         <ul class="footer-social">
           {{ with $footerSocial.facebook }}
@@ -60,11 +61,11 @@
         <h4 class="subtitle is-6" {{ if .Site.Data.design.footer.enable_black_text}}style="color:black"{{else}} style="color:white"{{end}}>Contact</h4>
         {{ $location := .Site.Data.profile.location_information }}
         {{ $contact := .Site.Data.profile.primary_contact }}
-        <ul {{ if .Site.Data.design.footer.enable_black_text}}style="color:black"{{else}} style="color:white"{{end}}>
+        <ul {{ if .Site.Data.design.footer.enable_black_text}}style="color:black"{{else}} style="color:white"{{end}} class="footer-contact">
           {{ if $location }}<li><i class="fas fa-map-marker-alt"></i>{{ $location.address }} {{ $location.city }} {{ $location.state }} {{ $location.zip_code }}</li> {{ end }}
-          {{ if $contact }}<li><i class="far fa-envelope"></i> {{ $contact.email }}</li> {{ end }}
-          {{ if $contact }}<li><i class="fas fa-mobile-alt"></i> {{ $contact.mobile_phone }}</li> {{ end }}
-          {{ if $contact }}<li><i class="fas fa-phone-alt"></i> {{ $contact.phone }}</li> {{ end }}
+          {{ if $contact }}<li><i class="far fa-envelope"></i><a href="mailto:{{ $contact.email }}">{{ $contact.email }}</a></li> {{ end }}
+          {{ if $contact }}<li><i class="fas fa-mobile-alt"></i> <a href="tel:{{ $contact.mobile_phone }}">{{ $contact.mobile_phone }}</a></li> {{ end }}
+          {{ if $contact }}<li><i class="fas fa-phone-alt"></i> <a href="tel:{{ $contact.phone }}">{{ $contact.phone }}</a></li> {{ end }}
         </ul>
         
         
@@ -99,7 +100,7 @@
 </div>
 </footer>
 <div class="bottom-credit">
-  <a href="https://hungryram.com" target="_blank">Website Developed by Hungry Ram</a>
+  <small>&copy; Copyright {{ dateFormat "2006" now }}, {{ .Site.Data.profile.primary_company_name }}</small> &middot; <a href="https://hungryram.com" target="_blank">Website Developed by Hungry Ram</a>
 </div>
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

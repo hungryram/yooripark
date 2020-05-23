@@ -7,14 +7,6 @@ primary_contact:
   email: info@sampletemplate.com
   license_type: BRE License
   license_number: "54535489"
-secondary_contact:
-  full_name: ''
-  title: ''
-  phone: ''
-  mobile_phone: ''
-  email: ''
-  license_type: ''
-  license_number: ''
 location_information:
   address: 1900 Addison Street
   city: Berkeley

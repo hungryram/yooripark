@@ -41,9 +41,9 @@
             <div class="container">
                 <!-- Start Carousel -->
                 <div class="columns">
-                    <div {{ if .blog_align_title_text }} class="column content {{ .blog_align_title_text }} "{{ end }}>
+                    <div {{ if .blog_align_title_text }} class="column {{ .blog_align_title_text }} "{{ end }}>
                         <h1 class="title">{{ .blog_title }}</h1>
-                        <h4 class="subtitle is-6">{{ .blog_subtitle }}</h4>
+                        <h4>{{ .blog_subtitle }}</h4>
                     </div>
                 </div>
                 <div class="responsive-slide">
@@ -52,18 +52,22 @@
                     <div class="column">
                         <div class="home-card card">
                             <div class="card-image">
+                                {{ if .Params.featured_image}}
                               <figure class="image is-16by9">
-                                <img src="{{ .Params.featured_image }}" alt="Placeholder image" style="object-fit: cover;">
+                                <img src="{{ .Params.featured_image }}" alt="Featured blog image" style="object-fit: cover;">
                               </figure>
+                              {{ else }}
+                              <figure class="image is-16by9">
+                                <img src="http://www.hungryram.com/uploads/nophotohouse.jpg" alt="Featured blog image" style="object-fit: cover;">
+                              </figure>
+                              {{ end }}
                             </div>
                             <div class="card-content content home-blog-content">
                               <div class="media-content">
                                 <h3 class="has-text-black">{{ .Title }}</h3>
                               </div> 
                               <div class="content">
-                                <p>
-                                {{ slicestr .Summary 2 150 | markdownify }}
-                                </p>
+                            <time><small><i class="far fa-calendar-alt"></i> {{.Date.Format "Jan 2, 2006" }}</small></time><br>
                                 <a href="{{ .Permalink }}" class="secondary-btn">Continue Reading</a>
                               </div>
                             </div>

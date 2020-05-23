@@ -1103,13 +1103,18 @@ footer ul li i {
     padding-right: 8px;
 }
 
+ul.footer-contact li a {
+    color: inherit;
+}
+
 .bottom-credit {
     padding: 15px;
     text-align: center;
     background: #191919;
 }
 
-.bottom-credit a {
+.bottom-credit a,
+.bottom-credit small {
     color: #9c9c9c;
     font-size: 14px;
 }
@@ -1151,6 +1156,15 @@ ul.footer-social li {
 
 .hero-foot div.section {
         padding: 1rem 1.5rem;
+}
+
+.inner-cont {
+    color: #c2c2c2;
+    padding: 0 40px;
+}
+
+.inner-cont small strong {
+    color: #fff;
 }
 
 @media print {

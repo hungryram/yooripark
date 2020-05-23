@@ -9,20 +9,19 @@
         </div>
         <div class="columns">
             <div class="column is-8">
-                {{ $paginator := .Paginate (where .Pages "Type" "blog") 5 }}
+                {{ $paginator := .Paginate (where .Pages "Type" "blog") 4 }}
                 {{ range $paginator.Pages }}
 
                 <div class="box content">
                     <img src="{{ .Params.featured_image }}" alt="">
                     <h1>{{.Title}}</h1>
-                    {{ slicestr .Summary 2 300 | markdownify }}
+                    {{ .Summary | markdownify }}
                     <hr>
                     <div class="columns">
                         <div class="column">
-                            <time><i class="far fa-calendar-alt"></i> {{ .Params.date_published }}</time>
-                        </div>
-                        <div class="column has-text-right">
-                            <a href="{{ .Permalink }}">Read More</a>
+                            {{ $blogDate := .Params.date_published }}
+                            <time><i class="far fa-calendar-alt"></i> {{.Date.Format "Jan 2, 2006" }}</time><br><br>
+                            <a href="{{ .Permalink }}" class="secondary-btn">Read More</a>
                         </div>
                     </div>
                 </div>
