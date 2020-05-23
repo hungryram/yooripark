@@ -12,7 +12,8 @@ zip_code = 94611
 [details]
 bathrooms = 2
 bedrooms = 5
-hoa = nil
+garage = 2
+hoa = 500
 lot_size = 0.17
 mls_number = "40904885"
 property_type = "Multi-family"
