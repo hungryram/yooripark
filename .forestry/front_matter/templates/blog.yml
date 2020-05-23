@@ -53,5 +53,6 @@ fields:
     label: SEO
   label: Search Engine Optimization
 pages:
+- content/blog/testing-the-date.md
 - content/blog/what-is-lorem-ipsum.md
 - content/blog/why-do-we-use-it.md
