@@ -49,7 +49,7 @@ home_sections:
     icons_three_cta: fab fa-btc
     cta_three_new_tab: false
 - template: intro
-  intro_title: Discover Our Finest Selection
+  intro_title: Discover Our Finest Homes
   intro_body: Each section of the home page can be arranged and customized through
     your phone or computer. Easily manage your website through our website editor
     customized specifically for real estate professionals.
@@ -86,12 +86,6 @@ home_sections:
   agent_title: Our Team
   agent_subtitle: Our team of real estate professionals are ready to help you
   agent_background: ''
-- template: intro
-  intro_title: hi
-  intro_body: ertert
-  add_photo: "/uploads/40904885-32jpg.jpg"
-  intro_align_text: has-text-left
-  intro_background_color: ''
 sub_pages:
   sub_page_image: "/uploads/main.jpg"
 footer:
