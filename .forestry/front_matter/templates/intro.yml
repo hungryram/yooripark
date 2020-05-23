@@ -19,6 +19,27 @@ fields:
 - name: add_photo
   type: file
   config:
-    maxSize: 250
+    maxSize: 5
   label: Add Photo
   description: Upload a photo next to your intro
+- name: intro_align_text
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - has-text-right
+    - has-text-left
+    - has-text-centered
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Align Text
+- name: intro_background_color
+  type: color
+  label: Background Color
+  config:
+    required: false
+    color_format: Hex
