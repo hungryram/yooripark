@@ -288,7 +288,110 @@ fields:
         - Sun Room
         - Basement
       label: Rooms
+    - name: interior_appliances
+      type: list
+      config:
+        use_select: true
+        min: 
+        max: 
+        source:
+          type: simple
+        options:
+        - Dishwasher
+        - Freezer
+        - Microwave
+        - Oven
+        - Trash Compactor
+        - Water Heater
+        - Wine Refrigerator
+        - Ceiling Fan(s)
+        - Dryer
+        - Garbage Disposal
+        - Range
+        - Refrigerator
+        - Washer
+        - Water Softener
+      label: Appliances
+      description: Appliances that are included in the property
+    - name: interior_flooring
+      type: list
+      config:
+        use_select: true
+        min: 
+        max: 
+        source:
+          type: simple
+        options:
+        - Carpet
+        - Hardwood
+        - Linoleum/Vinyl
+        - Tile
+        - Concrete
+        - Laminate
+      label: Flooring
     label: Interior Details
+  - name: exterior
+    type: field_group
+    config: {}
+    fields:
+    - name: exterior_details
+      type: list
+      config:
+        use_select: true
+        min: 
+        max: 
+        source:
+          type: simple
+        options:
+        - Pool
+        - Spa/Hot Tub
+        - Gated
+        - Tandem
+        - RV Possible
+        - Carport
+        - Solar Panels (Owned)
+        - Solar Panels (Leased)
+        - Tennis Court
+        - Basketball Court
+        - Fireplace
+        - Greenhouse
+      label: Exterior Details
+    - name: exterior_roof
+      type: list
+      config:
+        use_select: true
+        min: 
+        max: 
+        source:
+          type: simple
+        options:
+        - None
+        - Tile
+        - Clay
+        - Polyurethane
+        - Composition
+        - Barrel/Truss
+        - Bituthene
+        - Metal
+        - Foam
+        - Slate
+        - Bitumen
+        - Mansard
+        - Shingles
+        - Unreinforced Masonry
+        - Shake
+        - Wood Frame
+        - Elastomeic
+        - Rolled Composition
+        - Rock
+        - Concrete
+        - Fiberglass
+        - Wood Shakes
+        - Tar and Gravel
+        - Flat/Low Pitch
+        - Aluminum Over Tar
+      label: Roof
+    label: Exterior
   label: Property Features
 - name: photos
   type: field_group
