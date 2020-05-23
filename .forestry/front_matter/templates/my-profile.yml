@@ -211,5 +211,15 @@ fields:
     label: Reddit
   label: Social Accounts
   description: Social media accounts will update globally on the site.
+- name: search_engine_optimization
+  type: field_group
+  config: {}
+  fields:
+  - name: seo
+    type: include
+    config: {}
+    template: seo
+    label: SEO
+  label: Search Engine Optimization
 pages:
 - data/profile.yaml
