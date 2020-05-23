@@ -7,7 +7,7 @@ email = "james@gmail.com"
 fax = ""
 phone = ""
 [details]
-agent_photo = "/uploads/agent-4.jpg"
+agent_photo = "/uploads/66072_admin_79225_agent_sara-headshot.jpg"
 languages = []
 license_number = ""
 license_type = ""
