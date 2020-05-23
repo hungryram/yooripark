@@ -1,7 +1,7 @@
 ---
 video_background: false
 logo_or_title:
-  upload_logo: https://reluxurytemplate.s3-us-west-1.amazonaws.com/cropped-logotrans.png
+  upload_logo: ''
   title: Real Estate Sample
 main_image:
   hero_subtitle: Find your dream home
@@ -42,14 +42,14 @@ home_sections:
   top_left_tile:
     top_left_featured_title: Los Angeles
     top_left_link_to_property: "/listings"
-    top_left_featured_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/kichen.jpg
+    top_left_featured_image: ''
   bottom_left_tile:
     featured_title: San Diego
-    featured_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/shutterstock_570081934.jpg
+    featured_image: ''
     bottom_left_link_to_property: "/san-diego"
   right_tile:
     featured_title: Orange County
-    featured_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/whiteinterior.jpg
+    featured_image: ''
     right_link_to_property: "/orange-county"
   tile_background_color: ''
 - template: featured-blog
@@ -58,18 +58,18 @@ home_sections:
   blog_subtitle: ''
   blog_background: ''
 - template: agent-slider
-  agent_text_align: []
+  agent_text_align: ''
   agent_title: ''
   agent_subtitle: ''
   agent_background: ''
 sub_pages:
-  sub_page_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/main.jpg
+  sub_page_image: ''
 footer:
   footer_background: "#000000"
   footer_bio: The footer can be adjusted to the color you need. Use a background image
     or background color of your choice. Contact me for a full demo.
   disable_background_color: true
-  footer_background_image: https://reluxurytemplate.s3-us-west-1.amazonaws.com/shutterstock_43273009.jpg
+  footer_background_image: ''
   enable_black_text: false
 colors:
   text_link_colors: rgb(169, 140, 83)
