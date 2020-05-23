@@ -86,6 +86,12 @@ home_sections:
   agent_title: Our Team
   agent_subtitle: Our team of real estate professionals are ready to help you
   agent_background: ''
+- template: intro
+  intro_title: hi
+  intro_body: ertert
+  add_photo: "/uploads/40904885-32jpg.jpg"
+  intro_align_text: has-text-left
+  intro_background_color: ''
 sub_pages:
   sub_page_image: "/uploads/main.jpg"
 footer:
