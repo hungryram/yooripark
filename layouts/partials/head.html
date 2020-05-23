@@ -8,11 +8,15 @@
     <link rel="stylesheet" href="{{.Site.BaseURL}}/css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap" rel="stylesheet">
-    {{ if .Params.search_engine_optimization.meta_title }}
+    {{ with .Params.search_engine_optimization.meta_title }}
     <title>{{ . }}</title>
+    {{ else }}
+    <title>{{ .Site.Data.profile.search_engine_optimization.meta_title }}</title>
     {{ end }}
     {{ with .Params.search_engine_optimization.meta_description }}
     <meta name="description" content="{{ . }}">
+    {{ else }}
+    <meta name="description" content="{{ .Site.Data.profile.search_engine_optimization.meta_description }}">
     {{ end }}
     {{ $color := .Site.Data.design.hero_button_bg_color }}
     <style>
