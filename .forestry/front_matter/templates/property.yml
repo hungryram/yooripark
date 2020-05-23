@@ -329,6 +329,19 @@ fields:
         - Concrete
         - Laminate
       label: Flooring
+    - name: additional_interior_details
+      type: select
+      default: []
+      config:
+        required: false
+        options: []
+        source:
+          type: simple
+          section: 
+          file: 
+          path: 
+      label: Additional Interior Details
+      description: List your own details. Click enter after each detail to add.
     label: Interior Details
   - name: exterior
     type: field_group
@@ -355,6 +368,12 @@ fields:
         - Basketball Court
         - Fireplace
         - Greenhouse
+        - Guest House
+        - Workshop
+        - Pool House
+        - Barn
+        - Shed
+        - Gazebo
       label: Exterior Details
     - name: exterior_roof
       type: list
@@ -391,7 +410,59 @@ fields:
         - Flat/Low Pitch
         - Aluminum Over Tar
       label: Roof
+    - name: additional_exterior_details
+      type: tag_list
+      default: []
+      description: List your own details. Click enter after each detail to add.
+      label: Additional Exterior Details
     label: Exterior
+  - name: community_features
+    type: field_group
+    config: {}
+    fields:
+    - name: community_features_choice
+      type: list
+      config:
+        use_select: true
+        min: 
+        max: 
+        source:
+          type: simple
+        options:
+        - Roof Deck
+        - Storage Room
+        - Golf Course
+        - On Site Exercise
+        - Community Park
+        - Community Spa
+        - Walking/Biking/Hiking Trail
+        - Community Activity Center
+        - Community Raquetball
+        - Community Tennis
+        - Gated Community
+        - Parking Garage
+        - Pets Allowed
+        - Senior Community
+        - Doorman
+        - Media Room
+        - Bike Room
+        - Community Water/Lake/River Access
+        - Recreation Facilities
+        - Community Swimming Pool
+        - Community Fitness Center
+        - Elevator
+        - Concierge
+        - Laundry Room
+        - Security Features
+        - Age Restricted Community
+        - Community Playground
+      label: Community Features
+    - name: additional_community_details
+      type: tag_list
+      default: []
+      label: Additional Community Details
+      description: List your own details. Click enter after each detail to add.
+    label: Community Features
   label: Property Features
 - name: photos
   type: field_group
