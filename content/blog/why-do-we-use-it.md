@@ -1,6 +1,7 @@
 +++
-author = []
+author = "teams/samuel-palmer.md"
 categories = ["real estate", "listings"]
+date = ""
 date_published = ""
 featured_image = "https://reluxurytemplate.s3-us-west-1.amazonaws.com/mainimg.jpg"
 tags = ["california", "orange county"]
