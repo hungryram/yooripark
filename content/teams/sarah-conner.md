@@ -1,6 +1,6 @@
 +++
 title = "Sarah Conner"
-weight = nil
+weight = 0
 [contact]
 cell = "(510) 555-1213"
 email = "ddixon@mailinator.com"
