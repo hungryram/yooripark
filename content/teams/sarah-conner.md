@@ -7,7 +7,7 @@ email = "james@gmail.com"
 fax = ""
 phone = ""
 [details]
-agent_photo = ""
+agent_photo = "/uploads/freestocks-9uvmlib0wju-unsplash.jpg"
 languages = []
 license_number = ""
 license_type = ""
