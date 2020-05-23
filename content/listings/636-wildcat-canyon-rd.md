@@ -12,6 +12,7 @@ zip_code = 94708
 [details]
 bathrooms = 4
 bedrooms = 5
+garage = 5
 hoa = 3
 lot_size = 0.944
 mls_number = "40904495"
