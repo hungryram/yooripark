@@ -483,6 +483,8 @@ fields:
       maxSize: 5
     label: Main Photo
     default: "/uploads/main-house-photo.jpg"
+    description: Photos that are larger in size will take time to upload. We recommend
+      using optimized photos.
   - name: gallery
     type: image_gallery
     config: {}
