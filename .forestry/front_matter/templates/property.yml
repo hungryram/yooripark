@@ -195,6 +195,7 @@ fields:
     type: text
     config:
       required: false
+      min: 0
     label: MLS Number
   - name: square_footage
     type: number
@@ -202,7 +203,7 @@ fields:
     default: 0
     required: true
     config:
-      min: 
+      min: 0
       max: 
       step: 
     label: Square Footage
@@ -213,7 +214,7 @@ fields:
     default: 0
     required: true
     config:
-      min: 
+      min: 0
       max: 
       step: 
   - name: year_built
@@ -223,7 +224,7 @@ fields:
     default: 0
     required: true
     config:
-      min: 
+      min: 0
       max: 
       step: 
   - name: bedrooms
@@ -233,9 +234,10 @@ fields:
     default: 0
     required: true
     config:
-      min: 
+      min: 0
       max: 
       step: 
+      required: true
   - name: bathrooms
     type: number
     label: Bathrooms
@@ -243,9 +245,10 @@ fields:
     default: 0
     required: true
     config:
-      min: 
+      min: 0
       max: 
       step: 
+      required: true
   - name: hoa
     type: number
     label: HOA
