@@ -69,7 +69,7 @@ footer:
   footer_bio: The footer can be adjusted to the color you need. Use a background image
     or background color of your choice. Contact me for a full demo.
   disable_background_color: true
-  footer_background_image: "/uploads/kichen.jpg"
+  footer_background_image: "/uploads/losangeles.jpg"
   enable_black_text: false
 colors:
   text_link_colors: rgb(169, 140, 83)
