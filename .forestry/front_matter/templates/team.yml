@@ -175,5 +175,3 @@ fields:
     template: seo
     label: SEO
   label: Search Engine Optimization
-pages:
-- content/teams/john-conner.md
