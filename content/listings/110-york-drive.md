@@ -22,8 +22,8 @@ year_built = 1923
 [listing_agent]
 listing_agent = []
 [photos]
-gallery = []
-main_photo = ""
+gallery = ["/uploads/40904885-23jpg.jpg", "/uploads/40904885-22jpg.jpg", "/uploads/40904885-21jpg.jpg", "/uploads/40904885-20jpg.jpg", "/uploads/40904885-19jpg.jpg", "/uploads/40904885-18jpg.jpg", "/uploads/40904885-17jpg.jpg", "/uploads/40904885-16jpg.jpg", "/uploads/40904885-15jpg.jpg", "/uploads/40904885-14jpg.jpg", "/uploads/40904885-13jpg.jpg", "/uploads/40904885-12jpg.jpg", "/uploads/40904885-11jpg.jpg", "/uploads/40904885-10jpg.jpg", "/uploads/40904885-9jpg.jpg"]
+main_photo = "/uploads/40904885-32jpg.jpg"
 [pricing]
 price = "3,195,000"
 sold_price = ""
