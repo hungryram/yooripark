@@ -12,6 +12,7 @@ zip_code = 94611
 [details]
 bathrooms = 2
 bedrooms = 5
+hoa = nil
 lot_size = 0.17
 mls_number = "40904885"
 property_type = "Multi-family"
@@ -38,5 +39,17 @@ youtube_link = "https://www.youtube.com/watch?v=CTH0AWBWZRg"
 [utilities_and_features]
 appliances = ["Freezer"]
 floors = ["Slate", "Concrete"]
+[utilities_and_features.community_features]
+additional_community_details = []
+community_features_choice = []
+[utilities_and_features.exterior]
+additional_exterior_details = []
+exterior_details = []
+exterior_roof = []
+[utilities_and_features.interior_details]
+additional_interior_details = ""
+interior_appliances = ["Dishwasher", "Freezer"]
+interior_flooring = ["Carpet", "Hardwood"]
+interior_rooms = ["Workshop", "Steam Room", "Master Bath", "Laundry Room"]
 
 +++
