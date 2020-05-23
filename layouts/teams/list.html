@@ -16,7 +16,7 @@
                     <div class="column is-4">
                       <figure class="image">
                         {{ with .Params.details.agent_photo }}
-                      <img src="{{ . }}" alt="Image">
+                      <img src="{{ . | relURL }}" alt="Image">
                         {{else }}
                         <img src="https://bulma.io/images/placeholders/480x480.png" alt="Image">
 
