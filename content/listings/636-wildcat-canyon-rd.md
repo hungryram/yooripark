@@ -28,8 +28,8 @@ main_photo = "https://reluxurytemplate.s3-us-west-1.amazonaws.com/40904495JPG.jp
 price = "3,900,000"
 sold_price = ""
 [search_engine_optimization]
-meta_description = "modern home listing description"
-meta_title = "modern home"
+meta_description = ""
+meta_title = ""
 [tools]
 file_attachments = []
 matterport_link = ""
