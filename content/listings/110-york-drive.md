@@ -33,10 +33,10 @@ meta_title = "110 YORK DRIVE"
 [tools]
 file_attachments = []
 matterport_link = "https://my.matterport.com/show/?m=zEWsxhZpGba"
-open_house_date = "No Open House Available"
+open_house_date = ""
 open_house_details = ""
 virtual_tours = ""
-youtube_link = "https://www.youtube.com/watch?v=CTH0AWBWZRg"
+youtube_link = "CTH0AWBWZRg"
 [utilities_and_features]
 appliances = ["Freezer"]
 floors = ["Slate", "Concrete"]
