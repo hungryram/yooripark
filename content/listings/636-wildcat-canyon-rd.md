@@ -12,6 +12,7 @@ zip_code = 94708
 [details]
 bathrooms = 4
 bedrooms = 5
+hoa = nil
 lot_size = 0.944
 mls_number = "40904495"
 property_type = "Single Family"
@@ -38,5 +39,17 @@ youtube_link = ""
 [utilities_and_features]
 appliances = ["Dishwasher", "Dryer", "Freezer"]
 floors = ["Slate"]
+[utilities_and_features.community_features]
+additional_community_details = []
+community_features_choice = []
+[utilities_and_features.exterior]
+additional_exterior_details = []
+exterior_details = []
+exterior_roof = []
+[utilities_and_features.interior_details]
+additional_interior_details = ["floor is great", "carpet", "tile is granite"]
+interior_appliances = ["Range", "Wine Refrigerator", "Freezer"]
+interior_flooring = ["Hardwood", "Linoleum/Vinyl"]
+interior_rooms = ["Walk-in Closet", "Steam Room", "Laundry Room"]
 
 +++
