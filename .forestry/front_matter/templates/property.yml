@@ -263,31 +263,31 @@ fields:
     type: field_group
     config: {}
     fields:
-    - name: test
-      type: select
-      default: []
+    - name: interior_rooms
+      type: list
       config:
-        required: false
-        options:
-        - Attic
-        - Basement
-        - Ceiling fans
-        - Wainscoting
-        - Fireplace
-        - Jetted Tub
-        - Security System
-        - Smart Home
-        - Wet Bar
-        - Cable Ready
-        - Crown Moudling
-        - Dual-Pane Windows
-        - Intercom System
+        use_select: true
+        min: 
+        max: 
         source:
           type: simple
-          section: ''
-          file: 
-          path: 
-      label: Indoor
+        options:
+        - Family Room
+        - Laundry Room
+        - Master Bath
+        - Office
+        - Recreation Room
+        - Sauna
+        - Steam Room
+        - Walk-in Closet
+        - Dining Room
+        - Kitchen
+        - Mud Room
+        - Pantry
+        - Workshop
+        - Sun Room
+        - Basement
+      label: Rooms
     label: Interior Details
   label: Property Features
 - name: photos
