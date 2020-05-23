@@ -11,6 +11,23 @@
                 <img src="{{ .Params.featured_image }}" alt="">
                 <h1>{{ .Title }}</h1>
                 {{ .Content }}
+                <div class="author-blog">
+                    {{ if .Params.author }}<p>
+                        {{ with .Site.GetPage .Params.author }}
+                        <article class="media notification">
+                            <div class="media-left">
+                                <img src="{{ .Params.details.agent_photo }}" alt="" style="object-fit: cover;height:100px;width:100px;border-radius:50%;margin: 0 auto;">
+                            </div>
+                            <div class="media-content">
+                                <h4 class="subtitle is-4">{{ .Title }}</h4>
+                                <h6 class="subtitle is-6">{{ .Params.details.title }}</h6>
+                                {{ .Summary }}
+                                <a href="{{ .Permalink }}" class="secondary-btn">Read More</a>
+                            </div>
+                        </article>
+                        {{ end }}
+                    {{ end }}
+                </div>
             </div>
             {{ partial "sidebar.html" . }}
         </div>
