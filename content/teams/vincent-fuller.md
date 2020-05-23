@@ -1,13 +1,13 @@
 +++
 title = "Vincent Fuller"
-weight = 0
+weight = nil
 [contact]
 cell = "897 654 1258"
 email = "vincent@hungryram.com"
 fax = ""
 phone = ""
 [details]
-agent_photo = "/uploads/agent-4.jpg"
+agent_photo = ""
 languages = []
 license_number = ""
 license_type = ""
