@@ -22,8 +22,8 @@ year_built = 2016
 [listing_agent]
 listing_agent = "teams/sarah-conner.md"
 [photos]
-gallery = []
-main_photo = ""
+gallery = ["/uploads/40904495-30jpg.jpg", "/uploads/40904495-29jpg.jpg", "/uploads/40904495-28jpg.jpg", "/uploads/40904495-27jpg.jpg", "/uploads/40904495-26jpg.jpg", "/uploads/40904495-25jpg.jpg", "/uploads/40904495-24jpg.jpg", "/uploads/40904495-23jpg.jpg", "/uploads/40904495-22jpg.jpg", "/uploads/40904495-21jpg.jpg", "/uploads/40904495-20jpg.jpg", "/uploads/40904495-19jpg.jpg", "/uploads/40904495-18jpg.jpg", "/uploads/40904495-17jpg.jpg", "/uploads/40904495-16jpg.jpg", "/uploads/40904495-15jpg.jpg", "/uploads/40904495-14jpg.jpg", "/uploads/40904495-13jpg.jpg", "/uploads/40904495-12jpg.jpg", "/uploads/40904495-11jpg.jpg", "/uploads/40904495-10jpg.jpg", "/uploads/40904495-9jpg.jpg", "/uploads/40904495-8jpg.jpg", "/uploads/40904495-7jpg.jpg", "/uploads/40904495-6jpg.jpg", "/uploads/40904495-5jpg.jpg", "/uploads/40904495-4jpg.jpg", "/uploads/40904495-3jpg.jpg"]
+main_photo = "/uploads/40904495jpg.jpg"
 [pricing]
 price = "15,990,000"
 sold_price = ""
