@@ -512,6 +512,7 @@ fields:
     config:
       required: false
     label: Youtube Link
+    description: copy the last string in the URL<br>i.e https://www.youtube.com/watch?v=<strong>xxxxxxxxxxx</strong>
   - name: open_house_date
     type: text
     config:
