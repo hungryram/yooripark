@@ -22,8 +22,8 @@ year_built = 1950
 [listing_agent]
 listing_agent = "teams/john-renta.md"
 [photos]
-gallery = []
-main_photo = "/uploads/main-house-photo.jpg"
+gallery = ["/uploads/40904885-9jpg.jpg", "/uploads/40904885-6jpg.jpg", "/uploads/40904885-24jpg.jpg", "/uploads/40904885-22jpg.jpg", "/uploads/40904885-29jpg.jpg", "/uploads/40904885-26jpg.jpg", "/uploads/40904885-30jpg.jpg", "/uploads/40904885-20jpg.jpg", "/uploads/40904885-10jpg.jpg", "/uploads/40904885-15jpg.jpg", "/uploads/40904885-21jpg.jpg", "/uploads/40904885-25jpg.jpg", "/uploads/40904885-19jpg.jpg", "/uploads/40904885-12jpg.jpg", "/uploads/40904885-18jpg.jpg"]
+main_photo = "/uploads/40904495-8jpg.jpg"
 [search_engine_optimization]
 meta_description = ""
 meta_title = ""
