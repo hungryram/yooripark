@@ -22,8 +22,8 @@ year_built = 1956
 [listing_agent]
 listing_agent = "teams/sarah-conner.md"
 [photos]
-gallery = ["/uploads/40903982-15jpg.jpg", "/uploads/40903982-14jpg.jpg", "/uploads/40903982-13jpg.jpg", "/uploads/40903982-12jpg.jpg", "/uploads/40903982-11jpg.jpg", "/uploads/40903982-10jpg.jpg", "/uploads/40903982-9jpg.jpg", "/uploads/40903982-8jpg.jpg", "/uploads/40903982-7jpg.jpg", "/uploads/40903982-6jpg.jpg", "/uploads/40903982-5jpg.jpg", "/uploads/40903982-4jpg.jpg", "/uploads/40903982-3jpg.jpg", "/uploads/40903982-2jpg.jpg", "/uploads/40903982-1jpg.jpg", "/uploads/40902643jpg.jpg"]
-main_photo = "/uploads/40902643jpg.jpg"
+gallery = []
+main_photo = ""
 [pricing]
 price = "3,900,000"
 sold_price = ""
