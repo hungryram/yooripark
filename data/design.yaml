@@ -33,7 +33,7 @@ home_sections:
     body_text_one_cta: My body text
     cta_one_add_a_link: https://hungryram.com
     cta_two_new_tab: true
-    icon_one_cta: ''
+    icon_one_cta: fas fa-bullseye
   call_to_action_two:
     image_two_cta: "/uploads/40904885-31jpg.jpg"
     title_two_cta: test 2 title
