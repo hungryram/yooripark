@@ -59,6 +59,7 @@ fields:
     config:
       required: false
     label: Address
+    description: Include Apt/Unit if any.
   - name: city
     type: text
     config:
@@ -156,22 +157,6 @@ fields:
     description: The agent assigned to this listing. Add agent under the "Teams and
       Office" tab
   label: Listing Agent
-- name: pricing
-  type: field_group
-  config: {}
-  fields:
-  - name: price
-    type: text
-    config:
-      required: false
-    label: Price
-  - name: sold_price
-    type: text
-    config:
-      required: false
-    label: Sold Price
-    description: Leave blank if listing is not sold
-  label: Pricing
 - name: details
   type: field_group
   config: {}
@@ -259,40 +244,52 @@ fields:
       min: 
       max: 
       step: 
+  - name: hoa
+    type: number
+    label: HOA
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
   label: Details
 - name: utilities_and_features
   type: field_group
   config: {}
   fields:
-  - name: appliances
-    type: list
-    config:
-      use_select: true
-      min: 
-      max: 
-      source:
-        type: simple
-      options:
-      - Dishwasher
-      - Dryer
-      - Freezer
-      - Microwave
-    label: Appliances
-  - name: floors
-    type: list
-    config:
-      use_select: true
-      min: 
-      max: 
-      source:
-        type: simple
-      options:
-      - Carpet
-      - Concrete
-      - Slate
-      - Laminate
-    label: Floors
-  label: Utilities & Features
+  - name: interior_details
+    type: field_group
+    config: {}
+    fields:
+    - name: test
+      type: select
+      default: []
+      config:
+        required: false
+        options:
+        - Attic
+        - Basement
+        - Ceiling fans
+        - Wainscoting
+        - Fireplace
+        - Jetted Tub
+        - Security System
+        - Smart Home
+        - Wet Bar
+        - Cable Ready
+        - Crown Moudling
+        - Dual-Pane Windows
+        - Intercom System
+        source:
+          type: simple
+          section: ''
+          file: 
+          path: 
+      label: Indoor
+    label: Interior Details
+  label: Property Features
 - name: photos
   type: field_group
   config: {}
