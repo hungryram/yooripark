@@ -5,13 +5,13 @@ fields:
 - name: title
   type: text
   config:
-    required: false
+    required: true
   label: Property Title
   description: Enter the address as the title
 - name: short_description
   type: text
   config:
-    required: false
+    required: true
     max: 30
   label: Short Description
   description: 'Example: Luxury Listing'
@@ -19,7 +19,7 @@ fields:
   type: select
   default: ''
   config:
-    required: false
+    required: true
     options:
     - Sold
     - Active
@@ -50,6 +50,7 @@ fields:
     min: 
     max: 
     step: 
+    required: true
 - name: address
   type: field_group
   config: {}
@@ -57,19 +58,19 @@ fields:
   - name: address
     type: text
     config:
-      required: false
+      required: true
     label: Address
     description: Include Apt/Unit if any.
   - name: city
     type: text
     config:
-      required: false
+      required: true
     label: City
   - name: state
     type: select
     default: []
     config:
-      required: false
+      required: true
       options:
       - Alabama
       - Alaska
@@ -137,6 +138,7 @@ fields:
       min: 
       max: 99999
       step: 
+      required: true
   label: Listing Address
 - name: listing_agent
   type: field_group
@@ -254,6 +256,18 @@ fields:
       min: 
       max: 
       step: 
+      required: true
+  - name: garage
+    type: number
+    label: Garage
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+      required: true
   label: Details
 - name: utilities_and_features
   type: field_group
@@ -465,6 +479,7 @@ fields:
     config:
       maxSize: 5
     label: Main Photo
+    default: "/uploads/main-house-photo.jpg"
   - name: gallery
     type: image_gallery
     config: {}
