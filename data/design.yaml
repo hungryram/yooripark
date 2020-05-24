@@ -7,7 +7,7 @@ main_image:
   home_background_image: "/uploads/shutterstock_683283169.jpg"
   video_background: true
   upload_video: ''
-  add_url_to_youtube_video: ''
+  add_url_to_youtube_video: https://reformosa.pt/public/uploads/_/originals/c9e46682-1225-59f7-8596-67a74b011928.mp4
   hero_title: OUR LUXURY REAL ESTATE
   align_hero_text: has-text-right
   add_a_button:
