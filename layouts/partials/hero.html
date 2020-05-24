@@ -6,14 +6,18 @@
     {{ if .Site.Data.design.main_image.video_background }}
       <div class="hero-video">
         <video id="bgvid" playsinline autoplay muted loop>
-            <source src="{{ .Site.Data.design.main_image.add_url_to_youtube_video }}" type="video/mp4">
+            <source src="{{ .Site.Data.design.main_image.add_mp4_link }}" type="video/mp4">
         </video>
     </div>
     {{end}}
 
+    {{ if .Site.Data.design.main_image.add_youtube_background_video }}
     <iframe id="ytplayer-box" type="text/html" width="720" height="405"
-    src="https://www.youtube.com/embed/pY2CWYxUbrM?autoplay=1&mute=1&controls=0&disablekb=1&fs=0&loop=1&rel=0&playlist=pY2CWYxUbrM"
+    src="https://www.youtube.com/embed/{{ .Site.Data.design.main_image.add_url_to_youtube_video }}?autoplay=1&mute=1&controls=0&disablekb=1&fs=0&loop=1&rel=0&playlist={{ .Site.Data.design.main_image.add_url_to_youtube_video }}"
     frameborder="0" allowfullscreen></iframe>
+    {{ end }}
+
+
 <div class="black-overlay">
 </div>
 
