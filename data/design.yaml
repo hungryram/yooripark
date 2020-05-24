@@ -1,12 +1,11 @@
 ---
-video_background: false
 logo_or_title:
   upload_logo: "/uploads/cropped-logotrans.png"
   title: Real Estate Sample
 main_image:
   hero_subtitle: Find your dream home
   home_background_image: "/uploads/shutterstock_683283169.jpg"
-  video_background: false
+  video_background: true
   upload_video: ''
   add_url_to_youtube_video: ''
   hero_title: OUR LUXURY REAL ESTATE
@@ -17,14 +16,6 @@ main_image:
     open_in_new_tab: false
     hero_button_text_color: "#000000"
     hero_button_bg_color: "#ffffff"
-  slide_show:
-    slider:
-    - template: slide-show
-      upload_image: ''
-    - template: slide-show
-      upload_image: ''
-    - template: slide-show
-      upload_image: ''
 home_sections:
 - template: intro
   intro_title: Discover Our Finest Homes
