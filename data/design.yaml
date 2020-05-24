@@ -65,8 +65,8 @@ home_sections:
   agent_subtitle: Our team of real estate professionals are ready to help you
   agent_background: ''
 - template: testimonial-slider
-  testimonial_slider_title: Our clients love us
-  testimonial_slider_subtitle: Client Reviews
+  testimonial_slider_title: Client Reviews
+  testimonial_slider_subtitle: Our clients love us
 sub_pages:
   sub_page_image: "/uploads/main.jpg"
 footer:
