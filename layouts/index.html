@@ -221,9 +221,8 @@
                 {{ range first 20 (where $.Site.RegularPages "Type" "testimonials") }}
 
                     <div class="testimonials-slider">
-                            <figure class="image is-128x128">
-                                {{ if.Params.photo }}<img class="is-rounded" src="{{ .Params.photo }}" style="object-fit: cover;" alt="{{ .Site.BaseURL }} reviews">{{ end }}
-                            </figure>
+                                {{ if.Params.photo }}<img src="{{ .Params.photo }}" alt="" style="object-fit: cover;height:100px;width:100px;border-radius:50%;margin: 20px auto;" alt="{{ .Site.BaseURL }} reviews">
+                                {{ end }}
                             <p class="content">{{ .Params.testimonial }}</p>
                             <em>{{ .Title }}</em><br>
                             <em>{{ .Params.occupation }}</em><br><br>
