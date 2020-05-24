@@ -5,7 +5,7 @@ logo_or_title:
 main_image:
   hero_subtitle: Find your dream home
   home_background_image: "/uploads/shutterstock_683283169.jpg"
-  video_background: true
+  video_background: false
   upload_video: ''
   add_url_to_youtube_video: https://reformosa.pt/public/uploads/_/originals/c9e46682-1225-59f7-8596-67a74b011928.mp4
   hero_title: OUR LUXURY REAL ESTATE

@@ -429,8 +429,7 @@ a.navbar-item img {
     color: white;
 }
 
-/* HERO CONTAINER */
-
+/* HERO CONTAINER  */
 
 section.hero__container {
     background-size: cover;
@@ -449,6 +448,27 @@ section.hero__container {
 
 .hero-body h2 {
     color: #cbcbcb;
+}
+
+/* YOUTUBE */
+
+#ytplayer-box {
+    box-sizing: border-box;
+    height: 56.25vw;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    width: 177.77777778vh;
+}
+
+.black-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
 }
 
 /* PAGE BANNER */
