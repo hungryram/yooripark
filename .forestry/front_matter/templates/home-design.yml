@@ -119,7 +119,7 @@ fields:
   - name: upload_video
     type: file
     config:
-      maxSize: 5
+      maxSize: 50
     label: Upload Video
   - name: add_url_to_youtube_video
     type: text
