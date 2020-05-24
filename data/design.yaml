@@ -17,6 +17,7 @@ main_image:
     hero_button_text_color: "#000000"
     hero_button_bg_color: "#ffffff"
   add_mp4_link: https://reformosa.pt/public/uploads/_/originals/c9e46682-1225-59f7-8596-67a74b011928.mp4
+  add_youtube_background_video: true
 home_sections:
 - template: intro
   intro_title: Discover Our Finest Homes
