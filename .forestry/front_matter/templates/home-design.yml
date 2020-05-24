@@ -116,11 +116,6 @@ fields:
     type: boolean
     label: Video Background
     description: Toggle to enable background video instead of an image
-  - name: upload_video
-    type: file
-    config:
-      maxSize: 50
-    label: Upload Video
   - name: add_url_to_youtube_video
     type: text
     config:
