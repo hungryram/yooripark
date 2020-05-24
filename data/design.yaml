@@ -26,28 +26,6 @@ main_image:
     - template: slide-show
       upload_image: ''
 home_sections:
-- template: cta
-  call_to_action_one:
-    image_one_cta: "/uploads/40904885-31jpg.jpg"
-    title_one_cta: Test Title
-    body_text_one_cta: My body text
-    cta_one_add_a_link: https://hungryram.com
-    cta_two_new_tab: true
-    icon_one_cta: fas fa-bullseye
-  call_to_action_two:
-    image_two_cta: "/uploads/40904885-31jpg.jpg"
-    title_two_cta: test 2 title
-    body_text_two_cta: body tezxt
-    cta_two_add_a_link: https://ramdettmer.com
-    cta_two_new_tab: true
-    icon_two_cta: fas fa-building
-  call_to_action_three:
-    image_three_cta: ''
-    title_three_cta: Title 3
-    body_text_three_cta: body 3
-    cta_three_add_a_link: https://hungryram.com
-    icons_three_cta: fab fa-btc
-    cta_three_new_tab: false
 - template: intro
   intro_title: Discover Our Finest Homes
   intro_body: Each section of the home page can be arranged and customized through
@@ -86,6 +64,9 @@ home_sections:
   agent_title: Our Team
   agent_subtitle: Our team of real estate professionals are ready to help you
   agent_background: ''
+- template: testimonial-slider
+  testimonial_slider_title: Client Reviews
+  testimonial_slider_subtitle: Our clients love us
 sub_pages:
   sub_page_image: "/uploads/main.jpg"
 footer:
