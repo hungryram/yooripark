@@ -121,6 +121,14 @@ fields:
     config:
       required: false
     label: Add URL to Youtube Video
+    description: 'Add the Youtube ID only: https://www.youtube.com/watch?v=<strong>xxxxxxxxxxxx</strong><br>Remove
+      any link from the mp4 before adding youtube link.'
+  - name: add_mp4_link
+    type: text
+    config:
+      required: false
+    label: Add mp4 Link
+    description: Add a link to an mp4 video.
   label: Main Image
 - name: sub_pages
   type: field_group
