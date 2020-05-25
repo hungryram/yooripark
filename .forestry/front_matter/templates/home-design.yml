@@ -17,6 +17,13 @@ fields:
       required: false
     label: Title
     description: Display text instead of a logo
+  - name: favicon
+    type: file
+    config:
+      maxSize: 64
+    label: Favicon
+    description: A favicon is a small <strong>16x16</strong> icon that appears on
+      the tab.
   label: Logo or Title
 - name: colors
   type: field_group
