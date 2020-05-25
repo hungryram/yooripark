@@ -450,6 +450,16 @@ section.hero__container {
     color: #cbcbcb;
 }
 
+@media screen and (max-width: 768px){
+    .hero-body h1.hero-title {
+        font-size: 28px;
+    }
+
+    .hero-body h2.subtitle {
+        font-size: 18px;
+    }
+}
+
 /* VIDEO BACKGROUND */
 
 .video-container,
@@ -1197,6 +1207,8 @@ ul.footer-social li {
 #ihf-main-container label {
     color: #c2c2c2!important
 }
+
+
 
 .hero-foot {
     background: rgba(0, 0, 0, 0.6);

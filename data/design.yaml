@@ -5,7 +5,7 @@ logo_or_title:
 main_image:
   hero_subtitle: Find your dream home
   home_background_image: "/uploads/shutterstock_683283169.jpg"
-  video_background: false
+  video_background: true
   upload_video: ''
   add_url_to_youtube_video: pY2CWYxUbrM
   hero_title: OUR LUXURY REAL ESTATE

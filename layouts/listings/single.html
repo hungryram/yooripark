@@ -318,7 +318,7 @@
         <div class="box">
           <h2 class="title is-6">Attachments</h2>
           {{ range .Params.tools.file_attachments }}
-            <p class="box attachments-detail"><a href="{{ . }}"><i class="fas fa-download fa-2x"></i>Download File</a></p>
+            <p class="box attachments-detail"><a href="{{ . }}" target="_blank"><i class="fas fa-download fa-2x"></i>Download File</a></p>
           {{else}}
             <p>no files</p>
           {{end}}
