@@ -285,7 +285,6 @@ li.active a {
 @media screen and (max-width: 1087px){
 
     span.navbar-burger {
-        background: black;
         transition: all .2s ease;
         margin-top: 10px;
     }

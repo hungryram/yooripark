@@ -51,7 +51,8 @@
             {{end}}
             <div class="media-content">
               <div class="content">
-                  <h1 class="title is-6">{{ .Params.title }}</h1>
+                  <h1 class="title is-6" style="margin: 0;">{{ .Params.title }}</h1>
+                  <time><small><i class="far fa-calendar-alt"></i> {{.Date.Format "Jan 2, 2006" }}</small></time><br>
                   <a href="{{ .Permalink }}" class="secondary-btn">Continue Reading</a>
             </div>
         </article>
