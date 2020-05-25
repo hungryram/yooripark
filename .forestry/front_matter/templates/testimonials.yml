@@ -68,6 +68,11 @@ fields:
     template: seo
     label: SEO
   label: Search Engine Optimization
+- name: url
+  type: include
+  config: {}
+  template: url
+  label: URL
 pages:
 - content/testimonials/darlene-dixon.md
 - content/testimonials/michael-sims.md

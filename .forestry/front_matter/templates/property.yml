@@ -547,6 +547,11 @@ fields:
     template: seo
     label: SEO
   label: Search Engine Optimization
+- name: url
+  type: include
+  config: {}
+  template: url
+  label: URL
 pages:
 - content/listings/110-york-drive.md
 - content/listings/3385-pan-american-dr.md

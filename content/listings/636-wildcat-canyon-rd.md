@@ -3,6 +3,7 @@ featured_listing = true
 short_description = "Guaranteed Modern"
 status = "Active"
 title = "636 WILDERNESSCAT CANYON RD"
+url = "wildcat property"
 weight = 3900000
 [address]
 address = "636 WILDCAT CANYON RD"

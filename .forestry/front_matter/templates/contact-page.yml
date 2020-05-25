@@ -16,5 +16,10 @@ fields:
     schema:
       format: markdown
   label: Contact Content
+- name: url
+  type: include
+  config: {}
+  template: url
+  label: URL
 pages:
 - content/contact/_index.md
