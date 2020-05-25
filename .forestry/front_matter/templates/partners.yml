@@ -108,15 +108,10 @@ fields:
           path: 
       label: State
     - name: zip_code
-      type: number
-      label: Zip Code
-      description: ''
-      default: 0
-      required: true
+      type: text
       config:
-        min: 
-        max: 99999
-        step: 
+        required: false
+      label: Zip Code
     label: Address
   label: Contact
 - name: details
