@@ -1,15 +1,15 @@
 +++
-title = "Corona Office"
+title = "The Luxury Team"
 [contact]
 address = "1900 Addison Street"
 city = "Berkeley"
 email = "info@coronaoffice.com"
-fax_number = ""
+fax_number = "223-123-5465"
 office_phone = "(510) 555-1212"
 state = "California"
 zip_code = 94704
 [photos]
-main_photo = ""
+main_photo = "/uploads/group-of-people-sitting-indoors-3184360.jpg"
 photo_gallery = []
 [search_engine_optimization]
 meta_description = ""
