@@ -2,6 +2,7 @@
 logo_or_title:
   upload_logo: "/uploads/cropped-logotrans.png"
   title: Real Estate Sample
+  favicon: "/uploads/logo.png"
 main_image:
   hero_subtitle: Find your dream home
   home_background_image: "/uploads/shutterstock_683283169.jpg"
