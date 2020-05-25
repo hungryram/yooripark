@@ -36,12 +36,6 @@ fields:
     time_format: 
     display_utc: false
     export_format: MM/DD/YYYY
-- name: full_width
-  type: boolean
-  label: Make Full Width
-  default: false
-  description: "<strong>Optional:</strong> If no photo is attached. Enable this to
-    make the row full width, removing the column for images."
 - name: source_link
   type: text
   config:
