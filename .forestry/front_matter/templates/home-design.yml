@@ -210,6 +210,7 @@ fields:
     min: 
     max: 
   description: Arrange home sections by drag and drop. Click through each section
-    to customize. Listing sections will not display if no listings are found.
+    to customize.<br>Make sure to add listings before activating any listing sections.
+    Listing sections will not display if no listings are found.
 pages:
 - data/design.yaml
