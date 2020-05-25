@@ -7,7 +7,7 @@ email = "sarah@hungryram.com"
 fax = ""
 phone = "555-342-5633"
 [details]
-agent_photo = "/uploads/66072_admin_79225_agent_sara-headshot.jpg"
+agent_photo = "/uploads/women-s-white-and-black-button-up-collared-shirt-774909.jpg"
 languages = ["english", "spanish", "italian"]
 license_number = "40905442"
 license_type = "License Number"
