@@ -21,6 +21,10 @@ sections:
   match: "**/*"
   templates:
   - property
+- type: document
+  path: content/contact
+  label: Contact
+  match: "**/*"
 - type: directory
   path: content/teams
   label: Teams
