@@ -22,9 +22,8 @@ sections:
   templates:
   - property
 - type: document
-  path: content/contact
+  path: content/contact/_index.md
   label: Contact
-  match: "**/*"
 - type: directory
   path: content/teams
   label: Teams
