@@ -12,6 +12,9 @@ state = ""
 zip_code = ""
 [details]
 category = "Other Resources"
+[menu.main]
+name = "Home"
+weight = 1
 [search_engine_optimization]
 meta_description = ""
 meta_title = ""
