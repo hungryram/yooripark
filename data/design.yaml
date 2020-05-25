@@ -17,7 +17,7 @@ main_image:
     hero_button_text_color: "#000000"
     hero_button_bg_color: "#ffffff"
   add_mp4_link: https://hungryram.s3-us-west-1.amazonaws.com/ocean.mp4
-  add_youtube_background_video: true
+  add_youtube_background_video: false
 home_sections:
 - template: intro
   intro_title: Discover Our Finest Homes
@@ -27,12 +27,6 @@ home_sections:
   add_photo: "/uploads/office.jpg"
   intro_align_text: has-text-left
   intro_background_color: "#ECECEC"
-- template: featured-listings
-  active_align_title_text: has-text-centered
-  active_listing_title: Our Featured Exclusives​
-  listing_subtitle: View our most featured office listings by Real Estate Brokerage.
-    Contact us for more questions regarding these listings.
-  active_background_color: ''
 - template: featured-tiles
   top_left_tile:
     top_left_featured_title: Los Angeles
@@ -47,6 +41,15 @@ home_sections:
     featured_image: "/uploads/whiteinterior.jpg"
     right_link_to_property: "/orange-county"
   tile_background_color: ''
+- template: featured-listings
+  active_align_title_text: has-text-centered
+  active_listing_title: Our Featured Exclusives​
+  listing_subtitle: View our most featured office listings by Real Estate Brokerage.
+    Contact us for more questions regarding these listings.
+  active_background_color: ''
+- template: testimonial-slider
+  testimonial_slider_title: Client Reviews
+  testimonial_slider_subtitle: Our clients love us
 - template: featured-blog
   blog_align_title_text: has-text-centered
   blog_title: Our Latest Posts
@@ -57,16 +60,13 @@ home_sections:
   agent_title: Our Team
   agent_subtitle: Our team of real estate professionals are ready to help you
   agent_background: ''
-- template: testimonial-slider
-  testimonial_slider_title: Client Reviews
-  testimonial_slider_subtitle: Our clients love us
 sub_pages:
   sub_page_image: "/uploads/main.jpg"
 footer:
   footer_background: "#000000"
   footer_bio: The footer can be adjusted to the color you need. Use a background image
     or background color of your choice. Contact me for a full demo.
-  disable_background_color: true
+  disable_background_color: false
   footer_background_image: "/uploads/shutterstock_43273009.jpg"
   enable_black_text: false
 colors:
