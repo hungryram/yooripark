@@ -10,10 +10,10 @@ main_image:
   upload_video: ''
   add_url_to_youtube_video: pY2CWYxUbrM
   hero_title: OUR LUXURY REAL ESTATE
-  align_hero_text: has-text-right
+  align_hero_text: has-text-centered
   add_a_button:
     hero_button_text: VIEW LISTINGS
-    hero_button_link: https://hungryram.com
+    hero_button_link: "/listings"
     open_in_new_tab: false
     hero_button_text_color: "#000000"
     hero_button_bg_color: "#ffffff"
