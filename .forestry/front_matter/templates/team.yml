@@ -176,6 +176,7 @@ fields:
     label: SEO
   label: Search Engine Optimization
 pages:
+- content/teams/john-renta-1.md
 - content/teams/john-renta.md
 - content/teams/samuel-palmer.md
 - content/teams/sarah-conner.md
