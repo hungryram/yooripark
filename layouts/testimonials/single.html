@@ -5,9 +5,7 @@
     <h1 class="title is-4">Testimonial by {{ .Title }}</h1>
     <div class="columns card notification" style="margin: 10px 0;">
       <div class="column is-3" align="center">
-          <figure class="image is-128x128">
-              <img class="is-rounded" src="{{ .Params.photo }}">
-          </figure>
+        <img src="{{ .Params.photo }}" alt="{{ .Title }} review" style="object-fit: cover;height:200px;width:200px;border-radius:50%;margin: 0 auto;">
       </div>
       <div class="column quote-testimonial">
 
@@ -38,8 +36,6 @@
                   <a href="{{ .Params.external_link }}" target="_blank">{{.Params.link_label  }}</a><br>
               {{end}}
           {{end}}
-
-          <a href="{{ .Permalink }}">More</a>
       </div>
   </div>
   </div>
