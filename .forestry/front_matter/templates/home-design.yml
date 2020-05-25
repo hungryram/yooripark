@@ -187,6 +187,9 @@ fields:
     config:
       maxSize: 64
     label: Background Image
+    showOnly:
+      field: disable_background_color
+      value: true
   label: Footer
 - name: home_sections
   type: blocks
