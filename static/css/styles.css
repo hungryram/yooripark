@@ -1132,9 +1132,10 @@ footer.site-footer {
     left:0;
 }
 
-footer.footer h4 {
+footer.footer h4.subtitle {
     /* color: #fff; */
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 /* footer p {
