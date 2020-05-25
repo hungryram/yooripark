@@ -1,5 +1,35 @@
 baseURL = "https://trialrun.netlify.app"
 languageCode = "en-us"
+[[menu.main]]
+name = "Blog"
+url = "/blog"
+weight = 4
+[[menu.main]]
+name = "Testimonials"
+parent = "Resources"
+url = "/testimonials"
+weight = 3
+[[menu.main]]
+name = "Our Team"
+parent = "Resources"
+url = "/teams"
+weight = 2
+[[menu.main]]
+name = "Our Partners"
+parent = "Resources"
+url = "/partners"
+weight = 1
+[[menu.main]]
+name = "Resources"
+weight = 3
+[[menu.main]]
+name = "Listings"
+url = "/listings"
+weight = 2
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
 [taxonomies]
 category = "categories"
 status = "status"
