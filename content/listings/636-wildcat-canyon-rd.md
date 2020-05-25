@@ -31,7 +31,7 @@ sold_price = ""
 meta_description = ""
 meta_title = ""
 [tools]
-file_attachments = []
+file_attachments = ["/uploads/web-design-contract.pdf"]
 matterport_link = ""
 open_house_date = "No Open House Available"
 open_house_details = ""
