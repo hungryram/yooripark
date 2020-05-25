@@ -1,20 +1,19 @@
 +++
-draft = true
-title = "John Renta"
-weight = 1
+title = "Matt Deem"
+weight = 4
 [contact]
 cell = ""
-email = "john@hungryram.com"
+email = "matt@hungryram.com"
 fax = ""
 phone = "555-555-5555"
 [details]
-agent_photo = "/uploads/agent-4.jpg"
+agent_photo = "/uploads/man-in-white-dress-shirt-holding-suit-jacket-1043474.jpg"
 languages = ["english", "spanish", "japanese"]
-license_number = ""
-license_type = ""
-office = []
+license_number = "43253475"
+license_type = "License Number"
+office = "offices/corona-office.md"
 specialty = ["commercial", "land and lots"]
-title = ""
+title = "Real Estate Agent"
 website = ""
 [search_engine_optimization]
 meta_description = ""
