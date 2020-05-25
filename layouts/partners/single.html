@@ -3,6 +3,11 @@
 <div class="section agent-page">
   <div class="container">
     <div class="columns">
+      <div class="column">
+        {{ partial "breadcrumbs.html" . }}
+      </div>
+    </div>
+    <div class="columns">
       <div class="column is-8">
           <div style="padding: 20px">
             <h1 class="agent-name">{{ .Params.title }} </h1>
