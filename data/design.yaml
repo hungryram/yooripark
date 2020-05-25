@@ -27,6 +27,12 @@ home_sections:
   add_photo: "/uploads/office.jpg"
   intro_align_text: has-text-left
   intro_background_color: "#ECECEC"
+- template: featured-listings
+  active_align_title_text: has-text-centered
+  active_listing_title: Our Featured Exclusives​
+  listing_subtitle: View our most featured office listings by Real Estate Brokerage.
+    Contact us for more questions regarding these listings.
+  active_background_color: ''
 - template: featured-tiles
   top_left_tile:
     top_left_featured_title: Los Angeles
@@ -41,25 +47,19 @@ home_sections:
     featured_image: "/uploads/whiteinterior.jpg"
     right_link_to_property: "/orange-county"
   tile_background_color: ''
-- template: featured-listings
-  active_align_title_text: has-text-centered
-  active_listing_title: Our Featured Exclusives​
-  listing_subtitle: View our most featured office listings by Real Estate Brokerage.
-    Contact us for more questions regarding these listings.
-  active_background_color: ''
-- template: testimonial-slider
-  testimonial_slider_title: Client Reviews
-  testimonial_slider_subtitle: Our clients love us
-- template: featured-blog
-  blog_align_title_text: has-text-centered
-  blog_title: Our Latest Posts
-  blog_subtitle: View our latest posts for useful information
-  blog_background: ''
 - template: agent-slider
   agent_text_align: has-text-centered
   agent_title: Our Team
   agent_subtitle: Our team of real estate professionals are ready to help you
   agent_background: ''
+- template: featured-blog
+  blog_align_title_text: has-text-centered
+  blog_title: Our Latest Posts
+  blog_subtitle: View our latest posts for useful information
+  blog_background: ''
+- template: testimonial-slider
+  testimonial_slider_title: Client Reviews
+  testimonial_slider_subtitle: Our clients love us
 sub_pages:
   sub_page_image: "/uploads/main.jpg"
 footer:
