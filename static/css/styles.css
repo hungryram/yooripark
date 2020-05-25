@@ -905,6 +905,12 @@ a.descending {
     font-size: 14px;
 }
 
+/* BLOG SINGLE */
+
+.author-blog {
+    margin-top: 100px;
+}
+
 /* AGENT LIST PAGE */
 
 .agent-list-content small {

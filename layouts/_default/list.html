@@ -1,5 +1,37 @@
   
+
 {{ define "main" }}
+
+<div class="section agent-lists">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          {{ partial "breadcrumbs.html" . }}
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <h2 class="title is-4">{{ .Title }}</h2>
+        </div>
+      </div>
+        <div class="columns">
+            <div class="column is-8">
+                <div class="box">
+                    {{ range .Pages }}
+                        <div class="box default-list">
+                            <a href="{{ .Permalink }}"><i class="fas fa-layer-group"></i><br>{{ .Title }}</a>
+                        </div>        
+            {{ end }}
+                </div>
+
+            </div>
+            {{ partial "sidebar.html" . }}
+        </div>
+    </div>
+</div>
+
+
+
 <div class="section">
     <div class="container">
         <div class="columns">
