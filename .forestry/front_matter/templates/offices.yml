@@ -7,6 +7,11 @@ fields:
   config:
     required: true
   label: Office Name
+- name: url
+  type: include
+  config: {}
+  template: url
+  label: URL
 - name: contact
   type: field_group
   config: {}
