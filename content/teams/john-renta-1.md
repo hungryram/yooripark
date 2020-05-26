@@ -1,6 +1,7 @@
 +++
 title = "Matt Deem"
-weight = 4
+url = ""
+weight = 1
 [contact]
 cell = ""
 email = "matt@hungryram.com"
