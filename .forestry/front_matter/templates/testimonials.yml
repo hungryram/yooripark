@@ -7,6 +7,17 @@ fields:
   config:
     required: false
   label: Full Name
+- name: order_testimonial
+  type: number
+  label: Order Testimonial
+  description: Enter 1 to display as the first testimonial and 2 and so on as the
+    next..
+  default: 50
+  required: true
+  config:
+    min: 1
+    max: 
+    step: 
 - name: occupation
   type: text
   config:
