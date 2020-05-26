@@ -1,6 +1,7 @@
 +++
 title = "John Renta"
-weight = 1
+url = ""
+weight = 2
 [contact]
 cell = ""
 email = "john@hungryram.com"
