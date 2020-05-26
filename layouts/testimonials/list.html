@@ -30,8 +30,8 @@
                     </div>
                     <div class="column quote-testimonial">
 
-                        {{ if gt ( len .Params.testimonial )  0 }}
-                            <p>{{ .Params.testimonial }}</p><br>
+                        {{ if gt ( len .Summary )  0 }}
+                            <p>{{ .Summary }}</p><br>
                         {{end}}
                         
                         {{ if gt ( len .Params.title )  0 }}
