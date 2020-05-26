@@ -74,11 +74,7 @@ sections:
   path: data/idx.yaml
   label: Set Up
 - type: heading
-  label: Help Center
-- type: document
-  path: content/help/website-editing.md
-  label: Website Editing
-  read_only: true
+  label: Misc
 - type: document
   path: data/icons.json
   label: Developer Access Only
