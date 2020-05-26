@@ -9,8 +9,13 @@ source_label = ""
 source_link = ""
 testimonial = "This is one of the best real estate templates. Very easy to use and reliable."
 title = "Michael Sims"
+url = ""
 [search_engine_optimization]
 meta_description = "Michael Sims testimonial for this office"
 meta_title = "Michael Sims testimonial"
 
 +++
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic accusamus quaerat repellendus maiores, perferendis quia nemo temporibus! Iste reprehenderit, minus quo obcaecati tempora, quisquam architecto doloribus ab a debitis nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic accusamus quaerat repellendus maiores, perferendis quia nemo temporibus! Iste reprehenderit, minus quo obcaecati tempora, quisquam architecto doloribus ab a debitis nisi.
+
+  
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic accusamus quaerat repellendus maiores, perferendis quia nemo temporibus! Iste reprehenderit, minus quo obcaecati tempora, quisquam architecto doloribus ab a debitis nisi.
