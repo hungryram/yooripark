@@ -5,7 +5,7 @@
     <!-- Enable MP4 Video Background -->
     {{ if .Site.Data.design.main_image.video_background }}
       <div class="video-container">
-        <video id="bgvid" playsinline autoplay muted loop>
+        <video id="bgvid" playsinline autoplay muted loop playsinline>
             <source src="{{ .Site.Data.design.main_image.add_mp4_link }}" type="video/mp4">
         </video>
     </div>
