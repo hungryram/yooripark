@@ -11,7 +11,7 @@ source_link = ""
 testimonial = "The template is easy to use and highly customizable. It works off of no database too!"
 title = "Darlene Dixon"
 url = ""
-weight = 1
+weight = 2
 [search_engine_optimization]
 meta_description = "check testimonial description"
 meta_title = "The new testimonal"

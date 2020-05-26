@@ -11,7 +11,7 @@ source_link = ""
 testimonial = "This is one of the best real estate templates. Very easy to use and reliable."
 title = "Michael Sims"
 url = ""
-weight = 2
+weight = 1
 [search_engine_optimization]
 meta_description = "Michael Sims testimonial for this office"
 meta_title = "Michael Sims testimonial"
