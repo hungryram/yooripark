@@ -494,7 +494,8 @@ section.hero__container {
 }
 
 @media screen and (max-width: 768px) {
-    .youtube-container {
+    .youtube-container,
+    .video-container {
         display: none;
     }
 }
