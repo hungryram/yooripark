@@ -124,8 +124,9 @@ fields:
     label: Add Youtube Background Video
     showOnly:
       value: true
-    description: iOs and Android no longer supports autoplay videos on phones. A background
-      image will be used to display.<br>Disable mp4 if using Youtube.
+    description: iOs and Android no longer supports auto play videos on phones. A
+      background image will be used to display on mobile.<br>Disable mp4 if using
+      Youtube.
   - name: add_url_to_youtube_video
     type: text
     config:
