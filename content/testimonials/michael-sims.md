@@ -4,6 +4,7 @@ external_link = ""
 full_width = false
 link_label = ""
 occupation = "Real Estate Professional"
+order_testimonial = 1
 photo = "/uploads/adult-beard-boy-casual-220453.jpg"
 source_label = ""
 source_link = ""
