@@ -1,21 +1,12 @@
 ---
 label: Testimonials
-hide_body: true
+hide_body: false
 fields:
 - name: title
   type: text
   config:
     required: false
   label: Full Name
-- name: testimonial
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Testimonial
 - name: occupation
   type: text
   config:
