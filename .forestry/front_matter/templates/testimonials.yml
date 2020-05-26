@@ -7,7 +7,7 @@ fields:
   config:
     required: false
   label: Full Name
-- name: order_testimonial
+- name: weight
   type: number
   label: Order Testimonial
   description: Enter 1 to display as the first testimonial and 2 and so on as the
