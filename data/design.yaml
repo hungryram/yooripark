@@ -72,7 +72,7 @@ footer:
   enable_black_text: false
 colors:
   text_link_colors: rgb(169, 140, 83)
-  button_background_colors: "#A98C53"
+  button_background_colors: "#000000"
   header_background_color: "#FFFFFF"
   navigation_link_color: "#BA0000"
   enable_black_menu_items: true
