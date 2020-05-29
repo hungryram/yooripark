@@ -16,13 +16,6 @@ fields:
     schema:
       format: markdown
   label: Blog Subtitle
-- name: blog_background
-  type: color
-  label: Background Color
-  config:
-    required: false
-    color_format: Hex
-  description: Choose the background color for the blog section
 - name: blog_align_title_text
   type: select
   default: []
@@ -38,3 +31,14 @@ fields:
       file: 
       path: 
   label: Align Title Text
+- name: blog_background
+  type: color
+  label: Background Color
+  config:
+    required: false
+    color_format: Hex
+  description: Choose the background color for the blog section
+- name: blog_enable_white_text_color
+  type: boolean
+  label: Enable White Text Color
+  description: Enable this to make text readable on dark backgrounds.

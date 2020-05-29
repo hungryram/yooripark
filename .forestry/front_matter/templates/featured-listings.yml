@@ -17,12 +17,6 @@ fields:
     schema:
       format: markdown
   label: Listing Subtitle
-- name: active_background_color
-  type: color
-  label: Background Color
-  config:
-    required: false
-    color_format: Hex
 - name: active_align_title_text
   type: select
   default: []
@@ -38,3 +32,13 @@ fields:
       file: 
       path: 
   label: Align Title Text
+- name: active_background_color
+  type: color
+  label: Background Color
+  config:
+    required: false
+    color_format: Hex
+- name: active_enable_white_text_color
+  type: boolean
+  description: Enable this to make text readable on dark backgrounds.
+  label: Enable White Text Color

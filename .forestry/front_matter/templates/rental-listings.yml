@@ -12,12 +12,6 @@ fields:
   config:
     required: false
   label: Rental Subtitle
-- name: rental_background_color
-  type: color
-  label: Background Color
-  config:
-    required: false
-    color_format: Hex
 - name: rental_align_title_text
   type: select
   default: []
@@ -33,3 +27,13 @@ fields:
       file: 
       path: 
   label: Align Title Text
+- name: rental_background_color
+  type: color
+  label: Background Color
+  config:
+    required: false
+    color_format: Hex
+- name: rental_enable_white_text_color
+  type: boolean
+  label: Enable White Text Color
+  description: Enable this to make text readable on dark backgrounds.

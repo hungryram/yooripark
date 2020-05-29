@@ -18,12 +18,12 @@
         {{ end }}
 
         {{ if eq "idx-search-bar" .template }}
-            <div class="section">
+            <div class="section" style="{{ safeHTMLAttr (printf "background-color: %s" .idx_background_color) }}">
                 <div class="container">
                     <div class="columns has-text-centered">
                         <div class="column">
-                            <h1 class="title">{{ .idx_title }}</h1>
-                            <h4>{{ .subtitle }}</h4>
+                            <h1 class="title {{ if .idx_enable_white_text_color }}has-text-white{{ end }}">{{ .idx_title }}</h1>
+                            <h4 class="{{ if .idx_enable_white_text_color }}has-text-white{{ end }}">{{ .subtitle }}</h4>
                         </div>
                     </div>
                     <div class="columns">
@@ -42,8 +42,8 @@
                 <!-- Start Carousel -->
                 <div class="columns">
                     <div {{ if .blog_align_title_text }} class="column {{ .blog_align_title_text }} "{{ end }}>
-                        <h1 class="title">{{ .blog_title }}</h1>
-                        <h4>{{ .blog_subtitle }}</h4>
+                        <h1 class="title {{ if .blog_enable_white_text_color }}has-text-white{{ end }}">{{ .blog_title }}</h1>
+                        <h4 class="{{ if .blog_enable_white_text_color }}has-text-white{{ end }}">{{ .blog_subtitle }}</h4>
                     </div>
                 </div>
                 <div class="responsive-slide">
@@ -90,8 +90,8 @@
                     <!-- Start Carousel -->
                     <div class="columns {{ with .rental_align_title_text }}{{ . }}{{end}}">
                         <div class="column">
-                            <h1 class="title">{{ .rental_title }}</h1>
-                            <h4>{{ .rental_subtitle }}</h4>
+                            <h1 class="title {{ if .rental_enable_white_text_color }}has-text-white{{ end }}">{{ .rental_title }}</h1>
+                            <h4 class="{{ if .rental_enable_white_text_color }}has-text-white{{ end }}">{{ .rental_subtitle }}</h4>
                         </div>
                     </div>
                     <div class="responsive-slide">
@@ -114,8 +114,8 @@
                     <!-- Start Carousel -->
                     <div class="columns {{ with .active_align_title_text }}{{ . }}{{end}}">
                         <div class="column">
-                            <h1 class="title">{{ .active_listing_title }}</h1>
-                            <h4>{{ .listing_subtitle }}</h4>
+                            <h1 class="title {{ if .active_enable_white_text_color }}has-text-white{{ end }}">{{ .active_listing_title }}</h1>
+                            <h4 class="{{ if .active_enable_white_text_color }}has-text-white{{ end }}">{{ .listing_subtitle }}</h4>
                         </div>
                     </div>
                     <div class="responsive-slide">
@@ -131,13 +131,13 @@
 
                 {{/*  SHOWCASE FEATURED LISTING  */}}
                 {{ if eq "showcase-featured-properties" .template }}
-                <section class="section home-featured-sections active-listings" id="featured-listings" style="{{ safeHTMLAttr (printf "background-color: %s" .featured_background_color) }}">
+                <section class="section home-featured-sections active-listings" id="featured-listings" style="{{ safeHTMLAttr (printf "background-color: %s" .featured_background) }}">
                     <div class="container">
                         <!-- Start Carousel -->
                         <div class="columns {{ with .featured_align_title_text }}{{ . }}{{end}}">
-                            <div class="column is-half is-offset-one-quarter">
-                                <h1 class="title">{{ .featured_title }}</h1>
-                                <h4>{{ .featured_subtitle }}</h4>
+                            <div class="column">
+                                <h1 class="title {{ if .showcase_enable_white_text_color }}has-text-white{{ end }}">{{ .featured_title }}</h1>
+                                <h4 class="{{ if .showcase_enable_white_text_color }}has-text-white{{ end }}">{{ .featured_subtitle }}</h4>
                             </div>
                         </div>
                         <div class="responsive-slide">
@@ -161,8 +161,8 @@
                 <!-- Start Carousel -->
                 <div class="columns {{ with .sold_align_title_text }}{{ . }}{{end}}">
                     <div class="column">     
-                        <h1 class="title">{{ .sold_listing_title }}</h1>
-                        <h4>{{ .sold_listing_subtitle }}</h4>
+                        <h1 class="title {{ if .sold_enable_white_text_color }}has-text-white{{ end }}">{{ .sold_listing_title }}</h1>
+                        <h4 class="{{ if .sold_enable_white_text_color }}has-text-white{{ end }}">{{ .sold_listing_subtitle }}</h4>
                     </div>
                 </div>
                 <div class="responsive-slide">

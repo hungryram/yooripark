@@ -4,18 +4,20 @@
 
             {{ if .add_photo }}
                 <div class="column">
-                    <img src="{{ .add_photo }}" alt="" width="500">
+                    <img src="{{ .add_photo }}" alt="{{ $.Site.Data.profile.primary_company_name }}" width="500">
                 </div>
             {{ end }}
 
-            <div class="column">
-
+            <div class="column content">
                 {{ if .intro_title }}
-                    <h2 class="title is-2">{{ .intro_title }}</h2>
+                    <h2 class="title is-2 {{ if .intro_enable_white_text_color }}has-text-white{{ end }}">{{ .intro_title }}</h2>
                 {{ else }}
-                    <h2 class="title is-2">About Us</h2>
+                    <h2 class="title is-2 {{ if .intro_enable_white_text_color }}has-text-white{{ end }}">About Us</h2>
                 {{ end }}
-                     <p>{{.intro_body}}</p>
+                     <p class="content {{ if .intro_enable_white_text_color }}has-text-white{{ end }}">{{.intro_body}}</p>
+                     {{ if gt ( len .intro_add_button.button_label ) 0 }}
+                     <a href="{{ .intro_add_button.intro_button_link }}" style="{{ safeHTMLAttr (printf "background-color: %s" .intro_add_button.intro_button_background_color ) }};{{ safeHTMLAttr (printf "color: %s" .intro_add_button.intro_button_text_color ) }}" class="button intro-btn" {{ if .intro_add_button.intro_open_in_a_new_tab }}target="_blank"{{end}} >{{ .intro_add_button.button_label }}</a>
+                 {{end}}
             </div>
         </div>
     </div>

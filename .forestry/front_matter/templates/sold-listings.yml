@@ -23,6 +23,10 @@ fields:
   config:
     required: false
     color_format: Hex
+- name: sold_enable_white_text_color
+  type: boolean
+  label: Enable White Text Color
+  description: Enable this to make text readable on dark backgrounds.
 - name: sold_align_title_text
   type: select
   default: []

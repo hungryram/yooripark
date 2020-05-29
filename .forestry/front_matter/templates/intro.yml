@@ -16,6 +16,36 @@ fields:
     schema:
       format: markdown
   label: Intro Body
+- name: intro_add_button
+  type: field_group
+  config: {}
+  fields:
+  - name: button_label
+    type: text
+    config:
+      required: false
+    label: Button Label
+  - name: intro_button_link
+    type: text
+    config:
+      required: false
+    label: Link
+  - name: intro_open_in_a_new_tab
+    type: boolean
+    label: Open in a new tab
+  - name: intro_button_background_color
+    type: color
+    config:
+      required: false
+      color_format: Hex
+    label: Background Color
+  - name: intro_button_text_color
+    type: color
+    label: Button Text Color
+    config:
+      required: false
+      color_format: Hex
+  label: Add Button
 - name: add_photo
   type: file
   config:
@@ -43,3 +73,7 @@ fields:
   config:
     required: false
     color_format: Hex
+- name: intro_enable_white_text_color
+  type: boolean
+  label: Enable White Text Color
+  description: Enable this to make text readable on dark backgrounds.
