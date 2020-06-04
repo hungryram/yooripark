@@ -17,9 +17,9 @@ garage = 0
 hoa = 0
 lot_size = 7396
 mls_number = ""
-property_type = "Single Family"
-square_footage = 0
-year_built = 0
+property_type = "Not Specified"
+square_footage = nil
+year_built = nil
 [listing_agent]
 listing_agent = []
 [photos]
