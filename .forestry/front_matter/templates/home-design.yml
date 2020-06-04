@@ -167,6 +167,11 @@ fields:
   type: field_group
   config: {}
   fields:
+  - name: footer_logo
+    type: file
+    config:
+      maxSize: 5
+    label: Footer Logo
   - name: footer_background
     type: color
     label: Background Color
