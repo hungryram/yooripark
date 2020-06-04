@@ -20,47 +20,71 @@ main_image:
   add_mp4_link: https://yooripark.com/video/yooriparkvideo.mp4
   add_youtube_background_video: false
 home_sections:
+- template: cta
+  call_to_action_one:
+    title_one_cta: READY TO SELL
+    image_one_cta: "/uploads/ahmet-yalcinkaya-anrrsb2wldk-unsplash.jpg"
+    cta_one_add_a_link: "/ready-to-sell"
+    icon_one_cta: ''
+    body_text_one_cta: ''
+    cta_two_new_tab: false
+  call_to_action_two:
+    image_two_cta: "/uploads/shutterstock_514885876.jpg"
+    title_two_cta: READY TO BUY OR INVEST
+    cta_two_add_a_link: "/ready-to-buy-or-invest"
+    icon_two_cta: ''
+    body_text_two_cta: ''
+    cta_two_new_tab: false
+  call_to_action_three:
+    image_three_cta: "/uploads/sterling-davis-4ixagikxn3y-unsplash.jpg"
+    title_three_cta: BLOG
+    cta_three_add_a_link: "/blog"
+    icons_three_cta: ''
+    body_text_three_cta: ''
+    cta_three_new_tab: false
 - template: intro
   intro_title: Discover Our Finest Homes
   intro_body: Each section of the home page can be arranged and customized through
     your phone or computer. Easily manage your website through our website editor
     customized specifically for real estate professionals.
-  add_photo: "/uploads/office.jpg"
+  add_photo: "/uploads/yooriparkagent.png"
   intro_align_text: has-text-left
-  intro_background_color: "#ECECEC"
+  intro_background_color: "#000000"
+  intro_add_button:
+    button_label: READ MORE
+    intro_button_link: "/about"
+    intro_open_in_a_new_tab: false
+    intro_button_background_color: "#FFFFFF"
+    intro_button_text_color: "#000000"
+  intro_enable_white_text_color: true
 - template: featured-listings
   active_align_title_text: has-text-centered
-  active_listing_title: Our Featured Exclusives​
-  listing_subtitle: View our most featured office listings by Real Estate Brokerage.
-    Contact us for more questions regarding these listings.
+  active_listing_title: EXLUSIVE LISTINGS
   active_background_color: ''
-- template: featured-tiles
-  top_left_tile:
-    top_left_featured_title: Los Angeles
-    top_left_link_to_property: "/listings"
-    top_left_featured_image: "/uploads/kichen-1.jpg"
-  bottom_left_tile:
-    featured_title: San Diego
-    featured_image: "/uploads/main.jpg"
-    bottom_left_link_to_property: "/san-diego"
-  right_tile:
-    featured_title: Orange County
-    featured_image: "/uploads/whiteinterior.jpg"
-    right_link_to_property: "/orange-county"
-  tile_background_color: ''
-- template: agent-slider
-  agent_text_align: has-text-centered
-  agent_title: Our Team
-  agent_subtitle: Our team of real estate professionals are ready to help you
-  agent_background: ''
+  active_enable_white_text_color: false
+  listing_subtitle: ''
+- template: intro
+  intro_title: SEARCHING FOR YOUR NEXT HOME?
+  intro_body: Call now or send me an email!
+  intro_add_button:
+    intro_button_background_color: "#FFFFFF"
+    intro_button_text_color: "#000000"
+    intro_button_link: "/contact"
+    button_label: CONTACT
+    intro_open_in_a_new_tab: false
+  intro_background_color: "#000000"
+  intro_align_text: has-text-centered
+  add_photo: ''
+  intro_enable_white_text_color: true
+- template: testimonial-slider
+  testimonial_slider_title: Testimonials
+  testimonial_slider_subtitle: ''
 - template: featured-blog
   blog_align_title_text: has-text-centered
   blog_title: Our Latest Posts
   blog_subtitle: View our latest posts for useful information
   blog_background: ''
-- template: testimonial-slider
-  testimonial_slider_title: Client Reviews
-  testimonial_slider_subtitle: Our clients love us
+  blog_enable_white_text_color: false
 sub_pages:
   sub_page_image: "/uploads/main.jpg"
 footer:
@@ -68,7 +92,7 @@ footer:
   footer_bio: The footer can be adjusted to the color you need. Use a background image
     or background color of your choice. Contact me for a full demo.
   disable_background_color: true
-  footer_background_image: "/uploads/shutterstock_43273009.jpg"
+  footer_background_image: "/uploads/image-38.jpg"
   enable_black_text: false
 colors:
   text_link_colors: rgb(169, 140, 83)
