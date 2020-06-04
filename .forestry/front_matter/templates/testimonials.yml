@@ -75,3 +75,5 @@ fields:
   config: {}
   template: url
   label: URL
+pages:
+- content/testimonials/rebecca-o.md
