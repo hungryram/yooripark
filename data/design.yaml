@@ -94,6 +94,7 @@ footer:
   disable_background_color: true
   footer_background_image: "/uploads/image-38.jpg"
   enable_black_text: false
+  footer_logo: "/uploads/revelbg2.jpg"
 colors:
   text_link_colors: rgb(169, 140, 83)
   button_background_colors: "#000000"
