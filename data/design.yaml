@@ -75,7 +75,7 @@ home_sections:
   intro_background_color: "#000000"
   intro_align_text: has-text-centered
   add_photo: ''
-  intro_enable_white_text_color: false
+  intro_enable_white_text_color: true
 - template: testimonial-slider
   testimonial_slider_title: Testimonials
   testimonial_slider_subtitle: ''
