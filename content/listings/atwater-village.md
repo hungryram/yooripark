@@ -23,8 +23,8 @@ year_built = 0
 [listing_agent]
 listing_agent = []
 [photos]
-gallery = []
-main_photo = "/uploads/main-house-photo.jpg"
+gallery = ["/uploads/20200423-01-3952revereave-losangeles-ca-029-small.jpg", "/uploads/20200423-01-3952revereave-losangeles-ca-028-small.jpg", "/uploads/20200423-01-3952revereave-losangeles-ca-027-small.jpg", "/uploads/20200423-01-3952revereave-losangeles-ca-026-small.jpg", "/uploads/20200423-01-3952revereave-losangeles-ca-025-small.jpg", "/uploads/20200423-01-3952revereave-losangeles-ca-024-small.jpg", "/uploads/20200423-01-3952revereave-losangeles-ca-023-small.jpg", "/uploads/20200423-01-3952revereave-losangeles-ca-022-small.jpg", "/uploads/20200423-01-3952revereave-losangeles-ca-021-small.jpg", "/uploads/20200423-01-3952revereave-losangeles-ca-020-small.jpg", "/uploads/20200423-01-3952revereave-losangeles-ca-019-small.jpg", "/uploads/20200423-01-3952revereave-losangeles-ca-018-small.jpg", "/uploads/20200423-01-3952revereave-losangeles-ca-017-small.jpg", "/uploads/20200423-01-3952revereave-losangeles-ca-016-small.jpg", "/uploads/20200423-01-3952revereave-losangeles-ca-015-small.jpg", "/uploads/20200423-01-3952revereave-losangeles-ca-014-small.jpg", "/uploads/20200423-01-3952revereave-losangeles-ca-013-small.jpg", "/uploads/20200423-01-3952revereave-losangeles-ca-012-small.jpg", "/uploads/20200423-01-3952revereave-losangeles-ca-011-small.jpg", "/uploads/20200423-01-3952revereave-losangeles-ca-010-small.jpg", "/uploads/20200423-01-3952revereave-losangeles-ca-009-small.jpg", "/uploads/20200423-01-3952revereave-losangeles-ca-008-small.jpg", "/uploads/20200423-01-3952revereave-losangeles-ca-007-small.jpg", "/uploads/20200423-01-3952revereave-losangeles-ca-006-small.jpg", "/uploads/20200423-01-3952revereave-losangeles-ca-005-small.jpg", "/uploads/20200423-01-3952revereave-losangeles-ca-004-small.jpg", "/uploads/20200423-01-3952revereave-losangeles-ca-003-small.jpg", "/uploads/20200423-01-3952revereave-losangeles-ca-002-small.jpg", "/uploads/20200423-01-3952revereave-losangeles-ca-001-small.jpg"]
+main_photo = "/uploads/main-1.jpg"
 [search_engine_optimization]
 meta_description = ""
 meta_title = ""
