@@ -18,8 +18,8 @@ hoa = 0
 lot_size = 7396
 mls_number = ""
 property_type = "Not Specified"
-square_footage = nil
-year_built = nil
+square_footage = 
+year_built = 
 [listing_agent]
 listing_agent = []
 [photos]
