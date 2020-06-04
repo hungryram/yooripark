@@ -1,4 +1,4 @@
-baseURL = "https://trialrun.netlify.app"
+baseURL = "https://yooripark.netlify.app"
 languageCode = "en-us"
 [[menu.main]]
 name = "Blog"
