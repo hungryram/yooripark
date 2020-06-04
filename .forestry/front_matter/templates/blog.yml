@@ -57,6 +57,3 @@ fields:
   config: {}
   template: url
   label: URL
-pages:
-- content/blog/what-is-lorem-ipsum.md
-- content/blog/where-can-i-get-some.md
