@@ -57,3 +57,5 @@ fields:
   config: {}
   template: url
   label: URL
+pages:
+- content/blog/hello-doctors.there-is-a-loan-program-for-you.md
