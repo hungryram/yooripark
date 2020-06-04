@@ -6,7 +6,7 @@
     <div class="columns">
       <div class="column" {{ if .Site.Data.design.footer.enable_black_text}}style="color:black"{{else}} style="color:white"{{end}}>
         <a href="{{ .Site.BaseURL }}">
-              {{ with .Site.Data.design.logo_or_title.upload_logo}}
+              {{ with .Site.Data.design.footer.footer_logo}}
           <img src="{{ . }}" alt="{{ $.Site.Data.profile.primary_company_name }}" width="200">
               {{ else }}
           <h1>{{ .Site.Data.design.logo_or_title.title }}</h1>
@@ -62,10 +62,10 @@
         {{ $location := .Site.Data.profile.location_information }}
         {{ $contact := .Site.Data.profile.primary_contact }}
         <ul {{ if .Site.Data.design.footer.enable_black_text}}style="color:black"{{else}} style="color:white"{{end}} class="footer-contact">
-          {{ if $location }}<li><i class="fas fa-map-marker-alt"></i>{{ $location.address }} {{ $location.city }} {{ $location.state }} {{ $location.zip_code }}</li> {{ end }}
-          {{ if $contact }}<li><i class="far fa-envelope"></i><a href="mailto:{{ $contact.email }}">{{ $contact.email }}</a></li> {{ end }}
+          {{ if gt ( len $location.address ) 0 }}{{ if $location }}<li><i class="fas fa-map-marker-alt"></i>{{ $location.address }} {{ $location.city }} {{ $location.state }} {{ $location.zip_code }}</li> {{ end }}{{ end }}
+          {{ if $contact.email }}<li><i class="far fa-envelope"></i><a href="mailto:{{ $contact.email }}">{{ $contact.email }}</a></li> {{ end }}
           {{ if $contact }}<li><i class="fas fa-mobile-alt"></i> <a href="tel:{{ $contact.mobile_phone }}">{{ $contact.mobile_phone }}</a></li> {{ end }}
-          {{ if $contact }}<li><i class="fas fa-phone-alt"></i> <a href="tel:{{ $contact.phone }}">{{ $contact.phone }}</a></li> {{ end }}
+          {{ if $contact.phone }}<li><i class="fas fa-phone-alt"></i> <a href="tel:{{ $contact.phone }}">{{ $contact.phone }}</a></li> {{ end }}
         </ul>
         
         

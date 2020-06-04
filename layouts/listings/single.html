@@ -46,7 +46,7 @@
         </a>
     </div> <!-- end share buttons -->
       <div class="single-price-header">
-        <p>Property ID: {{ .Params.details.mls_number }}</p>
+        {{ if .Params.details.mls_number }}<p>Property ID: {{ .Params.details.mls_number }}</p>{{ end }}
         <h2 class="title is-3">${{ lang.NumFmt 0 .Params.weight }}</h2>
       </div>
     </div>
@@ -106,7 +106,7 @@
     </div> <!-- end share buttons -->
       <div class="single-price-header">
         <p>Property ID: {{ .Params.details.mls_number }}</p>
-        <h2 class="title is-3">${{ .Params.pricing.price }}</h2>
+        <h2 class="title is-3">${{ lang.NumFmt 0 .Params.weight }}</h2>
         
       </div>
     </div>
