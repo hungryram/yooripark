@@ -165,7 +165,7 @@ fields:
   fields:
   - name: property_type
     type: select
-    default: Single Family
+    default: Not Specified
     config:
       required: true
       options:
@@ -185,6 +185,7 @@ fields:
       - Single Family
       - Time Share
       - Vacation Home
+      - Not Specified
       source:
         type: simple
         section: 
