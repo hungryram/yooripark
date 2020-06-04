@@ -181,7 +181,4 @@ fields:
   template: url
   label: URL
 pages:
-- content/teams/john-renta-1.md
 - content/teams/john-renta.md
-- content/teams/samuel-palmer.md
-- content/teams/sarah-conner.md
