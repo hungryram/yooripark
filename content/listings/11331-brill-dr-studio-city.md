@@ -1,5 +1,4 @@
 +++
-draft = true
 featured_listing = true
 short_description = " Mid-Century Home"
 status = "Active"
@@ -12,11 +11,11 @@ city = "Studio City"
 state = "California"
 zip_code = 91604
 [details]
-bathrooms = 0
-bedrooms = 0
+bathrooms = 3
+bedrooms = 4
 garage = 0
 hoa = 0
-lot_size = 0
+lot_size = 7396
 mls_number = ""
 property_type = "Single Family"
 square_footage = 0
@@ -24,8 +23,8 @@ year_built = 0
 [listing_agent]
 listing_agent = []
 [photos]
-gallery = []
-main_photo = "/uploads/main-house-photo.jpg"
+gallery = ["/uploads/mainphoto1.jpg", "/uploads/image-57.jpg", "/uploads/image-53-b9fade97.jpg", "/uploads/image-52.jpg", "/uploads/image-51.jpg", "/uploads/image-50-68bdbd79.jpg", "/uploads/image-46.jpg", "/uploads/image-45.jpg", "/uploads/image-43.jpg", "/uploads/image-42.jpg", "/uploads/image-33-40de4388.jpg", "/uploads/image-31.jpg", "/uploads/image-28-8f12f554.jpg", "/uploads/image-26-d2f5ec8e.jpg", "/uploads/image-24.jpg", "/uploads/image-23.jpg", "/uploads/image-22.jpg", "/uploads/image-19.jpg", "/uploads/image-18.jpg", "/uploads/image-17-8d9c23ad.jpg", "/uploads/image-11-40599fe4.jpg", "/uploads/image-10.jpg", "/uploads/image-9-d3ff090d.jpg", "/uploads/image-1.jpg"]
+main_photo = "/uploads/mainphoto1.jpg"
 [search_engine_optimization]
 meta_description = ""
 meta_title = ""
@@ -49,3 +48,4 @@ interior_flooring = []
 interior_rooms = []
 
 +++
+Perched South of famed Ventura Blvd on a street to street lot in prime Studio City, w dazzling treetop, Valley & mountain views, sits this gated Mid-Century home boasting updates inside & out. Once beyond the gated entry, a 2-car garage & carport lead via an elevated walkway to a double entry. Rich wood floors dance across a blended dining & living room, as impossibly high ceilings & walls of glass infuse the space with light & volume. Just beyond, scenic views abound from a sweeping veranda - perfect for entertaining & dining al fresco. The chef's kitchen features newer cabinetry, stone counter tops & high-end appliances. A master suite, w dual vanity bath & walk-in shower, opens to the deck & awe-inspiring views. Below, 3 bedroom + 2 baths are centered around a TV Room w/ direct access to a patio w/ tiered gardens & meandering paths. Central dual HVAC (upstairs and downstairs) adds a touch of luxury, whilst proximity to shops & fine eateries along Ventura Blvd make this a must see!
