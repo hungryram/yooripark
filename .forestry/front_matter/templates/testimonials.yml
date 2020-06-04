@@ -75,6 +75,3 @@ fields:
   config: {}
   template: url
   label: URL
-pages:
-- content/testimonials/darlene-dixon.md
-- content/testimonials/michael-sims.md
