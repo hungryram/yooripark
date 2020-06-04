@@ -1,30 +1,32 @@
 ---
 primary_contact:
-  full_name: Louis Davis
-  title: Broker
-  phone: "(510) 555-1002"
-  mobile_phone: "(510) 555-1000"
-  email: info@sampletemplate.com
-  license_type: BRE License
-  license_number: "54535489"
+  full_name: Yoori Park
+  title: Real Estate Agent
+  phone: ''
+  mobile_phone: 424.245.0723
+  email: yoori@yooripark.com
+  license_type: ''
+  license_number: ''
 location_information:
-  address: 1900 Addison Street
-  city: Berkeley
-  state: California
-  zip_code: 54845
+  address: ''
+  city: ''
+  state: ''
+  zip_code: 
 social_accounts:
-  youtube: ''
-  facebook: https://facebook.com/hungryram
+  youtube: https://www.youtube.com/channel/UC1t1A2LxNRHCj7llznmah_A?view_as=subscriber
+  facebook: https://facebook.com/yooriparkrealtor
   linkedin: ''
-  instagram: https://instagram.com/hungry_ram
-  twitter: https://twitter.com/hungryram
+  instagram: https://www.instagram.com/_yooripark/
+  twitter: ''
   pinterest: ''
   zillow: ''
   redfin: ''
   realtor: ''
   trulia: ''
   reddit: ''
-primary_company_name: Real Estate Comapny
+primary_company_name: Yoori Park
 search_engine_optimization:
-  meta_title: Real Estate Property testing
-  meta_description: This is my business just adding on to description
+  meta_title: Yoori Park - Revel Real Estate
+  meta_description: 'Yoori Park aims is to assist clients wanting to buy or sell their
+    home from the very beginning of the process to the very end with essentially an
+    “open-door” policy that values 100% transparency and open communication. '
