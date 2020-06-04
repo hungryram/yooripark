@@ -76,4 +76,5 @@ fields:
   template: url
   label: URL
 pages:
+- content/testimonials/dae.md
 - content/testimonials/rebecca-o.md
