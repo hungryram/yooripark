@@ -1,6 +1,10 @@
 +++
 title = "READY TO BUY OR INVEST​"
 url = ""
+[menu.main]
+name = "Ready to Buy or Invest"
+parent = "Services"
+weight = 1
 [search_engine_optimization]
 meta_description = ""
 meta_title = ""

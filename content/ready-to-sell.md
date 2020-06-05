@@ -1,6 +1,10 @@
 +++
 title = "READY TO SELL​"
 url = ""
+[menu.main]
+name = "Ready to Sell"
+parent = "Services"
+weight = 2
 [search_engine_optimization]
 meta_description = ""
 meta_title = ""
