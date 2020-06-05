@@ -59,6 +59,8 @@ sections:
   label: Add/View Pages
   create: documents
   match: "*"
+  templates:
+  - custom-pages
 - type: heading
   label: Blog
 - type: directory
