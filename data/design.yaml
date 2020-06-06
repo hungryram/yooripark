@@ -20,6 +20,21 @@ main_image:
   add_mp4_link: https://yooripark.com/video/yooriparkvideo.mp4
   add_youtube_background_video: false
 home_sections:
+- template: intro
+  intro_title: Discover Our Finest Homes
+  intro_body: Each section of the home page can be arranged and customized through
+    your phone or computer. Easily manage your website through our website editor
+    customized specifically for real estate professionals.
+  add_photo: "/uploads/yooriparkagent.png"
+  intro_align_text: has-text-left
+  intro_background_color: "#000000"
+  intro_add_button:
+    button_label: READ MORE
+    intro_button_link: "/about"
+    intro_open_in_a_new_tab: false
+    intro_button_background_color: "#FFFFFF"
+    intro_button_text_color: "#000000"
+  intro_enable_white_text_color: true
 - template: cta
   call_to_action_one:
     title_one_cta: READY TO SELL
@@ -42,21 +57,6 @@ home_sections:
     icons_three_cta: ''
     body_text_three_cta: ''
     cta_three_new_tab: false
-- template: intro
-  intro_title: Discover Our Finest Homes
-  intro_body: Each section of the home page can be arranged and customized through
-    your phone or computer. Easily manage your website through our website editor
-    customized specifically for real estate professionals.
-  add_photo: "/uploads/yooriparkagent.png"
-  intro_align_text: has-text-left
-  intro_background_color: "#000000"
-  intro_add_button:
-    button_label: READ MORE
-    intro_button_link: "/about"
-    intro_open_in_a_new_tab: false
-    intro_button_background_color: "#FFFFFF"
-    intro_button_text_color: "#000000"
-  intro_enable_white_text_color: true
 - template: featured-listings
   active_align_title_text: has-text-centered
   active_listing_title: EXLUSIVE LISTINGS
