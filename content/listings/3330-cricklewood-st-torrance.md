@@ -23,8 +23,8 @@ year_built = 0
 [listing_agent]
 listing_agent = []
 [photos]
-gallery = []
-main_photo = "/uploads/main-house-photo.jpg"
+gallery = ["/uploads/screenshot2019-09-10at12-09-27pm-0a6ecebe.png", "/uploads/screenshot2019-09-10at12-09-08pm.png", "/uploads/screenshot2019-09-10at12-08-56pm.png", "/uploads/screenshot2019-09-10at12-08-34pm.png", "/uploads/screenshot2019-09-10at12-08-07pm.png", "/uploads/screenshot2019-09-10at12-07-47pm.png", "/uploads/screenshot2019-09-10at12-07-33pm.png", "/uploads/screenshot2019-09-10at12-07-23pm.png"]
+main_photo = "/uploads/screenmainphotocricklewood.png"
 [search_engine_optimization]
 meta_description = ""
 meta_title = ""
