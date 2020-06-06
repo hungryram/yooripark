@@ -4,7 +4,7 @@ short_description = "Charming Turn Key"
 status = "Sold"
 title = " 3330 Cricklewood St Torrance"
 url = ""
-weight = 0
+weight = 830000
 [address]
 address = " 3330 Cricklewood St Torrance"
 city = "Torrance"
