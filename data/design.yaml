@@ -86,12 +86,6 @@ home_sections:
 - template: testimonial-slider
   testimonial_slider_title: Testimonials
   testimonial_slider_subtitle: ''
-- template: featured-blog
-  blog_align_title_text: has-text-centered
-  blog_title: Our Latest Posts
-  blog_subtitle: View our latest posts for useful information
-  blog_background: ''
-  blog_enable_white_text_color: false
 sub_pages:
   sub_page_image: "/uploads/main.jpg"
 footer:

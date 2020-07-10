@@ -21,7 +21,7 @@ url = "/testimonials"
 weight = 1
 [[menu.main]]
 name = "Resources"
-weight = 8
+weight = 7
 [[menu.main]]
 name = "Services"
 weight = 4
@@ -33,10 +33,6 @@ weight = 1
 name = "Properties"
 url = "/listings"
 weight = 3
-[[menu.main]]
-name = "Blog"
-url = "/blog"
-weight = 6
 [taxonomies]
 category = "categories"
 status = "status"
