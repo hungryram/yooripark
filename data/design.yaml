@@ -5,7 +5,7 @@ logo_or_title:
   favicon: "/uploads/yooriparklogomain-1024x866.png"
 main_image:
   hero_subtitle: Integrity, Transparency, and Due Diligence Guaranteed
-  home_background_image: "/uploads/shutterstock_683283169.jpg"
+  home_background_image: "/uploads/belair.jpg"
   video_background: true
   upload_video: ''
   add_url_to_youtube_video: pY2CWYxUbrM
@@ -17,7 +17,7 @@ main_image:
     open_in_new_tab: false
     hero_button_text_color: "#000000"
     hero_button_bg_color: "#ffffff"
-  add_mp4_link: https://yooripark.com/video/yooriparkvideo.mp4
+  add_mp4_link: https://hungryram.s3-us-west-1.amazonaws.com/yooriparkvideo.mp4
   add_youtube_background_video: false
 home_sections:
 - template: cta
