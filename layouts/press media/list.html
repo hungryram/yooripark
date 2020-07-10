@@ -1,0 +1,36 @@
+  {{ define "main" }}
+
+<div class="section agent-lists">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          {{ partial "breadcrumbs.html" . }}
+        </div>
+      </div>
+        <div class="columns">
+            <div class="column is-8">
+                {{ range .Pages }}
+                <div class="box">
+                       <div class="columns">
+                           <div class="column is-6 content">
+                               {{ if .Params.press_image }}<img src="{{ .Params.press_image }}"/> {{ else }}
+                               <iframe style="width: 100%; height: 250px;" src="https://www.youtube.com/embed/{{ .Params.press_youtube }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                               {{ end }}
+                           </div>
+                           <div class="column">
+                               <h1 class="title is-4">{{ .Title }}</h1>
+                               {{ if .Params.press_text }}<p class="content">{{ .Params.press_text }}</p>{{ end }}
+                               <br>
+                               <a href="{{ .Params.press_link }}" target="_blank" class="press-link">Watch Now</a>
+                           </div>
+                       </div>    
+                </div>
+                {{ end }}
+
+
+            </div>
+            {{ partial "sidebar.html" . }}
+        </div>
+    </div>
+</div>
+{{ end }}

@@ -1,4 +1,12 @@
 <div class="column">
+  <div class="box profile-sidebar">
+    <img src="{{ .Site.Data.profile.profile_photo }}" alt="{{ .Site.Data.profile.primary_company_name }}" width="200">
+    <br>
+    <h2 class="title is-4">Meet Yoori Park</h2>
+    <h4 class="subtitle is-6">Los Angeles Realtor</h4>
+    <h4 class="subtitle is-6">{{ .Site.Data.profile.primary_contact.license_type }}: {{ .Site.Data.profile.primary_contact.license_number }}</h4>
+  </div>
+
     <div class="box">
         <h2 class="subtitle is-6">Recent Listings<h2>
             {{ range first 4 (where $.Site.RegularPages "Type" "listings") }}
@@ -27,17 +35,6 @@
     </div>
 
     <div class="box">
-      <h2 class="subtitle is-6">Blog Categories</h2>
-        <ul>
-            {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-          <li>
-            <i class="fas fa-angle-right" style="margin-right: 10px"></i><a href="/categories{{ $name | urlize | relURL }}" class="secondary-btn">{{ $name | humanize }} ({{ $taxonomy.Count }})</a>
-          </li>
-          {{end}}
-
-        </ul>
-    </div>
-    <div class="box">
         <h2 class="subtitle is-6">Latest Posts<h2>
 
         {{ range  first 4 ( where $.Site.RegularPages "Type" "blog") }}
@@ -52,7 +49,7 @@
             <div class="media-content">
               <div class="content">
                   <h1 class="title is-6" style="margin: 0;">{{ .Params.title }}</h1>
-                  <time><small><i class="far fa-calendar-alt"></i> {{.Date.Format "Jan 2, 2006" }}</small></time><br>
+                  <time><small>{{.Date.Format "Jan 2, 2006" }}</small></time><br>
                   <a href="{{ .Permalink }}" class="secondary-btn">Continue Reading</a>
             </div>
         </article>
