@@ -54,48 +54,7 @@
                 </div>
             </div>
             
-            <div class="column">
-              <div class="box">
-                  <h2 class="subtitle is-6">Contact Information<h2>
-                    {{ $contactSocial := .Site.Data.profile.social_accounts }}
-                    {{ $locationContact := .Site.Data.profile.location_information }}
-                    {{ $contactPage := .Site.Data.profile.primary_contact }}
-                                <ul class="contact-page-icons">
-                                  {{ if gt ( len $locationContact.address ) 0 }}{{ if $locationContact }}<li><i class="fas fa-map-marker-alt"></i>{{ $locationContact.address }} {{ $locationContact.city }} {{ $locationContact.state }} {{ $locationContact.zip_code }}</li> {{ end }}{{ end }}
-                                  {{ if $contactPage.email }}<li><i class="far fa-envelope"></i><a href="mailto:{{ $contactPage.email }}">{{ $contactPage.email }}</a></li> {{ end }}
-                                  {{ if $contactPage }}<li><i class="fas fa-mobile-alt"></i> <a href="tel:{{ $contactPage.mobile_phone }}">{{ $contactPage.mobile_phone }}</a></li> {{ end }}
-                                  {{ if $contactPage.phone }}<li><i class="fas fa-phone-alt"></i> <a href="tel:{{ $contactPage.phone }}">{{ $contactPage.phone }}</a></li> {{ end }}
-                              </ul>
-                              <ul class="contact-page-social">
-                                {{ if $contactSocial.facebook }}<li><a href="{{ $contactSocial.facebook }}" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>{{ end }}
-                                {{ if $contactSocial.instagram }}<li><a href="{{ $contactSocial.instagram }}" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>{{ end }}
-                                {{ if $contactSocial.yelp }}<li><a href="{{ $contactSocial.yelp }}" target="_blank" title="Yelp"><i class="fab fa-yelp"></i></a></li>{{ end }}
-                                {{ if $contactSocial.linkedin }}<li><a href="{{ $contactSocial.linkedin }}" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>{{ end }}
-                                {{ if $contactSocial.pinterest }}<li><a href="{{ $contactSocial.pinterest }}" target="_blank" title="Pinterest"><i class="fab fa-pinterest-p"></i></a></li>{{ end }}
-                              </ul>
-              </div>
-          
-              <div class="box">
-                  <h2 class="subtitle is-6">Latest Posts<h2>
-          
-                  {{ range  first 4 ( where $.Site.RegularPages "Type" "blog") }}
-                  <article class="media">
-                      {{ if .Params.featured_image }}
-                      <div class="media-left">
-                        <figure class="image is-96x96">
-                          <img src="{{ .Params.featured_image }}" alt="Image">
-                        </figure>
-                      </div>
-                      {{end}}
-                      <div class="media-content">
-                        <div class="content">
-                            <h1 class="title is-6">{{ .Params.title }}</h1>
-                            <a href="{{ .Permalink }}" class="secondary-btn">Continue Reading</a>
-                      </div>
-                  </article>
-                  {{end}}
-              </div>
-          </div>
+{{ partial "sidebar.html" . }}
 
         </div>
     </div>

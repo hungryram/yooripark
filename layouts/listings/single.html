@@ -167,6 +167,8 @@
           </ul>
       </div>
 
+      {{ if .Params.utilities_and_features.interior_details.hide_property_interior }}
+      {{else}}
       <div class="box single-features-list">
         <h2 class="title is-6"><i class="fas fa-th-large"></i>Property Interior</h2>
         <hr>
@@ -203,7 +205,10 @@
         {{end}}
         </ul>
       </div>
+{{ end }}
 
+{{ if .Params.utilities_and_features.exterior.hide_property_exterior }}
+{{else}}
       <div class="box single-features-list">
         <h2 class="title is-6"><i class="fas fa-th-large"></i>Property Exterior</h2>
         <hr>
@@ -232,7 +237,10 @@
         {{end}}
         </ul>
       </div>
+      {{ end }}
 
+      {{ if .Params.utilities_and_features.community_features.hide_community_details }}
+      {{else}}
       <div class="box single-features-list">
         <h2 class="title is-6"><i class="fas fa-th-large"></i>Community Details</h2>
         <hr>
@@ -253,6 +261,7 @@
         {{end}}
         </ul>
       </div>
+      {{ end }}
       {{ if .Params.tools.matterport_link }}
       <div class="box vt-single">
         <h2 class="title is-6">Virtual Tour</h2>

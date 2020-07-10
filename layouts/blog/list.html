@@ -14,13 +14,12 @@
 
                 <div class="box content">
                     <img src="{{ .Params.featured_image }}" alt="">
-                    <h1>{{.Title}}</h1>
+                    <h1 class="title is-4">{{.Title}}</h1>
+                    <time>{{.Date.Format "Jan 2, 2006" }}</time><br><br>
                     {{ .Summary | markdownify }}
-                    <hr>
                     <div class="columns">
                         <div class="column">
                             {{ $blogDate := .Params.date_published }}
-                            <time><i class="far fa-calendar-alt"></i> {{.Date.Format "Jan 2, 2006" }}</time><br><br>
                             <a href="{{ .Permalink }}" class="secondary-btn">Read More</a>
                         </div>
                     </div>
