@@ -7,6 +7,11 @@ fields:
   config:
     required: false
   label: Company Name
+- name: profile_photo
+  type: file
+  config:
+    maxSize: 64
+  label: Profile Photo
 - name: primary_contact
   type: field_group
   config: {}
