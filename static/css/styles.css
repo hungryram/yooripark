@@ -353,6 +353,7 @@ a.press-link {
     .head-nav li {
         display: inline-block;
         padding: 0 10px;
+        font-size: 14px;
     }
 
     ul.sub {

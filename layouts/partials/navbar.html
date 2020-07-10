@@ -1,5 +1,5 @@
 <div class="hero-head">
-    <header class="navbar" {{ if not .IsHome }}style="{{ safeHTMLAttr (printf "background-color: %s" .Site.Data.design.colors.header_background_color) }}"{{end}}>
+    <header class="navbar" style="{{ safeHTMLAttr (printf "background-color: %s" .Site.Data.design.colors.header_background_color) }}">
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item" href="/">
@@ -22,7 +22,7 @@
                 {{ range .Site.Menus.main }}
                     {{ if .HasChildren }}
                   <li class="sub-menu{{if $currentPage.HasMenuCurrent "main" . }} active{{end}}">
-                  <a href="javascript:;" class="parent-drop" {{ if not $.IsHome }}{{ if $.Site.Data.design.colors.enable_black_menu_items }}style="color: black"{{ end }}{{ else }}style="color: #fff"{{end}}>
+                  <a href="javascript:;" class="parent-drop" {{ if $.Site.Data.design.colors.enable_black_menu_items }}style="color: black"{{ else }}style="color: #fff"{{end}}>
                       {{ .Pre }}
                       <span>{{ .Name }}</span>
                       <i class="fas fa-caret-down dropdown-i"></i>
@@ -34,7 +34,7 @@
                   </ul>
                 {{else}}
                   <li>
-                  <a href="{{.URL}}" class="nav-item"{{ if not $.IsHome }}{{ if $.Site.Data.design.colors.enable_black_menu_items }}style="color: black"{{ end }}{{ else }}style="color: #fff"{{end}}>
+                  <a href="{{.URL}}" class="nav-item"{{ if $.Site.Data.design.colors.enable_black_menu_items }}style="color: black"{{ else }}style="color: #fff"{{end}}>
                       {{ .Pre }}
                       <span>{{ .Name }}</span>
                   </a>
