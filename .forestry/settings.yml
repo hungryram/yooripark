@@ -21,6 +21,13 @@ sections:
   match: "**/*"
   templates:
   - property
+- type: directory
+  path: content/press_media
+  label: Press and Media
+  create: documents
+  match: "**/*"
+  templates:
+  - press-and-media
 - type: document
   path: content/contact/_index.md
   label: Contact
