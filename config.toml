@@ -15,14 +15,6 @@ parent = "Properties"
 url = "/featured"
 weight = 1
 [[menu.main]]
-name = "Testimonials"
-parent = "Resources"
-url = "/testimonials"
-weight = 1
-[[menu.main]]
-name = "Resources"
-weight = 7
-[[menu.main]]
 name = "Services"
 weight = 4
 [[menu.main]]
