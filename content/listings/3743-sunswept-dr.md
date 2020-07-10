@@ -13,13 +13,13 @@ zip_code = 91604
 [details]
 bathrooms = 4
 bedrooms = 5
-garage = nil
-hoa = nil
+garage = 0
+hoa = 0
 lot_size = 12846
 mls_number = ""
 property_type = "Not Specified"
 square_footage = 3354
-year_built = nil
+year_built = 0
 [listing_agent]
 listing_agent = []
 [photos]

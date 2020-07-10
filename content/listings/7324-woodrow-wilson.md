@@ -13,13 +13,13 @@ zip_code = 90046
 [details]
 bathrooms = 2.5
 bedrooms = 3
-garage = nil
-hoa = nil
+garage = 0
+hoa = 0
 lot_size = 50
 mls_number = ""
 property_type = "Not Specified"
 square_footage = 2419
-year_built = nil
+year_built = 0
 [listing_agent]
 listing_agent = []
 [photos]

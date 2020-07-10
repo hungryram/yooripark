@@ -13,13 +13,13 @@ zip_code = 90069
 [details]
 bathrooms = 1
 bedrooms = 1
-garage = nil
-hoa = nil
-lot_size = nil
+garage = 0
+hoa = 0
+lot_size = 0
 mls_number = ""
 property_type = "Not Specified"
-square_footage = nil
-year_built = nil
+square_footage = 0
+year_built = 0
 [listing_agent]
 listing_agent = []
 [photos]

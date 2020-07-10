@@ -13,13 +13,13 @@ zip_code = 90068
 [details]
 bathrooms = 4
 bedrooms = 4
-garage = nil
-hoa = nil
+garage = 0
+hoa = 0
 lot_size = 5845
 mls_number = ""
 property_type = "Not Specified"
 square_footage = 3981
-year_built = nil
+year_built = 0
 [listing_agent]
 listing_agent = []
 [photos]
