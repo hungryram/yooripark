@@ -20,16 +20,6 @@ weight = 1
 name = "Testimonials"
 parent = "Resources"
 url = "/testimonials"
-weight = 3
-[[menu.main]]
-name = "Our Team"
-parent = "Resources"
-url = "/teams"
-weight = 2
-[[menu.main]]
-name = "Our Partners"
-parent = "Resources"
-url = "/partners"
 weight = 1
 [[menu.main]]
 name = "Home"
