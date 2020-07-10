@@ -1,10 +1,6 @@
 baseURL = "https://yooripark.netlify.app"
 languageCode = "en-us"
 [[menu.main]]
-name = "Press & Media"
-url = "press-media"
-weight = 5
-[[menu.main]]
 name = "Sold Listings"
 parent = "Properties"
 url = "/status/sold"
@@ -14,6 +10,10 @@ name = "Exclusive Listings"
 parent = "Properties"
 url = "/featured"
 weight = 1
+[[menu.main]]
+name = "Press & Media"
+url = "/press-media"
+weight = 5
 [[menu.main]]
 name = "Services"
 weight = 4
