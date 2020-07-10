@@ -4,6 +4,6 @@ title = "Contact Me"
 url = ""
 [menu.main]
 name = "Contact"
-weight = 6
+weight = 7
 
 +++
