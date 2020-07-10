@@ -260,7 +260,7 @@ fields:
       min: 0
       max: 
       step: 
-      required: true
+      required: false
   - name: garage
     type: number
     label: Garage
@@ -271,7 +271,7 @@ fields:
       min: 0
       max: 
       step: 
-      required: true
+      required: false
   label: Details
 - name: utilities_and_features
   type: field_group
