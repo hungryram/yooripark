@@ -13,13 +13,13 @@ zip_code = 90505
 [details]
 bathrooms = 1
 bedrooms = 3
-garage = 0
-hoa = 0
-lot_size = 0
+garage = nil
+hoa = nil
+lot_size = nil
 mls_number = ""
 property_type = "Not Specified"
 square_footage = 1067
-year_built = 0
+year_built = nil
 [listing_agent]
 listing_agent = []
 [photos]
@@ -37,12 +37,15 @@ youtube_link = ""
 [utilities_and_features.community_features]
 additional_community_details = []
 community_features_choice = []
+hide_community_details = true
 [utilities_and_features.exterior]
 additional_exterior_details = []
 exterior_details = []
 exterior_roof = []
+hide_property_exterior = true
 [utilities_and_features.interior_details]
 additional_interior_details = []
+hide_property_interior = true
 interior_appliances = []
 interior_flooring = []
 interior_rooms = []
