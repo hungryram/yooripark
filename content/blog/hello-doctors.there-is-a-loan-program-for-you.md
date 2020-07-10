@@ -2,7 +2,7 @@
 author = []
 categories = []
 date = 2019-12-08T08:00:00Z
-featured_image = ""
+featured_image = "/uploads/mainimg.jpg"
 tags = []
 title = "Hello Doctors. There is a loan program for you."
 url = ""
