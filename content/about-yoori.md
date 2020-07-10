@@ -1,6 +1,9 @@
 +++
 title = "About Yoori"
 url = ""
+[menu.main]
+name = "About Yoori Park"
+weight = 2
 [search_engine_optimization]
 meta_description = ""
 meta_title = ""
