@@ -23,6 +23,5 @@ fields:
   template: url
   label: URL
 pages:
-- content/about.md
 - content/ready-to-buy-or-invest.md
 - content/ready-to-sell.md
