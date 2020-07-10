@@ -43,16 +43,23 @@ home_sections:
     body_text_three_cta: ''
     cta_three_new_tab: false
 - template: intro
-  intro_title: Discover Our Finest Homes
-  intro_body: Each section of the home page can be arranged and customized through
-    your phone or computer. Easily manage your website through our website editor
-    customized specifically for real estate professionals.
+  intro_title: MEET YOORI PARK
+  intro_body: 'Yoori firmly believes that if you focus on the client and the client’s
+    aspirations, everything else will fall into place. The client is #1 in Yoori’s
+    book. Her desire is to assist clients wanting to buy or sell their home from the
+    very beginning of the process to the very end with essentially an “open-door”
+    policy that values 100% transparency and open communication. Yoori deeply values
+    building rapport with each and every one of her clients yet is strongly results-oriented
+    and works hard to deliver. Her confidence and prowess comes from 18 plus years
+    of training and experience in both sales and customer service. Top scores, ratings,
+    and reviews can all attest to her success, which she attributes to her own expertise
+    and genuine care.'
   add_photo: "/uploads/yooriparkagent.png"
   intro_align_text: has-text-left
   intro_background_color: "#000000"
   intro_add_button:
     button_label: READ MORE
-    intro_button_link: "/about"
+    intro_button_link: "/about-yoori"
     intro_open_in_a_new_tab: false
     intro_button_background_color: "#FFFFFF"
     intro_button_text_color: "#000000"
