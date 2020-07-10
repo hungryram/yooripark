@@ -2,7 +2,7 @@
 author = []
 categories = []
 date = 2020-01-24T08:00:00Z
-featured_image = ""
+featured_image = "/uploads/yooriblogwebsite.jpeg"
 tags = []
 title = "Who is Yoori Park?"
 url = ""
