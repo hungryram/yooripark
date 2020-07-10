@@ -281,6 +281,9 @@ fields:
     type: field_group
     config: {}
     fields:
+    - name: hide_property_interior
+      type: boolean
+      label: Hide Property Interior
     - name: interior_rooms
       type: list
       config:
@@ -357,6 +360,9 @@ fields:
     type: field_group
     config: {}
     fields:
+    - name: hide_property_exterior
+      type: boolean
+      label: Hide Property Exterior
     - name: exterior_details
       type: list
       config:
@@ -430,6 +436,9 @@ fields:
     type: field_group
     config: {}
     fields:
+    - name: hide_community_details
+      type: boolean
+      label: Hide Community Details
     - name: community_features_choice
       type: list
       config:
