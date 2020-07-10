@@ -11,7 +11,7 @@ meta_description = ""
 meta_title = ""
 
 +++
-\[I want the blogs about Real Estate easy for everyone to understand. If you are in the industry and/or been in Real Estate for awhile then you will understand all the lingos and everything you need to know. But I want to make sure everybody thoroughly understands everything you need to know about Real Estate. There are many opportunities in Real Estate.\]
+I want the blogs about Real Estate easy for everyone to understand. If you are in the industry and/or been in Real Estate for awhile then you will understand all the lingos and everything you need to know. But I want to make sure everybody thoroughly understands everything you need to know about Real Estate. There are many opportunities in Real Estate.\]
 
 What is a FHA Loan?
 
