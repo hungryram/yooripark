@@ -2,7 +2,7 @@
 author = []
 categories = []
 date = 2017-12-15T08:00:00Z
-featured_image = ""
+featured_image = "/uploads/powered.jpg"
 tags = []
 title = "Here are Information to Prepare You Before You Own Your First Home"
 url = ""
