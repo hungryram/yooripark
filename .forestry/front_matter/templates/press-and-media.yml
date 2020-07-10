@@ -35,3 +35,5 @@ fields:
   config:
     required: false
   label: Press Link
+pages:
+- content/press_media/new-home-atwater-village.md
