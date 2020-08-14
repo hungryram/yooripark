@@ -1,4 +1,4 @@
-baseURL = "https://yooripark.netlify.app"
+baseURL = "https://yooripark.com/"
 languageCode = "en-us"
 [[menu.main]]
 name = "Sold Listings"
