@@ -4,7 +4,9 @@ logo_or_title:
   title: Yoori Park
   favicon: "/uploads/yooriparklogomain-1024x866.png"
 main_image:
-  hero_subtitle: Integrity, Transparency, and Due Diligence Guaranteed
+  hero_subtitle: |-
+    Integrity, Transparency, and Due Diligence Guaranteed
+    Residential · Commercial · Development
   home_background_image: "/uploads/belair.jpg"
   video_background: true
   upload_video: ''

@@ -63,11 +63,14 @@ fields:
     label: Hero Title
     description: The main title overlaying the main image or video
   - name: hero_subtitle
-    type: text
+    type: textarea
+    default: ''
     config:
       required: false
+      wysiwyg: false
+      schema:
+        format: markdown
     label: Hero Subtitle
-    description: the subtitle overlaying the hero image or video
   - name: align_hero_text
     type: select
     default: []
