@@ -408,6 +408,14 @@ a.press-link {
 }
 
 /* ALL SCREEN SIZE MENU */
+div.top-bar {
+    background: black;
+    color: #fff;
+    position:relative;
+    z-index: 100;
+    padding: 5px;
+}
+
 header.navbar {
     padding: 10px 0;
 }
