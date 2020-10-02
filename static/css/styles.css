@@ -1,3 +1,13 @@
+h1.subtitle,
+h2.subtitle,
+h3.subtitle,
+h4.subtitle,
+h5.subtitle,
+h6.subtitle {
+    font-family: "Raleway", sans-serif;
+}
+
+
 /* DEFAULT LIST.HTML */
 
 button.button {
