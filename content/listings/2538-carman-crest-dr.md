@@ -11,14 +11,14 @@ city = "Los Angeles"
 state = "California"
 zip_code = 90068
 [details]
-bathrooms = 0
-bedrooms = 0
+bathrooms = 4
+bedrooms = 3
 garage = 0
 hoa = 0
 lot_size = 0
 mls_number = ""
 property_type = "Not Specified"
-square_footage = 0
+square_footage = 5000
 year_built = 0
 [listing_agent]
 listing_agent = []
@@ -52,3 +52,5 @@ interior_rooms = []
 
 +++
 A modern and organic architectural masterpiece that raises the bar in quality, design, and technology. This three story compound sits on over a quarter of an acre of beautifully landscaped California indigenous trees and water efficient plants in a quiet canyon on a private and premier cul-de-sac street. This house is ideal for an art collector with its abundance of tastefully placed art walls. The living and dining room are enveloped by floor to ceiling sliding doors overlooking the 75 foot raised zero edge infinity ozone pool that cascades off into thin air. The dream entertaining kitchen with a full sized Sub-Zero wine storage features a disappearing wall of glass that brings the outside in and a true second kitchen and dining room. The living room features a built-in media center and stealth audio that is buried inside of the walls. The master suite is its own reprieve surrounded by beautiful poetic trees and appointed with a private workout out room or study and a sun drenched spa bathroom. Additional amenities include a 2 story subterranean garage with 2 car lifts, a private Zen garden in the center of the house equipped with lighting and sound, and a huge backyard that looks like it was cut right from the Getty Museum’s grounds.
+
+![Revel Real Estate](/uploads/1571339881539-revelrealestatelogo-black.png)
