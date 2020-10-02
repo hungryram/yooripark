@@ -28,8 +28,8 @@
         <div class="container {{ . }}">
           {{end}}
             <h1 class="hero-title title is-1">{{ .Site.Data.design.main_image.hero_title }}</h1>
-            <h2 class="subtitle mb-2 is-3 is-size-5-mobile"> Residential · Commercial · Development</h2>
-            <h2 class="subtitle mb-0 is-size-6-mobile">Integrity, Transparency, and Due Diligence Guaranteed</h2>
+            <h2 class="subtitle mb-2 is-3 is-size-6-mobile"> Residential · Commercial · Development</h2>
+            <h2 class="subtitle mb-0 is-size-7-mobile">Integrity, Transparency, and Due Diligence Guaranteed</h2>
 
             {{ if gt ( len .Site.Data.design.main_image.add_a_button.hero_button_text ) 0 }}
                 <a href="{{ .Site.Data.design.main_image.add_a_button.hero_button_link }}" style="{{ safeHTMLAttr (printf "background-color: %s" .Site.Data.design.main_image.add_a_button.hero_button_bg_color ) }};{{ safeHTMLAttr (printf "color: %s" .Site.Data.design.main_image.add_a_button.hero_button_text_color ) }}" class="button hero-button" {{ if .Site.Data.design.main_image.add_a_button.open_in_new_tab }}target="_blank"{{end}} >{{ .Site.Data.design.main_image.add_a_button.hero_button_text }}</a>
