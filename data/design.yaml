@@ -68,7 +68,7 @@ home_sections:
   intro_enable_white_text_color: true
 - template: featured-listings
   active_align_title_text: has-text-centered
-  active_listing_title: EXLUSIVE LISTINGS
+  active_listing_title: EXCLUSIVE LISTINGS
   active_background_color: ''
   active_enable_white_text_color: false
   listing_subtitle: ''
